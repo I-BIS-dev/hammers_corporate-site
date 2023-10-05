@@ -28,6 +28,15 @@ $hover: all 0.3s ease;
   transition: $hover;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  vertical-align: bottom;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   width: 100%;
   font-family: "Noto Sans JP", "Roboto", YuGothic, "Hiragino Kaku Gothic ProN", "Hind", Meiryo, sans-serif;
@@ -58,6 +67,7 @@ a {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 * {
