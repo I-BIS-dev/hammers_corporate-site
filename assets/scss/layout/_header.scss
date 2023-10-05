@@ -1,13 +1,14 @@
 .l-header {
   width: 100%;
   height: 110px;
-  padding: 24px 28px;
+  padding: 24px 0px 24px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   @include mq(sp) {
     padding: 24px 8px;
   }
@@ -35,23 +36,79 @@
   .l-header__navarea {
     display: flex;
     align-items: center;
+    // transform: translateX(200%);
 
     .l-header__phone {
       text-align: right;
       font-size: 11px;
       color: $main-color;
       padding-bottom: 4px;
+      @include mq(tab) {
+        display: none;
+      }
+      @include mq(spls) {
+        display: none;
+      }
+      @include mq(sp) {
+        display: none;
+      }
     }
 
     .l-header__nav {
       font-size: 14px;
       font-weight: bold;
+      @include mq(tab) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+      }
+      @include mq(spls) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+      }
+      @include mq(sp) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+      }
 
       .l-header__nav-list {
         display: flex;
+        @include mq(tab) {
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+        }
+        @include mq(spls) {
+          flex-direction: column;
+          text-align: center;
+        }
+        @include mq(sp) {
+          flex-direction: column;
+          text-align: center;
+        }
 
         .l-header__nav-item {
           margin-left: 32px;
+          @include mq(tab) {
+            margin: 0;
+            padding-bottom: 40px;
+          }
+          @include mq(spls) {
+            flex-direction: column;
+            text-align: center;
+          }
+          @include mq(sp) {
+            flex-direction: column;
+            text-align: center;
+          }
 
           .l-header__nav-link {
             display: block;
@@ -79,4 +136,57 @@
       font-weight: bold;
     }
   }
+}
+
+// ハンバーガーメニュー
+.header__hamburger {
+  width: 48px;
+  height: 100%;
+}
+
+.hamburger {
+  background-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
+  border-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
+  z-index: 9999;
+}
+
+//ハンバーガーメニューの線
+.hamburger span {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: relative;
+  transition: ease 0.4s; /*ハンバーガーメニュークリック時の三本線の動きを遅延*/
+  display: block;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  margin: 8px 0;
+}
+
+.hamburger span:nth-child(3) {
+  top: 0;
+}
+
+//ハンバーガーメニュークリック後のスタイル
+.active {
+  transform: translateX(0);
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: -13px;
+  transform: rotate(-45deg);
 }

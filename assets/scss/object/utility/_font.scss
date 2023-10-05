@@ -2,3 +2,13 @@
   font-weight: bold;
   font-size: 18px;
 }
+
+.u-header__logo {
+  font-size: 32px;
+  color: $main-color;
+  display: block;
+  @include mq(sp) {
+    font-size: 23px;
+    color: $main-color;
+  }
+}
