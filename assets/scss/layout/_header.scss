@@ -36,7 +36,8 @@
   .l-header__navarea {
     display: flex;
     align-items: center;
-    // transform: translateX(200%);
+    @include mq(sp-tab) {
+    }
 
     .l-header__phone {
       text-align: right;
@@ -57,57 +58,28 @@
     .l-header__nav {
       font-size: 14px;
       font-weight: bold;
-      @include mq(tab) {
+      @include mq(sp-tab) {
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         height: 100vh;
-      }
-      @include mq(spls) {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 100vh;
-      }
-      @include mq(sp) {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 100vh;
+        transform: translateX(400%);
       }
 
       .l-header__nav-list {
         display: flex;
-        @include mq(tab) {
+        @include mq(sp-tab) {
           flex-direction: column;
           text-align: center;
           align-items: center;
         }
-        @include mq(spls) {
-          flex-direction: column;
-          text-align: center;
-        }
-        @include mq(sp) {
-          flex-direction: column;
-          text-align: center;
-        }
 
         .l-header__nav-item {
           margin-left: 32px;
-          @include mq(tab) {
+          @include mq(sp-tab) {
             margin: 0;
-            padding-bottom: 40px;
-          }
-          @include mq(spls) {
-            flex-direction: column;
-            text-align: center;
-          }
-          @include mq(sp) {
-            flex-direction: column;
-            text-align: center;
+            padding: 40px;
           }
 
           .l-header__nav-link {
@@ -142,6 +114,10 @@
 .header__hamburger {
   width: 48px;
   height: 100%;
+  display: none;
+  @include mq(sp-tab) {
+    display: block;
+  }
 }
 
 .hamburger {
