@@ -16,6 +16,11 @@ $breakpoints: (
     @content;
   }
 }
+
+@mixin hover() {
+  transition: all 0.3s;
+}
+
 $white: #fff;
 $black: #262626;
 $bg-color: #f4f7f7;
