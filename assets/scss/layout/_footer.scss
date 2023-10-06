@@ -3,15 +3,17 @@
   background-color: $main-color;
   box-shadow: 0 0 0 100vmax $main-color;
   clip-path: inset(0 -100vmax);
+  position: relative;
 
   .l-footer__top {
     display: flex;
     justify-content: space-between;
     color: $white;
     border-bottom: 1px solid #229f5d;
+    padding: 0 8px;
 
     .l-footer__logo {
-      min-width: 350px;
+      // min-width: 350px;
 
       .l-footer__logo-name {
         font-size: 32px;
@@ -30,11 +32,15 @@
       .l-footer__logo-address {
         font-size: 13px;
         padding-bottom: 40px;
+        min-width: 400px;
       }
     }
     .l-footer__nav-list {
       columns: 3;
       column-gap: 0;
+      @include mq(sp-tab) {
+        display: none;
+      }
 
       .l-footer__nav-item {
         text-align: center;
