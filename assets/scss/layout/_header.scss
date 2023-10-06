@@ -44,13 +44,7 @@
       font-size: 11px;
       color: $main-color;
       padding-bottom: 4px;
-      @include mq(tab) {
-        display: none;
-      }
-      @include mq(spls) {
-        display: none;
-      }
-      @include mq(sp) {
+      @include mq(sp-tab) {
         display: none;
       }
     }
@@ -64,7 +58,7 @@
         left: 0;
         right: 0;
         height: 100vh;
-        transform: translateX(400%);
+        transform: translateX(100%);
       }
 
       .l-header__nav-list {
@@ -150,6 +144,7 @@
 
 //ハンバーガーメニュークリック後のスタイル
 .active {
+  -webkit-transform: translateX(0);
   transform: translateX(0);
 }
 
