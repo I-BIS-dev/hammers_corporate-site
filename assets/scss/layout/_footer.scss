@@ -1,32 +1,72 @@
 .l-footer {
+  padding: 24px 0 0;
   background-color: $main-color;
+  box-shadow: 0 0 0 100vmax $main-color;
+  clip-path: inset(0 -100vmax);
+
   .l-footer__top {
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    border-bottom: 1px solid #229f5d;
+
     .l-footer__logo {
       min-width: 350px;
+
+      .l-footer__logo-name {
+        font-size: 32px;
+        font-weight: bold;
+        padding-bottom: 4px;
+      }
+
+      .l-footer__logo-description {
+        font-size: 12px;
+        font-weight: bold;
+      }
+      .l-footer__logo-company {
+        padding-top: 24px;
+        font-size: 13px;
+      }
+      .l-footer__logo-address {
+        font-size: 13px;
+        padding-bottom: 40px;
+      }
     }
     .l-footer__nav-list {
       columns: 3;
       column-gap: 0;
-      padding: 0;
 
       .l-footer__nav-item {
         text-align: center;
         min-width: 200px;
 
         &:not(:last-child):not(:nth-last-child(2)) {
-          border-right: 1px solid #ccc;
+          border-right: 1px solid #229f5d;
         }
 
         .l-footer__nav-link {
-          color: #333;
-          font-weight: bold;
-          font-size: 16px;
+          display: block;
+          font-size: 13px;
+          color: $white;
+          text-align: center;
+          padding-top: 8px;
 
           &:hover {
-            color: #555;
+            @include hover-effect;
           }
         }
       }
+    }
+  }
+  .l-footer__bottom {
+    padding: 8px;
+    text-align: center;
+    align-items: center;
+
+    .l-footer__copyright {
+      color: $white;
+      font-weight: bold;
+      font-size: 10px;
     }
   }
 }
