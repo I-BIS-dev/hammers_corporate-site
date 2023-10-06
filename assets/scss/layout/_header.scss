@@ -67,6 +67,7 @@
           flex-direction: column;
           text-align: center;
           align-items: center;
+          width: 100%;
         }
 
         .l-header__nav-item {
@@ -80,6 +81,9 @@
             display: block;
             &:hover {
               @include hover-effect;
+            }
+            @include mq(sp-tab) {
+              min-width: 300px;
             }
           }
         }
@@ -146,6 +150,7 @@
 .active {
   -webkit-transform: translateX(0);
   transform: translateX(0);
+  // transform: inherit;
 }
 
 .hamburger.active span:nth-child(1) {
