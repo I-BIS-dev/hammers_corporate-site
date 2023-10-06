@@ -1,0 +1,32 @@
+.l-footer {
+  background-color: $main-color;
+  .l-footer__top {
+    .l-footer__logo {
+      min-width: 350px;
+    }
+    .l-footer__nav-list {
+      columns: 3;
+      column-gap: 0;
+      padding: 0;
+
+      .l-footer__nav-item {
+        text-align: center;
+        min-width: 200px;
+
+        &:not(:last-child):not(:nth-last-child(2)) {
+          border-right: 1px solid #ccc;
+        }
+
+        .l-footer__nav-link {
+          color: #333;
+          font-weight: bold;
+          font-size: 16px;
+
+          &:hover {
+            color: #555;
+          }
+        }
+      }
+    }
+  }
+}
