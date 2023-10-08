@@ -1,8 +1,7 @@
 .l-footer {
-  padding: 24px 0 0;
   background-color: $main-color;
-  box-shadow: 0 0 0 100vmax $main-color;
-  clip-path: inset(0 -100vmax);
+  margin: 0 calc(50% - 50vw);
+  padding: 0 calc(50vw - 50%);
   position: relative;
 
   .l-footer__top {
@@ -10,7 +9,7 @@
     justify-content: space-between;
     color: $white;
     border-bottom: 1px solid #229f5d;
-    padding: 0 8px;
+    padding: 16px 8px;
 
     .l-footer__logo {
       // min-width: 350px;
@@ -31,7 +30,7 @@
       }
       .l-footer__logo-address {
         font-size: 13px;
-        padding-bottom: 40px;
+        padding-bottom: 32px;
         min-width: 400px;
       }
     }
