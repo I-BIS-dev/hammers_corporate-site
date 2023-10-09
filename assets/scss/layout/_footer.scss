@@ -12,8 +12,6 @@
     padding: 16px 8px;
 
     .l-footer__logo {
-      // min-width: 350px;
-
       .l-footer__logo-name {
         font-size: 32px;
         font-weight: bold;
@@ -44,10 +42,7 @@
       .l-footer__nav-item {
         text-align: center;
         min-width: 200px;
-
-        &:not(:last-child):not(:nth-last-child(2)) {
-          border-right: 1px solid #229f5d;
-        }
+        border-right: 1px solid #229f5d;
 
         .l-footer__nav-link {
           display: block;
@@ -60,6 +55,9 @@
             @include hover-effect;
           }
         }
+      }
+      .--noborder {
+        border: none;
       }
     }
   }
