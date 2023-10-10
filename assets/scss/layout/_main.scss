@@ -9,8 +9,7 @@ main {
     padding: 0 calc(50vw - 50%);
 
     .l-mv__hero-text {
-      margin-top: 411px;
-      padding-bottom: 64px;
+      padding: 340px 0 64px;
       color: $main-color;
       font-size: 46px;
       font-weight: bold;
@@ -66,6 +65,132 @@ main {
     }
   }
 
-  // .l-feature {
+  .l-feature {
+    background-color: $bg-color;
+    margin: 0 calc(50% - 50vw);
+    padding: 0 calc(50vw - 50%);
+    padding-top: 128px;
+
+    .l-feature__text-top {
+      max-width: 650px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 200%;
+      padding-bottom: 48px;
+      @include mq(sp-ls) {
+        font-size: 12px;
+      }
+    }
+    .l-feature__card {
+      max-width: 425px;
+      text-align: center;
+      margin: 0 40px;
+      padding-bottom: 24px;
+      @include mq(sp-ls) {
+        margin: 0 auto;
+      }
+
+      .l-feature__card-top {
+        background-color: $main-color;
+        padding: 4px 24px;
+        border-radius: 7px 7px 0 0;
+
+        .l-feature__card-top--text {
+          color: $white;
+          font-size: 20px;
+          font-weight: bold;
+          position: relative;
+          display: inline-block;
+          @include mq(sp-ls) {
+            font-size: 14px;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 55%;
+            transform: translateY(-50%);
+            left: -25px;
+            width: 20px;
+            height: 20px;
+            background-image: url("../assets/images/check-icon.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+      .l-feature__card-bottom {
+        border: 1px solid $main-color;
+        border-top: none;
+        border-radius: 0 0 7px 7px;
+        padding: 32px;
+        background-color: $white;
+        @include mq(sp-ls) {
+          padding: 24px;
+        }
+        .l-feature__card-bottom--day {
+          font-size: 40px;
+          font-weight: bold;
+          @include mq(sp-ls) {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+    .l-feature__text-bottom {
+      max-width: 650px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 180%;
+      padding-bottom: 64px;
+      @include mq(sp-ls) {
+        font-size: 12px;
+        padding-bottom: 24px;
+      }
+      .l-feature__text {
+        font-size: 10px;
+      }
+    }
+    .l-feature__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 64px;
+      @include mq(sp) {
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 32px;
+      }
+      .l-feature__info-area {
+        max-width: 270px;
+        height: auto;
+        .l-feature__info-img {
+          padding-bottom: 16px;
+        }
+        .l-feature__info-text {
+          font-weight: bold;
+          @include mq(sp-ls) {
+            font-size: 12px;
+          }
+          @include mq(sp) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  // .l-survey{
+  // }
+
+  // .l-flow{
+  // }
+
+  // .l-faq{
+  // }
+
+  // .l-access{
+  // }
+
+  // .l-ctaarea{
   // }
 }

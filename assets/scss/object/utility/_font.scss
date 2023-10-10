@@ -13,3 +13,19 @@
     color: $main-color;
   }
 }
+
+.c-font-bold {
+  font-weight: bold;
+}
+
+.c-font-color__feature-card {
+  color: $main-color;
+}
+
+.c-font-size__feature-card {
+  font-size: 46px;
+  line-height: 127%;
+  @include mq(sp-ls) {
+    font-size: 30px;
+  }
+}
