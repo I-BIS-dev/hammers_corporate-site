@@ -166,6 +166,7 @@ main {
         justify-content: center;
         padding-bottom: 32px;
       }
+
       .l-feature__info-area {
         max-width: 270px;
         height: auto;
@@ -176,9 +177,11 @@ main {
           margin: 0;
           padding-bottom: 32px;
         }
+
         .l-feature__info-img {
           padding-bottom: 16px;
         }
+
         .l-feature__info-text {
           font-weight: bold;
           @include mq(sp-ls) {
@@ -190,6 +193,7 @@ main {
         }
       }
     }
+
     .l-feature__ctabtn {
       display: flex;
       justify-content: center;
@@ -198,8 +202,73 @@ main {
     }
   }
 
-  // .l-survey{
-  // }
+  .l-survey {
+    background-color: $white;
+
+    .l-surbey__ttl {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 64px;
+
+      .l-surbey__ttl-text {
+        font-size: 32px;
+        font-weight: bold;
+
+        &.--font {
+          font-size: 40px;
+          color: $main-color;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            border-bottom: 2px dashed $main-color;
+          }
+        }
+      }
+    }
+    .l-surbey__flex-container {
+      display: flex;
+      padding: 40px 0 80px;
+      @include mq(sp-ls) {
+        flex-direction: column;
+        justify-content: center;
+      }
+      .l-surbey__imgarea {
+        flex: 5;
+        position: relative;
+        .l-surbey__img1 {
+          max-width: 245px;
+        }
+        .l-surbey__img2 {
+          max-width: 245px;
+          position: absolute;
+          top: 5%;
+          left: 40%;
+        }
+      }
+      .l-surbey__info {
+        flex: 5;
+        max-width: 428px;
+        @include mq(sp-ls) {
+          margin: 0 auto;
+        }
+
+        .l-surbey__description {
+          text-align: justify;
+          padding: 40px 0 84px;
+          line-height: 200%;
+        }
+        .l-surbey__ctabtn {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
 
   // .l-flow{
   // }
