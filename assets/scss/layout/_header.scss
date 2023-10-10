@@ -61,6 +61,10 @@
         opacity: 0;
       }
 
+      &.--open {
+        opacity: 1 !important;
+      }
+
       .l-header__nav-list {
         display: flex;
         @include mq(sp-tab) {
