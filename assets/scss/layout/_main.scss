@@ -70,6 +70,12 @@ main {
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
     padding-top: 128px;
+    @include mq(sp-ls) {
+      padding-top: 64px;
+    }
+    @include mq(sp) {
+      padding-top: 32px;
+    }
 
     .l-feature__text-top {
       max-width: 650px;
@@ -163,6 +169,13 @@ main {
       .l-feature__info-area {
         max-width: 270px;
         height: auto;
+        @include mq(sp-ls) {
+          margin: 0 4px;
+        }
+        @include mq(sp) {
+          margin: 0;
+          padding-bottom: 32px;
+        }
         .l-feature__info-img {
           padding-bottom: 16px;
         }
@@ -176,6 +189,12 @@ main {
           }
         }
       }
+    }
+    .l-feature__ctabtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 64px;
     }
   }
 
