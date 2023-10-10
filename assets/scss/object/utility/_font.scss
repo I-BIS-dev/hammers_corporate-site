@@ -1,0 +1,15 @@
+.u-header__nav--fontsize {
+  font-weight: bold;
+  font-size: 18px;
+  color: $main-color;
+}
+
+.u-header__logo {
+  font-size: 32px;
+  color: $main-color;
+  display: block;
+  @include mq(sp) {
+    font-size: 23px;
+    color: $main-color;
+  }
+}

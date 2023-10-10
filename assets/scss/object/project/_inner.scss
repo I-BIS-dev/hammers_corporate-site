@@ -1,0 +1,8 @@
+.p-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @include mq(sp-ls) {
+    padding: 0 8px;
+  }
+}

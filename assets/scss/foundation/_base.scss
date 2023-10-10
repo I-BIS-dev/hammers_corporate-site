@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 $breakpoints: (
+  "sp-tab": "screen and (max-width: 1023px)",
   "sp": "screen and (max-width: 414px)",
   "spls": "screen and (min-width: 415px) and (max-width: 767px)",
   "tab": "screen and (min-width: 768px) and (max-width: 1023px)",
@@ -16,6 +17,11 @@ $breakpoints: (
     @content;
   }
 }
+
+@mixin hover() {
+  transition: all 0.3s;
+}
+
 $white: #fff;
 $black: #262626;
 $bg-color: #f4f7f7;
@@ -44,6 +50,8 @@ body {
   letter-spacing: 5%;
   color: $black;
   font-size: 16px;
+  max-width: 1280px;
+  margin: 0 auto;
   @include mq(sp) {
     font-size: 14px;
   }
@@ -70,6 +78,7 @@ img {
   height: auto;
 }
 
-* {
-  border: 1px solid magenta;
-}
+//レイアウト調節のため補助線配置>開発完成後に削除予定
+// * {
+//   border: 1px solid magenta;
+// }
