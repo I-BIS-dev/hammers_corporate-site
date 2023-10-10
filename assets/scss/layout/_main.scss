@@ -214,11 +214,23 @@ main {
       .l-surbey__ttl-text {
         font-size: 32px;
         font-weight: bold;
+        @include mq(sp-ls) {
+          font-size: 26px;
+        }
+        @include mq(sp) {
+          font-size: 16px;
+        }
 
         &.--font {
           font-size: 40px;
           color: $main-color;
           position: relative;
+          @include mq(sp-ls) {
+            font-size: 32px;
+          }
+          @include mq(sp) {
+            font-size: 20px;
+          }
           &::after {
             content: "";
             position: absolute;
@@ -240,14 +252,27 @@ main {
       .l-surbey__imgarea {
         flex: 5;
         position: relative;
+        @include mq(sp-ls) {
+          display: flex;
+          justify-content: center;
+        }
         .l-surbey__img1 {
           max-width: 245px;
+          @include mq(sp) {
+            max-width: 170px;
+          }
         }
         .l-surbey__img2 {
           max-width: 245px;
           position: absolute;
           top: 5%;
           left: 40%;
+          @include mq(sp-ls) {
+            position: static;
+          }
+          @include mq(sp) {
+            max-width: 170px;
+          }
         }
       }
       .l-surbey__info {
@@ -255,6 +280,9 @@ main {
         max-width: 428px;
         @include mq(sp-ls) {
           margin: 0 auto;
+        }
+        @include mq(sp) {
+          padding: 8px;
         }
 
         .l-surbey__description {
