@@ -4,6 +4,7 @@
 
 $breakpoints: (
   "sp-tab": "screen and (max-width: 1023px)",
+  "sp-ls": "screen and (max-width: 768px)",
   "sp": "screen and (max-width: 414px)",
   "spls": "screen and (min-width: 415px) and (max-width: 767px)",
   "tab": "screen and (min-width: 768px) and (max-width: 1023px)",
@@ -79,6 +80,6 @@ img {
   height: auto;
 }
 
-// * {
-//   border: 1px solid magenta;
-// }
+* {
+  border: 1px solid magenta;
+}
