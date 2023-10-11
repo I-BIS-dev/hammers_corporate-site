@@ -1,11 +1,25 @@
 <?php
-$to = "ino.winter.1212@gmail.com";
-$subject = "TEST MAIL";
-$message = "Hello!\r\nThis is TEST MAIL.";
-$headers = "From: from@samurai.jp";
+$to = $_POST["mail"];
+$subject = "お問い合わせありがとうございました";
+$message  = "お問い合わせを受け付けました \r\n"
+  // . "会社名: " . $_SESSION['fullname'] . "\r\n"
+  // . "email: " . $_SESSION['email'] . "\r\n"
+  . "お問い合わせ内容:\r\n";
+// . preg_replace("/\r\n|\r|\n/", "\r\n", $_SESSION['message']);
+$headers = "From: test@example.com";
 
 mail($to, $subject, $message, $headers);
 ?>
+
+<?php
+$to = "ino.winter.1212@gmail.com";
+$subject = "お問い合わせがありました";
+$message = "Hello!\r\nThis is TEST MAIL.";
+$headers = "From: test@example.com";
+
+mail($to, $subject, $message, $headers);
+?>
+
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -68,6 +82,7 @@ mail($to, $subject, $message, $headers);
   <main>
     <div class="main-test">
       送信しました
+      <p><?php echo $_POST["mail"]; ?></p>
     </div>
   </main>
 
