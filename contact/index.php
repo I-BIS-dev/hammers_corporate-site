@@ -58,7 +58,20 @@
 
   <main>
     <div class="main-test">
-      コンテンツ
+      <form action="confirmation.php" method="post">
+        名前：<br />
+        <input type="text" name="name" size="50" value="" /><br />
+
+        メールアドレス：<br />
+        <input type="text" name="mail" size="50" value="" /><br />
+
+        問合せ内容：<br />
+        <textarea name="inquiry" cols="50" rows="5"></textarea><br />
+
+        <br />
+
+        <input type="submit" value="送信" />
+      </form>
     </div>
   </main>
 
