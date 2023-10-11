@@ -59,14 +59,32 @@
   <main>
     <div class="main-test">
       <form action="/contact/confirm.php" method="post">
-        名前：<br />
-        <input type="text" name="name" size="50" value="" required><br />
+        会社名：<br />
+        <input placeholder="株式会社〇〇" type="text" name="company" size="50" value="" required><br />
+
+        担当者名：<br />
+        <input placeholder="△△ △△" type="text" name="name" size="50" value="" required><br />
+
+        電話番号：<br />
+        <input placeholder="090-1234-5678" type="text" name="tel" size="50" value="" required><br />
 
         メールアドレス：<br />
-        <input type="text" name="mail" size="50" value="" required><br />
+        <input placeholder="abcde@fghij.com" type="text" name="mail" size="50" value="" required><br />
 
-        問合せ内容：<br />
-        <textarea name="inquiry" cols="50" rows="5"></textarea><br />
+        連絡方法：<br />
+        <div>
+          <input type="radio" name="contact" value="メール" checked>メール
+          <input type="radio" name="contact" value="電話">電話
+        </div>
+
+        問い合わせ項目：<br />
+        <div>
+          <input type="radio" name="item" value="分析依頼の相談" checked>分析依頼の相談
+          <input type="radio" name="item" value="弊社へのご意見・質問">弊社へのご意見・質問
+        </div>
+
+        問い合わせ内容：<br />
+        <textarea placeholder="内容を入力してください" name="inquiry" cols="50" rows="5" required></textarea><br />
 
         <br />
 
