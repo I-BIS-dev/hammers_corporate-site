@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>株式会社ハマーズ</title>
 
-  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="/css/common.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="./assets/js/main.js"></script>
+  <script src="/assets/js/main.js"></script>
 
 </head>
 
@@ -34,13 +34,13 @@
         </nav>
       </div>
       <div class="l-header__nav-contact">
-        <img class="l-header__navicon" src="./assets/images/arrow-header.svg" width="25" height="25" alt="矢印アイコン">
+        <img class="l-header__navicon" src="/assets/images/arrow-header.svg" width="25" height="25" alt="矢印アイコン">
         <a href="#" class="l-header__btn">分析依頼はこちら</a>
       </div>
     </div>
     <div class="c-phone-btn">
       <a href="tel:045-253-2560">
-        <img class="c-phone-icon" src="./assets/images/phone-icon.svg" alt="電話のアイコン">
+        <img class="c-phone-icon" src="/assets/images/phone-icon.svg" alt="電話のアイコン">
       </a>
     </div>
     <button class="l-header__hamburger" id="js-hamburger">
@@ -50,7 +50,7 @@
     </button>
     <div class="c-contact">
       <a href="#">
-        <img class="c-contact__img" src="./assets/images/arrow-header.svg" width="15" height="15" alt="問い合わせフォームリンク">
+        <img class="c-contact__img" src="/assets/images/arrow-header.svg" width="15" height="15" alt="問い合わせフォームリンク">
         <p class="c-contact__text">分析依頼はこちら</p>
       </a>
     </div>
@@ -62,12 +62,28 @@
 
         <table border="1">
           <tr>
-            <td>名前</td>
+            <td>会社名</td>
+            <td><?php echo $_POST["company"]; ?></td>
+          </tr>
+          <tr>
+            <td>担当者名</td>
             <td><?php echo $_POST["name"]; ?></td>
+          </tr>
+          <tr>
+            <td>電話番号</td>
+            <td><?php echo $_POST["tel"]; ?></td>
           </tr>
           <tr>
             <td>メールアドレス</td>
             <td><?php echo $_POST["mail"]; ?></td>
+          </tr>
+          <tr>
+            <td>連絡方法</td>
+            <td><?php echo $_POST["contact"]; ?></td>
+          </tr>
+          <tr>
+            <td> 問い合わせ項目</td>
+            <td><?php echo $_POST["item"]; ?></td>
           </tr>
           <tr>
             <td>問い合わせ内容</td>
@@ -105,7 +121,7 @@
       <p class="l-footer__copyright">Copyright &copy2023 HAMMER'S All Rights Reserved.</p>
     </div>
     <!-- <div class="c-top-btn">
-      <img src="./assets/images/arrow-topbtn.svg" alt="topに戻るボタン" class="c-top-btn-icon">
+      <img src="/assets/images/arrow-topbtn.svg" alt="topに戻るボタン" class="c-top-btn-icon">
     </div> -->
   </footer>
 </body>
