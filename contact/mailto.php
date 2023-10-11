@@ -1,3 +1,12 @@
+<?php
+$to = "ino.winter.1212@gmail.com";
+$subject = "TEST MAIL";
+$message = "Hello!\r\nThis is TEST MAIL.";
+$headers = "From: from@samurai.jp";
+
+mail($to, $subject, $message, $headers);
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -58,20 +67,7 @@
 
   <main>
     <div class="main-test">
-      <form action="/contact/confirmation.php" method="post">
-        名前：<br />
-        <input type="text" name="name" size="50" value="" /><br />
-
-        メールアドレス：<br />
-        <input type="text" name="mail" size="50" value="" /><br />
-
-        問合せ内容：<br />
-        <textarea name="inquiry" cols="50" rows="5"></textarea><br />
-
-        <br />
-
-        <input type="submit" value="送信" />
-      </form>
+      送信しました
     </div>
   </main>
 

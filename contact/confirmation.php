@@ -58,17 +58,22 @@
 
   <main>
     <div class="main-test">
-      <form action="/contact/confirmation.php" method="post">
-        名前：<br />
-        <input type="text" name="name" size="50" value="" /><br />
+      <form action="/contact/mailto.php" method="post">
 
-        メールアドレス：<br />
-        <input type="text" name="mail" size="50" value="" /><br />
-
-        問合せ内容：<br />
-        <textarea name="inquiry" cols="50" rows="5"></textarea><br />
-
-        <br />
+        <table border="1">
+          <tr>
+            <td>名前</td>
+            <td><?php echo $_POST["name"]; ?></td>
+          </tr>
+          <tr>
+            <td>メールアドレス</td>
+            <td><?php echo $_POST["mail"]; ?></td>
+          </tr>
+          <tr>
+            <td>問い合わせ内容</td>
+            <td><?php echo $_POST["inquiry"]; ?></td>
+          </tr>
+        </table>
 
         <input type="submit" value="送信" />
       </form>
