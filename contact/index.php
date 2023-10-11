@@ -58,7 +58,7 @@
 
   <main>
     <div class="main-test">
-      <form action="/contact/confirmation.php" method="post">
+      <form action="/contact/confirm.php" method="post">
         名前：<br />
         <input type="text" name="name" size="50" value="" /><br />
 
