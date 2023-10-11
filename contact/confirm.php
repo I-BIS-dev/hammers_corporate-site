@@ -64,14 +64,17 @@
           <tr>
             <td>会社名</td>
             <td><?php echo $_POST["company"]; ?></td>
+            <input hidden type="text" name="company" size="50" value="<?php echo $_POST["company"]; ?>">
           </tr>
           <tr>
             <td>担当者名</td>
             <td><?php echo $_POST["name"]; ?></td>
+            <input hidden type="text" name="name" size="50" value="<?php echo $_POST["name"]; ?>">
           </tr>
           <tr>
             <td>電話番号</td>
             <td><?php echo $_POST["tel"]; ?></td>
+            <input hidden type="text" name="tel" size="50" value="<?php echo $_POST["tel"]; ?>">
           </tr>
           <tr>
             <td>メールアドレス</td>
@@ -81,14 +84,17 @@
           <tr>
             <td>連絡方法</td>
             <td><?php echo $_POST["contact"]; ?></td>
+            <input hidden type="text" name="contact" size="50" value="<?php echo $_POST["contact"]; ?>">
           </tr>
           <tr>
             <td> 問い合わせ項目</td>
             <td><?php echo $_POST["item"]; ?></td>
+            <input hidden type="text" name="item" size="50" value="<?php echo $_POST["item"]; ?>">
           </tr>
           <tr>
             <td>問い合わせ内容</td>
             <td><?php echo $_POST["inquiry"]; ?></td>
+            <textarea hidden type="text" name="inquiry" size="50" value="<?php echo $_POST["inquiry"]; ?>"></textarea>
           </tr>
         </table>
 
