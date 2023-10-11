@@ -15,4 +15,8 @@ $(document).ready(function () {
       $(this).addClass('--arrow');
     }
   });
+
+  $(".--topbtn img").click(function () {
+    $("html,body").animate({ scrollTop: 0 }, 700);
+  });
 });
