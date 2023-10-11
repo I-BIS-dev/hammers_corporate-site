@@ -33,9 +33,9 @@ mail($to, $subject, $message, $headers);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>株式会社ハマーズ</title>
 
-  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="/css/common.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="./assets/js/main.js"></script>
+  <script src="/assets/js/main.js"></script>
 
 </head>
 
@@ -61,13 +61,13 @@ mail($to, $subject, $message, $headers);
         </nav>
       </div>
       <div class="l-header__nav-contact">
-        <img class="l-header__navicon" src="./assets/images/arrow-header.svg" width="25" height="25" alt="矢印アイコン">
+        <img class="l-header__navicon" src="/assets/images/arrow-header.svg" width="25" height="25" alt="矢印アイコン">
         <a href="#" class="l-header__btn">分析依頼はこちら</a>
       </div>
     </div>
     <div class="c-phone-btn">
       <a href="tel:045-253-2560">
-        <img class="c-phone-icon" src="./assets/images/phone-icon.svg" alt="電話のアイコン">
+        <img class="c-phone-icon" src="/assets/images/phone-icon.svg" alt="電話のアイコン">
       </a>
     </div>
     <button class="l-header__hamburger" id="js-hamburger">
@@ -77,7 +77,7 @@ mail($to, $subject, $message, $headers);
     </button>
     <div class="c-contact">
       <a href="#">
-        <img class="c-contact__img" src="./assets/images/arrow-header.svg" width="15" height="15" alt="問い合わせフォームリンク">
+        <img class="c-contact__img" src="/assets/images/arrow-header.svg" width="15" height="15" alt="問い合わせフォームリンク">
         <p class="c-contact__text">分析依頼はこちら</p>
       </a>
     </div>
@@ -121,7 +121,7 @@ mail($to, $subject, $message, $headers);
       <p class="l-footer__copyright">Copyright &copy2023 HAMMER'S All Rights Reserved.</p>
     </div>
     <!-- <div class="c-top-btn">
-      <img src="./assets/images/arrow-topbtn.svg" alt="topに戻るボタン" class="c-top-btn-icon">
+      <img src="/assets/images/arrow-topbtn.svg" alt="topに戻るボタン" class="c-top-btn-icon">
     </div> -->
   </footer>
 </body>
