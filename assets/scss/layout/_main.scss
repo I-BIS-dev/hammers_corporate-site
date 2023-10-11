@@ -391,313 +391,378 @@ main {
       }
     }
   }
-}
 
-.l-faq {
-  .l-faq__list {
-    padding-bottom: 64px;
+  .l-faq {
+    .l-faq__list {
+      padding-bottom: 64px;
 
-    .l-faq__item {
-      position: relative;
-      margin: 40px 0 0;
-      cursor: pointer;
-      @include mq(sp-ls) {
-        margin: 10px 0 0;
-      }
-      &:first-child {
-        margin-top: 0;
-      }
-      &::after {
-        position: absolute;
-        top: 34px;
-        right: 26px;
-        display: block;
-        width: 10px;
-        height: 10px;
-        margin: auto;
-        content: "";
-        transform: rotate(135deg);
-        border-top: 2px solid $black;
-        border-right: 2px solid $black;
-        transition: all 0.3s;
-        @include mq(sp-ls) {
-          top: 20px;
-          right: 20px;
-          width: 7px;
-          height: 7px;
-        }
-      }
-
-      &.--arrow::after {
-        transform: rotate(-45deg);
-      }
-
-      .l-faq__question {
+      .l-faq__item {
         position: relative;
-        margin: 0;
-        padding: 24px 20px 24px 80px;
-        background: $bg-color;
-        border-radius: 16px;
-        font-weight: bold;
-        font-family: "Roboto", sans-serif;
+        margin: 40px 0 0;
+        cursor: pointer;
         @include mq(sp-ls) {
-          padding: 16px 16px 16px 50px;
-          font-size: 14px;
+          margin: 10px 0 0;
         }
-        &::before {
-          font-size: 20px;
-          line-height: 1;
+        &:first-child {
+          margin-top: 0;
+        }
+        &::after {
           position: absolute;
-          top: 16px;
-          left: 16px;
+          top: 34px;
+          right: 26px;
           display: block;
-          content: "Q";
-          color: #3285bf;
-          background-color: #00833e;
-          color: #fff;
-          border-radius: 50%;
-          width: 40px;
-          height: 40px;
-          text-align: center;
-          line-height: 39px;
+          width: 10px;
+          height: 10px;
+          margin: auto;
+          content: "";
+          transform: rotate(135deg);
+          border-top: 2px solid $black;
+          border-right: 2px solid $black;
+          transition: all 0.3s;
           @include mq(sp-ls) {
-            top: 11px;
-            left: 15px;
-            width: 28px;
-            height: 28px;
-            line-height: 30px;
-            font-size: 14px;
+            top: 20px;
+            right: 20px;
+            width: 7px;
+            height: 7px;
           }
         }
-      }
 
-      .l-faq__answer {
-        position: relative;
-        margin: 0;
-        padding: 20px 20px 20px 80px;
-        line-height: 170%;
-        @include mq(sp-ls) {
+        &.--arrow::after {
+          transform: rotate(-45deg);
+        }
+
+        .l-faq__question {
+          position: relative;
           margin: 0;
-          padding: 16px 16px 16px 50px;
-          font-size: 14px;
-        }
-        &::before {
-          font-size: 22px;
-          line-height: 1;
-          position: absolute;
-          left: 16px;
-          top: 14px;
-          display: block;
-          content: "A";
+          padding: 24px 20px 24px 80px;
+          background: $bg-color;
+          border-radius: 16px;
           font-weight: bold;
-          color: #3285bf;
-          border: 1px solid $main-color;
-          color: $main-color;
-          border-radius: 50%;
-          width: 40px;
-          height: 40px;
-          text-align: center;
-          line-height: 33px;
+          font-family: "Roboto", sans-serif;
           @include mq(sp-ls) {
+            padding: 16px 16px 16px 50px;
             font-size: 14px;
-            left: 15px;
-            margin-top: 0;
-            width: 28px;
-            height: 28px;
-            line-height: 25px;
+          }
+          &::before {
+            font-size: 20px;
+            line-height: 1;
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            display: block;
+            content: "Q";
+            color: #3285bf;
+            background-color: #00833e;
+            color: #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 39px;
+            @include mq(sp-ls) {
+              top: 11px;
+              left: 15px;
+              width: 28px;
+              height: 28px;
+              line-height: 30px;
+              font-size: 14px;
+            }
           }
         }
 
-        .l-faq__text {
-          margin: 30px 0 0;
-          &:first-child {
-            margin-top: 0;
-          }
-        }
-      }
-    }
-  }
-
-  .l-faq__ctabtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 64px;
-  }
-}
-
-.l-access {
-  background-color: $bg-color;
-  margin: 0 calc(50% - 50vw);
-  padding: 0 calc(50vw - 50%);
-  padding-top: 96px;
-  @include mq(sp-ls) {
-    padding-top: 64px;
-  }
-  @include mq(sp) {
-    padding-top: 16px;
-  }
-
-  .l-access__pointarea {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 24px;
-
-    .l-access_point-card {
-      max-width: 400px;
-      @include mq(sp-ls) {
-        max-width: 300;
-      }
-      .l-access__point1 {
-        white-space: nowrap;
-        font-size: 20px;
-        font-weight: bold;
-        color: $main-color;
-        background-color: $white;
-        padding: 8px 80px;
-        border: 1px solid $main-color;
-        border-radius: 14px;
-        text-align: center;
-        position: relative;
-        display: block;
-        @include mq(sp-ls) {
-          padding: 8px 40px;
-          font-size: 16px;
-          white-space: normal;
-        }
-        &::before {
-          content: "";
-          width: 30px;
-          height: 30px;
-          line-height: 30;
-          position: absolute;
-          left: 52px;
-          top: 17px;
-          background-image: url(../assets/images/access-checkicon.svg);
-          background-repeat: no-repeat;
+        .l-faq__answer {
+          position: relative;
+          margin: 0;
+          padding: 20px 20px 20px 80px;
+          line-height: 170%;
           @include mq(sp-ls) {
-            content: "";
-            width: 15px;
-            height: 16px;
-            left: 18px;
-            top: 15px;
-            background-size: contain;
+            margin: 0;
+            padding: 16px 16px 16px 50px;
+            font-size: 14px;
           }
-        }
-      }
-      .l-access__point2 {
-        white-space: nowrap;
-        font-size: 20px;
-        font-weight: bold;
-        color: $main-color;
-        background-color: $white;
-        padding: 8px 80px;
-        border: 1px solid $main-color;
-        border-radius: 14px;
-        text-align: center;
-        position: relative;
-        display: block;
-        @include mq(sp-ls) {
-          padding: 8px 40px;
-          font-size: 16px;
-          white-space: normal;
-        }
-        &::before {
-          content: "";
-          width: 30px;
-          height: 30px;
-          line-height: 30;
-          position: absolute;
-          left: 52px;
-          top: 17px;
-          background-image: url(../assets/images/access-checkicon.svg);
-          background-repeat: no-repeat;
-          @include mq(sp-ls) {
-            content: "";
-            width: 15px;
-            height: 16px;
-            left: 18px;
-            top: 15px;
-            background-size: contain;
+          &::before {
+            font-size: 22px;
+            line-height: 1;
+            position: absolute;
+            left: 16px;
+            top: 14px;
+            display: block;
+            content: "A";
+            font-weight: bold;
+            color: #3285bf;
+            border: 1px solid $main-color;
+            color: $main-color;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 33px;
+            @include mq(sp-ls) {
+              font-size: 14px;
+              left: 15px;
+              margin-top: 0;
+              width: 28px;
+              height: 28px;
+              line-height: 25px;
+            }
+          }
+
+          .l-faq__text {
+            margin: 30px 0 0;
+            &:first-child {
+              margin-top: 0;
+            }
           }
         }
       }
     }
-  }
 
-  .l-access__textarea {
-    text-align: center;
-
-    .l-acces__text {
-      line-height: 200%;
-      padding-bottom: 40px;
+    .l-faq__ctabtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 64px;
     }
   }
 
-  .l-access__addressarea {
-    background-color: $white;
-    display: flex;
+  .l-access {
+    background-color: $bg-color;
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
+    padding-top: 96px;
     @include mq(sp-ls) {
-      flex-direction: column;
-      justify-content: center;
+      padding-top: 64px;
+    }
+    @include mq(sp) {
+      padding-top: 16px;
     }
 
-    .l-access__address-map {
-      width: 100%;
-      max-width: 686px;
+    .l-access__pointarea {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 24px;
 
-      iframe {
-        max-width: 686px;
-        width: 100%;
-        min-height: 300px;
-      }
-    }
-    .l-access__address-info {
-      flex: auto;
-      background-color: #fff;
-      padding: 24px 32px;
-
-      .l-access__namearea {
-        padding-bottom: 24px;
+      .l-access_point-card {
+        max-width: 400px;
         @include mq(sp-ls) {
-          padding-bottom: 16px;
+          max-width: 300;
         }
-
-        .l-access__name {
-          font-weight: bold;
+        .l-access__point1 {
+          white-space: nowrap;
           font-size: 20px;
-        }
-      }
-      .l-access__adressarea {
-        padding-bottom: 24px;
-        @include mq(sp-ls) {
-          padding-bottom: 16px;
-        }
-
-        .l-access__adress {
-          font-size: 16px;
-        }
-      }
-      .l-access__telarea {
-        padding-bottom: 48px;
-        @include mq(sp-ls) {
-          padding-bottom: 24px;
-        }
-
-        .l-access__tel {
           font-weight: bold;
+          color: $main-color;
+          background-color: $white;
+          padding: 8px 80px;
+          border: 1px solid $main-color;
+          border-radius: 14px;
+          text-align: center;
+          position: relative;
+          display: block;
+          @include mq(sp-ls) {
+            padding: 8px 40px;
+            font-size: 16px;
+            white-space: normal;
+          }
+          &::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            line-height: 30;
+            position: absolute;
+            left: 52px;
+            top: 17px;
+            background-image: url(../assets/images/access-checkicon.svg);
+            background-repeat: no-repeat;
+            @include mq(sp-ls) {
+              content: "";
+              width: 15px;
+              height: 16px;
+              left: 18px;
+              top: 15px;
+              background-size: contain;
+            }
+          }
+        }
+        .l-access__point2 {
+          white-space: nowrap;
+          font-size: 20px;
+          font-weight: bold;
+          color: $main-color;
+          background-color: $white;
+          padding: 8px 80px;
+          border: 1px solid $main-color;
+          border-radius: 14px;
+          text-align: center;
+          position: relative;
+          display: block;
+          @include mq(sp-ls) {
+            padding: 8px 40px;
+            font-size: 16px;
+            white-space: normal;
+          }
+          &::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            line-height: 30;
+            position: absolute;
+            left: 52px;
+            top: 17px;
+            background-image: url(../assets/images/access-checkicon.svg);
+            background-repeat: no-repeat;
+            @include mq(sp-ls) {
+              content: "";
+              width: 15px;
+              height: 16px;
+              left: 18px;
+              top: 15px;
+              background-size: contain;
+            }
+          }
         }
       }
-      .l-access__ctabtn {
-        display: flex;
-        justify-content: start;
+    }
+
+    .l-access__textarea {
+      text-align: center;
+
+      .l-acces__text {
+        line-height: 200%;
+        padding-bottom: 40px;
+      }
+    }
+
+    .l-access__addressarea {
+      background-color: $white;
+      display: flex;
+      margin: 0 calc(50% - 50vw);
+      padding: 0 calc(50vw - 50%);
+      @include mq(sp-ls) {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .l-access__address-map {
+        width: 100%;
+        max-width: 686px;
+
+        iframe {
+          max-width: 686px;
+          width: 100%;
+          min-height: 300px;
+        }
+      }
+      .l-access__address-info {
+        flex: auto;
+        background-color: #fff;
+        padding: 24px 32px;
+
+        .l-access__namearea {
+          padding-bottom: 24px;
+          @include mq(sp-ls) {
+            padding-bottom: 16px;
+          }
+
+          .l-access__name {
+            font-weight: bold;
+            font-size: 20px;
+          }
+        }
+        .l-access__adressarea {
+          padding-bottom: 24px;
+          @include mq(sp-ls) {
+            padding-bottom: 16px;
+          }
+
+          .l-access__adress {
+            font-size: 16px;
+          }
+        }
+        .l-access__telarea {
+          padding-bottom: 48px;
+          @include mq(sp-ls) {
+            padding-bottom: 24px;
+          }
+
+          .l-access__tel {
+            font-weight: bold;
+
+            &.--link {
+              &:hover {
+                @include hover-effect;
+              }
+            }
+          }
+        }
+        .l-access__ctabtn {
+          display: flex;
+          justify-content: start;
+        }
       }
     }
   }
 
-  // .l-contact{
-  // }
+  .l-contact {
+    background-color: $bg-color;
+    margin: 0 calc(50% - 50vw);
+    padding: 0 calc(50vw - 50%);
+    padding: 64px 0;
+
+    .l-contact-ttl {
+      text-align: center;
+      padding: 32px 0;
+
+      .l-contact-text {
+        color: $main-color;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+
+    .l-contact__infoarea {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      @include mq(sp-ls) {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .l-contact__telarea {
+        text-align: center;
+        padding-bottom: 8px;
+
+        .l-contact__tel {
+          font-size: 32px;
+          font-family: "Roboto", sans-serif;
+          font-weight: bold;
+          color: $main-color;
+
+          &.--link {
+            &:hover {
+              @include hover-effect;
+            }
+          }
+        }
+        .l-contact__time {
+          color: $main-color;
+          font-size: 12px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .l-contact__btnarea {
+      text-align: center;
+      display: flex;
+      justify-content: start;
+
+      .l-contact__btn {
+        font-size: 14px;
+      }
+    }
+  }
 }

@@ -99,4 +99,11 @@
   &:hover::after {
     right: 4%;
   }
+  &.--sub {
+    background-color: $white;
+    color: $main-color;
+    &::after {
+      background-image: url(../assets/images/arrow-ctasub.svg);
+    }
+  }
 }
