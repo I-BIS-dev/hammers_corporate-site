@@ -58,7 +58,7 @@
 
   <main>
     <div class="main-test">
-      <form action="/contact/mailto.php" method="post">
+      <form action="/contact/complete.php" method="post">
 
         <table border="1">
           <tr>
