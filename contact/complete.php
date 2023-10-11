@@ -86,13 +86,6 @@ mail($to, $subject, $message, $headers);
   <main>
     <div class="main-test">
       送信しました
-      <p><?php echo $_POST["company"]; ?></p>
-      <p><?php echo $_POST["name"]; ?></p>
-      <p><?php echo $_POST["tel"]; ?></p>
-      <p><?php echo $_POST["mail"]; ?></p>
-      <p><?php echo $_POST["contact"]; ?></p>
-      <p><?php echo $_POST["item"]; ?></p>
-      <p>本文；<?php echo nl2br($_POST["inquiry"]); ?></p>
     </div>
   </main>
 
