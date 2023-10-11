@@ -2,19 +2,23 @@
 $to = $_POST["mail"];
 $subject = "お問い合わせありがとうございました";
 $message  = "お問い合わせを受け付けました \r\n"
-  // . "会社名: " . $_SESSION['fullname'] . "\r\n"
-  // . "email: " . $_SESSION['email'] . "\r\n"
-  . "お問い合わせ内容:\r\n";
-// . preg_replace("/\r\n|\r|\n/", "\r\n", $_SESSION['message']);
+  . "会社名: " .  $_POST['company'] . "\r\n"
+  . "担当者名: " .  $_POST['name'] . "\r\n"
+  . "電話番号: " .  $_POST['tel'] . "\r\n"
+  . "メールアドレス: " . $_POST['mail'] . "\r\n"
+  . "連絡方法: " . $_POST['contact'] . "\r\n"
+  . "問い合わせ項目: " . $_POST['item'] . "\r\n"
+  . "お問い合わせ内容:\r\n"
+  . preg_replace("/\r\n|\r|\n/", "\r\n", $_POST['inquiry']);
 $headers = "From: test@example.com";
 
 mail($to, $subject, $message, $headers);
 ?>
 
 <?php
-$to = "ino.winter.1212@gmail.com";
+$to = "//ハマーズメールアドレスを挿入";
 $subject = "お問い合わせがありました";
-$message = "Hello!\r\nThis is TEST MAIL.";
+$message = "ここに本文を挿入";
 $headers = "From: test@example.com";
 
 mail($to, $subject, $message, $headers);
@@ -82,7 +86,13 @@ mail($to, $subject, $message, $headers);
   <main>
     <div class="main-test">
       送信しました
+      <p><?php echo $_POST["company"]; ?></p>
+      <p><?php echo $_POST["name"]; ?></p>
+      <p><?php echo $_POST["tel"]; ?></p>
       <p><?php echo $_POST["mail"]; ?></p>
+      <p><?php echo $_POST["contact"]; ?></p>
+      <p><?php echo $_POST["item"]; ?></p>
+      <p><?php echo $_POST["inquiry"]; ?></p>
     </div>
   </main>
 
