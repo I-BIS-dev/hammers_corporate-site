@@ -69,7 +69,7 @@ main {
     background-color: $bg-color;
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
-    padding-top: 128px;
+    padding-top: 96px;
     @include mq(sp-ls) {
       padding-top: 64px;
     }
@@ -302,7 +302,7 @@ main {
     background-color: $bg-color;
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
-    padding-top: 128px;
+    padding-top: 96px;
 
     .l-flow__card-container {
       display: flex;
@@ -491,8 +491,144 @@ main {
     }
   }
 
-  // .l-access{
-  // }
+  .l-access {
+    background-color: $bg-color;
+    margin: 0 calc(50% - 50vw);
+    padding: 0 calc(50vw - 50%);
+    padding-top: 96px;
+    @include mq(sp-ls) {
+      padding-top: 64px;
+    }
+    @include mq(sp) {
+      padding-top: 16px;
+    }
+
+    .l-access__pointarea {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 24px;
+
+      .l-access_point-card {
+        max-width: 400px;
+        @include mq(sp-ls) {
+          max-width: 300;
+        }
+        .l-access__point1 {
+          white-space: nowrap;
+          font-size: 20px;
+          font-weight: bold;
+          color: $main-color;
+          background-color: $white;
+          padding: 8px 80px;
+          border: 1px solid $main-color;
+          border-radius: 14px;
+          text-align: center;
+          position: relative;
+          display: block;
+          @include mq(sp-ls) {
+            padding: 8px 40px;
+            font-size: 16px;
+            white-space: normal;
+          }
+          &::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            line-height: 30;
+            position: absolute;
+            left: 52px;
+            top: 17px;
+            background-image: url(../assets/images/access-checkicon.svg);
+            background-repeat: no-repeat;
+            @include mq(sp-ls) {
+              content: "";
+              width: 15px;
+              height: 16px;
+              left: 18px;
+              top: 15px;
+              background-size: contain;
+            }
+          }
+        }
+        .l-access__point2 {
+          white-space: nowrap;
+          font-size: 20px;
+          font-weight: bold;
+          color: $main-color;
+          background-color: $white;
+          padding: 8px 80px;
+          border: 1px solid $main-color;
+          border-radius: 14px;
+          text-align: center;
+          position: relative;
+          display: block;
+          @include mq(sp-ls) {
+            padding: 8px 40px;
+            font-size: 16px;
+            white-space: normal;
+          }
+          &::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            line-height: 30;
+            position: absolute;
+            left: 52px;
+            top: 17px;
+            background-image: url(../assets/images/access-checkicon.svg);
+            background-repeat: no-repeat;
+            @include mq(sp-ls) {
+              content: "";
+              width: 15px;
+              height: 16px;
+              left: 18px;
+              top: 15px;
+              background-size: contain;
+            }
+          }
+        }
+      }
+    }
+
+    .l-access__textarea {
+      text-align: center;
+
+      .l-acces__text {
+        line-height: 200%;
+        padding-bottom: 40px;
+      }
+    }
+
+    .l-access__addressarea {
+      display: flex;
+      margin: 0 calc(50% - 50vw);
+      padding: 0 calc(50vw - 50%);
+      // max-height: 300px;
+
+      .l-access__address-map {
+        // width: 100%;
+        // max-width: 686px;
+        // flex: 6;
+        position: relative;
+        height: 0;
+        padding-bottom: 56.25%; /* 縦横比の指定 */
+        overflow: hidden;
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .l-access__address-info {
+        flex: auto;
+        background-color: #fff;
+        padding: 24px 32px;
+      }
+    }
+  }
 
   // .l-ctaarea{
   // }
