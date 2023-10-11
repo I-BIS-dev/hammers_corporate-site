@@ -93,8 +93,8 @@
           </tr>
           <tr>
             <td>問い合わせ内容</td>
-            <td><?php echo $_POST["inquiry"]; ?></td>
-            <textarea hidden type="text" name="inquiry" size="50" value="<?php echo $_POST["inquiry"]; ?>"></textarea>
+            <td><?php echo nl2br($_POST["inquiry"]); ?></td>
+            <textarea hidden name="inquiry"><?php echo nl2br($_POST["inquiry"]);; ?></textarea>
           </tr>
         </table>
 

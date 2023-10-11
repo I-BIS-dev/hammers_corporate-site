@@ -9,7 +9,7 @@ $message  = "お問い合わせを受け付けました \r\n"
   . "連絡方法: " . $_POST['contact'] . "\r\n"
   . "問い合わせ項目: " . $_POST['item'] . "\r\n"
   . "お問い合わせ内容:\r\n"
-  . preg_replace("/\r\n|\r|\n/", "\r\n", $_POST['inquiry']);
+  . nl2br($_POST["inquiry"]);
 $headers = "From: test@example.com";
 
 mail($to, $subject, $message, $headers);
@@ -92,7 +92,7 @@ mail($to, $subject, $message, $headers);
       <p><?php echo $_POST["mail"]; ?></p>
       <p><?php echo $_POST["contact"]; ?></p>
       <p><?php echo $_POST["item"]; ?></p>
-      <p><?php echo $_POST["inquiry"]; ?></p>
+      <p>本文；<?php echo nl2br($_POST["inquiry"]); ?></p>
     </div>
   </main>
 
