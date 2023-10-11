@@ -76,6 +76,7 @@
           <tr>
             <td>メールアドレス</td>
             <td><?php echo $_POST["mail"]; ?></td>
+            <input hidden type="text" name="mail" size="50" value="<?php echo $_POST["mail"]; ?>">
           </tr>
           <tr>
             <td>連絡方法</td>
