@@ -1,0 +1,18 @@
+main {
+  .l-sub-mv {
+    padding-top: 120px;
+    .l-sub-mv__area {
+      .l-sub-mv__img {
+        width: 100%;
+        height: 260px;
+        background-image: url(../assets/images/mainvisual.png);
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .l-sub-mv__hero {
+        text-align: center;
+      }
+    }
+  }
+}
