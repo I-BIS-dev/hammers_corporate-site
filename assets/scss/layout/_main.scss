@@ -619,6 +619,7 @@ main {
     .l-access__addressarea {
       background-color: $white;
       display: flex;
+      justify-content: center;
       margin: 0 calc(50% - 50vw);
       padding: 0 calc(50vw - 50%);
       @include mq(sp-ls) {
@@ -638,6 +639,7 @@ main {
       }
       .l-access__address-info {
         flex: auto;
+        max-width: 524px;
         background-color: #fff;
         padding: 24px 32px;
 
