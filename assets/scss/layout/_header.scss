@@ -11,6 +11,7 @@
   right: 0;
   @include mq(sp-tab) {
     padding: 0px 8px 16px;
+    z-index: 9999;
   }
 
   .l-header__logo {
@@ -51,7 +52,7 @@
       font-size: 14px;
       font-weight: bold;
       position: relative;
-      // z-index: 999999 !important;
+
       @include mq(sp-tab) {
         position: absolute;
         top: 0;
@@ -60,9 +61,7 @@
         height: 100vh;
         background-color: rgba(0, 131, 62, 0.9);
         transition: all 0.3s;
-        // opacity: 0;
-        display: none;
-        z-index: 99 !important;
+        opacity: 0;
       }
 
       &.--open {
