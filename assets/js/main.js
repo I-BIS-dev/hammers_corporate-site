@@ -6,6 +6,7 @@ $(document).ready(function () {
     nav.fadeToggle();
   });
 
+  // #27で開発予定
   // const ham = $('#js-hamburger');
   // const nav = $('#js-nav');
   // ham.on('click', function () {
