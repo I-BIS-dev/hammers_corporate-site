@@ -51,7 +51,6 @@ body {
   letter-spacing: 5%;
   color: $black;
   font-size: 16px;
-  // max-width: 1280px;
   margin: 0 auto;
   overflow-x: hidden;
   @include mq(sp) {
@@ -80,7 +79,7 @@ img {
   height: auto;
 }
 
-// レイアウト調節のため補助線配置>開発完成後に削除予定
+//レイアウト調節のため補助線配置>開発完成後に削除予定
 // * {
 //   border: 1px solid magenta;
 // }

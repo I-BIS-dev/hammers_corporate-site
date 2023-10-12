@@ -9,7 +9,7 @@ main {
     padding: 0 calc(50vw - 50%);
 
     .l-mv__hero-text {
-      padding: 340px 0 64px;
+      padding: 340px 0 64px 146px;
       color: $main-color;
       font-size: 46px;
       font-weight: bold;
@@ -18,12 +18,15 @@ main {
         font-size: 22px;
         color: $white;
         text-align: center;
+        padding: 340px 0 64px;
       }
     }
     .l-mv__flex-container {
       display: flex;
+      padding-left: 146px;
       @include mq(sp-ls) {
         justify-content: center;
+        padding-left: 0;
       }
 
       .l-mv__flex-img-bg {
