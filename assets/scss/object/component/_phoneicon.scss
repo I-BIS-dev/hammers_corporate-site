@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   right: 48px;
-  width: 49px;
+  width: 48px;
   height: 49px;
   background-color: #18ab5d;
   cursor: pointer;
@@ -13,7 +13,10 @@
   @include mq(sp-tab) {
     display: block;
   }
-  .c-phone-icon {
-    margin: 16px auto;
+  .c-phone-link {
+    display: block;
+    .c-phone-icon {
+      margin: 16px auto;
+    }
   }
 }

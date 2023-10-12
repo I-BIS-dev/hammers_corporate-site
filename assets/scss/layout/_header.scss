@@ -9,6 +9,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9999;
   @include mq(sp-tab) {
     padding: 0px 8px 16px;
   }
@@ -50,6 +51,8 @@
     .l-header__nav {
       font-size: 14px;
       font-weight: bold;
+      position: relative;
+
       @include mq(sp-tab) {
         position: absolute;
         top: 0;
