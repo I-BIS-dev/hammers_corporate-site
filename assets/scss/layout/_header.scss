@@ -9,9 +9,9 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9999;
   @include mq(sp-tab) {
     padding: 0px 8px 16px;
-    z-index: 9999;
   }
 
   .l-header__logo {
