@@ -1,0 +1,31 @@
+.c-analysis {
+  margin: 140px auto 0;
+  max-width: 800px;
+  
+  .c-analysis__top-text {
+    line-height: 2;
+
+  }
+
+  .c-analysis__caution {
+    font-size: 12px;
+  }
+
+  .c-analysis__top-link {
+    text-decoration: underline;
+  }
+
+  .c-analysis__form {
+    border: 1px solid #999999;
+    margin-top: 80px;
+    padding: 20px 17px 119px;
+  }
+
+  .c-analysis__row {
+    display: flex;
+  }
+
+   input[type=radio] {
+
+   }
+}
