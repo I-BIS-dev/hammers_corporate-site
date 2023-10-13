@@ -140,6 +140,9 @@ main {
       }
       .l-greeting__description {
         line-height: 200%;
+        @include mq(sp) {
+          line-height: 170%;
+        }
         &.--link {
           text-decoration: underline;
           &:hover {
@@ -159,6 +162,7 @@ main {
           padding-bottom: 8px;
           @include mq(sp) {
             min-width: 110px;
+            padding-bottom: 10px;
           }
         }
         .l-table-data {
