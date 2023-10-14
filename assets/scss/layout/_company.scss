@@ -258,13 +258,16 @@ main {
           max-height: 190px;
           border-radius: 50%;
           position: absolute;
-          bottom: -20%;
+          bottom: -77px;
           right: -12px;
         }
       }
       .l-adress2-info {
         margin: 0 auto;
         padding: 0 16px;
+        @include mq(sp-ls) {
+          padding: 88px 16px 0;
+        }
 
         .l-adress2-text {
           padding-bottom: 24px;
