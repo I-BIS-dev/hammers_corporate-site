@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>株式会社ハマーズ</title>
+  
 
-  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href= "<?php echo get_template_directory_uri(); ?>/css/common.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="./assets/js/main.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
 
 </head>
 
@@ -436,6 +437,11 @@
             <input type="submit" value="送信内容を確認する" />
           </div>
         </form>
+        <div class="c-analysis__form">
+
+          <?php echo do_shortcode('[contact-form-7 id="e7bd033" title="Contact form 1"]') ?>
+          
+        </div>
       </div>
     </div>
 
