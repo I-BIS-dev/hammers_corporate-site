@@ -187,16 +187,19 @@ main {
     .l-adress {
       display: flex;
       justify-content: space-between;
-      @include mq(sp) {
+      padding-bottom: 64px;
+      @include mq(sp-ls) {
         flex-direction: column;
         justify-content: center;
+        padding-bottom: 40px;
       }
 
       .l-adress-img {
-        width: 467px;
+        width: 100%;
         height: auto;
-        @include mq(sp) {
-          width: 370px;
+        max-width: 500px;
+        @include mq(sp-ls) {
+          max-width: 100%;
           margin: 0 auto;
         }
         iframe {
@@ -206,6 +209,90 @@ main {
       }
       .l-adress-info {
         margin: 0 auto;
+        padding: 0 16px;
+
+        .l-adress-text {
+          padding-bottom: 24px;
+          &:nth-child(2) {
+            font-weight: bold;
+          }
+          @include mq(sp) {
+            font-size: 14px;
+            padding-bottom: 14px;
+          }
+        }
+
+        .l-adress-list {
+          .l-adress-item {
+            list-style-type: disc;
+            list-style-position: inside;
+          }
+        }
+      }
+    }
+    .l-adress2 {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 64px;
+      @include mq(sp-ls) {
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 40px;
+      }
+
+      .l-adress2-imgarea {
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+        position: relative;
+        @include mq(sp-ls) {
+          max-width: 100%;
+          margin: 0 auto;
+        }
+        .l-adress2-img {
+          width: 100%;
+          min-height: 400px;
+        }
+        .l-adress2-img2 {
+          max-width: 190px;
+          max-height: 190px;
+          border-radius: 50%;
+          position: absolute;
+          bottom: -20%;
+          right: -12px;
+        }
+      }
+      .l-adress2-info {
+        margin: 0 auto;
+        padding: 0 16px;
+
+        .l-adress2-text {
+          padding-bottom: 24px;
+          &:nth-child(2) {
+            font-weight: bold;
+          }
+          @include mq(sp) {
+            font-size: 14px;
+            padding-bottom: 14px;
+          }
+        }
+
+        .l-adress2-list {
+          .l-adress2-item {
+            list-style-type: disc;
+            list-style-position: inside;
+          }
+        }
+      }
+    }
+
+    .l-adress-map {
+      padding-top: 64px;
+      max-width: 100%;
+
+      iframe {
+        width: 100%;
+        min-height: 256px;
       }
     }
   }
