@@ -61,36 +61,46 @@
       }
 
       .c-analysis__head {
-        min-width: 130px;
-        // max-width: 160px;
-        justify-content: space-between;
-        display: flex;
-        font-size: 14px;
 
-        @include mq(sp-ls) {
-          // display: inline-block;
-          justify-content: start;
-          font-size: 18px;
-        }
+        &>p {
 
-        span {
+          min-width: 130px;
+          justify-content: space-between;
+          display: flex;
+          font-size: 14px;
+
           @include mq(sp-ls) {
-            margin-left: 20px;
+            justify-content: start;
+            font-size: 18px;
+          }
+
+          span {
+            @include mq(sp-ls) {
+              margin-left: 20px;
+            }
           }
         }
 
-        .c-analysis__plan-required {
+        &--plan {
+          display: flex;
+          justify-content: space-between;
+          min-width: 130px;
+
+          >p {
+            min-width: auto;
+          }
+        }
+
+        .c-analysis__plan-required>p {
           display: flex;
           flex-direction: column;
-          row-gap: 7px;
+          font-size: 14px;
 
           .spls-none {
             @include mq(sp-ls) {
               display: none;
             }
           }
-
-
         }
       }
 
@@ -106,12 +116,25 @@
           margin-top: 4px;
         }
 
+        &--plan>p>.wpcf7-form-control-wrap>.wpcf7-form-control {
+          display: block;
+        }
+
+        >p {
+          width: 100%;
+        }
+
         &.checkbox-wrap {
           column-gap: 20px;
           row-gap: 7px;
 
           @include mq(sp-ls) {
             row-gap: 0;
+          }
+
+          .wpcf7-radio {
+            display: flex;
+            column-gap: 20px;
           }
 
           .spls-show {
@@ -124,38 +147,39 @@
 
           label {
             display: inline-block;
+
+            span {
+              padding-left: 14px;
+              position: relative;
+
+              @include mq(sp-ls) {
+                display: block;
+              }
+
+              &:before {
+                content: '';
+                position: absolute;
+                top: calc(50% + 1px);
+                left: 0;
+                transform: translateY(-50%);
+
+                border: 1px solid #262626;
+                border-radius: 50%;
+                background-color: #fff;
+                height: 12px;
+                width: 12px;
+              }
+            }
+
+            input[type=radio]:checked+span:before {
+              background: #262626;
+            }
           }
 
           input[type=radio] {
             display: none;
           }
 
-          span {
-            padding-left: 14px;
-            position: relative;
-
-            @include mq(sp-ls) {
-              display: block;
-            }
-
-            &:before {
-              content: '';
-              position: absolute;
-              top: calc(50% + 1px);
-              left: 0;
-              transform: translateY(-50%);
-
-              border: 1px solid #262626;
-              border-radius: 50%;
-              background-color: #fff;
-              height: 12px;
-              width: 12px;
-            }
-          }
-
-          input[type=radio]:checked+span:before {
-            background: #262626;
-          }
         }
 
         input[type=text],
@@ -167,7 +191,7 @@
           outline: none;
           padding-top: 2px;
 
-          &::placeholder{
+          &::placeholder {
             font-size: 14px;
           }
 
@@ -202,15 +226,20 @@
 
       .c-analysis__sample-category {
 
-        input[type=text] {
-          &:first-of-type {
-            width: 120px;
-          }
+        p {
+          display: flex;
 
-          &:nth-of-type(2) {
-            width: 75px;
+          span {
+            &:first-of-type {
+              width: 120px;
+            }
+
+            &:nth-of-type(2) {
+              width: 80px;
+            }
           }
         }
+
 
       }
 
@@ -224,17 +253,29 @@
       margin-top: 48px;
       text-align: center;
 
-      input[type=submit] {
+      p {
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+      }
+
+      input[type=submit],
+      input[type=button] {
         border: 1px solid #999999;
         border-radius: 4px;
         background-color: transparent;
         font-weight: 700;
+        font-family: inherit;
         padding: 15px 48px;
         cursor: pointer;
 
         &:hover {
           @include hover-effect;
         }
+      }
+
+      .wpcf7-spinner {
+        display: none;
       }
     }
   }

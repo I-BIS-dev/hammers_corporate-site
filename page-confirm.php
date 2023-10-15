@@ -4,11 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- あとで消す -->
   <meta name="robots" content="noindex" />
   <title>株式会社ハマーズ</title>
-
+  
   <?php wp_head(); ?>
 
 </head>
@@ -60,21 +58,16 @@
   <main>
     <div class="c-analysis">
       <div class="c-analysis__fv">
-        <p class="c-analysis__fv-text">分析依頼</p>
+        <p class="c-analysis__fv-text">確認画面</p>
       </div>
       <div class="c-analysis__contents">
 
-        <div class="c-analysis__top-text">
-          <p class="c-analysis__description">アスベストの分析依頼はこちらのフォームからお間違いないようご入力ください。<br>正常に受付が受理されますと、数日以内にメールを差し上げます。
-          </p>
-          <p class="c-analysis__caution">※11件以上の同時検体をご希望の場合は、事前にお電話または<a href=""
-              class="c-analysis__top-link">お問い合わせフォーム</a>からご相談ください。</p>
-        </div>
         <div class="c-analysis__form">
-          <?php echo do_shortcode('[contact-form-7 id="e7bd033" title="Contact form 1"]') ?>
+          <?php echo do_shortcode('[contact-form-7 id="e1bc80b" title="お問い合わせ確認画面"]') ?>
         </div>
       </div>
     </div>
+
   </main>
 
   <footer class="l-footer">
