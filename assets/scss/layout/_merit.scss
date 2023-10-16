@@ -24,7 +24,7 @@ main {
     }
   }
 
-  .l-speedy {
+  .l-merit1-2 {
     padding: 240px 24px;
     @include mq(sp-ls) {
       padding: 120px 24px;
@@ -32,10 +32,10 @@ main {
     @include mq(sp) {
       padding: 32px 16px;
     }
-    .l-speedy__ttl-area {
+    .l-merit1-2__ttl-area {
       text-align: center;
 
-      .l-speedy__ttl {
+      .l-merit1-2__ttl {
         color: $main-color;
         font-size: 24px;
         font-family: "Roboto", sans-serif;
@@ -51,7 +51,7 @@ main {
           }
         }
       }
-      .l-speedy__text {
+      .l-merit1-2__text {
         font-size: 32px;
         font-weight: bold;
         color: $black;
@@ -69,13 +69,135 @@ main {
         }
       }
 
-      .l-speedy__desctiption-area {
+      .l-merit1-2__desctiption-area {
         display: flex;
         justify-content: center;
         padding-top: 32px;
-        .l-speedy__desctiption {
+
+        .l-merit1-2__desctiption {
           text-align-last: left;
           margin: 0 auto;
+          max-width: 800px;
+          line-height: 200%;
+        }
+      }
+    }
+  }
+
+  .l-reliable {
+    padding: 240px 24px;
+    @include mq(sp-ls) {
+      padding: 120px 24px;
+    }
+    @include mq(sp) {
+      padding: 32px 16px;
+    }
+    .l-reliable__ttl-area {
+      text-align: center;
+
+      .l-reliable__ttl {
+        color: $main-color;
+        font-size: 24px;
+        font-family: "Roboto", sans-serif;
+        @include mq(sp) {
+          font-size: 20px;
+        }
+        &.--font-strong {
+          font-size: 80px;
+          line-height: 0.9;
+          padding-left: 4px;
+          @include mq(sp) {
+            font-size: 40px;
+          }
+        }
+      }
+      .l-reliable__text {
+        font-size: 32px;
+        font-weight: bold;
+        color: $black;
+        padding-top: 24px;
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-decoration-color: $main-color;
+        text-decoration-thickness: 2px;
+        text-decoration-skip-ink: none;
+        text-underline-offset: 16px;
+        @include mq(sp) {
+          font-size: 26px;
+          text-underline-offset: 12px;
+          padding-top: 16px;
+        }
+      }
+
+      .l-reliable__desctiption-area {
+        display: flex;
+        justify-content: center;
+        padding-top: 32px;
+
+        .l-reliable__desctiption {
+          text-align-last: left;
+          margin: 0 auto;
+          max-width: 800px;
+          line-height: 200%;
+        }
+      }
+    }
+  }
+  .l-allin {
+    padding: 240px 24px;
+    @include mq(sp-ls) {
+      padding: 120px 24px;
+    }
+    @include mq(sp) {
+      padding: 32px 16px;
+    }
+    .l-allin__ttl-area {
+      text-align: center;
+
+      .l-allin__ttl {
+        color: $main-color;
+        font-size: 24px;
+        font-family: "Roboto", sans-serif;
+        @include mq(sp) {
+          font-size: 20px;
+        }
+        &.--font-strong {
+          font-size: 80px;
+          line-height: 0.9;
+          padding-left: 4px;
+          @include mq(sp) {
+            font-size: 40px;
+          }
+        }
+      }
+      .l-allin__text {
+        font-size: 32px;
+        font-weight: bold;
+        color: $black;
+        padding-top: 24px;
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-decoration-color: $main-color;
+        text-decoration-thickness: 2px;
+        text-decoration-skip-ink: none;
+        text-underline-offset: 16px;
+        @include mq(sp) {
+          font-size: 26px;
+          text-underline-offset: 12px;
+          padding-top: 16px;
+        }
+      }
+
+      .l-allin__desctiption-area {
+        display: flex;
+        justify-content: center;
+        padding-top: 32px;
+
+        .l-allin__desctiption {
+          text-align-last: left;
+          margin: 0 auto;
+          max-width: 800px;
+          line-height: 200%;
         }
       }
     }
