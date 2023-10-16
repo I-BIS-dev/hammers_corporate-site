@@ -1,0 +1,83 @@
+main {
+  .l-sub-mv {
+    .l-sub-mv__area {
+      .l-sub-mv__hero {
+        &.--merit {
+          &::after {
+            content: "MERIT";
+            color: $white;
+            font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            @include mq(sp-ls) {
+              font-size: 16px;
+            }
+            @include mq(sp) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .l-speedy {
+    padding: 240px 24px;
+    @include mq(sp-ls) {
+      padding: 120px 24px;
+    }
+    @include mq(sp) {
+      padding: 32px 16px;
+    }
+    .l-speedy__ttl-area {
+      text-align: center;
+
+      .l-speedy__ttl {
+        color: $main-color;
+        font-size: 24px;
+        font-family: "Roboto", sans-serif;
+        @include mq(sp) {
+          font-size: 20px;
+        }
+        &.--font-strong {
+          font-size: 80px;
+          line-height: 0.9;
+          padding-left: 4px;
+          @include mq(sp) {
+            font-size: 40px;
+          }
+        }
+      }
+      .l-speedy__text {
+        font-size: 32px;
+        font-weight: bold;
+        color: $black;
+        padding-top: 24px;
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-decoration-color: $main-color;
+        text-decoration-thickness: 2px;
+        text-decoration-skip-ink: none;
+        text-underline-offset: 16px;
+        @include mq(sp) {
+          font-size: 26px;
+          text-underline-offset: 12px;
+          padding-top: 16px;
+        }
+      }
+
+      .l-speedy__desctiption-area {
+        display: flex;
+        justify-content: center;
+        padding-top: 32px;
+        .l-speedy__desctiption {
+          text-align-last: left;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
