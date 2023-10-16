@@ -243,6 +243,18 @@ main {
           line-height: 200%;
         }
       }
+      .l-allin__img {
+        max-width: 520px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 48px;
+        @include mq(sp-ls) {
+          padding-top: 32px;
+        }
+        @include mq(sp) {
+          padding-top: 24px;
+        }
+      }
     }
   }
 }
