@@ -210,6 +210,10 @@ main {
       .l-adress-info {
         margin: 0 auto;
         padding: 0 16px;
+        max-width: 460px;
+        @include mq(sp-ls) {
+          padding: 16px 16px 0;
+        }
 
         .l-adress-text {
           padding-bottom: 24px;
@@ -265,6 +269,8 @@ main {
       .l-adress2-info {
         margin: 0 auto;
         padding: 0 16px;
+        max-width: 460px;
+
         @include mq(sp-ls) {
           padding: 88px 16px 0;
         }
