@@ -1,6 +1,7 @@
-main {
+.main {
   .l-sub-mv {
     padding-top: 124px;
+
     .l-sub-mv__area {
       width: 100%;
       height: 260px;
@@ -56,10 +57,12 @@ main {
         }
       }
     }
+
     .l-sub-mv__label-area {
       background-color: $bg-color;
       margin: 0 calc(50% - 50vw);
       padding: 0 calc(50vw - 50%);
+
       .l-sub-mv__label {
         padding: 30px 0 30px 64px;
         display: flex;
@@ -138,6 +141,7 @@ main {
           padding: 0 8px 24px;
         }
       }
+
       .l-greeting__description {
         line-height: 200%;
         @include mq(sp) {
@@ -151,9 +155,11 @@ main {
         }
       }
     }
+
     .l-table-area {
       border: 1px solid $black;
       padding: 8px 8px;
+
       .l-table {
         display: flex;
 
@@ -165,6 +171,7 @@ main {
             padding-bottom: 10px;
           }
         }
+
         .l-table-data {
           padding-bottom: 8px;
           &:last-child {
@@ -184,6 +191,7 @@ main {
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
     padding: 64px 0;
+
     .l-adress {
       display: flex;
       justify-content: space-between;
@@ -202,11 +210,13 @@ main {
           max-width: 100%;
           margin: 0 auto;
         }
-        iframe {
+
+        .l-adress-iframe {
           width: 100%;
           min-height: 400px;
         }
       }
+
       .l-adress-info {
         margin: 0 auto;
         padding: 0 16px;
@@ -234,7 +244,8 @@ main {
         }
       }
     }
-    .l-adress2 {
+
+    .l-adress-second {
       display: flex;
       justify-content: space-between;
       padding-bottom: 64px;
@@ -244,7 +255,7 @@ main {
         padding-bottom: 40px;
       }
 
-      .l-adress2-imgarea {
+      .l-adress-second__imgarea {
         width: 100%;
         height: auto;
         max-width: 500px;
@@ -253,56 +264,75 @@ main {
           max-width: 100%;
           margin: 0 auto;
         }
-        .l-adress2-img {
+
+        .l-adress-second__img {
           width: 100%;
           min-height: 400px;
         }
-        .l-adress2-img2 {
+
+        .l-adress-second__img2 {
           max-width: 190px;
           min-height: 190px;
           border-radius: 50%;
           position: absolute;
           bottom: -77px;
           right: -12px;
-        }
-      }
-      .l-adress2-info {
-        margin: 0 auto;
-        padding: 0 16px;
-        max-width: 460px;
-
-        @include mq(sp-ls) {
-          padding: 88px 16px 0;
-        }
-
-        .l-adress2-text {
-          padding-bottom: 24px;
-          &:nth-child(2) {
-            font-weight: bold;
-          }
-          @include mq(sp) {
-            font-size: 14px;
-            padding-bottom: 14px;
+          @include mq(sp-ls) {
+            max-width: 170px;
+            min-height: 170px;
+            bottom: -70px;
           }
         }
 
-        .l-adress2-list {
-          .l-adress2-item {
-            list-style-type: disc;
-            list-style-position: inside;
+        .l-adress-second__img-info {
+          position: absolute;
+          bottom: -100px;
+          right: -12px;
+          font-size: 12px;
+          font-weight: bold;
+          @include mq(sp-ls) {
+            right: 0;
+            bottom: -90px;
           }
         }
       }
     }
 
-    .l-adress-map {
-      padding-top: 64px;
-      max-width: 100%;
-
-      iframe {
-        width: 100%;
-        min-height: 256px;
+    .l-adress-second__info {
+      margin: 0 auto;
+      padding: 0 16px;
+      max-width: 460px;
+      @include mq(sp-ls) {
+        padding: 108px 16px 0;
       }
+
+      .l-adress-second__text {
+        padding-bottom: 24px;
+        &:nth-child(2) {
+          font-weight: bold;
+        }
+        @include mq(sp) {
+          font-size: 14px;
+          padding-bottom: 14px;
+        }
+      }
+
+      .l-adress-second__list {
+        .l-adress-second__item {
+          list-style-type: disc;
+          list-style-position: inside;
+        }
+      }
+    }
+  }
+
+  .l-adress-second__map {
+    padding-top: 64px;
+    max-width: 100%;
+
+    .l-adress-second__iframe {
+      width: 100%;
+      min-height: 256px;
     }
   }
 }
