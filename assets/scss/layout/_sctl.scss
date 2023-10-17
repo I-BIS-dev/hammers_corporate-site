@@ -1,0 +1,34 @@
+main {
+  .l-sub-mv {
+    .l-sub-mv__area {
+      .l-sub-mv__hero {
+        @include mq(sp-ls) {
+          width: 90%;
+          text-align: center;
+        }
+        @include mq(sp) {
+          width: 90%;
+          text-align: center;
+        }
+        &.--privacy {
+          &::after {
+            content: "SCTL";
+            color: $white;
+            font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            @include mq(sp-ls) {
+              font-size: 16px;
+            }
+            @include mq(sp) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
