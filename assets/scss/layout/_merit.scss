@@ -176,7 +176,7 @@ main {
           display: flex;
           justify-content: space-between;
           padding-top: 24px;
-          @include mq(sp) {
+          @include mq(sp-ls) {
             flex-direction: column;
             justify-content: center;
           }
