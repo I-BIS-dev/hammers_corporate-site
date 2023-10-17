@@ -2,6 +2,14 @@ main {
   .l-sub-mv {
     .l-sub-mv__area {
       .l-sub-mv__hero {
+        @include mq(sp-ls) {
+          width: 90%;
+          text-align: center;
+        }
+        @include mq(sp) {
+          width: 90%;
+          text-align: center;
+        }
         &.--privacy {
           &::after {
             content: "PRIVACY";
