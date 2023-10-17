@@ -31,4 +31,67 @@ main {
       }
     }
   }
+
+  .l-sctl {
+    margin: 64px auto;
+    @include mq(sp) {
+      margin: 32px auto;
+    }
+
+    .l-sctl-area {
+      padding-bottom: 32px;
+      @include mq(sp) {
+        padding-bottom: 24px;
+      }
+
+      .l-sctl__ttl {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        padding: 0 16px 32px;
+        @include mq(sp) {
+          font-size: 20px;
+          padding: 0 8px 24px;
+        }
+      }
+      .l-sctl__description {
+        line-height: 200%;
+        @include mq(sp) {
+          line-height: 170%;
+        }
+        &.--link {
+          text-decoration: underline;
+          &:hover {
+            @include hover-effect;
+          }
+        }
+      }
+    }
+    .l-table-area {
+      border: 1px solid $black;
+      padding: 8px 8px;
+      .l-table {
+        display: flex;
+
+        .l-table-ttl {
+          min-width: 150px;
+          padding-bottom: 8px;
+          @include mq(sp) {
+            min-width: 110px;
+            padding-bottom: 10px;
+          }
+        }
+        .l-table-data {
+          padding-bottom: 8px;
+          &:last-child {
+            padding-bottom: 0;
+          }
+          &.--item {
+            list-style-type: disc;
+            list-style-position: inside;
+          }
+        }
+      }
+    }
+  }
 }
