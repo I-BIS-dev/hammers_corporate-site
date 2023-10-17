@@ -12,20 +12,7 @@ main {
         }
         &.--privacy {
           &::after {
-            content: "PRIVACY";
-            color: $white;
-            font-size: 20px;
-            font-weight: bold;
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            @include mq(sp-ls) {
-              font-size: 16px;
-            }
-            @include mq(sp) {
-              font-size: 12px;
-            }
+            display: none;
           }
         }
       }
