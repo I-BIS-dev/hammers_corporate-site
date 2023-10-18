@@ -15,7 +15,7 @@
 <body>
   <header class="l-header">
     <div class="l-header__logo">
-      <h1 class="l-header__logo-name"><a class="u-header__logo" href="#">BESTAR</a></h1>
+      <h1 class="l-header__logo-name"><a class="u-header__logo" href="../index.html">BESTAR</a></h1>
       <p class="l-header__logo-description">アスベスト分析・調査の専門家</p>
     </div>
     <div class="l-header__navarea">
@@ -24,12 +24,12 @@
             045-253-2560</a></p>
         <nav class="l-header__nav" id="js-nav">
           <ul class="l-header__nav-list">
-            <li class="l-header__nav-item"><a class="l-header__nav-link" href="#">ベスターの強み</a></li>
+            <li class="l-header__nav-item"><a class="l-header__nav-link" href="../merit/index.html">ベスターの強み</a></li>
             <li class="l-header__nav-item"><a class="l-header__nav-link" href="#">アスベストの危険性</a></li>
             <li class="l-header__nav-item"><a class="l-header__nav-link" href="#">ご依頼の流れ</a></li>
             <li class="l-header__nav-item"><a class="l-header__nav-link" href="#">よくある質問</a></li>
-            <li class="l-header__nav-item"><a class="l-header__nav-link" href="#">会社概要</a></li>
-            <li class="l-header__nav-item"><a class="l-header__nav-link" href="#">お問い合わせ</a></li>
+            <li class="l-header__nav-item"><a class="l-header__nav-link" href="../company/index.html">会社概要</a></li>
+            <li class="l-header__nav-item"><a class="l-header__nav-link" href="index.php">お問い合わせ</a></li>
           </ul>
         </nav>
       </div>
@@ -102,16 +102,16 @@
         <p class="l-footer__logo-address">〒231-0048 神奈川県横浜市中区蓬莱町2-6-14 戸賀崎ビル2F</p>
       </div>
       <ul class="l-footer__nav-list">
-        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="#">TOP</a></li>
-        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="#">ベスターの強み</a></li>
+        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../index.html">TOP</a></li>
+        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../merit/index.html">ベスターの強み</a></li>
         <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="#">アスベストの危険性</a></li>
         <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="#">ご依頼の流れ</a></li>
         <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="#">よくある質問</a></li>
         <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="#">会社概要</a></li>
-        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="#">お問い合わせ</a></li>
+        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="index.php">お問い合わせ</a></li>
         <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="#">分析依頼</a></li>
-        <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="#">特定商取引法に基づく表記</a></li>
-        <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="#">プライバシーポリシー</a></li>
+        <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="../privacy/sctl/index.html">特定商取引法に基づく表記</a></li>
+        <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="../privacy/index.html">プライバシーポリシー</a></li>
       </ul>
     </div>
     <div class="l-footer__bottom">
