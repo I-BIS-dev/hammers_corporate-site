@@ -1,0 +1,126 @@
+.l-header {
+  width: 100%;
+  max-height: 110px;
+  padding: 24px 0px 24px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  @include mq(sp-tab) {
+    padding: 0px 8px 16px;
+  }
+
+  .l-header__logo {
+    min-width: 136px;
+    color: $main-color;
+    text-align-last: left;
+
+    .l-header__logo-name {
+      font-size: 32px;
+      @include mq(sp-tab) {
+        font-size: 23px;
+      }
+    }
+
+    .l-header__logo-description {
+      font-size: 12px;
+      @include mq(sp-tab) {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .l-header__navarea {
+    display: flex;
+    align-items: center;
+
+    .l-header__phone {
+      text-align: right;
+      font-size: 11px;
+      color: $main-color;
+      padding-bottom: 4px;
+      @include mq(sp-tab) {
+        display: none;
+      }
+    }
+
+    .l-header__nav {
+      font-size: 14px;
+      font-weight: bold;
+      position: relative;
+
+      @include mq(sp-tab) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        background-color: rgba(0, 131, 62, 0.9);
+        transition: all 0.3s;
+        opacity: 0;
+      }
+
+      &.--open {
+        opacity: 1 !important;
+      }
+
+      .l-header__nav-list {
+        display: flex;
+        @include mq(sp-tab) {
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          height: 100vh;
+          justify-content: center;
+        }
+
+        .l-header__nav-item {
+          margin-left: 32px;
+          @include mq(sp-tab) {
+            margin: 0;
+            padding: 40px;
+          }
+
+          .l-header__nav-link {
+            display: block;
+            &:hover {
+              @include hover-effect;
+            }
+            @include mq(sp-tab) {
+              min-width: 300px;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .l-header__nav-contact {
+    background-color: $main-color;
+    padding: 45px 16px;
+    margin-left: 8px;
+
+    &:hover {
+      @include hover-effect;
+    }
+    @include mq(sp-tab) {
+      display: none;
+    }
+    .l-header__navicon {
+      margin: 0 auto;
+      padding-bottom: 8px;
+    }
+
+    .l-header__btn {
+      display: block;
+      color: $white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}

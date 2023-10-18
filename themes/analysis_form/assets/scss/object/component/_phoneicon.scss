@@ -1,0 +1,22 @@
+.c-phone-btn {
+  position: fixed;
+  top: 0;
+  right: 48px;
+  width: 48px;
+  height: 49px;
+  background-color: #18ab5d;
+  cursor: pointer;
+  display: none;
+  &:hover {
+    @include hover-effect;
+  }
+  @include mq(sp-tab) {
+    display: block;
+  }
+  .c-phone-link {
+    display: block;
+    .c-phone-icon {
+      margin: 16px auto;
+    }
+  }
+}
