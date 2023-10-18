@@ -42,7 +42,7 @@ mail($to, $subject, $message, $headers);
 <body>
   <header class="l-header">
     <div class="l-header__logo">
-      <h1 class="l-header__logo-name"><a class="u-header__logo" href="#">BESTER</a></h1>
+      <h1 class="l-header__logo-name"><a class="u-header__logo" href="#">BESTAR</a></h1>
       <p class="l-header__logo-description">アスベスト分析・調査の専門家</p>
     </div>
     <div class="l-header__navarea">
@@ -92,7 +92,7 @@ mail($to, $subject, $message, $headers);
   <footer class="l-footer">
     <div class="l-footer__top">
       <div class="l-footer__logo">
-        <p class="l-footer__logo-name">BESTER</p>
+        <p class="l-footer__logo-name">BESTAR</p>
         <p class="l-footer__logo-description">アスベスト分析・調査の専門家</p>
         <p class="l-footer__logo-company">株式会社ハマーズ アスベスト分析事業部</p>
         <p class="l-footer__logo-address">〒231-0048 神奈川県横浜市中区蓬莱町2-6-14 戸賀崎ビル2F</p>
