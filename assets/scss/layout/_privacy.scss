@@ -1,0 +1,71 @@
+.main {
+  .l-sub-mv {
+    .l-sub-mv__area {
+      .l-sub-mv__hero {
+        @include mq(sp-ls) {
+          width: 90%;
+          text-align: center;
+        }
+        @include mq(sp) {
+          width: 90%;
+          text-align: center;
+        }
+        &.--privacy {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .l-privacy {
+    text-align: left;
+    margin: 80px auto;
+    padding: 0 24px;
+    .l-privacy__text-area {
+      line-height: 200%;
+
+      .l-privacy__text {
+        line-height: 200%;
+        padding-bottom: 120px;
+        @include mq(sp) {
+          padding-bottom: 64px;
+        }
+      }
+    }
+
+    .l-privacy-content {
+      text-align: left;
+      padding-bottom: 56px;
+      @include mq(sp) {
+        padding-bottom: 32px;
+      }
+
+      .l-privacy__ttl {
+        font-weight: bold;
+        font-size: 24px;
+        padding-bottom: 32px;
+        @include mq(sp) {
+          font-size: 20px;
+          padding-bottom: 16px;
+        }
+      }
+      .l-privacy__text {
+        line-height: 200%;
+
+        .l-privacy__list {
+          .l-privacy__item {
+            list-style-type: disc;
+            list-style-position: inside;
+          }
+        }
+      }
+    }
+
+    .l-privacy__date {
+      margin-top: 32px;
+      text-align: right;
+    }
+  }
+}
