@@ -10,8 +10,10 @@
   left: 0;
   right: 0;
   z-index: 9999;
-  @include mq(sp-tab) {
+  background-color: rgba(255, 255, 255, 0.8);
+  @include mq(sp-ls) {
     padding: 0px 8px 16px;
+    background-color: transparent;
   }
 
   .l-header__logo {
@@ -19,6 +21,12 @@
     color: $main-color;
     text-align-last: left;
     margin-left: 80px;
+    @include mq(sp-tab) {
+      margin-left: 32px;
+    }
+    @include mq(sp) {
+      margin-left: 8px;
+    }
 
     .l-header__logo-name {
       font-size: 32px;
@@ -88,8 +96,30 @@
 
           .l-header__nav-link {
             display: block;
-            &:hover {
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 2px;
+              bottom: 0;
+              margin: -5px 0;
+              background-color: $main-color;
+              visibility: hidden;
+              transform: scaleX(0);
+              transition: all 0.4s ease-in-out 0s;
+            }
+            &:hover::before {
               @include hover-effect;
+              visibility: visible;
+              transform: scaleX(1);
+            }
+            &.current {
+              &::before {
+                @include hover-effect;
+                visibility: visible;
+                transform: scaleX(1);
+              }
             }
             @include mq(sp-tab) {
               min-width: 300px;
@@ -103,8 +133,8 @@
 
   .l-header__nav-contact {
     background-color: $main-color;
-    padding: 45px 16px;
-    margin-left: 8px;
+    padding: 27px 16px;
+    margin-left: 24px;
 
     &:hover {
       @include hover-effect;
