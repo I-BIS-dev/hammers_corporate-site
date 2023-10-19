@@ -5,14 +5,14 @@ $(document).ready(function () {
     ham.toggleClass('--active');
     nav.toggleClass('--open');
   });
+  //カレント表示に関して
+  // const headerNavLink = document.querySelectorAll('.l-header__nav .l-header__nav-list .l-header__nav-item .l-header__nav-link');
 
-  const headerNavLink = document.querySelectorAll('.l-header__nav .l-header__nav-list .l-header__nav-item .l-header__nav-link');
-
-  headerNavLink.forEach((targetLink) => {
-    if (targetLink.href === location.href) {
-      targetLink.classList.add('current');
-    }
-  });
+  // headerNavLink.forEach((targetLink) => {
+  //   if (targetLink.href === location.href) {
+  //     targetLink.classList.add('current');
+  //   }
+  // });
 
 
 
