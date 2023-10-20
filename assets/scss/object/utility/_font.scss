@@ -39,3 +39,17 @@
     margin-bottom: 10px;
   }
 }
+
+.u--font-hightlight {
+  background: linear-gradient(transparent 60%, $sub-color 60% 90%, transparent 90%);
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+
+.u--link {
+  text-decoration: underline;
+  color: $black;
+  &:hover {
+    @include hover-effect;
+  }
+}
