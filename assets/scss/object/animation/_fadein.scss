@@ -1,0 +1,9 @@
+.a--fadeIn {
+  transform: translate3d(0, 50px, 0);
+  transition: 1.5s;
+  opacity: 0;
+}
+.a--animated {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}

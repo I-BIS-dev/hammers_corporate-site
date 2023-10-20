@@ -19,4 +19,21 @@ $(document).ready(function () {
   $(".--topbtn img").click(function () {
     $("html,body").animate({ scrollTop: 0 }, 700);
   });
+
+  $(window).on('load scroll', function () {
+
+    const box = $('.a--fadeIn');
+    const animated = 'a--animated';
+
+    box.each(function () {
+
+      const boxOffset = $(this).offset().top;
+      const scrollPos = $(window).scrollTop();
+      const wh = $(window).height();
+
+      if (scrollPos > boxOffset - wh + 200) {
+        $(this).addClass(`a--animated`);
+      }
+    });
+  });
 });
