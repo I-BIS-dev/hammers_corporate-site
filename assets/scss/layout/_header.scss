@@ -13,6 +13,7 @@
   transition: max-height 0.3s ease;
   &.header-animation {
     max-height: 80px;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
   }
   @include mq(sp-ls) {
     padding: 0px 8px 16px;
@@ -119,7 +120,6 @@
             }
             &.current {
               &::before {
-                @include hover-effect;
                 visibility: visible;
                 transform: scaleX(1);
               }

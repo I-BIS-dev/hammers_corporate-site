@@ -14,6 +14,15 @@ $(document).ready(function () {
   //   }
   // });
 
+  var currentPath = window.location.pathname;
+
+  // .l-header__nav-link の中からURLパスが一致する要素を検索し、.current クラスを追加
+  $('.l-header__nav-link').each(function () {
+    if ($(this).attr('href') === currentPath) {
+      $(this).addClass('current');
+    }
+  });
+
   var $win = $(window),
     $header = $('header'),
     $contact = $('header .l-header__nav-contact'),
