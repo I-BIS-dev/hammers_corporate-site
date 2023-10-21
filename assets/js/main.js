@@ -14,6 +14,22 @@ $(document).ready(function () {
   //   }
   // });
 
+  var $win = $(window),
+    $header = $('header'),
+    $contact = $('header .l-header__nav-contact'),
+    animationClass = 'header-animation';
+
+  $win.on('load scroll', function () {
+    var value = $(this).scrollTop();
+    if (value > 100) {
+      $header.addClass('header-animation');
+      $contact.addClass('header-animation');
+    } else {
+      $header.removeClass('header-animation');
+      $contact.removeClass('header-animation');
+    }
+  });
+
 
 
   $(".l-faq__list dd").hide();
