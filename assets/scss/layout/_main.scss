@@ -132,7 +132,7 @@
   }
 
   .l-feature {
-    background-color: $bg-color;
+    background-color: $white;
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
     padding: 64px 0;
@@ -145,6 +145,7 @@
 
     .l-feature__text-top {
       max-width: 650px;
+      font-weight: bold;
       margin: 0 auto;
       text-align: center;
       line-height: 200%;
@@ -154,16 +155,17 @@
       }
     }
     .l-feature__card {
-      max-width: 425px;
+      max-width: 500px;
       text-align: center;
-      margin: 0 40px;
+      margin: 0 20px;
       padding-bottom: 24px;
       @include mq(sp-ls) {
         margin: 0 auto;
+        width: 383px;
       }
 
       .l-feature__card-top {
-        background-color: $main-color;
+        background-color: $accent-color;
         padding: 4px 24px;
         border-radius: 7px 7px 0 0;
 
@@ -191,19 +193,29 @@
         }
       }
       .l-feature__card-bottom {
-        border: 1px solid $main-color;
+        border: 3px solid $accent-color;
         border-top: none;
         border-radius: 0 0 7px 7px;
-        padding: 32px;
+        padding: 32px 24px;
         background-color: $white;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
         @include mq(sp-ls) {
           padding: 24px;
+        }
+        @include mq(sp) {
+          padding: 14px;
         }
         .l-feature__card-bottom--day {
           font-size: 40px;
           font-weight: bold;
+          &.--secondary {
+            font-size: 32px;
+            @include mq(sp-ls) {
+              font-size: 20px;
+            }
+          }
           @include mq(sp-ls) {
-            font-size: 26px;
+            font-size: 20px;
           }
         }
       }
@@ -259,12 +271,23 @@
         }
       }
     }
-
-    .l-feature__ctabtn {
+    .l-feature__ctabtn-area {
       display: flex;
       justify-content: center;
-      align-items: center;
-      padding-bottom: 64px;
+      gap: 32px;
+      @include mq(sp-ls) {
+        flex-direction: column;
+        gap: 8px;
+      }
+      .l-feature__ctabtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 64px;
+        @include mq(sp-ls) {
+          padding-bottom: 24px;
+        }
+      }
     }
   }
 

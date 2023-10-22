@@ -20,7 +20,29 @@
 }
 
 .c-font-color__feature-card {
-  color: $main-color;
+  color: $accent-color;
+}
+.c-font-color__feature-card--secondary {
+  color: $black;
+  font-size: 26px;
+}
+
+.c-font__value {
+  font-size: 36px;
+}
+.c-font__value--secondary {
+  font-size: 46px;
+  line-height: 1.2;
+  @include mq(sp-ls) {
+    font-size: 37px;
+  }
+}
+
+.c-font-tax {
+  font-size: 18px;
+  @include mq(sp) {
+    font-size: 12px;
+  }
 }
 
 .c-font-size__feature-card {

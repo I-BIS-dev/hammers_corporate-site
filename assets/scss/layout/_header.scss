@@ -90,6 +90,7 @@
 
       .l-header__nav-list {
         display: flex;
+        padding-top: 18px;
         @include mq(sp-tab) {
           flex-direction: column;
           text-align: center;
