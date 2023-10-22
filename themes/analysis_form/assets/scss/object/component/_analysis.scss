@@ -24,6 +24,7 @@
 
     .c-analysis__top-text {
       line-height: 2;
+      text-align: center;
     }
 
     .c-analysis__caution {
@@ -35,21 +36,26 @@
     }
 
     .c-analysis__form {
-      border: 1px solid #999999;
       margin-top: 80px;
       padding: 22px 17px 20px;
     }
 
     .c-analysis__row {
       display: flex;
-
+      border-top: 1px solid $bg-color;
+      padding-top: 12px;
 
       &:not(:first-of-type) {
-        margin-top: 7px;
+        margin-top: 12px;
 
         @include mq(sp-ls) {
           margin-top: 12px;
         }
+      }
+
+      &:last-of-type {
+        border-bottom: 1px solid $bg-color;
+        padding-bottom: 12px;
       }
 
       &.--company {
@@ -61,22 +67,30 @@
       }
 
       .c-analysis__head {
+        display: flex;
+        align-items: center;
 
         &>p {
 
-          min-width: 130px;
+          min-width: 160px;
           justify-content: space-between;
           display: flex;
+          align-items: center;
           font-size: 14px;
 
           @include mq(sp-ls) {
             justify-content: start;
-            font-size: 18px;
+            font-weight: bold;
           }
 
           span {
+            background: $sub-color;
+            padding: 4px 16px;
+            color: white;
+
             @include mq(sp-ls) {
               margin-left: 20px;
+              font-weight: normal;
             }
           }
         }
@@ -84,15 +98,26 @@
         &--plan {
           display: flex;
           justify-content: space-between;
-          min-width: 130px;
+          min-width: 160px;
+          align-items: flex-start;
 
           @include mq(sp-ls) {
             justify-content: start;
+            align-items: center;
           }
 
           >p {
             min-width: auto;
+            padding-top: 4px;
+
+            @include mq(sp-ls) {
+              padding-top: 0;
+            }
           }
+        }
+
+        &--file {
+          align-items: flex-start;
         }
 
         .c-analysis__plan-required>p {
@@ -101,13 +126,21 @@
           font-size: 14px;
 
           @include mq(sp-ls) {
-            font-size: 18px;
             margin-left: 20px;
           }
 
+          >span {
+            background: $sub-color;
+            padding: 4px 16px;
+            color: #fff;
+          }
+
           .spls-none {
+            margin-top: 2px;
+
             @include mq(sp-ls) {
               display: none;
+              margin-top: 0;
             }
           }
         }
@@ -127,6 +160,11 @@
 
         &--plan>p>.wpcf7-form-control-wrap>.wpcf7-form-control {
           display: block;
+
+          >.wpcf7-list-item.last {
+            display: block;
+            margin-top: 10px;
+          }
         }
 
         >p {
@@ -136,14 +174,16 @@
         &.checkbox-wrap {
           column-gap: 20px;
           row-gap: 7px;
+          align-items: center;
 
-          @include mq(sp-ls) {
-            row-gap: 0;
-          }
 
           .wpcf7-radio {
             display: flex;
             column-gap: 20px;
+          }
+
+          .wpcf7-list-item {
+            margin-left: 0;
           }
 
           .spls-show {
@@ -158,7 +198,7 @@
             display: inline-block;
 
             span {
-              padding-left: 14px;
+              padding-left: 16px;
               position: relative;
 
               @include mq(sp-ls) {
@@ -171,17 +211,29 @@
                 top: calc(50% + 1px);
                 left: 0;
                 transform: translateY(-50%);
-
-                border: 1px solid #262626;
+                border: 1px solid $black;
                 border-radius: 50%;
                 background-color: #fff;
-                height: 12px;
-                width: 12px;
+                height: 14px;
+                width: 14px;
+              }
+
+              &:after {
+                content: '';
+                position: absolute;
+                top: calc(50% + 1px);
+                left: 3px;
+                transform: translateY(-50%);
+                border-radius: 50%;
+                background-color: $main-color;
+                height: 8px;
+                width: 8px;
+                display: none;
               }
             }
 
-            input[type=radio]:checked+span:before {
-              background: #262626;
+            input[type=radio]:checked+span:after {
+              display: block;
             }
           }
 
@@ -198,7 +250,8 @@
           width: 100%;
           border: none;
           outline: none;
-          padding-top: 2px;
+          background: $bg-color;
+          padding: 10px;
 
           &::placeholder {
             font-size: 14px;
@@ -206,6 +259,15 @@
 
           &:focus {
             border: 1px solid #262626;
+          }
+        }
+
+        input[type=date] {
+          background: $bg-color;
+          padding: 6px 10px;
+
+          &::placeholder {
+            opacity: 0.54;
           }
         }
 
@@ -218,9 +280,7 @@
           }
         }
 
-        input[type=date]::placeholder {
-          opacity: 0.54;
-        }
+
 
         input[type="file" i]::-webkit-file-upload-button {
           border: none;
@@ -247,17 +307,21 @@
       margin-top: 34px;
 
       .c-analysis__sample-category {
+        display: flex;
+        align-items: center;
+        // margin-right: 30px;
 
         p {
           display: flex;
 
           span {
             &:first-of-type {
-              width: 120px;
+              width: 140px;
             }
 
             &:nth-of-type(2) {
-              width: 80px;
+              width: 140px;
+              margin-left: 12px;
             }
           }
         }
@@ -268,6 +332,7 @@
       .c-analysis__analysis {
         display: flex;
         column-gap: 12px;
+        align-items: center;
       }
     }
 
@@ -290,6 +355,7 @@
         font-family: inherit;
         padding: 15px 48px;
         cursor: pointer;
+        color: $black;
 
         &:hover {
           @include hover-effect;
@@ -299,6 +365,11 @@
       .wpcf7-spinner {
         display: none;
       }
+
+    }
+
+    .wpcf7-response-output {
+      text-align: center;
     }
   }
 }
