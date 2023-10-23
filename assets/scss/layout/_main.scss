@@ -463,6 +463,184 @@
     }
   }
 
+  .l-merit-top {
+    background-color: $bg-color;
+    margin: 0 calc(50% - 50vw);
+    padding: 0 calc(50vw - 50%);
+    .l-merit-top__list {
+      position: relative;
+      padding: 90px 24px;
+      border: solid 4px #00833e;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 94px;
+      margin-bottom: 64px;
+      @include mq(sp-ls) {
+        padding: 56px 16px;
+        flex-direction: column;
+        gap: 24px;
+        border: solid 2px #00833e;
+      }
+      &::after {
+        content: "EASY&SPEEDY";
+        position: absolute;
+        top: -28px;
+        left: 15px;
+        background: #f4f7f7;
+        font-size: 32px;
+        color: #00833e;
+        padding: 0 10px;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        @include mq(sp-ls) {
+          font-size: 24px;
+          top: -21px;
+        }
+      }
+
+      .l-merit-top__list-img {
+        max-width: 154px;
+        height: auto;
+        @include mq(sp-ls) {
+          margin: 0 auto;
+        }
+      }
+      .l-merit-top__list-text {
+        max-width: 480px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 180%;
+        @include mq(sp-ls) {
+          font-size: 20px;
+          max-width: 80%;
+          margin: 0 auto;
+        }
+      }
+      &.--secondary {
+        flex-direction: row-reverse;
+        &::after {
+          content: "RELIABLE";
+          position: absolute;
+          top: -28px;
+          right: 15px;
+          background: #f4f7f7;
+          font-size: 32px;
+          color: #00833e;
+          padding: 0 10px;
+          font-weight: bold;
+          font-family: "Roboto", sans-serif;
+          @include mq(sp-ls) {
+            font-size: 24px;
+            top: -21px;
+          }
+        }
+      }
+    }
+    .l-merit-top__list {
+      position: relative;
+      padding: 90px 24px;
+      border: solid 4px #00833e;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 94px;
+      margin-bottom: 64px;
+      @include mq(sp-ls) {
+        padding: 56px 16px;
+        flex-direction: column;
+        gap: 24px;
+        border: solid 2px #00833e;
+      }
+      &::after {
+        content: "EASY&SPEEDY";
+        position: absolute;
+        top: -28px;
+        left: 15px;
+        background: #f4f7f7;
+        font-size: 32px;
+        color: #00833e;
+        padding: 0 10px;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        @include mq(sp-ls) {
+          font-size: 24px;
+          top: -21px;
+        }
+      }
+
+      .l-merit-top__list-img {
+        max-width: 154px;
+        height: auto;
+        @include mq(sp-ls) {
+          margin: 0 auto;
+        }
+      }
+      .l-merit-top__list-text {
+        max-width: 480px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 180%;
+        @include mq(sp-ls) {
+          font-size: 20px;
+          max-width: 80%;
+          margin: 0 auto;
+        }
+      }
+    }
+    .l-merit-top__list {
+      position: relative;
+      padding: 90px 24px;
+      border: solid 4px #00833e;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 94px;
+      margin-bottom: 64px;
+      @include mq(sp-ls) {
+        padding: 56px 16px;
+        flex-direction: column;
+        gap: 24px;
+        border: solid 2px #00833e;
+      }
+      &::after {
+        content: "EASY&SPEEDY";
+        position: absolute;
+        top: -28px;
+        left: 15px;
+        background: #f4f7f7;
+        font-size: 32px;
+        color: #00833e;
+        padding: 0 10px;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        @include mq(sp-ls) {
+          font-size: 24px;
+          top: -21px;
+        }
+      }
+
+      .l-merit-top__list-img {
+        max-width: 154px;
+        height: auto;
+        @include mq(sp-ls) {
+          margin: 0 auto;
+        }
+      }
+      .l-merit-top__list-text {
+        max-width: 480px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 180%;
+        @include mq(sp-ls) {
+          font-size: 20px;
+          max-width: 80%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
   .l-faq {
     .l-faq__list {
       padding-bottom: 64px;
