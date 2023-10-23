@@ -19,4 +19,7 @@ $(document).ready(function () {
   $(".--topbtn img").click(function () {
     $("html,body").animate({ scrollTop: 0 }, 700);
   });
+
 });
+
+$('#datepicker').datepicker();
