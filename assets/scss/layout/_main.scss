@@ -689,7 +689,7 @@
           font-weight: bold;
           font-family: "Roboto", sans-serif;
           @include mq(sp-ls) {
-            padding: 16px 16px 16px 50px;
+            padding: 16px 38px 16px 50px;
             font-size: 14px;
           }
           &::before {
@@ -758,6 +758,7 @@
 
           .l-faq__text {
             margin: 30px 0 0;
+            text-align: justify;
             &:first-child {
               margin-top: 0;
             }
