@@ -1,6 +1,6 @@
 .main {
   .l-sub-mv {
-    padding-top: 124px;
+    padding-top: 105px;
 
     .l-sub-mv__area {
       width: 100%;
@@ -120,7 +120,7 @@
   }
 
   .l-greeting {
-    margin: 64px auto;
+    padding: 120px 24px;
     @include mq(sp) {
       margin: 32px auto;
     }
@@ -190,7 +190,7 @@
     background-color: $bg-color;
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
-    padding: 64px 0;
+    padding: 120px 0;
 
     .l-adress {
       display: flex;

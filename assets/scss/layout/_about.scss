@@ -1,6 +1,6 @@
-main {
+.main {
   .l-sub-mv {
-    padding-top: 124px;
+    padding-top: 105px;
 
     .l-sub-mv__area {
       width: 100%;
@@ -120,7 +120,7 @@ main {
   }
 
   .l-about-primary {
-    padding: 240px 24px;
+    padding: 120px 24px;
     @include mq(sp-ls) {
       padding: 120px 24px;
     }
@@ -182,7 +182,7 @@ main {
   }
 
   .l-about-secondary {
-    padding: 240px 24px;
+    padding: 120px 24px;
     @include mq(sp-ls) {
       padding: 120px 24px;
     }
@@ -232,7 +232,7 @@ main {
   }
 
   .l-about-tertiary {
-    padding: 240px 24px;
+    padding: 120px 24px;
     @include mq(sp-ls) {
       padding: 120px 24px;
     }
