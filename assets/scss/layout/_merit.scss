@@ -169,13 +169,43 @@
       .l-merit__desctiption-area {
         display: flex;
         justify-content: center;
-        padding-top: 32px;
+        align-items: center;
+        padding-top: 48px;
+        @include mq(sp-ls) {
+          justify-content: space-between;
+        }
+        @include mq(sp) {
+          flex-direction: column;
+        }
 
         .l-merit__desctiption {
-          text-align-last: left;
-          margin: 0 auto;
-          max-width: 800px;
+          text-align: left;
+          max-width: 400px;
           line-height: 200%;
+          @include mq(sp-ls) {
+            max-width: 288px;
+          }
+        }
+
+        .circle {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          border: 3px solid $main-color;
+          margin-left: 96px;
+          background-image: url(../assets/images/high-speed.png);
+          background-repeat: no-repeat;
+          background-size: 141px;
+          background-position: center;
+          @include mq(sp-ls) {
+            width: 150px;
+            height: 150px;
+            margin-left: 0;
+            background-size: 100px;
+          }
+          @include mq(sp) {
+            margin: 0 auto;
+          }
         }
       }
     }
@@ -280,6 +310,10 @@
             max-width: 380px;
             width: 100%;
             height: auto;
+            @include mq(sp-ls) {
+              margin: 0 auto;
+              padding-bottom: 8px;
+            }
             @include mq(sp) {
               padding-bottom: 8px;
             }
