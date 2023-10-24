@@ -14,12 +14,20 @@ $(document).ready(function () {
   //   }
   // });
 
-  var currentPath = window.location.pathname;
+  // var currentPath = window.location.pathname;
 
-  // .l-header__nav-link の中からURLパスが一致する要素を検索し、.current クラスを追加
-  $('.l-header__nav-link').each(function () {
-    if ($(this).attr('href') === currentPath) {
-      $(this).addClass('current');
+  // // .l-header__nav-link の中からURLパスが一致する要素を検索し、.current クラスを追加
+  // $('.l-header__nav-link').each(function () {
+  //   if ($(this).attr('href') === currentPath) {
+  //     $(this).addClass('current');
+  //   }
+  // });
+
+  const headerNavLink = document.querySelectorAll('.l-header__nav-link');
+
+  headerNavLink.forEach((targetLink) => {
+    if (targetLink.href === location.href) {
+      targetLink.classList.add('current');
     }
   });
 
