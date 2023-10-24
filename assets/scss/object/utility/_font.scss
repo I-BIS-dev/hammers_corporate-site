@@ -2,16 +2,20 @@
   font-weight: bold;
   font-size: 16px;
   color: $white;
-  line-height: 1.2;
 }
 
-.u-header__logo {
+.c-header__logo {
   font-size: 32px;
   color: $main-color;
-  display: block;
-  @include mq(sp) {
-    font-size: 23px;
+  line-height: 1.1;
+  @include mq(sp-tab) {
+    font-size: 24px;
     color: $main-color;
+  }
+  @include mq(sp) {
+    font-size: 22px;
+    color: $main-color;
+    line-height: 1;
   }
 }
 

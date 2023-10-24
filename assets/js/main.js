@@ -5,23 +5,6 @@ $(document).ready(function () {
     ham.toggleClass('--active');
     nav.toggleClass('--open');
   });
-  //カレント表示に関して
-  // const headerNavLink = document.querySelectorAll('.l-header__nav .l-header__nav-list .l-header__nav-item .l-header__nav-link');
-
-  // headerNavLink.forEach((targetLink) => {
-  //   if (targetLink.href === location.href) {
-  //     targetLink.classList.add('current');
-  //   }
-  // });
-
-  // var currentPath = window.location.pathname;
-
-  // // .l-header__nav-link の中からURLパスが一致する要素を検索し、.current クラスを追加
-  // $('.l-header__nav-link').each(function () {
-  //   if ($(this).attr('href') === currentPath) {
-  //     $(this).addClass('current');
-  //   }
-  // });
 
   const headerNavLink = document.querySelectorAll('.l-header__nav-link');
 
@@ -34,16 +17,19 @@ $(document).ready(function () {
   var $win = $(window),
     $header = $('header'),
     $contact = $('header .l-header__nav-contact'),
+    $phone = $('header .l-header__phone'),
     animationClass = 'header-animation';
 
   $win.on('load scroll', function () {
-    var value = $(this).scrollTop();
+    const value = $(this).scrollTop();
     if (value > 100) {
       $header.addClass('header-animation');
       $contact.addClass('header-animation');
+      $phone.addClass('header-animation');
     } else {
       $header.removeClass('header-animation');
       $contact.removeClass('header-animation');
+      $phone.removeClass('header-animation');
     }
   });
 
