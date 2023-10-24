@@ -103,7 +103,7 @@
   &.--sub {
     background-color: $white;
     color: $sub-color;
-    border: 1px solid $sub-color;
+    border: 3px solid $sub-color;
     &::after {
       background-image: url(../assets/images/arrow-ctasub.svg);
     }
