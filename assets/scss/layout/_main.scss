@@ -22,7 +22,9 @@
       @include mq(sp-ls) {
         flex-direction: column;
         justify-content: center;
-        margin: 0 24px;
+      }
+      @include mq(sp) {
+        margin: 0;
       }
 
       .l-mv__hero-text {
@@ -106,6 +108,9 @@
           width: 110px;
           height: 110px;
         }
+        @include mq(sp-ls) {
+          margin: 0 8px;
+        }
 
         .l-mv__hero-descroption {
           min-width: 164px;
@@ -118,6 +123,9 @@
           transform: translate(-50%, -50%);
           @include mq(sp-ls) {
             font-size: 10px;
+          }
+          @include mq(sp) {
+            min-width: 112px;
           }
 
           .l-mv__hero-hero-descroption--bold {
@@ -162,6 +170,9 @@
       @include mq(sp-ls) {
         margin: 0 auto;
         width: 383px;
+      }
+      @include mq(sp) {
+        width: 314px;
       }
 
       .l-feature__card-top {
@@ -221,9 +232,10 @@
       }
     }
     .l-feature__text-bottom {
-      max-width: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin: 0 auto;
-      text-align: center;
       line-height: 180%;
       padding-bottom: 64px;
       @include mq(sp-ls) {
@@ -232,6 +244,7 @@
       }
       .l-feature__text {
         font-size: 10px;
+        text-align-last: left;
       }
     }
     .l-feature__info {
