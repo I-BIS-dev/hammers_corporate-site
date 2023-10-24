@@ -42,7 +42,7 @@ mail($to, $subject, $message, $headers);
 <body>
   <header class="l-header">
     <div class="l-header__logo">
-      <h1 class="l-header__logo-name"><a class="u-header__logo" href="#">BESTAR</a></h1>
+      <h1 class="l-header__logo-name"><a class="c-header__logo" href="#">BESTAR</a></h1>
       <p class="l-header__logo-description">アスベスト分析・調査の専門家</p>
     </div>
     <div class="l-header__navarea">

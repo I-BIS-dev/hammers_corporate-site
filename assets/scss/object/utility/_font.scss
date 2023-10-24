@@ -6,7 +6,7 @@
 
 .c-header__logo {
   font-size: 32px;
-  color: $main-color;
+  color: $main-color !important;
   line-height: 1.1;
   @include mq(sp-tab) {
     font-size: 24px;
