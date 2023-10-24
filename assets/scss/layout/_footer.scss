@@ -17,20 +17,27 @@
     }
 
     .l-footer__logo {
-      .l-footer__logo-name {
-        font-size: 32px;
-        font-weight: bold;
-        padding-bottom: 4px;
-        @include mq(sp) {
-          font-size: 23px;
-        }
-      }
+      .l-footer__logoarea {
+        display: flex;
+        align-items: center;
 
-      .l-footer__logo-description {
-        font-size: 12px;
-        font-weight: bold;
-        @include mq(sp) {
-          font-size: 10px;
+        .l-footer__logo-right {
+          .l-footer__logo-name {
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 1;
+            @include mq(sp) {
+              font-size: 23px;
+            }
+          }
+
+          .l-footer__logo-description {
+            font-size: 12px;
+            font-weight: bold;
+            @include mq(sp) {
+              font-size: 10px;
+            }
+          }
         }
       }
       .l-footer__logo-company {
