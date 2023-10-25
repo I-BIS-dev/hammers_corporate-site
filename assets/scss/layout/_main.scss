@@ -93,6 +93,9 @@
       @include mq(sp-ls) {
         justify-content: center;
       }
+      @include mq(sp) {
+        width: 338px;
+      }
 
       .l-mv__flex-img-bg {
         width: 180px;
@@ -108,8 +111,9 @@
           width: 110px;
           height: 110px;
         }
-        @include mq(sp-ls) {
+        @include mq(sp) {
           margin: 0 8px;
+          background-size: contain;
         }
 
         .l-mv__hero-descroption {
@@ -444,6 +448,9 @@
         }
         .l-surbey__img1 {
           max-width: 245px;
+          @include mq(sp-ls) {
+            width: 50%;
+          }
           @include mq(sp) {
             max-width: 170px;
           }
@@ -455,6 +462,7 @@
           left: 40%;
           @include mq(sp-ls) {
             position: static;
+            width: 50%;
           }
           @include mq(sp) {
             max-width: 170px;
@@ -943,6 +951,9 @@
       .l-access__address-map {
         width: 100%;
         max-width: 686px;
+        @include mq(sp-ls) {
+          margin: 0 auto;
+        }
 
         iframe {
           max-width: 686px;
@@ -955,6 +966,9 @@
         max-width: 524px;
         background-color: #fff;
         padding: 24px 32px;
+        @include mq(sp-ls) {
+          margin: 0 auto;
+        }
 
         .l-access__namearea {
           padding-bottom: 24px;

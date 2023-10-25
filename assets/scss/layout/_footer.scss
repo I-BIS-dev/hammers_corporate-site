@@ -13,10 +13,11 @@
       padding: 8px 0 0px 16px;
     }
     @include mq(sp) {
-      padding: 4px 0 0px 8px;
+      padding: 4px 0 0 0;
     }
 
     .l-footer__logo {
+      width: 100%;
       .l-footer__logoarea {
         display: flex;
         align-items: center;
@@ -24,7 +25,7 @@
         .l-footer__logo-right {
           .l-footer__logo-name {
             font-size: 32px;
-            font-weight: bold;
+            font-weight: 900;
             line-height: 1;
             @include mq(sp) {
               font-size: 23px;
@@ -55,6 +56,7 @@
         @include mq(sp) {
           font-size: 10px;
           padding-bottom: 16px;
+          min-width: 0;
         }
       }
     }
