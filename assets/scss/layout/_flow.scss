@@ -2,12 +2,10 @@
   padding-bottom: 220px;
 
   .l-sub-mv {
-
     .l-sub-mv__area {
-
       .l-sub-mv__hero {
         &.--flow::after {
-          content: 'FLOW';
+          content: "FLOW";
         }
       }
     }
@@ -28,7 +26,7 @@
     .l-step__step1-textarea {
       margin-top: 63px;
 
-      .l-step__text:nth-of-type(2){
+      .l-step__text:nth-of-type(2) {
         margin-top: 29px;
       }
     }
@@ -48,7 +46,7 @@
         font-weight: 700;
       }
 
-      a{
+      a {
         text-decoration: underline;
 
         &:hover {
@@ -90,7 +88,7 @@
           }
         }
 
-        .l-step__contact-tel__link {}
+        // .l-step__contact-tel__link {}
 
         .l-step__contact-time {
           font-size: 12px;
@@ -99,7 +97,7 @@
           margin-top: 6px;
         }
 
-        .l-step__btnarea{
+        .l-step__btnarea {
           margin-top: 2px;
         }
       }
@@ -125,11 +123,10 @@
           @include hover-effect;
         }
 
-        &.--excel-btn{
+        &.--excel-btn {
           font-size: 16px;
           padding: 14px 31px;
         }
-
       }
     }
 
@@ -159,7 +156,7 @@
           text-align: center;
         }
 
-        .l-step__text a{
+        .l-step__text a {
           font-weight: 700;
           text-decoration: none;
 
@@ -183,10 +180,7 @@
       }
 
       .l-step__excel-imgarea {
-
-
         .l-step__img {
-
           @include mq(sp-ls) {
             display: flex;
             flex-direction: column;
@@ -200,7 +194,6 @@
         }
       }
 
-
       .l-step__example {
         font-size: 14px;
         line-height: 160.2%;
@@ -211,7 +204,6 @@
     }
 
     &.step2 {
-
       .l-step2__top-textarea {
         margin-top: 60px;
       }
@@ -251,7 +243,7 @@
           display: block;
         }
 
-        .l-step__sample-topleft {}
+        // .l-step__sample-topleft {}
 
         .l-step__img-left {
           display: flex;
@@ -262,7 +254,6 @@
             flex-wrap: wrap;
             row-gap: 12px;
           }
-
         }
 
         .l-step__img-topright {
@@ -325,7 +316,6 @@
         }
 
         .l-step__bottom-right {
-
           @include mq(sp-ls) {
             display: flex;
             justify-content: center;
@@ -351,7 +341,4 @@
       justify-content: center;
     }
   }
-
-
-
 }
