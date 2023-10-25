@@ -1,0 +1,9 @@
+.u-padding {
+  padding: 120px 32px;
+  @include mq(sp-ls) {
+    padding: 80pxpx 16px;
+  }
+  @include mq(sp) {
+    padding: 48px 8px;
+  }
+}
