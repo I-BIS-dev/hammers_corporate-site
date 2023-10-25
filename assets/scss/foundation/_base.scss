@@ -45,6 +45,10 @@ $hover: all 0.3s ease;
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   width: 100%;
   font-family: "Noto Sans JP", "Roboto", YuGothic, "Hiragino Kaku Gothic ProN", "Hind", Meiryo, sans-serif;
@@ -53,7 +57,7 @@ body {
   color: $black;
   font-size: 16px;
   margin: 0 auto;
-  // overflow-x: hidden;
+  overflow-x: hidden;
   @include mq(sp) {
     font-size: 14px;
   }
