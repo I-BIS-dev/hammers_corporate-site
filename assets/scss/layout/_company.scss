@@ -131,10 +131,23 @@
       }
 
       .l-greeting__ttl {
-        font-size: 24px;
+        font-size: 32px;
         font-weight: bold;
         text-align: center;
         padding: 0 16px 32px;
+        position: relative;
+        margin-bottom: 1em;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 80px;
+          height: 4px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          background-color: $main-color;
+        }
         @include mq(sp) {
           font-size: 20px;
           padding: 0 8px 24px;
@@ -143,6 +156,8 @@
 
       .l-greeting__description {
         line-height: 200%;
+        max-width: 960px;
+        margin: 0 auto;
         @include mq(sp) {
           line-height: 170%;
         }
@@ -156,29 +171,50 @@
     }
 
     .l-table-area {
-      border: 1px solid $black;
-      padding: 8px 8px;
+      max-width: 960px;
+      margin: 0 auto;
 
       .l-table {
         display: flex;
+        border-top: 1px solid #c2cfc9;
+        &:last-child {
+          border-bottom: 1px solid #c2cfc9;
+        }
 
-        .l-table-ttl {
-          min-width: 150px;
-          padding-bottom: 8px;
-          @include mq(sp) {
-            min-width: 110px;
-            padding-bottom: 10px;
+        .l-table-ttl__box {
+          width: 260px;
+          background-color: #f4f7f7;
+          display: flex;
+          justify-content: center; /* 左右中央に寄せる */
+          align-items: center;
+          .l-table-ttl {
+            padding: 24px 0;
+            font-weight: bold;
+            text-align: center;
+
+            min-width: 260px;
+            @include mq(sp) {
+              min-width: 110px;
+              padding-bottom: 10px;
+            }
           }
         }
 
-        .l-table-data {
-          padding-bottom: 8px;
-          &:last-child {
-            padding-bottom: 0;
-          }
-          &.--item {
-            list-style-type: disc;
-            list-style-position: inside;
+        .l-table-data__box {
+          width: 100%;
+
+          .l-table-data {
+            padding: 24px 24px 24px 40px;
+
+            &.--list {
+              padding: 0;
+            }
+            &.--item {
+              list-style-type: disc;
+              list-style-position: inside;
+              padding: 0;
+              line-height: 180%;
+            }
           }
         }
       }
