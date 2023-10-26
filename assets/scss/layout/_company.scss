@@ -121,7 +121,7 @@
   .l-greeting {
     padding: 120px 24px;
     @include mq(sp) {
-      margin: 32px auto;
+      padding: 64px 16px;
     }
 
     .l-greeting-area {
@@ -167,6 +167,7 @@
         margin: 0 auto;
         @include mq(sp) {
           line-height: 170%;
+          text-align: justify;
         }
         &.--link {
           text-decoration: underline;

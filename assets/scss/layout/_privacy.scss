@@ -23,6 +23,10 @@
     text-align: left;
     margin: 120px auto;
     padding: 0 24px;
+    @include mq(sp) {
+      margin: 64px auto;
+    }
+
     .l-privacy__text-area {
       line-height: 200%;
 
@@ -37,7 +41,7 @@
 
     .l-privacy-content {
       text-align: left;
-      padding-bottom: 56px;
+      padding-bottom: 64px;
       @include mq(sp) {
         padding-bottom: 32px;
       }
@@ -45,10 +49,23 @@
       .l-privacy__ttl {
         font-weight: bold;
         font-size: 24px;
-        padding-bottom: 32px;
+        padding-bottom: 8px;
+        position: relative;
+        border-bottom: 3px solid $main-color;
+        margin-bottom: 40px;
+        &::before {
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          width: 28%;
+          height: 3px;
+          content: "";
+          background: #00cc5b;
+        }
         @include mq(sp) {
           font-size: 20px;
           padding-bottom: 16px;
+          margin-bottom: 24px;
         }
       }
       .l-privacy__text {
