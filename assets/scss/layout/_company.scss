@@ -124,60 +124,6 @@
       padding: 64px 16px;
     }
 
-    .l-greeting-area {
-      padding-bottom: 80px;
-      @include mq(sp-ls) {
-        padding-bottom: 48px;
-      }
-      @include mq(sp) {
-        padding-bottom: 32px;
-      }
-
-      .l-greeting__ttl {
-        font-size: 32px;
-        font-weight: bold;
-        text-align: center;
-        padding: 0 16px 32px;
-        position: relative;
-        margin-bottom: 1em;
-        &::before {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          width: 80px;
-          height: 4px;
-          left: 50%;
-          -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-          background-color: $main-color;
-        }
-        @include mq(sp-ls) {
-          font-size: 28px;
-          padding: 0 8px 26px;
-        }
-        @include mq(sp) {
-          font-size: 20px;
-          padding: 0 8px 24px;
-        }
-      }
-
-      .l-greeting__description {
-        line-height: 200%;
-        max-width: 960px;
-        margin: 0 auto;
-        @include mq(sp) {
-          line-height: 170%;
-          text-align: justify;
-        }
-        &.--link {
-          text-decoration: underline;
-          &:hover {
-            @include hover-effect;
-          }
-        }
-      }
-    }
-
     .l-table-area {
       max-width: 960px;
       margin: 0 auto;
@@ -249,10 +195,10 @@
   }
 
   .l-adress-area {
-    background-color: $bg-color;
-    margin: 0 calc(50% - 50vw);
-    padding: 0 calc(50vw - 50%);
     padding: 120px 0;
+    @include mq(sp) {
+      padding: 64px 0;
+    }
 
     .l-adress__ttl-area {
       padding-bottom: 80px;
