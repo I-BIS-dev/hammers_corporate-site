@@ -57,7 +57,7 @@
   </header>
 
   <main>
-    <div class="main-test">
+    <div class="main-test a--fadein-first">
       <form action="/contact/confirm.php" method="post">
         会社名<span>必須</span><br>
         <input placeholder="株式会社〇〇" type="text" name="company" size="50" value="" required><br>

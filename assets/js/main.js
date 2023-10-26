@@ -58,7 +58,7 @@ $(document).ready(function () {
       const scrollPos = $(window).scrollTop();
       const wh = $(window).height();
 
-      if (scrollPos > boxOffset - wh + 200) {
+      if (scrollPos > boxOffset - wh + 100) {
         $(this).addClass(`a--animated`);
       }
     });
