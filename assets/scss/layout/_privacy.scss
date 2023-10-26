@@ -49,22 +49,13 @@
       .l-privacy__ttl {
         font-weight: bold;
         font-size: 24px;
-        padding-bottom: 8px;
-        position: relative;
-        border-bottom: 3px solid $main-color;
+        border-left: 4px solid $main-color;
         margin-bottom: 40px;
-        &::before {
-          position: absolute;
-          bottom: -3px;
-          left: 0;
-          width: 28%;
-          height: 3px;
-          content: "";
-          background: #00cc5b;
-        }
+        padding-left: 20px;
+
         @include mq(sp) {
-          font-size: 20px;
-          padding-bottom: 16px;
+          font-size: 18px;
+          padding: 6px 12px;
           margin-bottom: 24px;
         }
       }
