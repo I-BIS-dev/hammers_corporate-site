@@ -22,7 +22,7 @@
   .l-sctl {
     margin: 120px auto;
     @include mq(sp) {
-      margin: 32px auto;
+      margin: 64px auto;
     }
 
     .l-sctl-area {
@@ -55,27 +55,68 @@
       }
     }
     .l-table-area {
-      border: 1px solid $black;
-      padding: 8px 8px;
+      max-width: 960px;
+      margin: 0 auto;
       .l-table {
         display: flex;
+        border-top: 1px solid #c2cfc9;
+        &:last-child {
+          border-bottom: 1px solid #c2cfc9;
+        }
 
-        .l-table-ttl {
-          min-width: 150px;
-          padding-bottom: 8px;
+        .l-table-ttl__box {
+          width: 260px;
+          background-color: #f4f7f7;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include mq(sp-ls) {
+            width: 200px;
+          }
           @include mq(sp) {
-            min-width: 110px;
-            padding-bottom: 10px;
+            width: 100px;
+          }
+          .l-table-ttl {
+            padding: 24px 0;
+            font-weight: bold;
+            text-align: center;
+            width: 260px;
+            @include mq(sp-ls) {
+              width: 200px;
+              padding: 16px 0;
+              font-size: 14px;
+            }
+            @include mq(sp) {
+              font-size: 12px;
+              padding: 16px 0;
+            }
           }
         }
-        .l-table-data {
-          padding-bottom: 8px;
-          &:last-child {
-            padding-bottom: 0;
+
+        .l-table-data__box {
+          width: 100%;
+
+          .l-table-data {
+            padding: 24px 24px 24px 40px;
+            @include mq(sp-ls) {
+              padding: 16px 16px 16px 16px;
+              font-size: 14px;
+              @include mq(sp) {
+                padding: 16px 16px 16px 16px;
+                font-size: 12px;
+              }
+            }
           }
-          &.--item {
+          .l-table-data--list {
+            padding: 0;
             list-style-type: disc;
             list-style-position: inside;
+            .l-table-data--item {
+              list-style-type: disc;
+              list-style-position: inside;
+              padding: 0;
+              line-height: 180%;
+            }
           }
         }
       }
