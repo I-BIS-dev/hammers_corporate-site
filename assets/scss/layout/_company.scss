@@ -180,13 +180,19 @@
           }
           .l-table-data--list {
             padding: 0;
-            list-style-type: disc;
-            list-style-position: inside;
             .l-table-data--item {
-              list-style-type: disc;
-              list-style-position: inside;
-              padding: 0;
-              line-height: 180%;
+              &::before {
+                content: "";
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: #262626;
+                display: inline-block;
+                line-height: 5;
+                position: relative;
+                top: -9px;
+                margin-right: 8px;
+              }
             }
           }
         }
@@ -289,8 +295,18 @@
         .l-adress-list {
           padding-bottom: 32px;
           .l-adress-item {
-            list-style-type: disc;
-            list-style-position: inside;
+            &::before {
+              content: "";
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              background-color: #262626;
+              display: inline-block;
+              line-height: 5;
+              position: relative;
+              top: -9px;
+              margin-right: 8px;
+            }
           }
         }
 
@@ -399,8 +415,18 @@
         .l-adress-second__list {
           padding-bottom: 32px;
           .l-adress-second__item {
-            list-style-type: disc;
-            list-style-position: inside;
+            &::before {
+              content: "";
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              background-color: #262626;
+              display: inline-block;
+              line-height: 5;
+              position: relative;
+              top: -9px;
+              margin-right: 8px;
+            }
           }
         }
 
@@ -418,6 +444,9 @@
             font-size: 14px;
             font-weight: bold;
             padding: 8px 16px;
+            position: relative;
+            top: -1;
+            margin-right: 5px;
           }
         }
       }
