@@ -314,49 +314,88 @@
         margin: 0 auto;
         max-width: 800px;
         padding-bottom: 24px;
-        @include mq(sp-ls) {
-          padding-bottom: 16px;
-        }
+        // @include mq(sp-ls) {
+        //   padding-bottom: 16px;
+        // }
       }
     }
 
     .l-about-table {
-      border: 1px solid $black;
-      padding: 8px 8px;
+      // border: 1px solid $black;
+      // padding: 8px 8px;
       display: flex;
       justify-content: space-between;
       max-width: 800px;
       margin: 0 auto;
-      @include mq(sp) {
+      @include mq(sp-ls) {
         flex-direction: column;
+        justify-content: center;
       }
 
       .l-about-table__left {
         flex: 5;
+        max-width: 400px;
+        width: 100%;
+        @include mq(sp-ls) {
+          padding-bottom: 16px;
+          margin: 0 auto;
+        }
         @include mq(sp) {
           padding-bottom: 16px;
         }
 
         .l-about-table__ttl {
           text-align: center;
-          padding-bottom: 16px;
+          font-weight: bold;
+          padding: 11px 0;
+          background-color: #e9f5f5;
+          margin: 0 4px;
         }
         .l-about-table__list {
           .l-about-table__item {
-            padding: 0 0 8px 8px;
+            padding: 8px 0;
+            margin: 0 4px;
+            background-color: $bg-color;
+            text-align: center;
+            &:nth-child(even) {
+              background-color: #e9f5f5;
+            }
+            &:last-child {
+              color: transparent;
+            }
+            &:last-child {
+              @include mq(sp-ls) {
+                display: none;
+              }
+            }
           }
         }
       }
       .l-about-table__right {
         flex: 5;
+        max-width: 400px;
+        width: 100%;
+        @include mq(sp-ls) {
+          padding-bottom: 16px;
+          margin: 0 auto;
+        }
 
         .l-about-table__ttl {
           text-align: center;
-          padding-bottom: 16px;
+          font-weight: bold;
+          padding: 11px 0;
+          background-color: #e9f5f5;
+          margin: 0 4px;
         }
         .l-about-table__list {
           .l-about-table__item {
-            padding: 0 0 8px 8px;
+            padding: 8px 0;
+            margin: 0 4px;
+            background-color: $bg-color;
+            text-align: center;
+            &:nth-child(even) {
+              background-color: #e9f5f5;
+            }
           }
         }
       }
