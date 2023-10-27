@@ -135,9 +135,25 @@
         font-size: 24px;
         font-weight: bold;
         color: $black;
+        line-height: 200%;
         padding: 24px 0 40px;
-
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-decoration-color: $main-color;
+        text-decoration-thickness: 2px;
+        text-decoration-skip-ink: none;
+        text-underline-offset: 16px;
+        &::first-letter {
+          color: $accent-color;
+        }
+        @include mq(sp-ls) {
+          font-size: 20px;
+          text-underline-offset: 14px;
+        }
         @include mq(sp) {
+          font-size: 18px;
+          text-underline-offset: 12px;
+          padding-top: 16px;
           font-size: 18px;
           padding: 16px 0 24px;
         }
@@ -195,10 +211,27 @@
         font-size: 24px;
         font-weight: bold;
         color: $black;
-        padding-top: 24px;
+        line-height: 200%;
+        padding: 24px 0 40px;
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-decoration-color: $main-color;
+        text-decoration-thickness: 2px;
+        text-decoration-skip-ink: none;
+        text-underline-offset: 16px;
+        &::first-letter {
+          color: $accent-color;
+        }
+        @include mq(sp-ls) {
+          font-size: 20px;
+          text-underline-offset: 14px;
+        }
         @include mq(sp) {
           font-size: 18px;
+          text-underline-offset: 12px;
           padding-top: 16px;
+          font-size: 18px;
+          padding: 16px 0 24px;
         }
       }
 
@@ -215,16 +248,21 @@
         }
       }
 
-      .l-about-secondary__img {
+      .l-about-secondary__img-area {
         max-width: 520px;
-        width: 100%;
-        margin: 0 auto;
-        padding-top: 48px;
+        display: flex;
+        justify-content: center;
+        margin: 48px auto;
         @include mq(sp-ls) {
-          padding-top: 32px;
+          margin: 32px auto;
         }
         @include mq(sp) {
-          padding-top: 24px;
+          margin: 24px auto;
+        }
+
+        .l-about-secondary__img {
+          width: 100%;
+          margin: 0 auto;
         }
       }
     }
@@ -247,9 +285,25 @@
         font-size: 24px;
         font-weight: bold;
         color: $black;
+        line-height: 200%;
         padding: 24px 0 40px;
-
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-decoration-color: $main-color;
+        text-decoration-thickness: 2px;
+        text-decoration-skip-ink: none;
+        text-underline-offset: 16px;
+        &::first-letter {
+          color: $accent-color;
+        }
+        @include mq(sp-ls) {
+          font-size: 20px;
+          text-underline-offset: 14px;
+        }
         @include mq(sp) {
+          font-size: 18px;
+          text-underline-offset: 12px;
+          padding-top: 16px;
           font-size: 18px;
           padding: 16px 0 24px;
         }
