@@ -18,6 +18,7 @@ $(document).ready(function () {
     $header = $('header'),
     $contact = $('header .l-header__nav-contact'),
     $phone = $('header .l-header__phone'),
+    $nav = $('header .l-header__nav-list'),
     animationClass = 'header-animation';
 
   $win.on('load scroll', function () {
@@ -26,10 +27,12 @@ $(document).ready(function () {
       $header.addClass('header-animation');
       $contact.addClass('header-animation');
       $phone.addClass('header-animation');
+      $nav.addClass('header-animation');
     } else {
       $header.removeClass('header-animation');
       $contact.removeClass('header-animation');
       $phone.removeClass('header-animation');
+      $nav.removeClass('header-animation');
     }
   });
 

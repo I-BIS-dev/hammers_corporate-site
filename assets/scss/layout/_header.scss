@@ -12,78 +12,37 @@
   transition: max-height 0.3s ease;
   &.header-animation {
     max-height: 80px;
-    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.8);
+    // box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+    // background-color: rgba(255, 255, 255, 0.8);
   }
   @include mq(sp-tab) {
     padding: 4px 0;
-    background-color: rgba(255, 255, 255, 0.8);
+    // background-color: rgba(255, 255, 255, 0.8);
     max-height: 49px;
     &.header-animation {
       max-height: 49px;
-      box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+      // box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
     }
   }
   @include mq(sp) {
-    // padding: 0px 8px 16px;
-    background-color: rgba(255, 255, 255, 0.8);
+    // background-color: rgba(255, 255, 255, 0.8);
     height: 49px;
     &.header-animation {
       height: 49px;
-      box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+      // box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
     }
   }
 
-  .l-header__logo {
-    min-width: 136px;
-    color: $main-color;
-    text-align-last: left;
-    margin-left: 120px;
-    @include mq(sp-tab) {
-      margin-left: 58px;
-    }
-    @include mq(sp) {
-      margin-left: 38px;
-    }
+  .l-header__logo-area {
+    width: 176px;
+    margin-left: 80px;
 
-    .l-header__logo-name {
-      font-size: 32px;
-      font-weight: bold;
-      position: relative;
-      line-height: 1;
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -56px;
-        background-image: url(../assets/images/logo.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 55px;
-        height: 55px;
-        @include mq(sp-tab) {
-          left: -40px;
-          width: 40px;
-          height: 40px;
-        }
-        @include mq(sp) {
-          left: -32px;
-          width: 32px;
-          height: 32px;
-        }
-      }
-      @include mq(sp-tab) {
-        font-size: 23px;
-      }
-    }
+    .l-header__link {
+      display: block;
 
-    .l-header__logo-description {
-      font-size: 12px;
-      @include mq(sp-tab) {
-        font-size: 10px;
-      }
-      @include mq(sp) {
-        font-size: 8px;
+      .l-header-logo {
+        max-width: 100%;
+        height: auto;
       }
     }
   }
@@ -132,6 +91,9 @@
       .l-header__nav-list {
         display: flex;
         padding-top: 18px;
+        &.header-animation {
+          padding: 0;
+        }
         @include mq(sp-tab) {
           flex-direction: column;
           text-align: center;
