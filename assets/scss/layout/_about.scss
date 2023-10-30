@@ -39,7 +39,7 @@
           font-size: 24px;
           letter-spacing: 1.3px;
         }
-        &::after {
+        &.--risk::after {
           content: "RISK";
           color: $white;
           font-size: 20px;
@@ -118,7 +118,7 @@
     }
   }
 
-  .l-about-primary {
+  .l-risk-primary {
     padding: 120px 24px;
     @include mq(sp-ls) {
       padding: 120px 24px;
@@ -127,11 +127,11 @@
       padding: 32px 16px;
     }
 
-    .l-about-primary__contents {
+    .l-risk-primary__contents {
       text-align: center;
       line-height: 180%;
 
-      .l-about-primary__text {
+      .l-risk-primary__text {
         font-size: 24px;
         font-weight: bold;
         color: $black;
@@ -159,7 +159,7 @@
         }
       }
 
-      .l-about-primary__desctiption {
+      .l-risk-primary__desctiption {
         text-align: left;
         margin: 0 auto;
         max-width: 800px;
@@ -169,7 +169,7 @@
         }
       }
 
-      .l-about-primary__img-area {
+      .l-risk-primary__img-area {
         display: flex;
         justify-content: space-between;
         padding-top: 24px;
@@ -180,7 +180,7 @@
           justify-content: center;
         }
 
-        .l-about-primary__img {
+        .l-risk-primary__img {
           max-width: 380px;
           width: 100%;
           height: auto;
@@ -196,7 +196,7 @@
     }
   }
 
-  .l-about-secondary {
+  .l-risk-secondary {
     padding: 120px 24px;
     @include mq(sp-ls) {
       padding: 120px 24px;
@@ -204,10 +204,10 @@
     @include mq(sp) {
       padding: 32px 16px;
     }
-    .l-about-secondary__contents {
+    .l-risk-secondary__contents {
       text-align: center;
 
-      .l-about-secondary__text {
+      .l-risk-secondary__text {
         font-size: 24px;
         font-weight: bold;
         color: $black;
@@ -235,12 +235,12 @@
         }
       }
 
-      .l-about-secondary__desctiption-area {
+      .l-risk-secondary__desctiption-area {
         display: flex;
         justify-content: center;
         padding-top: 32px;
 
-        .l-about-secondary__desctiption {
+        .l-risk-secondary__desctiption {
           text-align: left;
           margin: 0 auto;
           max-width: 800px;
@@ -248,7 +248,7 @@
         }
       }
 
-      .l-about-secondary__img-area {
+      .l-risk-secondary__img-area {
         max-width: 520px;
         display: flex;
         justify-content: center;
@@ -260,7 +260,7 @@
           margin: 24px auto;
         }
 
-        .l-about-secondary__img {
+        .l-risk-secondary__img {
           width: 100%;
           margin: 0 auto;
         }
@@ -268,7 +268,7 @@
     }
   }
 
-  .l-about-tertiary {
+  .l-risk-tertiary {
     padding: 120px 24px;
     @include mq(sp-ls) {
       padding: 120px 24px;
@@ -277,11 +277,11 @@
       padding: 32px 16px;
     }
 
-    .l-about-tertiary__contents {
+    .l-risk-tertiary__contents {
       text-align: center;
       line-height: 180%;
 
-      .l-about-tertiary__text {
+      .l-risk-tertiary__text {
         font-size: 24px;
         font-weight: bold;
         color: $black;
@@ -309,7 +309,7 @@
         }
       }
 
-      .l-about-tertiary__desctiption {
+      .l-risk-tertiary__desctiption {
         text-align: left;
         margin: 0 auto;
         max-width: 800px;
@@ -320,7 +320,7 @@
       }
     }
 
-    .l-about-table {
+    .l-risk-table {
       display: flex;
       justify-content: space-between;
       max-width: 800px;
@@ -330,7 +330,7 @@
         justify-content: center;
       }
 
-      .l-about-table__left {
+      .l-risk-table__left {
         flex: 5;
         max-width: 400px;
         width: 100%;
@@ -339,15 +339,15 @@
           margin: 0 auto;
         }
 
-        .l-about-table__ttl {
+        .l-risk-table__ttl {
           text-align: center;
           font-weight: bold;
           padding: 11px 0;
           background-color: #dbede3;
           margin: 0 4px;
         }
-        .l-about-table__list {
-          .l-about-table__item {
+        .l-risk-table__list {
+          .l-risk-table__item {
             padding: 8px 0;
             margin: 0 4px;
             background-color: $bg-color;
@@ -366,7 +366,7 @@
           }
         }
       }
-      .l-about-table__right {
+      .l-risk-table__right {
         flex: 5;
         max-width: 400px;
         width: 100%;
@@ -375,15 +375,15 @@
           margin: 0 auto;
         }
 
-        .l-about-table__ttl {
+        .l-risk-table__ttl {
           text-align: center;
           font-weight: bold;
           padding: 11px 0;
           background-color: #dbede3;
           margin: 0 4px;
         }
-        .l-about-table__list {
-          .l-about-table__item {
+        .l-risk-table__list {
+          .l-risk-table__item {
             padding: 8px 0;
             margin: 0 4px;
             background-color: $bg-color;

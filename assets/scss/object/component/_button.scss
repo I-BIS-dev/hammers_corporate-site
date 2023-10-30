@@ -108,4 +108,12 @@
       background-image: url(../assets/images/arrow-ctasub.svg);
     }
   }
+  &.--excle {
+    background-color: $main-color;
+    color: $white;
+    // border: 3px solid $sub-color;
+    &::after {
+      background-image: url(../assets/images/arrow-ctabtn.svg);
+    }
+  }
 }
