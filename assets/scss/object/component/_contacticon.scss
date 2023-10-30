@@ -1,10 +1,10 @@
-.c-phone-btn {
+.c-contact-btn {
   position: fixed;
-  top: 96px;
+  top: 47px;
   right: 0;
   width: 49px;
   height: 49px;
-  background-color: #18ab5d;
+  background-color: $main-color;
   cursor: pointer;
   display: none;
   &:hover {
@@ -14,24 +14,25 @@
   @include mq(sp-tab) {
     display: block;
     &::after {
-      content: "TEL";
+      content: "お問い合わせ";
       position: absolute;
-      width: 20px;
+      width: 48px;
       height: 20px;
       bottom: -5px;
       left: 54%;
       transform: translateX(-50%);
       font-size: 7px;
       font-weight: bold;
-      letter-spacing: 2px;
-      color: $white;
+      letter-spacing: 0.5px;
+      color: #fff;
     }
   }
 
   .c-phone-link {
     display: block;
     .c-phone-icon {
-      margin: 13px auto 20px;
+      margin: 12px auto 20px;
+      width: 20px;
     }
   }
 }

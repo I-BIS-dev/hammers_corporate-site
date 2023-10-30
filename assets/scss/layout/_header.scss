@@ -36,6 +36,15 @@
   .l-header__logo-area {
     width: 176px;
     margin-left: 80px;
+    @include mq(sp-tab) {
+      margin-left: 24px;
+    }
+    @include mq(sp) {
+      margin-left: 16px;
+      &.header-animation {
+        opacity: 0;
+      }
+    }
 
     .l-header__link {
       display: block;

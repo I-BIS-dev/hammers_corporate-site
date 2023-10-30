@@ -18,8 +18,8 @@
 .l-header__hamburger {
   width: 48px;
   display: none;
-  background-color: $main-color;
   border-color: transparent;
+  background-color: transparent;
   z-index: 9999;
   padding: 13px 6px;
   position: fixed;
@@ -31,8 +31,8 @@
 
   .l-header__hamburger--border {
     width: 100%;
-    height: 1px;
-    background-color: #fff;
+    height: 2px;
+    background-color: $main-color;
     position: relative;
     transition: ease 0.4s;
     display: block;
@@ -42,7 +42,7 @@
     }
 
     &:nth-child(2) {
-      margin: 8px 0;
+      margin: 5px 0;
     }
 
     &:nth-child(3) {
