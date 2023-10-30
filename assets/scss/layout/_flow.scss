@@ -11,8 +11,11 @@
 
   .l-step1 {
     max-width: 840px;
-    padding: 120px 20px;
+    padding: 120px 20px 0;
     margin: 0 auto;
+    @include mq(sp) {
+      padding: 80px 16px 0;
+    }
 
     .l-step1__headline-area {
       padding-bottom: 24px;
@@ -74,6 +77,7 @@
 
     .l-step1__text-area {
       text-align: justify;
+      padding-bottom: 40px;
       .l-step1__text {
         line-height: 180%;
       }
@@ -82,6 +86,7 @@
     .l-step1__excel {
       padding: 24px;
       border-radius: 12px;
+      margin-top: 40px;
       border: 3px solid $main-color;
       @include mq(sp) {
         padding: 0;
@@ -93,6 +98,10 @@
         padding-bottom: 24px;
         font-size: 20px;
         font-weight: bold;
+        @include mq(sp) {
+          padding: 16px 0;
+          font-size: 18px;
+        }
       }
 
       .l-step1__info-area {
@@ -121,6 +130,7 @@
         .l-step1__excel-area {
           flex: 5;
           max-width: 278px;
+          margin-top: 40px;
           @include mq(sp-ls) {
             padding-bottom: 24px;
           }
@@ -145,8 +155,11 @@
   }
   .l-step2 {
     max-width: 840px;
-    padding: 120px 20px;
+    padding: 120px 20px 0;
     margin: 0 auto;
+    @include mq(sp) {
+      padding: 80px 16px 0;
+    }
 
     .l-step2__headline-area {
       padding-bottom: 24px;
@@ -208,6 +221,7 @@
 
     .l-step2__text-area {
       text-align: justify;
+
       .l-step2__text {
         line-height: 180%;
 
@@ -236,54 +250,104 @@
         padding-bottom: 24px;
         font-size: 20px;
         font-weight: bold;
+        @include mq(sp) {
+          padding: 16px 0;
+          font-size: 18px;
+        }
       }
 
-      .l-step2__info-area {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        @include mq(sp-ls) {
-          flex-direction: column-reverse;
-        }
-        .l-step2__info {
-          flex: 5;
-          padding: 0 64px;
-          @include mq(sp-ls) {
-            padding: 0;
-          }
+      .l-step2__text {
+        padding: 16px 0;
+      }
 
-          .l-step2__text {
-            line-height: 180%;
-            padding-bottom: 24px;
-          }
-          .l-step2__btn-area {
+      .l-step2__caution-top {
+        // display: flex;
+        // align-items: center;
+        .l-step2__sample-topleft {
+          // display: flex;
+
+          .l-step2__img-left {
             display: flex;
-            justify-content: center;
-          }
-        }
-        .l-step2__excel-area {
-          flex: 5;
-          max-width: 278px;
-          @include mq(sp-ls) {
-            padding-bottom: 24px;
-          }
-          @include mq(sp-ls) {
-            padding-bottom: 16px;
-          }
-          .l-step2__img {
-            max-width: 278px;
-            width: 100%;
-          }
-          .l-step2__dl-area {
-            text-align: center;
-            padding: 2px;
-            .l-step2__example {
-              color: $main-color;
-              font-size: 14px;
+            .l-step2__img-area {
+              max-width: 196px;
+
+              .l-step2__img {
+                min-height: 148px;
+                width: 100%;
+              }
             }
           }
+
+          .l-step2__caution-text {
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+          }
+        }
+        .l-step2__img-topright {
+          .l-step2__img-area {
+            max-width: 196px;
+
+            .l-step2__img {
+              min-height: 148px;
+              width: 100%;
+            }
+          }
+
+          .l-step2__caution-text {
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+          }
         }
       }
+
+      // .l-step2__info-area {
+      //   display: flex;
+      //   justify-content: space-between;
+      //   align-items: center;
+      //   @include mq(sp-ls) {
+      //     flex-direction: column-reverse;
+      //   }
+      //   .l-step2__info {
+      //     flex: 5;
+      //     padding: 0 64px;
+      //     @include mq(sp-ls) {
+      //       padding: 0;
+      //     }
+
+      //     .l-step2__text {
+      //       line-height: 180%;
+      //       padding-bottom: 24px;
+      //     }
+      //     .l-step2__btn-area {
+      //       display: flex;
+      //       justify-content: center;
+      //     }
+      //   }
+      //   .l-step2__excel-area {
+      //     flex: 5;
+      //     max-width: 278px;
+      //     @include mq(sp-ls) {
+      //       padding-bottom: 24px;
+      //     }
+      //     @include mq(sp-ls) {
+      //       padding-bottom: 16px;
+      //     }
+      //     .l-step2__img {
+      //       max-width: 278px;
+      //       width: 100%;
+      //     }
+      //     .l-step2__dl-area {
+      //       text-align: center;
+      //       padding: 2px;
+      //       .l-step2__example {
+      //         color: $main-color;
+      //         font-size: 14px;
+      //       }
+      //     }
+      //   }
+      // }
     }
   }
 }
