@@ -39,8 +39,6 @@ $(document).ready(function () {
     }
   });
 
-
-
   $(".l-faq__list dd").hide();
   $('.l-faq__list dt').click(function () {
     $(this).next('.l-faq__list dd').slideToggle('fast');
@@ -69,4 +67,27 @@ $(document).ready(function () {
       }
     });
   });
+
+  // モーダル修正時使用予定
+  // $(".l-step1__dl-area .l-step1__example").click(function () {
+  //   $("#graydisplay").html($(this).prop('outerHTML'));
+  //   $("#graydisplay").fadeIn(200);
+  // });
+  // $("#graydisplay, #graydisplay img").click(function () {
+  //   $("#graydisplay").fadeOut(200);
+  // });
+
+  // $(".l-step1__dl-area .l-step1__example").click(function () {
+  //   var imgSrc = $(this).closest(".l-step1__img-area").find(".l-step1__img").attr("src");
+  //   $("#graydisplay img").attr("src", imgSrc);
+  // });
+
+  // $(".l-step1__dl-area .l-step1__example").click(function () {
+  //   var imgSrc = $(this).data("img-src");
+  //   console.log(imgSrc);
+  //   $("#graydisplay img").attr("src", imgSrc);
+  // });
+
+
+
 });

@@ -109,14 +109,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 64px;
+        padding: 0 40px;
         @include mq(sp-ls) {
           flex-direction: column-reverse;
+          gap: 32px;
         }
         .l-step1__info {
           flex: 5;
-          padding: 0 64px;
           @include mq(sp-ls) {
-            padding: 0;
+            padding: 24px;
           }
 
           .l-step1__text {
@@ -131,16 +133,18 @@
         .l-step1__excel-area {
           flex: 5;
           max-width: 278px;
-          margin-top: 40px;
-          @include mq(sp-ls) {
-            padding-bottom: 24px;
-          }
-          @include mq(sp-ls) {
+          @include mq(sp) {
             padding-bottom: 16px;
           }
-          .l-step1__img {
+          .l-step1__img-area {
             max-width: 278px;
             width: 100%;
+            @include mq(sp-ls) {
+              padding-top: 24px;
+            }
+            .l-step1__img {
+              min-width: 278px;
+            }
           }
           .l-step1__dl-area {
             text-align: center;
