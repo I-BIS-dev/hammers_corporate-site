@@ -62,40 +62,65 @@
     </div>
   </header>
 
-  <main>
-    <div class="main-test a--fadein-first">
-      <form action="/contact/confirm.php" method="post">
-        会社名<span>必須</span><br>
-        <input placeholder="株式会社〇〇" type="text" name="company" size="50" value="" required><br>
+  <main class="main">
+    <section class="l-sub-mv">
+      <div class="l-sub-mv__area">
+        <h1 class="l-sub-mv__hero --privacy">お問い合わせ</h1>
+      </div>
+      <div class="l-sub-mv__label-area">
+        <p class="l-sub-mv__label">
+          <a href="#" class="l-sub-mv__label--top">TOP</a>
+          <span class="l-sub-mv__label--arrow"></span>
+          <a href="" class="l-sub-mv__label--current">お問い合わせ</a>
+        </p>
+      </div>
+    </section>
 
-        担当者名<span>必須</span><br>
-        <input placeholder="△△ △△" type="text" name="name" size="50" value="" required><br>
+    <div class="c-analysis__contents a--fadein-first">
+      <div class="c-analysis__top-text">
+        <p class="c-analysis__description">弊社ならびにサービスに関するご質問や相談は、お電話またはこちらのフォームからお送りください。<br>数日以内にご希望の連絡方法にて返信いたします。<br>なお、添付ファイルがある場合は、<span class="c-font-bold">info-b@bestar7.jp</span>宛にメールで送信ください。
+        </p>
+      </div>
+      <div class="main-test c-analysis__form ">
+        <form action="/contact/confirm.php" method="post">
+          <div class="c-analysis__head">
+            <p>会社名</p>
 
-        電話番号<span>必須</span><br>
-        <input placeholder="090-1234-5678" type="text" name="tel" size="50" value="" required><br>
+            <span>必須</span>
+          </div>
+          <div class="c-analysis__data">
+            <input placeholder="株式会社〇〇" type="text" name="company" size="50" value="" required><br>
+          </div>
 
-        メールアドレス<span>必須</span><br>
-        <input placeholder="abcde@fghij.com" type="text" name="mail" size="50" value="" required><br>
+          担当者名<span>必須</span><br>
+          <input placeholder="△△ △△" type="text" name="name" size="50" value="" required><br>
 
-        連絡方法<br>
-        <div>
-          <input type="radio" name="contact" value="メール" checked>メール
-          <input type="radio" name="contact" value="電話">電話
-        </div>
+          電話番号<span>必須</span><br>
+          <input placeholder="090-1234-5678" type="text" name="tel" size="50" value="" required><br>
 
-        問い合わせ項目<br>
-        <div>
-          <input type="radio" name="item" value="分析依頼の相談" checked>分析依頼の相談
-          <input type="radio" name="item" value="弊社へのご意見・質問">弊社へのご意見・質問
-        </div>
+          メールアドレス<span>必須</span><br>
+          <input placeholder="abcde@fghij.com" type="text" name="mail" size="50" value="" required><br>
 
-        問い合わせ内容<br>
-        <textarea placeholder="内容を入力してください" name="inquiry" cols="50" rows="5" required></textarea><br>
+          連絡方法<br>
+          <div>
+            <input type="radio" name="contact" value="メール" checked>メール
+            <input type="radio" name="contact" value="電話">電話
+          </div>
 
-        <br>
+          問い合わせ項目<br>
+          <div>
+            <input type="radio" name="item" value="分析依頼の相談" checked>分析依頼の相談
+            <input type="radio" name="item" value="弊社へのご意見・質問">弊社へのご意見・質問
+          </div>
 
-        <input type="submit" value="送信" />
-      </form>
+          問い合わせ内容<br>
+          <textarea placeholder="内容を入力してください" name="inquiry" cols="50" rows="5" required></textarea><br>
+
+          <br>
+
+          <input type="submit" value="送信" />
+        </form>
+      </div>
     </div>
   </main>
 
