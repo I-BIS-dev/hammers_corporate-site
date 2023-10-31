@@ -1,7 +1,6 @@
 .c-analysis {
-
   .c-analysis__fv {
-    background: #F5F5F5;
+    background: #f5f5f5;
 
     height: 260px;
     margin-top: 126px;
@@ -71,8 +70,7 @@
         align-items: center;
         // padding-top: 12px;
 
-        &>p {
-
+        & > p {
           min-width: 280px;
           justify-content: space-between;
           display: flex;
@@ -109,7 +107,7 @@
             align-items: center;
           }
 
-          >p {
+          > p {
             min-width: auto;
 
             @include mq(sp-ls) {
@@ -118,19 +116,19 @@
           }
         }
 
-        &--check {
-          // padding-top: 0;
-        }
+        // &--check {
+        //   // padding-top: 0;
+        // }
 
-        &--date {
-          // padding-top: 5px;
-        }
+        // &--date {
+        //   // padding-top: 5px;
+        // }
 
         &--file {
           align-items: flex-start;
         }
 
-        .c-analysis__plan-required>p {
+        .c-analysis__plan-required > p {
           display: flex;
           flex-direction: column;
           font-size: 14px;
@@ -139,7 +137,7 @@
             margin-left: 20px;
           }
 
-          >span {
+          > span {
             background: $sub-color;
             padding: 2px 16px;
             color: #fff;
@@ -168,20 +166,20 @@
           margin-top: 4px;
         }
 
-        &--plan {
-          // padding-top: 4px;
-        }
+        // &--plan {
+        //   // padding-top: 4px;
+        // }
 
-        &--plan>p>.wpcf7-form-control-wrap>.wpcf7-form-control {
+        &--plan > p > .wpcf7-form-control-wrap > .wpcf7-form-control {
           display: block;
 
-          >.wpcf7-list-item.last {
+          > .wpcf7-list-item.last {
             display: block;
             margin-top: 10px;
           }
         }
 
-        >p {
+        > p {
           width: 100%;
         }
 
@@ -195,7 +193,6 @@
             align-items: flex-start;
           }
 
-
           .wpcf7-radio {
             display: flex;
             column-gap: 20px;
@@ -204,8 +201,6 @@
           .wpcf7-list-item {
             margin-left: 0;
           }
-
-
 
           .spls-show {
             display: none;
@@ -227,7 +222,7 @@
               }
 
               &:before {
-                content: '';
+                content: "";
                 position: absolute;
                 top: calc(50% + 1px);
                 left: 0;
@@ -240,7 +235,7 @@
               }
 
               &:after {
-                content: '';
+                content: "";
                 position: absolute;
                 top: calc(50% + 1px);
                 left: 3px;
@@ -253,20 +248,19 @@
               }
             }
 
-            input[type=radio]:checked+span:after {
+            input[type="radio"]:checked + span:after {
               display: block;
             }
           }
 
-          input[type=radio] {
+          input[type="radio"] {
             display: none;
           }
-
         }
 
-        input[type=text],
-        input[type=tel],
-        input[type=email] {
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
           height: auto;
           width: 100%;
           border: none;
@@ -287,8 +281,7 @@
           cursor: pointer;
         }
 
-
-        input[type=date] {
+        input[type="date"] {
           background: $bg-color;
           padding: 6px 10px;
 
@@ -345,7 +338,6 @@
         p {
           display: flex;
 
-
           @include mq(sp-ls) {
             width: 100%;
             flex-direction: column;
@@ -375,8 +367,6 @@
             }
           }
         }
-
-
       }
 
       .c-analysis__analysis {
@@ -408,7 +398,7 @@
           background: url(../assets/images/arrow-ctabtn.svg);
           background-size: contain;
           background-repeat: no-repeat;
-          content: '';
+          content: "";
           height: 10px;
           position: absolute;
           width: 14px;
@@ -419,8 +409,8 @@
         }
       }
 
-      input[type=submit],
-      input[type=button] {
+      input[type="submit"],
+      input[type="button"] {
         border: none;
         background-color: $sub-color;
         font-weight: 700;
@@ -433,8 +423,6 @@
         border-radius: 80px;
         position: relative;
 
-
-
         &:hover {
           @include hover-effect;
         }
@@ -443,7 +431,6 @@
       .wpcf7-spinner {
         display: none;
       }
-
     }
 
     .wpcf7-response-output {
@@ -452,8 +439,8 @@
       color: #dc3232;
     }
 
-    .wpcf7-not-valid-tip {
-      // color: #dc3232;
-    }
+    // .wpcf7-not-valid-tip {
+    //   // color: #dc3232;
+    // }
   }
 }

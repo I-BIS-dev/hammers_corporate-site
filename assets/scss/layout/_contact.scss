@@ -18,6 +18,7 @@
       }
     }
   }
+
   .c-analysis__contents {
     margin: 128px auto;
     max-width: 1020px;
@@ -118,13 +119,13 @@
           }
         }
 
-        &--check {
-          // padding-top: 0;
-        }
+        // &--check {
+        //   // padding-top: 0;
+        // }
 
-        &--date {
-          // padding-top: 5px;
-        }
+        // &--date {
+        //   // padding-top: 5px;
+        // }
 
         &--file {
           align-items: flex-start;
@@ -168,9 +169,9 @@
           margin-top: 4px;
         }
 
-        &--plan {
-          // padding-top: 4px;
-        }
+        // &--plan {
+        //   // padding-top: 4px;
+        // }
 
         &--plan > p > .wpcf7-form-control-wrap > .wpcf7-form-control {
           display: block;
@@ -441,8 +442,8 @@
       color: #dc3232;
     }
 
-    .wpcf7-not-valid-tip {
-      // color: #dc3232;
-    }
+    // .wpcf7-not-valid-tip {
+    //   // color: #dc3232;
+    // }
   }
 }
