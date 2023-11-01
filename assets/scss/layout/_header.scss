@@ -37,8 +37,10 @@
   }
 
   .l-header__logo-area {
-    width: 229px;
     margin-left: 80px;
+    &.header-animation {
+      width: 176px;
+    }
     @include mq(sp-tab) {
       width: 176px;
       margin-left: 24px;
@@ -146,7 +148,8 @@
             &:first-child {
               display: block;
             }
-            &:last-child {
+
+            &.--none {
               display: none;
             }
             &:nth-child(8) {

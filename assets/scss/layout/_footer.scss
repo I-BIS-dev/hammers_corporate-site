@@ -9,81 +9,112 @@
     justify-content: space-between;
     color: $white;
     padding: 56px 80px 0;
+    @include mq(sp-tab) {
+      padding: 56px 40px 0;
+      flex-direction: column;
+      justify-content: center;
+    }
     @include mq(sp-ls) {
-      padding: 8px 0 0px 16px;
+      padding: 8px 0 24px;
     }
     @include mq(sp) {
       padding: 4px 0 0 0;
     }
 
-    .l-footer__logo {
+    .l-footer__logo-area {
       width: 100%;
-      .l-footer__logoarea {
-        display: flex;
-        align-items: center;
+      max-width: 390px;
+      @include mq(sp-tab) {
+        margin: 0 auto;
+      }
 
-        .l-footer__logo-right {
-          .l-footer__logo-name {
-            font-size: 32px;
-            font-weight: 900;
-            line-height: 1;
-            @include mq(sp) {
-              font-size: 23px;
-            }
+      .l-footer__logo {
+        @include mq(sp-ls) {
+          padding-top: 34px;
+        }
+        .l-footer__logo-img {
+          max-width: 230px;
+          height: auto;
+          width: 100%;
+          @include mq(sp-tab) {
+            margin: 0 auto;
           }
-
-          .l-footer__logo-description {
-            font-size: 12px;
-            font-weight: bold;
-            @include mq(sp) {
-              font-size: 10px;
-            }
+          @include mq(sp) {
+            max-width: 196px;
           }
         }
       }
+
       .l-footer__logo-company {
         padding-top: 24px;
-        font-size: 13px;
+        font-size: 14px;
+        font-weight: bold;
+        @include mq(sp-tab) {
+          text-align: center;
+        }
+
         @include mq(sp) {
           padding-top: 16px;
-          font-size: 10px;
+          font-size: 12px;
         }
       }
       .l-footer__logo-address {
-        font-size: 13px;
+        font-size: 14px;
         padding-bottom: 32px;
-        min-width: 400px;
+        width: 390px;
+        font-weight: bold;
+        @include mq(sp-tab) {
+          text-align: center;
+        }
         @include mq(sp) {
-          font-size: 10px;
-          padding-bottom: 16px;
-          min-width: 0;
+          font-size: 12px;
+          padding-bottom: 24px;
         }
       }
     }
     .l-footer__nav-list {
-      columns: 3;
+      columns: 12em 3;
       column-gap: 0;
-      @include mq(pcsm) {
-        display: none;
+      @include mq(sp-ls) {
+        columns: 2;
       }
       @include mq(sp-tab) {
-        display: none;
+        padding-bottom: 34px;
       }
 
       .l-footer__nav-item {
         text-align: center;
-        min-width: 200px;
         border-right: 1px solid #229f5d;
+        padding-left: 40px;
+        @include mq(sp) {
+          &:nth-child(6) {
+            padding-left: 20px;
+          }
+          &:nth-child(7) {
+            padding-left: 20px;
+          }
+          &:nth-child(8) {
+            padding-left: 20px;
+          }
+          &:nth-child(9) {
+            padding-left: 20px;
+          }
+          &:nth-child(10) {
+            padding-left: 20px;
+          }
+        }
 
         .l-footer__nav-link {
           display: block;
-          font-size: 13px;
+          font-size: 14px;
           color: $white;
-          text-align: center;
+          text-align: left;
           padding-top: 8px;
-
           &:hover {
             @include hover-effect;
+          }
+          @include mq(sp) {
+            font-size: 12px;
           }
         }
       }
