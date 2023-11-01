@@ -95,17 +95,19 @@
 
       @include mq(sp-tab) {
         position: absolute;
+        z-index: 1;
         top: 0;
         left: 0;
         right: 0;
         height: 100vh;
-        background-color: rgba(0, 131, 62, 0.9);
+        background-color: rgb(0, 131, 62);
         transition: all 0.9s;
         display: none;
       }
 
       &.--open {
         display: block;
+        z-index: 1;
       }
 
       .l-header__nav-list {
@@ -128,15 +130,44 @@
           &:first-child {
             display: none;
           }
+          &:nth-child(8) {
+            display: none;
+          }
+          &:nth-child(9) {
+            display: none;
+          }
           @include mq(sp-tab) {
             margin: 0;
-            padding: 24px;
+            padding: 18px;
             width: 90%;
             border-bottom: 1px solid #229f5d;
             text-align: left;
             font-size: 16px;
             &:first-child {
               display: block;
+            }
+            &:last-child {
+              display: none;
+            }
+            &:nth-child(8) {
+              display: block;
+              border: none;
+              display: flex;
+              justify-content: center;
+              padding-top: 56px;
+              &::after {
+                display: none;
+              }
+            }
+            &:nth-child(9) {
+              display: block;
+              border: none;
+              display: flex;
+              justify-content: center;
+              padding-top: 0;
+              &::after {
+                display: none;
+              }
             }
 
             &::after {
@@ -212,33 +243,33 @@
         }
       }
     }
-  }
 
-  .l-header__nav-contact {
-    background-color: $main-color;
-    padding: 27px 28px;
-    margin-left: 24px;
-    transition: padding 0.3s ease;
-    &.header-animation {
-      padding: 12px 16px;
-    }
+    .l-header__nav-contact {
+      background-color: $main-color;
+      padding: 27px 28px;
+      margin-left: 24px;
+      transition: padding 0.3s ease;
+      &.header-animation {
+        padding: 12px 16px;
+      }
 
-    &:hover {
-      @include hover-effect;
-    }
-    @include mq(sp-tab) {
-      display: none;
-    }
-    .l-header__navicon {
-      margin: 0 auto;
-      padding-bottom: 8px;
-    }
+      &:hover {
+        @include hover-effect;
+      }
+      @include mq(sp-tab) {
+        display: none;
+      }
+      .l-header__navicon {
+        margin: 0 auto;
+        padding-bottom: 8px;
+      }
 
-    .l-header__btn {
-      display: block;
-      color: $white;
-      font-size: 14px;
-      font-weight: bold;
+      .l-header__btn {
+        display: block;
+        color: $white;
+        font-size: 14px;
+        font-weight: bold;
+      }
     }
   }
 }
