@@ -1,9 +1,9 @@
 .c-phone-btn {
   position: fixed;
-  top: 96px;
+  top: 120px;
   right: 0;
-  width: 49px;
-  height: 49px;
+  width: 60px;
+  height: 60px;
   background-color: #18ab5d;
   cursor: pointer;
   display: none;
@@ -16,12 +16,12 @@
     &::after {
       content: "TEL";
       position: absolute;
-      width: 20px;
+      width: 24px;
       height: 20px;
       bottom: -5px;
       left: 54%;
       transform: translateX(-50%);
-      font-size: 7px;
+      font-size: 9px;
       font-weight: bold;
       letter-spacing: 2px;
       color: $white;
@@ -32,6 +32,7 @@
     display: block;
     .c-phone-icon {
       margin: 13px auto 20px;
+      width: 24px;
     }
   }
 }

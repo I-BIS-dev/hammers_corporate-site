@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // ハンバーガーボタン
   const ham = $('#js-hamburger');
   const nav = $('#js-nav');
   ham.on('click', function () {
@@ -6,6 +7,7 @@ $(document).ready(function () {
     nav.toggleClass('--open');
   });
 
+  // カレント表示
   const headerNavLink = document.querySelectorAll('.l-header__nav-link');
 
   headerNavLink.forEach((targetLink) => {
@@ -14,6 +16,7 @@ $(document).ready(function () {
     }
   });
 
+  // スクロール時ヘッダーアニメーション
   var $win = $(window),
     $header = $('header'),
     $contact = $('header .l-header__nav-contact'),
