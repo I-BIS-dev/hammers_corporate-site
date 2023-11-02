@@ -5,7 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex" />
-  <title>株式会社ハマーズ</title>
+  <title>分析依頼 | ベスター アスベスト分析・調査の専門家</title>
+  <meta name="description" content="分析依頼のページです。早い・簡単・便利なアスベスト分析ならベスターにお任せください！">
+  <meta property="og:title" content="分析依頼 | ベスター アスベスト分析・調査の専門家">
+  <meta property="og:description" content="分析依頼のページです。早い・簡単・便利なアスベスト分析ならベスターにお任せください！">
+  <meta property="og:url" content="https://bestar7.jp/request/">
+  <meta property="og:image" content="https://bestar7.jp/assets/images/ogp-img.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ベスター アスベスト分析・調査の専門家">
 
   <?php wp_head(); ?>
 </head>

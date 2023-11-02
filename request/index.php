@@ -4,8 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>株式会社ハマーズ</title>
+  <title>分析依頼 | ベスター アスベスト分析・調査の専門家</title>
+  <meta name="description" content="分析依頼のページです。早い・簡単・便利なアスベスト分析ならベスターにお任せください！">
+  <meta property="og:title" content="分析依頼 | ベスター アスベスト分析・調査の専門家">
+  <meta property="og:description" content="分析依頼のページです。早い・簡単・便利なアスベスト分析ならベスターにお任せください！">
+  <meta property="og:url" content="https://bestar7.jp/request/">
+  <meta property="og:image" content="https://bestar7.jp/assets/images/ogp-img.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ベスター アスベスト分析・調査の専門家">
 
   <?php wp_head(); ?>
 
@@ -65,8 +71,7 @@
         <div class="c-analysis__top-text">
           <p class="c-analysis__description">アスベストの分析依頼はこちらのフォームからお間違いないようご入力ください。<br>正常に受付が受理されますと、数日以内にメールを差し上げます。
           </p>
-          <p class="c-analysis__caution">※11件以上の同時検体をご希望の場合は、事前にお電話または<a href=""
-              class="c-analysis__top-link">お問い合わせフォーム</a>からご相談ください。</p>
+          <p class="c-analysis__caution">※11件以上の同時検体をご希望の場合は、事前にお電話または<a href="" class="c-analysis__top-link">お問い合わせフォーム</a>からご相談ください。</p>
         </div>
         <div class="c-analysis__form">
           <?php echo do_shortcode('[contact-form-7 id="e7bd033" title="Contact form 1"]') ?>
