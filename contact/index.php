@@ -66,12 +66,12 @@
       <img class="c-phone-icon" src="/assets/images/phone-icon.svg" alt="電話のアイコン">
     </a>
   </div>
-  <div class="c-contact">
+  <!-- <div class="c-contact">
     <a href="../request/">
       <img class="c-contact__img" src="/assets/images/arrow-header.svg" width="15" height="15" alt="問い合わせフォームリンク">
       <p class="c-contact__text">分析依頼はこちら</p>
     </a>
-  </div>
+  </div> -->
 
   <main class="main">
     <section class="l-sub-mv">
@@ -92,46 +92,89 @@
         <p class="c-analysis__description">弊社ならびにサービスに関するご質問や相談は、お電話またはこちらのフォームからお送りください。<br>数日以内にご希望の連絡方法にて返信いたします。<br>なお、添付ファイルがある場合は、<span class="c-font-bold">info-b@bestar7.jp</span>宛にメールで送信ください。
         </p>
       </div>
-      <div class="main-test c-analysis__form ">
-        <form action="/contact/confirm.php" method="post">
+      <form class="c-analysis__form" action="/contact/confirm.php" method="post">
+        <div class="c-analysis__row --company">
           <div class="c-analysis__head">
-            <p>会社名</p>
-
-            <span>必須</span>
+            <p>
+              会社名<span>必須</span>
+            </p>
           </div>
           <div class="c-analysis__data">
             <input placeholder="株式会社〇〇" type="text" name="company" size="50" value="" required><br>
           </div>
-
-          担当者名<span>必須</span><br>
-          <input placeholder="△△ △△" type="text" name="name" size="50" value="" required><br>
-
-          電話番号<span>必須</span><br>
-          <input placeholder="090-1234-5678" type="text" name="tel" size="50" value="" required><br>
-
-          メールアドレス<span>必須</span><br>
-          <input placeholder="abcde@fghij.com" type="text" name="mail" size="50" value="" required><br>
-
-          連絡方法<br>
-          <div>
-            <input type="radio" name="contact" value="メール" checked>メール
-            <input type="radio" name="contact" value="電話">電話
+        </div>
+        <div class="c-analysis__row">
+          <div class="c-analysis__head">
+            <p>
+              担当者名<span>必須</span>
+            </p>
           </div>
-
-          問い合わせ項目<br>
-          <div>
-            <input type="radio" name="item" value="分析依頼の相談" checked>分析依頼の相談
-            <input type="radio" name="item" value="弊社へのご意見・質問">弊社へのご意見・質問
+          <div class="c-analysis__data">
+            <input placeholder="△△ △△" type="text" name="name" size="50" value="" required><br>
           </div>
+        </div>
+        <div class="c-analysis__row">
+          <div class="c-analysis__head">
+            <p>
+              電話番号<span>必須</span>
+            </p>
+          </div>
+          <div class="c-analysis__data">
+            <input placeholder="090-1234-5678" type="text" name="tel" size="50" value="" required><br>
+          </div>
+        </div>
+        <div class="c-analysis__row">
+          <div class="c-analysis__head">
+            <p>
+              メールアドレス<span>必須</span>
+            </p>
+          </div>
+          <div class="c-analysis__data">
+            <input placeholder="abcde@fghij.com" type="text" name="mail" size="50" value="" required><br>
+          </div>
+        </div>
+        <div class="c-analysis__row">
+          <div class="c-analysis__head c-analysis__head--check">
+            <p>連絡方法</p>
+          </div>
+          <div class="c-analysis__data checkbox-wrap">
+            <label for="mail">
+              <input type="radio" id="mail" name="contact" value="メール" checked><span>メール</span>
+            </label>
+            <label for="tel">
+              <input type="radio" id="tel" name="contact" value="電話"><span>電話</span>
+            </label>
+          </div>
+        </div>
+        <div class="c-analysis__row">
+          <div class="c-analysis__head c-analysis__head--check">
+            <p>問い合わせ項目</p>
+          </div>
+          <div class="c-analysis__data checkbox-wrap">
+            <label for="analysis">
+              <input type="radio" id="analysis" name="item" value="分析依頼の相談" checked><span>分析依頼の相談</span>
+            </label>
+            <label for="faq">
+              <input type="radio" id="faq" name="item" value="弊社へのご意見・質問"><span>弊社へのご意見・質問</span>
+            </label>
+          </div>
+        </div>
+        <div class="c-analysis__row">
+          <div class="c-analysis__head">
+            <p>
+              問い合わせ内容
+            </p>
+          </div>
+          <div class="c-analysis__data">
+            <textarea placeholder="内容を入力してください" name="inquiry" cols="50" rows="5" required></textarea>
+          </div>
+        </div>
+        <div class="c-analysis__row"></div>
 
-          問い合わせ内容<br>
-          <textarea placeholder="内容を入力してください" name="inquiry" cols="50" rows="5" required></textarea><br>
-
-          <br>
-
+        <div class="c-analysis__submit-wrap">
           <input type="submit" value="送信" />
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   </main>
 

@@ -48,12 +48,12 @@
       <span class="l-header__hamburger--border"></span>
       <span class="l-header__hamburger--border"></span>
     </button>
-    <div class="c-contact">
+    <!-- <div class="c-contact">
       <a href="#">
         <img class="c-contact__img" src="/assets/images/arrow-header.svg" width="15" height="15" alt="問い合わせフォームリンク">
         <p class="c-contact__text">分析依頼はこちら</p>
       </a>
-    </div>
+    </div> -->
   </header>
 
   <main>
@@ -99,6 +99,7 @@
         </table>
 
         <input type="submit" value="送信" />
+        <button type="button" onclick="history.back(-1)">戻る</button>
       </form>
     </div>
   </main>
