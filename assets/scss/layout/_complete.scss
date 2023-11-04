@@ -1,0 +1,133 @@
+.main {
+  .l-sub-mv {
+    .l-sub-mv__area {
+      .l-sub-mv__hero {
+        @include mq(sp-ls) {
+          width: 90%;
+          text-align: center;
+        }
+        @include mq(sp) {
+          width: 90%;
+          text-align: center;
+        }
+        &.--contact {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .l-confirm-area {
+    padding: 64px;
+    max-width: 960px;
+    margin: 0 auto;
+    @include mq(sp-tab) {
+      padding: 40px;
+    }
+    @include mq(sp) {
+      padding: 40px 20px;
+    }
+
+    .l-stepbar {
+      display: flex;
+      max-width: 400px;
+      position: relative;
+      margin: 48px auto;
+      text-align: center;
+      @include mq(sp) {
+        margin: 32px auto;
+      }
+
+      .l-stepbar__list {
+        font-size: 12px;
+        list-style: none;
+        position: relative;
+        width: 33.333%;
+
+        &:after {
+          background: #91cfae;
+          content: "";
+          width: calc(100% - 24px);
+          height: 4px;
+          position: absolute;
+          left: calc(-50% + 12px);
+          top: 10px;
+          @include mq(sp) {
+            width: calc(100% - 18px);
+            height: 2px;
+            left: calc(-50% + 10px);
+            top: 9px;
+          }
+        }
+
+        &:first-child:after {
+          display: none;
+        }
+
+        .l-stepbar__number {
+          background: #91cfae;
+          color: #ffffff;
+          display: inline-block;
+          height: 24px;
+          margin-bottom: 5px;
+          line-height: 22px;
+          width: 24px;
+          border-radius: 50%;
+          @include mq(sp) {
+            height: 20px;
+            line-height: 18px;
+            width: 20px;
+          }
+        }
+      }
+
+      .--visited {
+        &:after,
+        .l-stepbar__number {
+          background: $accent-color;
+        }
+      }
+    }
+
+    .l-complete__msg-area {
+      margin: 80px auto 260px;
+      @include mq(sp) {
+        margin: 40px auto 64px;
+      }
+      .l-complete__msg {
+        font-size: 16px;
+        line-height: 200%;
+        color: $black;
+        text-align: center;
+        padding-bottom: 24px;
+        @include mq(sp) {
+          font-size: 14px;
+          line-height: 180%;
+          text-align: left;
+        }
+        &.--ttl {
+          color: $main-color;
+          font-size: 22px;
+          font-weight: bold;
+          padding-bottom: 24px;
+          @include mq(sp) {
+            font-size: 16px;
+            text-align: center;
+          }
+        }
+        &.--desctiption {
+          color: #807e7e;
+          font-size: 14px;
+          line-height: 160%;
+          padding-bottom: 24px;
+          @include mq(sp) {
+            font-size: 10px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

@@ -69,13 +69,13 @@
   <main class="main">
     <section class="l-sub-mv">
       <div class="l-sub-mv__area">
-        <h1 class="l-sub-mv__hero --privacy">確認画面</h1>
+        <h1 class="l-sub-mv__hero --privacy">お問い合わせ/確認画面</h1>
       </div>
       <div class="l-sub-mv__label-area">
         <p class="l-sub-mv__label">
           <a href="#" class="l-sub-mv__label--top">TOP</a>
           <span class="l-sub-mv__label--arrow"></span>
-          <a href="" class="l-sub-mv__label--current">確認画面</a>
+          <a href="" class="l-sub-mv__label--current">お問い合わせ/確認画面</a>
         </p>
       </div>
     </section>

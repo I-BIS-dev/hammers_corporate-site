@@ -98,7 +98,7 @@
         <li class="l-stepbar__list"><span class="l-stepbar__number">3</span><br>完了</li>
       </ol>
       <form class="c-analysis__form" action="/contact/confirm.php" method="post">
-        <div class="c-analysis__row --company">
+        <div class="c-analysis__row">
           <div class="c-analysis__head">
             <p>
               会社名<span>必須</span>

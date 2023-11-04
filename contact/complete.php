@@ -93,9 +93,30 @@ mail($to, $subject, $message, $headers);
     </a>
   </div> -->
 
-  <main>
-    <div class="main-test">
-      送信しました
+  <main class="main">
+    <section class="l-sub-mv">
+      <div class="l-sub-mv__area">
+        <h1 class="l-sub-mv__hero --privacy">お問い合わせ/完了画面</h1>
+      </div>
+      <div class="l-sub-mv__label-area">
+        <p class="l-sub-mv__label">
+          <a href="#" class="l-sub-mv__label--top">TOP</a>
+          <span class="l-sub-mv__label--arrow"></span>
+          <a href="" class="l-sub-mv__label--current">お問い合わせ/完了画面</a>
+        </p>
+      </div>
+    </section>
+    <div class="l-confirm-area">
+      <ol class="l-stepbar">
+        <li class="l-stepbar__list --visited"><span class="l-stepbar__number">1</span><br>入力</li>
+        <li class="l-stepbar__list --visited"><span class="l-stepbar__number">2</span><br>確認</li>
+        <li class="l-stepbar__list --visited"><span class="l-stepbar__number">3</span><br>完了</li>
+      </ol>
+      <div class="l-complete__msg-area">
+        <p class="l-complete__msg --ttl">送信が完了しました</p>
+        <p class="l-complete__msg">フォーム内容をご送信頂きまして誠にありがとうございます。<br>担当者よりご案内させていただきます。</p>
+        <p class="l-complete__msg --desctiption">※ご入力内容を記載した確認メールを送信しました。<br>※ご確認メールが24時間経過しても届かない場合は、恐れ入りますが、再度お問い合わせください。<br>※返信にお時間を頂く場合がございます。予めご了承ください。</p>
+      </div>
     </div>
   </main>
 
