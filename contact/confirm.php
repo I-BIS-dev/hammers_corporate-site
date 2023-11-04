@@ -66,51 +66,72 @@
     </a>
   </div> -->
 
-  <main>
-    <div class="main-test">
+  <main class="main">
+    <section class="l-sub-mv">
+      <div class="l-sub-mv__area">
+        <h1 class="l-sub-mv__hero --privacy">確認画面</h1>
+      </div>
+      <div class="l-sub-mv__label-area">
+        <p class="l-sub-mv__label">
+          <a href="#" class="l-sub-mv__label--top">TOP</a>
+          <span class="l-sub-mv__label--arrow"></span>
+          <a href="" class="l-sub-mv__label--current">確認画面</a>
+        </p>
+      </div>
+    </section>
+    <div class="l-confirm-area">
+      <ol class="l-stepbar">
+        <li class="l-stepbar__list --visited"><span class="l-stepbar__number">1</span><br>入力</li>
+        <li class="l-stepbar__list --visited"><span class="l-stepbar__number">2</span><br>確認</li>
+        <li class="l-stepbar__list"><span class="l-stepbar__number">3</span><br>完了</li>
+      </ol>
+      <!-- <div class="main-test"> -->
       <form action="/contact/complete.php" method="post">
-
-        <table border="1">
-          <tr>
-            <td>会社名</td>
-            <td><?php echo $_POST["company"]; ?></td>
+        <table>
+          <tr class="l-confirm-rows">
+            <!-- <div class="l-confirm-leftbox"> -->
+            <td class="l-confirm-left">会社名</td>
+            <!-- </div> -->
+            <td class="l-confirm-right"><?php echo $_POST["company"]; ?></td>
             <input hidden type="text" name="company" size="50" value="<?php echo $_POST["company"]; ?>">
           </tr>
-          <tr>
-            <td>担当者名</td>
-            <td><?php echo $_POST["name"]; ?></td>
+          <tr class="l-confirm-rows">
+            <td class="l-confirm-left">担当者名</td>
+            <td class="l-confirm-right"><?php echo $_POST["name"]; ?></td>
             <input hidden type="text" name="name" size="50" value="<?php echo $_POST["name"]; ?>">
           </tr>
-          <tr>
-            <td>電話番号</td>
-            <td><?php echo $_POST["tel"]; ?></td>
+          <tr class="l-confirm-rows">
+            <td class="l-confirm-left">電話番号</td>
+            <td class="l-confirm-right"><?php echo $_POST["tel"]; ?></td>
             <input hidden type="text" name="tel" size="50" value="<?php echo $_POST["tel"]; ?>">
           </tr>
-          <tr>
-            <td>メールアドレス</td>
-            <td><?php echo $_POST["mail"]; ?></td>
+          <tr class="l-confirm-rows">
+            <td class="l-confirm-left">メールアドレス</td>
+            <td class="l-confirm-right"><?php echo $_POST["mail"]; ?></td>
             <input hidden type="text" name="mail" size="50" value="<?php echo $_POST["mail"]; ?>">
           </tr>
-          <tr>
-            <td>連絡方法</td>
-            <td><?php echo $_POST["contact"]; ?></td>
+          <tr class="l-confirm-rows">
+            <td class="l-confirm-left">連絡方法</td>
+            <td class="l-confirm-right"><?php echo $_POST["contact"]; ?></td>
             <input hidden type="text" name="contact" size="50" value="<?php echo $_POST["contact"]; ?>">
           </tr>
-          <tr>
-            <td> 問い合わせ項目</td>
-            <td><?php echo $_POST["item"]; ?></td>
+          <tr class="l-confirm-rows">
+            <td class="l-confirm-left"> 問い合わせ項目</td>
+            <td class="l-confirm-right"><?php echo $_POST["item"]; ?></td>
             <input hidden type="text" name="item" size="50" value="<?php echo $_POST["item"]; ?>">
           </tr>
-          <tr>
-            <td>問い合わせ内容</td>
-            <td><?php echo nl2br($_POST["inquiry"]); ?></td>
+          <tr class="l-confirm-rows">
+            <td class="l-confirm-left">問い合わせ内容</td>
+            <td class="l-confirm-right"><?php echo nl2br($_POST["inquiry"]); ?></td>
             <textarea hidden name="inquiry"><?php echo nl2br($_POST["inquiry"]);; ?></textarea>
           </tr>
         </table>
-
-        <input type="submit" value="送信" />
-        <button type="button" onclick="history.back(-1)">戻る</button>
+        <div class="c-confirm-btn-area">
+          <input class="c-confirm-btn" type="submit" value="送信" />
+          <button class="c-back-btn" type="button" onclick="history.back(-1)">戻る</button>
+        </div>
       </form>
+      <!-- </div> -->
     </div>
   </main>
 

@@ -129,3 +129,54 @@
     }
   }
 }
+
+.c-confirm-btn-area {
+  padding-top: 32px;
+  gap: 24px;
+  .c-confirm-btn {
+    border: none;
+    background-color: #70b63a;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    padding: 18px 64px;
+    border-radius: 80px;
+    margin-right: 12px;
+    &:hover {
+      @include hover-effect;
+    }
+    @include mq(sp-ls) {
+      font-size: 14px;
+      padding: 12px 64px;
+    }
+    @include mq(sp) {
+      font-size: 12px;
+      padding: 12px 64px;
+    }
+  }
+
+  .c-back-btn {
+    border: none;
+    background-color: #ddd;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    padding: 18px 64px;
+    border-radius: 80px;
+    &:hover {
+      @include hover-effect;
+    }
+    @include mq(sp-ls) {
+      font-size: 14px;
+      padding: 12px 64px;
+    }
+    @include mq(sp) {
+      font-size: 12px;
+      padding: 12px 64px;
+    }
+  }
+}

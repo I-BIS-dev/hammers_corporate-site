@@ -92,6 +92,11 @@
         <p class="c-analysis__description">弊社ならびにサービスに関するご質問や相談は、お電話またはこちらのフォームからお送りください。<br>数日以内にご希望の連絡方法にて返信いたします。<br>なお、添付ファイルがある場合は、<span class="c-font-bold">info-b@bestar7.jp</span>宛にメールで送信ください。
         </p>
       </div>
+      <ol class="l-stepbar">
+        <li class="l-stepbar__list --visited"><span class="l-stepbar__number">1</span><br>入力</li>
+        <li class="l-stepbar__list"><span class="l-stepbar__number">2</span><br>確認</li>
+        <li class="l-stepbar__list"><span class="l-stepbar__number">3</span><br>完了</li>
+      </ol>
       <form class="c-analysis__form" action="/contact/confirm.php" method="post">
         <div class="c-analysis__row --company">
           <div class="c-analysis__head">
