@@ -1,24 +1,34 @@
 .main {
   .l-sub-mv {
     padding-top: 105px;
+    @include mq(sp) {
+      padding-top: 60px !important;
+    }
 
     .l-sub-mv__area {
       width: 100%;
       height: 260px;
-      background-image: url(../assets/images/subvisual.jpg);
+      background-image: url(../assets/images/subvisual.png) !important;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       position: relative;
+      z-index: 1;
+      @include mq(sp) {
+        height: 180px !important;
+      }
       &::after {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 1;
+        z-index: 2;
         width: 100%;
         height: 260px;
         background-color: rgba(0, 131, 62, 0.3);
+        @include mq(sp) {
+          height: 180px !important;
+        }
       }
 
       .l-sub-mv__hero {
@@ -30,7 +40,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 2;
+        z-index: 3;
         @include mq(sp-ls) {
           font-size: 32px;
           letter-spacing: 1.3px;
@@ -59,7 +69,7 @@
     }
 
     .l-sub-mv__label-area {
-      background-color: $bg-color;
+      background-color: #f7f7f7 !important;
       margin: 0 calc(50% - 50vw);
       padding: 0 calc(50vw - 50%);
 
@@ -72,12 +82,12 @@
           padding: 28px 0 28px 8px;
         }
         @include mq(sp) {
-          padding: 8px 0 8px 4px;
+          padding: 11px 0 11px 4px !important;
         }
 
         .l-sub-mv__label--top {
           display: block;
-          font-size: 14px;
+          font-size: 12px !important;
           padding: 0 8px;
           text-align: center;
           text-decoration: underline;
@@ -105,9 +115,10 @@
 
         .l-sub-mv__label--current {
           display: block;
-          font-size: 14px;
+          font-size: 12px !important;
           padding: 0 8px;
           text-align: center;
+          pointer-events: none !important;
           &:hover {
             @include hover-effect;
           }
@@ -156,6 +167,7 @@
         font-weight: bold;
         color: $black;
         padding-top: 24px;
+        padding-bottom: 60px;
         text-decoration: underline;
         text-decoration-style: dashed;
         text-decoration-color: $main-color;
@@ -171,7 +183,7 @@
         @include mq(sp) {
           font-size: 18px;
           text-underline-offset: 12px;
-          padding-top: 16px;
+          padding-bottom: 30px;
         }
       }
 
@@ -179,7 +191,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 48px;
         @include mq(sp-ls) {
           justify-content: space-between;
         }
@@ -192,7 +203,7 @@
           max-width: 400px;
           line-height: 200%;
           @include mq(sp-ls) {
-            max-width: 288px;
+            padding-bottom: 16px;
           }
         }
 
@@ -256,6 +267,7 @@
         font-weight: bold;
         color: $black;
         padding-top: 24px;
+        padding-bottom: 60px;
         text-decoration: underline;
         text-decoration-style: dashed;
         text-decoration-color: $main-color;
@@ -271,28 +283,27 @@
         @include mq(sp) {
           font-size: 18px;
           text-underline-offset: 12px;
-          padding-top: 16px;
+          padding-bottom: 30px;
         }
       }
 
       .l-reliable__desctiption-area {
         display: flex;
         justify-content: space-between;
-        padding-top: 32px;
         max-width: 800px;
         margin: 0 auto;
         @include mq(sp-ls) {
-          flex-direction: column;
+          flex-direction: column-reverse;
           justify-content: center;
         }
 
         .l-reliable__desctiption {
           text-align-last: left;
-          margin: 0 auto;
           max-width: 400px;
           line-height: 200%;
           @include mq(sp-ls) {
-            padding-top: 8px;
+            padding: 8px 0;
+            margin: 0 auto;
           }
         }
 
@@ -333,7 +344,7 @@
               padding-bottom: 8px;
             }
             @include mq(sp) {
-              padding-bottom: 8px;
+              padding-bottom: 20px;
             }
           }
         }
