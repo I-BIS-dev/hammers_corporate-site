@@ -133,10 +133,10 @@
   .l-merit {
     padding: 120px 24px;
     @include mq(sp-ls) {
-      padding: 120px 24px;
+      padding: 80px 24px;
     }
     @include mq(sp) {
-      padding: 32px 16px;
+      padding: 60px 0;
     }
 
     .l-merit__ttl-area {
@@ -234,10 +234,10 @@
   .l-reliable {
     padding: 120px 24px;
     @include mq(sp-ls) {
-      padding: 120px 24px;
+      padding: 80px 24px;
     }
     @include mq(sp) {
-      padding: 32px 16px;
+      padding: 60px 0;
     }
 
     .l-reliable__ttl-area {
@@ -355,10 +355,10 @@
   .l-allin {
     padding: 120px 24px;
     @include mq(sp-ls) {
-      padding: 120px 24px;
+      padding: 80px 24px;
     }
     @include mq(sp) {
-      padding: 32px 16px;
+      padding: 60px 0;
     }
     .l-allin__ttl-area {
       text-align: center;
