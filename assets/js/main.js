@@ -23,6 +23,8 @@ $(document).ready(function () {
     $phone = $('header .l-header__phone'),
     $logo = $('header .l-header__logo-area'),
     $nav = $('header .l-header__nav-list'),
+    $navtext = $('header .l-header__nav-link'),
+    $contacttext = $('.l-header__btn'),
     animationClass = 'header-animation';
 
   $win.on('load scroll', function () {
@@ -33,12 +35,16 @@ $(document).ready(function () {
       $phone.addClass('header-animation');
       $logo.addClass('header-animation');
       $nav.addClass('header-animation');
+      $navtext.addClass('header-animation');
+      $contacttext.addClass('header-animation');
     } else {
       $header.removeClass('header-animation');
       $contact.removeClass('header-animation');
       $phone.removeClass('header-animation');
       $logo.removeClass('header-animation');
       $nav.removeClass('header-animation');
+      $navtext.removeClass('header-animation');
+      $contacttext.removeClass('header-animation');
     }
   });
 

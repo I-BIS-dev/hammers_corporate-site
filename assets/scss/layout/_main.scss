@@ -102,24 +102,24 @@
         height: 180px;
         background-image: url(../assets/images/mv-textbg.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         position: relative;
         text-align: center;
         margin: 0 16px;
         @include mq(sp-ls) {
-          width: 110px;
-          height: 110px;
+          width: 120px;
+          height: 120px;
         }
         @include mq(sp) {
-          margin: 0 8px;
+          margin: 0 2px;
           background-size: contain;
         }
 
         .l-mv__hero-descroption {
           min-width: 164px;
           color: $main-color;
-          font-size: 15px;
+          font-size: 14px;
           line-height: 155%;
           position: absolute;
           top: 50%;
@@ -133,7 +133,7 @@
           }
 
           .l-mv__hero-hero-descroption--bold {
-            font-size: 20px;
+            font-size: 18px;
             @include mq(sp-ls) {
               font-size: 10px;
             }
@@ -147,22 +147,25 @@
     background-color: $white;
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
-    padding: 64px 0;
+    padding: 120px 0;
     @include mq(sp-ls) {
-      padding-top: 64px;
+      padding: 80px 0;
     }
     @include mq(sp) {
-      padding-top: 32px;
+      padding: 60px 0;
     }
 
     .l-feature__text-top {
-      max-width: 650px;
       font-weight: bold;
       margin: 0 auto;
       text-align: center;
       line-height: 200%;
       padding-bottom: 48px;
+      font-size: 21px;
       @include mq(sp-ls) {
+        font-size: 16px;
+      }
+      @include mq(sp) {
         font-size: 12px;
       }
     }
@@ -243,12 +246,20 @@
       line-height: 180%;
       padding-bottom: 64px;
       @include mq(sp-ls) {
-        font-size: 12px;
         padding-bottom: 24px;
       }
       .l-feature__text {
-        font-size: 10px;
-        text-align-last: left;
+        font-size: 16px;
+        text-align: left;
+        padding-top: 16px;
+        @include mq(sp-ls) {
+          font-size: 14px;
+          padding-top: 14px;
+        }
+        @include mq(sp) {
+          font-size: 12px;
+          padding-top: 12px;
+        }
       }
     }
     .l-feature__info {
@@ -300,7 +311,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 64px;
         @include mq(sp-ls) {
           padding-bottom: 24px;
         }
@@ -312,7 +322,13 @@
     background-color: $bg-color;
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
-    padding: 64px 0;
+    padding: 120px 0;
+    @include mq(sp-ls) {
+      padding: 80px 0;
+    }
+    @include mq(sp) {
+      padding: 60px 0;
+    }
 
     .l-flow__card-container {
       display: flex;
@@ -338,7 +354,12 @@
           position: relative;
           z-index: 1;
           @include mq(sp-ls) {
-            max-width: 400px;
+            max-width: 315px;
+            margin: 0 auto;
+          }
+          @include mq(sp) {
+            max-width: 205px;
+            margin: 0 auto;
           }
           &::after {
             content: "";
@@ -376,7 +397,7 @@
         padding-bottom: 16px;
       }
       .l-flow__card-description {
-        text-align: justify;
+        text-align-last: left;
         line-height: 170%;
 
         &.--link {
@@ -388,18 +409,30 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-bottom: 64px;
     }
   }
 
   .l-survey {
     background-color: $white;
+    padding: 120px 0;
+    @include mq(sp-ls) {
+      padding: 80px 0;
+    }
+    @include mq(sp) {
+      padding: 60px 0;
+    }
 
     .l-surbey__ttl {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-top: 64px;
+      padding-bottom: 60px;
+      @include mq(sp-ls) {
+        padding-bottom: 48px;
+      }
+      @include mq(sp) {
+        padding-bottom: 30px;
+      }
 
       .l-surbey__ttl-text {
         font-size: 32px;
@@ -424,17 +457,24 @@
           &::after {
             content: "";
             position: absolute;
-            bottom: 0;
+            bottom: -15px;
             left: 0;
             width: 100%;
-            border-bottom: 2px dashed $main-color;
+            border-bottom: 4px dashed $main-color;
+            @include mq(sp-ls) {
+              bottom: -13px;
+              border-bottom: 3px dashed $main-color;
+            }
+            @include mq(sp) {
+              bottom: -10px;
+              border-bottom: 2px dashed $main-color;
+            }
           }
         }
       }
     }
     .l-surbey__flex-container {
       display: flex;
-      padding: 40px 0 80px;
       @include mq(sp-ls) {
         flex-direction: column;
         justify-content: center;
@@ -445,28 +485,11 @@
         @include mq(sp-ls) {
           display: flex;
           justify-content: center;
+          padding: 0 20px;
         }
         .l-surbey__img1 {
-          max-width: 245px;
-          @include mq(sp-ls) {
-            width: 50%;
-          }
-          @include mq(sp) {
-            max-width: 170px;
-          }
-        }
-        .l-surbey__img2 {
-          max-width: 245px;
-          position: absolute;
-          top: 5%;
-          left: 40%;
-          @include mq(sp-ls) {
-            position: static;
-            width: 50%;
-          }
-          @include mq(sp) {
-            max-width: 170px;
-          }
+          max-width: 454px;
+          width: 100%;
         }
       }
       .l-surbey__info {
@@ -480,8 +503,7 @@
         }
 
         .l-surbey__description {
-          text-align: justify;
-          padding: 40px 0 84px;
+          padding: 40px 12px 84px;
           line-height: 200%;
         }
         .l-surbey__ctabtn {
@@ -496,18 +518,24 @@
     background-color: $bg-color;
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
-    padding: 64px 0;
+    padding: 120px 0;
+    @include mq(sp-ls) {
+      padding: 80px 0;
+    }
+    @include mq(sp) {
+      padding: 60px 0;
+    }
     .l-merit-top__list {
       position: relative;
-      padding: 90px 24px;
+      padding: 64px 8px;
       border: solid 4px #00833e;
       border-radius: 15px;
       display: flex;
       justify-content: center;
-      gap: 94px;
+      gap: 115px;
       margin-bottom: 80px;
       @include mq(sp-ls) {
-        padding: 56px 16px;
+        padding: 40px 16px;
         flex-direction: column;
         gap: 24px;
         border: solid 2px #00833e;
@@ -550,22 +578,25 @@
           max-width: 80%;
           margin: 0 auto;
         }
+        @include mq(sp) {
+          font-size: 16px;
+        }
       }
     }
 
     .l-merit-top__list--secondary {
       position: relative;
-      padding: 90px 24px;
+      padding: 64px 8px;
       border: solid 4px #00833e;
       border-radius: 15px;
       display: flex;
       flex-direction: row-reverse;
       justify-content: center;
       align-items: center;
-      gap: 94px;
+      gap: 115px;
       margin-bottom: 80px;
       @include mq(sp-ls) {
-        padding: 56px 16px;
+        padding: 40px 16px;
         flex-direction: column;
         gap: 24px;
         border: solid 2px #00833e;
@@ -608,21 +639,24 @@
           max-width: 80%;
           margin: 0 auto;
         }
+        @include mq(sp) {
+          font-size: 16px;
+        }
       }
     }
 
     .l-merit-top__list--tertiary {
       position: relative;
-      padding: 90px 24px;
+      padding: 64px 8px;
       border: solid 4px #00833e;
       border-radius: 15px;
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 94px;
+      gap: 115px;
       margin-bottom: 80px;
       @include mq(sp-ls) {
-        padding: 56px 16px;
+        padding: 40px 16px;
         flex-direction: column;
         gap: 24px;
         border: solid 2px #00833e;
@@ -665,6 +699,9 @@
           max-width: 80%;
           margin: 0 auto;
         }
+        @include mq(sp) {
+          font-size: 16px;
+        }
       }
     }
 
@@ -672,15 +709,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-bottom: 64px;
-      @include mq(sp-ls) {
-        padding-bottom: 24px;
-      }
     }
   }
 
   .l-faq {
-    padding: 64px 0;
+    padding: 120px 0;
+    @include mq(sp-ls) {
+      padding: 80px 0;
+    }
+    @include mq(sp) {
+      padding: 60px 0;
+    }
     .l-faq__list {
       padding-bottom: 64px;
 
@@ -740,7 +779,7 @@
             display: block;
             content: "Q";
             color: #3285bf;
-            background-color: #00833e;
+            background-color: #229f5d;
             color: #fff;
             border-radius: 50%;
             width: 40px;
@@ -777,9 +816,8 @@
             display: block;
             content: "A";
             font-weight: bold;
-            color: #3285bf;
-            border: 1px solid $main-color;
-            color: $main-color;
+            border: 1px solid #229f5d;
+            color: #229f5d;
             border-radius: 50%;
             width: 40px;
             height: 40px;
@@ -810,7 +848,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-bottom: 64px;
     }
   }
 
@@ -818,19 +855,18 @@
     background-color: $bg-color;
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
-    padding: 64px 0;
+    padding: 120px 0;
     @include mq(sp-ls) {
-      padding-top: 64px;
+      padding: 80px 0;
     }
     @include mq(sp) {
-      padding-top: 16px;
+      padding: 60px 0;
     }
 
     .l-access__pointarea {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-bottom: 24px;
       gap: 40px;
       @include mq(sp-ls) {
         flex-direction: column;
@@ -838,10 +874,6 @@
       }
 
       .l-access_point-card {
-        max-width: 400px;
-        @include mq(sp-ls) {
-          max-width: 300;
-        }
         .l-access__point1 {
           white-space: nowrap;
           font-size: 20px;
@@ -849,12 +881,13 @@
           color: #00833e;
           background-color: $bg-color;
           padding: 8px 80px;
-          border: 1px solid #00833e;
           border-radius: 5px;
           text-align: center;
           position: relative;
           display: block;
           width: 400px;
+          padding-bottom: 13px;
+
           @include mq(sp-ls) {
             padding: 8px 40px;
             font-size: 16px;
@@ -882,6 +915,14 @@
               background-size: contain;
             }
           }
+          .l-access__border {
+            border-bottom: 3px dashed $main-color;
+            padding: 6px;
+            @include mq(sp) {
+              padding: 4px;
+              border-bottom: 2px dashed $main-color;
+            }
+          }
         }
         .l-access__point2 {
           white-space: nowrap;
@@ -889,8 +930,6 @@
           font-weight: bold;
           color: #00833e;
           background-color: $bg-color;
-          padding: 8px 56px;
-          border: 1px solid #00833e;
           border-radius: 5px;
           text-align: center;
           position: relative;
@@ -900,9 +939,6 @@
             padding: 8px 40px;
             font-size: 16px;
             white-space: normal;
-          }
-          @include mq(sp) {
-            width: 324px;
           }
           &::before {
             content: "";
@@ -921,6 +957,14 @@
               left: 18px;
               top: 15px;
               background-size: contain;
+            }
+          }
+          .l-access__border {
+            border-bottom: 3px dashed $main-color;
+            padding: 6px;
+            @include mq(sp) {
+              padding: 4px;
+              border-bottom: 2px dashed $main-color;
             }
           }
         }
@@ -932,43 +976,40 @@
 
       .l-acces__text {
         line-height: 200%;
-        padding-bottom: 40px;
+        padding: 60px 0;
+        @include mq(sp) {
+          padding: 40px 0;
+        }
       }
     }
 
     .l-access__addressarea {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      @include mq(sp-ls) {
-        flex-direction: column;
-        justify-content: center;
-      }
+      max-width: 960px;
 
       .l-access__address-map {
         width: 100%;
-        max-width: 800px;
+
         @include mq(sp-ls) {
           margin: 0 auto;
           text-align: center;
         }
 
         .l-access__iframe {
-          width: 800px;
           width: 100%;
-          height: 750px;
+          height: 277px;
+          @include mq(sp) {
+            height: 342px;
+          }
         }
       }
       .l-access__address-info {
-        flex: auto;
-        padding: 24px 32px;
-        max-width: 412px;
+        margin: 0 auto;
+        max-width: 460px;
+        padding-bottom: 64px;
         @include mq(sp-ls) {
           margin: 0 auto;
-          padding: 0;
         }
         @include mq(sp) {
-          padding: 0 24px;
           width: 100%;
         }
 
@@ -1026,8 +1067,6 @@
 
         .l-access__adressarea {
           padding-bottom: 24px;
-          // display: flex;
-          // justify-content: center;
           margin: 0 auto;
           @include mq(sp-ls) {
             padding-bottom: 16px;
@@ -1045,8 +1084,6 @@
         }
         .l-access__telarea {
           padding-bottom: 48px;
-          // display: flex;
-          // justify-content: center;
           margin: 0 auto;
           @include mq(sp-ls) {
             padding-bottom: 24px;
@@ -1062,10 +1099,11 @@
           }
         }
         .l-access__ctabtn {
-          display: flex;
-          justify-content: center;
+          margin: 0 auto;
+          width: 356px;
           @include mq(sp) {
             justify-content: center;
+            width: 300px;
           }
         }
       }
@@ -1084,12 +1122,15 @@
 
     .l-contact-ttl {
       text-align: center;
-      padding: 32px 0;
+      padding-bottom: 32px;
 
       .l-contact-text {
         color: $main-color;
         font-size: 20px;
         font-weight: bold;
+        @include mq(sp) {
+          font-size: 13px;
+        }
       }
     }
 
@@ -1112,6 +1153,9 @@
           font-family: "Roboto", sans-serif;
           font-weight: bold;
           color: $main-color;
+          @include mq(sp) {
+            font-size: 26px;
+          }
 
           &.--link {
             &:hover {

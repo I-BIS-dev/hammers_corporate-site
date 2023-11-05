@@ -27,7 +27,7 @@
       </a>
     </h1>
     <div class="l-header__navarea">
-      <p class="l-header__phone">受付時間9:00~20:00（土日祝除く）TEL<a class="u-header__nav--fontsize" href="tel:045-253-2560">
+      <p class="l-header__phone">受付時間9:00~18:00（土日祝除く）TEL<a class="u-header__nav--fontsize" href="">
           045-253-2560</a></p>
       <nav class="l-header__nav" id="js-nav">
         <ul class="l-header__nav-list">
