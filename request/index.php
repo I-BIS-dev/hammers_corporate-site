@@ -78,35 +78,55 @@
         </div>
       </div>
     </div>
+
+    <section class="l-contact">
+      <div class="p-inner">
+        <div class="l-contact-ttl">
+          <p class="l-contact-text">アスベストのことならお気軽にお問い合わせください</p>
+        </div>
+        <div class="l-contact__infoarea">
+          <div class="l-contact__telarea">
+            <p class="l-contact__tel">TEL<a class="l-contact__tel --link" href="tel:045-253-2560">045-253-2560</a></p>
+            <p class="l-contact__time">受付時間 9:00〜18:00（土日祝除く）</p>
+          </div>
+          <div class="l-contact__btnarea">
+            <a href="/contact/" class="c-ctabtn --sub">お問い合わせ</a>
+          </div>
+        </div>
+      </div>
+      <div class="c-top-btn --topbtn">
+        <img src="/assets/images/arrow-topbtn.svg" alt="topに戻るボタン" class="c-top-btn-icon">
+      </div>
+    </section>
+
   </main>
 
   <footer class="l-footer">
     <div class="l-footer__top">
-      <div class="l-footer__logo">
-        <p class="l-footer__logo-name">BESTER</p>
-        <p class="l-footer__logo-description">アスベスト分析・調査の専門家</p>
+      <div class="l-footer__logo-area">
+        <div class="l-footer__logo">
+          <img src="../assets/images/logo-white.svg" alt="ハマーズロゴ" class="l-footer__logo-img">
+        </div>
         <p class="l-footer__logo-company">株式会社ハマーズ アスベスト分析事業部</p>
         <p class="l-footer__logo-address">〒231-0048 神奈川県横浜市中区蓬莱町2-6-14 戸賀崎ビル2F</p>
       </div>
       <ul class="l-footer__nav-list">
-        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="#">TOP</a></li>
-        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="#">ベスターの強み</a></li>
-        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="#">アスベストの危険性</a></li>
-        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="#">ご依頼の流れ</a></li>
-        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="#">よくある質問</a></li>
-        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="#">会社概要</a></li>
-        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="#">お問い合わせ</a></li>
-        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="#">分析依頼</a></li>
-        <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="#">特定商取引法に基づく表記</a></li>
-        <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="#">プライバシーポリシー</a></li>
+        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../">TOP</a></li>
+        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../merit/">ベスターの強み</a></li>
+        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../risk/">アスベストの危険性</a></li>
+        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="/flow/">ご依頼の流れ</a></li>
+        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../faq/">よくある質問</a></li>
+        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../company/">会社概要</a></li>
+        <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="../contact/">お問い合わせ</a></li>
+        <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="">分析依頼</a></li>
+        <!-- <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="../sctl/">特定商取引法に基づく表記</a>
+        </li> -->
+        <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="../privacy/">プライバシーポリシー</a></li>
       </ul>
     </div>
     <div class="l-footer__bottom">
-      <p class="l-footer__copyright">Copyright &copy2023 HAMMER'S All Rights Reserved.</p>
+      <p class="l-footer__copyright">Copyright &copy;HAMMER'S All Rights Reserved.</p>
     </div>
-    <!-- <div class="c-top-btn">
-      <img src="./assets/images/arrow-topbtn.svg" alt="topに戻るボタン" class="c-top-btn-icon">
-    </div> -->
   </footer>
 
   <?php wp_footer(); ?>
