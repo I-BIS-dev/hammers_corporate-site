@@ -151,10 +151,10 @@
         <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../flow/">ご依頼の流れ</a></li>
         <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../faq/">よくある質問</a></li>
         <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../company/">会社概要</a></li>
-        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="">お問い合わせ</a></li>
-        <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../request/">分析依頼</a></li>
-        <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="../sctl/">特定商取引法に基づく表記</a>
-        </li>
+        <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="">お問い合わせ</a></li>
+        <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="../request/">分析依頼</a></li>
+        <!-- <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="../sctl/">特定商取引法に基づく表記</a>
+        </li> -->
         <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="../privacy/">プライバシーポリシー</a></li>
       </ul>
     </div>

@@ -979,6 +979,7 @@
         padding: 60px 0;
         @include mq(sp) {
           padding: 40px 0;
+          text-align: left;
         }
       }
     }

@@ -47,7 +47,7 @@
 
       .l-footer__logo-company {
         padding-top: 24px;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bold;
         @include mq(sp-tab) {
           text-align: center;
@@ -59,7 +59,7 @@
         }
       }
       .l-footer__logo-address {
-        font-size: 14px;
+        font-size: 12px;
         padding-bottom: 32px;
         width: 390px;
         font-weight: bold;
@@ -106,7 +106,7 @@
 
         .l-footer__nav-link {
           display: block;
-          font-size: 14px;
+          font-size: 12px;
           color: $white;
           text-align: left;
           padding-top: 8px;
