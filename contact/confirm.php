@@ -79,8 +79,8 @@
         </p>
       </div>
     </section>
-    <div class="l-confirm-area">
-      <ol class="l-stepbar">
+    <div class="l-confirm-area a--fadein-first">
+      <ol class=" l-stepbar">
         <li class="l-stepbar__list --visited"><span class="l-stepbar__number">1</span><br>入力</li>
         <li class="l-stepbar__list --visited"><span class="l-stepbar__number">2</span><br>確認</li>
         <li class="l-stepbar__list"><span class="l-stepbar__number">3</span><br>完了</li>
