@@ -124,6 +124,13 @@
       padding: 64px 16px;
     }
 
+    .l-greeting__description {
+      padding-top: 40px;
+      @include mq(sp) {
+        padding-top: 18px;
+      }
+    }
+
     .l-table-area {
       max-width: 960px;
       margin: 0 auto;
@@ -256,13 +263,12 @@
 
       .l-adress-img {
         width: 100%;
-        height: auto;
+        height: 370px;
         max-width: 470px;
         position: relative;
         @include mq(sp-ls) {
           max-width: 100%;
           margin: 0 auto;
-          order: -1;
         }
 
         .l-adress-iframe {
@@ -271,6 +277,9 @@
           position: absolute;
           left: 0;
           top: 0;
+          @include mq(sp) {
+            min-height: 360px;
+          }
         }
       }
 
@@ -280,7 +289,6 @@
         max-width: 460px;
         @include mq(sp-ls) {
           padding: 16px 16px 0;
-          order: 1;
         }
 
         .l-adress-text {
@@ -455,10 +463,15 @@
     .l-adress-second__map {
       padding-top: 64px;
       max-width: 100%;
-
+      @include mq(sp) {
+        padding-top: 0;
+      }
       .l-adress-second__iframe {
         width: 100%;
         min-height: 256px;
+        @include mq(sp) {
+          min-height: 360px;
+        }
       }
     }
   }

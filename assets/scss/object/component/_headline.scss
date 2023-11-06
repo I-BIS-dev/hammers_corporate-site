@@ -1,10 +1,10 @@
 .c-headline-area {
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   @include mq(sp-ls) {
     padding-bottom: 48px;
   }
   @include mq(sp) {
-    padding-bottom: 32px;
+    padding-bottom: 30px;
   }
 
   .c-headline {
