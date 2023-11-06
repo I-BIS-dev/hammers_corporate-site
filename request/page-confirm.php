@@ -20,47 +20,57 @@
 
 <body>
   <header class="l-header">
-    <div class="l-header__logo">
-      <h1 class="l-header__logo-name"><a class="u-header__logo" href="#">BESTER</a></h1>
-      <p class="l-header__logo-description">アスベスト分析・調査の専門家</p>
-    </div>
+    <h1 class="l-header__logo-area">
+      <a href="../" class="l-header__link">
+        <img src="/assets/images/logo.svg" alt="ハマーズのロゴ" class="l-header-logo">
+      </a>
+    </h1>
     <div class="l-header__navarea">
-      <div class="p-flexdirection">
-        <p class="l-header__phone">受付時間9:00~18:00（土日祝除く）TEL<a class="u-header__nav--fontsize" href="">
-            045-253-2560</a></p>
-        <nav class="l-header__nav" id="js-nav">
-          <ul class="l-header__nav-list">
-            <li class="l-header__nav-item"><a class="l-header__nav-link" href="#">ベスターの強み</a></li>
-            <li class="l-header__nav-item"><a class="l-header__nav-link" href="#">アスベストの危険性</a></li>
-            <li class="l-header__nav-item"><a class="l-header__nav-link" href="#">ご依頼の流れ</a></li>
-            <li class="l-header__nav-item"><a class="l-header__nav-link" href="#">よくある質問</a></li>
-            <li class="l-header__nav-item"><a class="l-header__nav-link" href="#">会社概要</a></li>
-            <li class="l-header__nav-item"><a class="l-header__nav-link" href="#">お問い合わせ</a></li>
-          </ul>
-        </nav>
-      </div>
+      <p class="l-header__phone">受付時間9:00~18:00（土日祝除く）TEL<a class="u-header__nav--fontsize" href="">
+          045-253-2560</a></p>
+      <nav class="l-header__nav" id="js-nav">
+        <ul class="l-header__nav-list">
+          <li class="l-header__nav-item"><a class="l-header__nav-link" href="../">TOP</a></li>
+          <li class="l-header__nav-item"><a class="l-header__nav-link" href="../merit/">ベスターの強み</a></li>
+          <li class="l-header__nav-item"><a class="l-header__nav-link" href="../risk/">アスベストの危険性</a></li>
+          <li class="l-header__nav-item"><a class="l-header__nav-link" href="../flow/">ご依頼の流れ</a></li>
+          <li class="l-header__nav-item"><a class="l-header__nav-link" href="../faq/">よくある質問</a></li>
+          <li class="l-header__nav-item"><a class="l-header__nav-link" href="../company/">会社概要</a></li>
+          <li class="l-header__nav-item --none"><a class="l-header__nav-link" href="">分析依頼</a></li>
+          <li class="l-header__nav-item"><a class="c-ctabtn --white" href="../contact/">お問い合わせ</a></li>
+          <li class="l-header__nav-item"><a class="c-ctabtn" href="">分析依頼</a></li>
+        </ul>
+      </nav>
       <div class="l-header__nav-contact">
-        <img class="l-header__navicon" src="./assets/images/arrow-header.svg" width="25" height="25" alt="矢印アイコン">
-        <a href="#" class="l-header__btn">分析依頼はこちら</a>
+        <img class="l-header__navicon" src="/assets/images/arrow-header.svg" width="25" height="25" alt="矢印アイコン">
+        <a href="../contact/" class="l-header__btn">お問い合わせ</a>
       </div>
     </div>
-    <div class="c-phone-btn">
-      <a href="tel:045-253-2560">
-        <img class="c-phone-icon" src="./assets/images/phone-icon.svg" alt="電話のアイコン">
-      </a>
-    </div>
-    <button class="l-header__hamburger" id="js-hamburger">
-      <span class="l-header__hamburger--border"></span>
-      <span class="l-header__hamburger--border"></span>
-      <span class="l-header__hamburger--border"></span>
-    </button>
-    <!-- <div class="c-contact">
-      <a href="#">
-        <img class="c-contact__img" src="./assets/images/arrow-header.svg" width="15" height="15" alt="問い合わせフォームリンク">
-        <p class="c-contact__text">分析依頼はこちら</p>
-      </a>
-    </div> -->
   </header>
+
+  <!-- ボタン各種 -->
+  <button class="l-header__hamburger" id="js-hamburger">
+    <span class="l-header__hamburger--border"></span>
+    <span class="l-header__hamburger--border"></span>
+    <span class="l-header__hamburger--border"></span>
+  </button>
+
+  <div class="c-contact-btn">
+    <a class="c-contact-link" href="">
+      <img class="c-contact-icon" src="/assets/images/arrow-header.svg" alt="矢印のアイコン">
+    </a>
+  </div>
+  <div class="c-phone-btn">
+    <a class="c-phone-link" href="tel:045-253-2560">
+      <img class="c-phone-icon" src="/assets/images/phone-icon.svg" alt="電話のアイコン">
+    </a>
+  </div>
+  <!-- <div class="c-contact">
+    <a href="../request/">
+      <img class="c-contact__img" src="/assets/images/arrow-header.svg" width="15" height="15" alt="問い合わせフォームリンク">
+      <p class="c-contact__text">分析依頼はこちら</p>
+    </a>
+  </div> -->
 
   <main>
     <div class="c-analysis">

@@ -132,7 +132,7 @@
       line-height: 180%;
 
       .l-risk-primary__text {
-        font-size: 24px;
+        font-size: 32px;
         font-weight: bold;
         color: $black;
         line-height: 200%;
@@ -140,12 +140,9 @@
         text-decoration: underline;
         text-decoration-style: dashed;
         text-decoration-color: $main-color;
-        text-decoration-thickness: 2px;
+        text-decoration-thickness: 4px;
         text-decoration-skip-ink: none;
         text-underline-offset: 16px;
-        &::first-letter {
-          color: $accent-color;
-        }
         @include mq(sp-ls) {
           font-size: 20px;
           text-underline-offset: 14px;
