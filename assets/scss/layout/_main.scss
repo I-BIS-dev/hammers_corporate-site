@@ -1118,6 +1118,7 @@
     position: relative;
     &.--flow {
       background-color: $bg-color;
+      padding: 0;
     }
 
     .l-contact-ttl {
@@ -1142,6 +1143,14 @@
       @include mq(sp-ls) {
         flex-direction: column;
         justify-content: center;
+      }
+      &.--flow {
+        @include mq(sp-ls) {
+          flex-direction: column;
+          justify-content: center;
+          padding: 40px 0;
+          gap: 14px;
+        }
       }
 
       .l-contact__telarea {
@@ -1175,6 +1184,12 @@
       text-align: center;
       display: flex;
       justify-content: start;
+      &.--flow {
+        padding: 80px 0;
+        @include mq(sp) {
+          padding: 0;
+        }
+      }
 
       .l-contact__btn {
         font-size: 14px;

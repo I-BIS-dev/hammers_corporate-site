@@ -127,6 +127,9 @@
     &::after {
       background-image: url(../assets/images/arrow-ctabtn.svg);
     }
+    @include mq(sp) {
+      width: 287px;
+    }
   }
   &.--lg {
     width: 356px;
