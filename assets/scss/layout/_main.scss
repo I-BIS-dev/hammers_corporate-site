@@ -1,6 +1,6 @@
 .main {
   .l-mv {
-    background-image: url(../assets/images/mainvisual.png);
+    background-image: url(../assets/images/test2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -62,11 +62,11 @@
           align-items: center;
           justify-content: center;
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-          transition: all 0.3s ease-in-out;
+          // transition: background 0.3s ease-in-out;
           overflow: hidden;
-          // border: 1px solid #fff;
           &:hover {
-            background-image: radial-gradient(circle at 100% 0%, rgba(0, 176, 155, 1) 15%, rgba(150, 201, 61, 1));
+            // background: linear-gradient(64deg, rgba(150, 201, 61, 1) 0%, rgba(0, 176, 155, 1) 100%);
+            background: radial-gradient(circle at 100% 0%, rgba(0, 176, 155, 1) 15%, rgba(150, 201, 61, 1));
           }
 
           &::before {
@@ -77,7 +77,7 @@
             height: 100%;
             background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
             transform: skewX(-25deg);
-            transition: 0.5s;
+            transition: 2s ease-in-out;
             content: "";
             @keyframes flash {
               100% {
