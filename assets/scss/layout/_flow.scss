@@ -474,6 +474,7 @@
         .l-step2__text {
           line-height: 180%;
           text-align: left;
+          padding-right: 24px;
 
           @include mq(sp-ls) {
             padding: 32px 0;
@@ -484,6 +485,7 @@
 
           &.--min {
             font-size: 12px;
+            padding-right: 24px;
           }
         }
       }
