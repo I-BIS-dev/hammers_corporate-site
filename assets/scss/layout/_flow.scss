@@ -14,7 +14,7 @@
     padding: 120px 20px 0;
     margin: 0 auto;
     @include mq(sp) {
-      padding: 80px 16px 0;
+      padding: 60px 16px 0;
     }
 
     .l-step1__headline-area {
@@ -28,14 +28,28 @@
 
       .l-step1__headline-prefix {
         text-align: center;
-        font-size: 32px;
+        font-size: 24px;
         font-weight: bold;
         color: $main-color;
+        padding-bottom: 18px;
         @include mq(sp-ls) {
-          font-size: 28px;
+          font-size: 22px;
+          padding-bottom: 13px;
         }
         @include mq(sp) {
           font-size: 20px;
+          padding-bottom: 9px;
+        }
+
+        .--font-lg {
+          font-size: 80px;
+          line-height: 1;
+          @include mq(sp-ls) {
+            font-size: 60px;
+          }
+          @include mq(sp) {
+            font-size: 40px;
+          }
         }
       }
       .l-step1__ttl-area {
@@ -145,14 +159,7 @@
               min-width: 278px;
             }
           }
-          // .l-step1__dl-area {
-          //   text-align: center;
-          //   padding: 2px;
-          //   .l-step1__example {
-          //     color: $main-color;
-          //     font-size: 14px;
-          //   }
-          // }
+
           .l-step1__modal-open {
             text-align: center;
             padding: 2px;
@@ -207,12 +214,9 @@
               background-color: #fff;
               position: absolute;
               z-index: 100;
-              top: 54%;
+              top: 50%;
               left: 50%;
               transform: translate(-50%, -50%);
-              @include mq(sp-tab) {
-                top: 50%;
-              }
             }
             .l-step1__modal-contents {
               overflow: auto;
@@ -245,28 +249,34 @@
   position: relative;
   z-index: 1;
   @include mq(sp) {
-    padding: 80px 16px 0;
+    padding: 60px 16px 0;
   }
 
   .l-step2__headline-area {
-    padding-bottom: 24px;
-    @include mq(sp-ls) {
-      padding-bottom: 16px;
-    }
-    @include mq(sp) {
-      padding-bottom: 12px;
-    }
-
     .l-step2__headline-prefix {
       text-align: center;
-      font-size: 32px;
+      font-size: 24px;
       font-weight: bold;
       color: $main-color;
+      padding-bottom: 18px;
       @include mq(sp-ls) {
-        font-size: 28px;
+        font-size: 22px;
+        padding-bottom: 13px;
       }
       @include mq(sp) {
         font-size: 20px;
+        padding-bottom: 9px;
+      }
+
+      .--font-lg {
+        font-size: 80px;
+        line-height: 1;
+        @include mq(sp-ls) {
+          font-size: 60px;
+        }
+        @include mq(sp) {
+          font-size: 40px;
+        }
       }
     }
     .l-step2__ttl-area {
@@ -299,8 +309,6 @@
   }
 
   .l-step2__text-area {
-    text-align: justify;
-
     .l-step2__text {
       line-height: 180%;
 
@@ -310,7 +318,7 @@
       &.--bold {
         font-weight: bold;
         text-align: center;
-        padding: 24px 0;
+        padding: 40px 0;
       }
     }
   }
@@ -320,7 +328,7 @@
     border-radius: 12px;
     border: 3px solid $main-color;
     @include mq(sp) {
-      padding: 0;
+      padding: 10px;
       border: 2px solid $main-color;
     }
 
@@ -338,6 +346,7 @@
 
     .l-step2__text {
       padding: 16px 0;
+      text-align: center;
       @include mq(sp) {
         padding: 16px 8px;
       }
@@ -359,7 +368,7 @@
 
         .l-step2__img-left {
           display: flex;
-          gap: 64px;
+          gap: 30px;
           @include mq(sp-ls) {
             justify-content: center;
             gap: 32px;
@@ -421,6 +430,7 @@
     .l-step2__caution-center {
       .l-step2__caution-text {
         font-weight: bold;
+        text-align: center;
         padding: 56px 8px;
         font-size: 14px;
         @include mq(sp) {
@@ -463,6 +473,8 @@
         max-width: 387px;
         .l-step2__text {
           line-height: 180%;
+          text-align: left;
+
           @include mq(sp-ls) {
             padding: 32px 0;
           }
@@ -543,28 +555,34 @@
   padding: 120px 20px 0;
   margin: 0 auto;
   @include mq(sp) {
-    padding: 80px 16px 0;
+    padding: 60px 16px 0;
   }
 
   .l-step3__headline-area {
-    padding-bottom: 24px;
-    @include mq(sp-ls) {
-      padding-bottom: 16px;
-    }
-    @include mq(sp) {
-      padding-bottom: 12px;
-    }
-
     .l-step3__headline-prefix {
       text-align: center;
-      font-size: 32px;
+      font-size: 24px;
       font-weight: bold;
       color: $main-color;
+      padding-bottom: 18px;
       @include mq(sp-ls) {
-        font-size: 28px;
+        font-size: 22px;
+        padding-bottom: 13px;
       }
       @include mq(sp) {
         font-size: 20px;
+        padding-bottom: 9px;
+      }
+
+      .--font-lg {
+        font-size: 80px;
+        line-height: 1;
+        @include mq(sp-ls) {
+          font-size: 60px;
+        }
+        @include mq(sp) {
+          font-size: 40px;
+        }
       }
     }
     .l-step3__ttl-area {
@@ -617,28 +635,33 @@
   padding: 120px 20px 120px;
   margin: 0 auto;
   @include mq(sp) {
-    padding: 80px 16px 80px;
+    padding: 60px 16px 60px;
   }
 
   .l-step4__headline-area {
-    padding-bottom: 24px;
-    @include mq(sp-ls) {
-      padding-bottom: 16px;
-    }
-    @include mq(sp) {
-      padding-bottom: 12px;
-    }
-
     .l-step4__headline-prefix {
       text-align: center;
-      font-size: 32px;
+      font-size: 24px;
       font-weight: bold;
       color: $main-color;
+      padding-bottom: 18px;
       @include mq(sp-ls) {
-        font-size: 28px;
+        font-size: 22px;
+        padding-bottom: 13px;
       }
       @include mq(sp) {
         font-size: 20px;
+        padding-bottom: 9px;
+      }
+      .--font-lg {
+        font-size: 80px;
+        line-height: 1;
+        @include mq(sp-ls) {
+          font-size: 60px;
+        }
+        @include mq(sp) {
+          font-size: 40px;
+        }
       }
     }
     .l-step4__ttl-area {
