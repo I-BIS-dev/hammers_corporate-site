@@ -1,7 +1,7 @@
 <?php
 $to = $_POST["mail"];
 $subject = "送信ありがとうございました";
-$message  = "test 様 \r\n"
+$message  = $_POST['name'] . " 様 \r\n"
   . "\r\n"
   . "BESTARへお問い合わせありがとうございました。\r\n"
   . "早急にご返信致しますので今しばらくお待ちください。\r\n"
@@ -34,7 +34,7 @@ mail($to, $subject, $message, $headers);
 <?php
 $to = "ino.winter.1212@gmail.com";
 $subject = "お問い合わせがありました";
-$message  = "test 様 \r\n"
+$message  = $_POST['name'] . " 様 \r\n"
   . "\r\n"
   . "BESTARへお問い合わせありがとうございました。\r\n"
   . "早急にご返信致しますので今しばらくお待ちください。\r\n"
