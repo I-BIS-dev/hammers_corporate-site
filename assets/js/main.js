@@ -1,7 +1,7 @@
-$(document).ready(function () {
+jQuery(document).ready(function () {
   // ハンバーガーボタン
-  const ham = $("#js-hamburger");
-  const nav = $("#js-nav");
+  const ham = jQuery("#js-hamburger");
+  const nav = jQuery("#js-nav");
   ham.on("click", function () {
     ham.toggleClass("--active");
     nav.toggleClass("--open");
@@ -17,78 +17,78 @@ $(document).ready(function () {
   });
 
   // スクロール時ヘッダーアニメーション
-  var $win = $(window),
-    $header = $("header"),
-    $contact = $("header .l-header__nav-contact"),
-    $phone = $("header .l-header__phone"),
-    $logo = $("header .l-header__logo-area"),
-    $nav = $("header .l-header__nav-list"),
-    $navtext = $("header .l-header__nav-link"),
-    $contacttext = $(".l-header__btn"),
+  var jQuerywin = jQuery(window),
+    jQueryheader = jQuery("header"),
+    jQuerycontact = jQuery("header .l-header__nav-contact"),
+    jQueryphone = jQuery("header .l-header__phone"),
+    jQuerylogo = jQuery("header .l-header__logo-area"),
+    jQuerynav = jQuery("header .l-header__nav-list"),
+    jQuerynavtext = jQuery("header .l-header__nav-link"),
+    jQuerycontacttext = jQuery(".l-header__btn"),
     animationClass = "header-animation";
 
-  $win.on("load scroll", function () {
-    const value = $(this).scrollTop();
+  jQuerywin.on("load scroll", function () {
+    const value = jQuery(this).scrollTop();
     if (value > 100) {
-      $header.addClass("header-animation");
-      $contact.addClass("header-animation");
-      $phone.addClass("header-animation");
-      $logo.addClass("header-animation");
-      $nav.addClass("header-animation");
-      $navtext.addClass("header-animation");
-      $contacttext.addClass("header-animation");
+      jQueryheader.addClass("header-animation");
+      jQuerycontact.addClass("header-animation");
+      jQueryphone.addClass("header-animation");
+      jQuerylogo.addClass("header-animation");
+      jQuerynav.addClass("header-animation");
+      jQuerynavtext.addClass("header-animation");
+      jQuerycontacttext.addClass("header-animation");
     } else {
-      $header.removeClass("header-animation");
-      $contact.removeClass("header-animation");
-      $phone.removeClass("header-animation");
-      $logo.removeClass("header-animation");
-      $nav.removeClass("header-animation");
-      $navtext.removeClass("header-animation");
-      $contacttext.removeClass("header-animation");
+      jQueryheader.removeClass("header-animation");
+      jQuerycontact.removeClass("header-animation");
+      jQueryphone.removeClass("header-animation");
+      jQuerylogo.removeClass("header-animation");
+      jQuerynav.removeClass("header-animation");
+      jQuerynavtext.removeClass("header-animation");
+      jQuerycontacttext.removeClass("header-animation");
     }
   });
 
-  $(".l-faq__list dd").hide();
-  $(".l-faq__list dt").click(function () {
-    $(this).next(".l-faq__list dd").slideToggle("fast");
-    $(this).toggleClass("--arrow");
-    $(".l-faq__list dt").not($(this)).next(".l-faq__list dd").slideUp();
-    $(".l-faq__list dt").not($(this)).removeClass("--arrow");
+  jQuery(".l-faq__list dd").hide();
+  jQuery(".l-faq__list dt").click(function () {
+    jQuery(this).next(".l-faq__list dd").slideToggle("fast");
+    jQuery(this).toggleClass("--arrow");
+    jQuery(".l-faq__list dt").not(jQuery(this)).next(".l-faq__list dd").slideUp();
+    jQuery(".l-faq__list dt").not(jQuery(this)).removeClass("--arrow");
   });
 
-  $(".--topbtn img").click(function () {
-    $("html,body").animate({ scrollTop: 0 }, 700);
+  jQuery(".--topbtn img").click(function () {
+    jQuery("html,body").animate({ scrollTop: 0 }, 700);
   });
 
-  $(window).on("load scroll", function () {
-    const box = $(".a--fadeIn");
+  jQuery(window).on("load scroll", function () {
+    const box = jQuery(".a--fadeIn");
     const animated = "a--animated";
 
     box.each(function () {
-      const boxOffset = $(this).offset().top;
-      const scrollPos = $(window).scrollTop();
-      const wh = $(window).height();
+      const boxOffset = jQuery(this).offset().top;
+      const scrollPos = jQuery(window).scrollTop();
+      const wh = jQuery(window).height();
 
       if (scrollPos > boxOffset - wh + 100) {
-        $(this).addClass(`a--animated`);
+        jQuery(this).addClass(`a--animated`);
       }
     });
   });
 
-  $(".js-err").css("display", "none");
+  jQuery(".js-err").css("display", "none");
 
-  $(".js-form-click").click(function () {
-    $(".js-form-input").each(function () {
-      if ($(this).val() === "") {
+  jQuery(".js-form-click").click(function () {
+    jQuery(".js-form-input").each(function () {
+      if (jQuery(this).val() === "") {
         console.log("true");
-        $(this).next("p").css({
+        jQuery(this).next("p").css({
           color: "#dc3232",
           "font-size": "12px",
           "font-weight": "normal",
           display: "block",
         });
       } else {
-        $(this).next("p").css({
+        jQuery(this).next("p").css({
           display: "none",
         });
       }
