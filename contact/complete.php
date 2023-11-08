@@ -145,6 +145,7 @@ mail($to, $subject, $message, $headers);
   <main class="main">
     <section class="l-sub-mv">
       <div class="l-sub-mv__area">
+        <div class="l-sub-mv-area-sp"></div>
         <h1 class="l-sub-mv__hero --privacy">お問い合わせ/完了画面</h1>
       </div>
       <div class="l-sub-mv__label-area">
