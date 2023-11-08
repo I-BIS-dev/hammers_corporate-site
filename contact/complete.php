@@ -111,10 +111,10 @@ mail($to, $subject, $message, $headers);
           <li class="l-header__nav-item"><a class="c-ctabtn" href="../request/">分析依頼</a></li>
         </ul>
       </nav>
-      <div class="l-header__nav-contact">
+      <a href="../contact/" class="l-header__nav-contact">
         <img class="l-header__navicon" src="/assets/images/arrow-header.svg" width="25" height="25" alt="矢印アイコン">
-        <a href="../contact/" class="l-header__btn">お問い合わせ</a>
-      </div>
+        <span class="l-header__btn">お問い合わせ</span>
+      </a>
     </div>
   </header>
 
@@ -193,7 +193,7 @@ mail($to, $subject, $message, $headers);
       </ul>
     </div>
     <div class="l-footer__bottom">
-      <p class="l-footer__copyright">Copyright &copy2023 HAMMER'S All Rights Reserved.</p>
+      <p class="l-footer__copyright">Copyright &copy;HAMMER'S All Rights Reserved.</p>
     </div>
   </footer>
 </body>
