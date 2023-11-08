@@ -105,7 +105,8 @@
             </p>
           </div>
           <div class="c-analysis__data">
-            <input placeholder="株式会社〇〇" type="text" name="company" size="50" value="" required><br>
+            <input class="js-form-input" placeholder="株式会社〇〇" type="text" name="company" size="50" value="" required>
+            <p class="js-err">このフィールドに入力してください。</p>
           </div>
         </div>
         <div class="c-analysis__row">
@@ -115,7 +116,8 @@
             </p>
           </div>
           <div class="c-analysis__data">
-            <input placeholder="△△ △△" type="text" name="name" size="50" value="" required><br>
+            <input class="js-form-input" placeholder="△△ △△" type="text" name="name" size="50" value="" required>
+            <p class="js-err">このフィールドに入力してください。</p>
           </div>
         </div>
         <div class="c-analysis__row">
@@ -125,7 +127,8 @@
             </p>
           </div>
           <div class="c-analysis__data">
-            <input placeholder="090-1234-5678" type="text" name="tel" size="50" value="" required><br>
+            <input class="js-form-input" placeholder="090-1234-5678" type="text" name="tel" size="50" value="" required>
+            <p class="js-err">このフィールドに入力してください。</p>
           </div>
         </div>
         <div class="c-analysis__row">
@@ -135,7 +138,8 @@
             </p>
           </div>
           <div class="c-analysis__data">
-            <input placeholder="abcde@fghij.com" type="text" name="mail" size="50" value="" required><br>
+            <input class="js-form-input" placeholder="abcde@fghij.com" type="text" name="mail" size="50" value="" required>
+            <p class="js-err">このフィールドに入力してください。</p>
           </div>
         </div>
         <div class="c-analysis__row">
@@ -171,13 +175,13 @@
             </p>
           </div>
           <div class="c-analysis__data">
-            <textarea placeholder="内容を入力してください" name="inquiry" cols="50" rows="5" required></textarea>
+            <textarea placeholder="内容を入力してください" name="inquiry" cols="50" rows="5"></textarea>
           </div>
         </div>
         <div class="c-analysis__row"></div>
 
         <div class="c-analysis__submit-wrap">
-          <input type="submit" value="送信" />
+          <input class="js-form-click" type="submit" value="送信" />
         </div>
       </form>
     </div>

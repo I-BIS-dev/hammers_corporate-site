@@ -1,25 +1,65 @@
 <?php
 $to = $_POST["mail"];
-$subject = "お問い合わせありがとうございました";
-$message  = "お問い合わせを受け付けました \r\n"
-  . "会社名: " .  $_POST['company'] . "\r\n"
-  . "担当者名: " .  $_POST['name'] . "\r\n"
-  . "電話番号: " .  $_POST['tel'] . "\r\n"
-  . "メールアドレス: " . $_POST['mail'] . "\r\n"
-  . "連絡方法: " . $_POST['contact'] . "\r\n"
-  . "問い合わせ項目: " . $_POST['item'] . "\r\n"
-  . "お問い合わせ内容:\r\n"
-  . str_replace("<br />", "\r\n", $_POST['inquiry']);;
-$headers = "From: test@example.com";
+$subject = "送信ありがとうございました";
+$message  = $_POST['name'] . " 様 \r\n"
+  . "\r\n"
+  . "BESTARへお問い合わせありがとうございました。\r\n"
+  . "早急にご返信致しますので今しばらくお待ちください。\r\n"
+  . "\r\n"
+  . "送信内容は以下になります。\r\n"
+  . "\r\n"
+  . "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\r\n"
+  . "\r\n"
+  . "【 ご用件 】\r\n"
+  . "【 会社名 】" .  $_POST['company'] . "\r\n"
+  . "【 担当者名 】" .  $_POST['name'] . "\r\n"
+  . "【 電話番号 】" .  $_POST['tel'] . "\r\n"
+  . "【 Email 】" . $_POST['mail'] . "\r\n"
+  . "【 連絡方法 】" . $_POST['contact'] . "\r\n"
+  . "【問い合わせ項目】 " . $_POST['item'] . "\r\n"
+  . "【お問い合わせ内容】\r\n"
+  . str_replace("<br />", "\r\n", $_POST['inquiry'])
+  . "\r\n"
+  . "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\r\n"
+  . "──────────────────────\r\n"
+  . "株式会社ハマーズ 分析事業部 (BESTAR)\r\n"
+  . "http://bestar7.jp/\r\n"
+  . "Mail:info-b@bestar7.jp\r\n"
+  . "──────────────────────";
+$headers = "From: info-b@bestar7.jp";
 
 mail($to, $subject, $message, $headers);
 ?>
 
 <?php
-$to = "//ハマーズメールアドレスを挿入";
+$to = "ino.winter.1212@gmail.com";
 $subject = "お問い合わせがありました";
-$message = "ここに本文を挿入";
-$headers = "From: test@example.com";
+$message  = $_POST['name'] . " 様 \r\n"
+  . "\r\n"
+  . "BESTARへお問い合わせありがとうございました。\r\n"
+  . "早急にご返信致しますので今しばらくお待ちください。\r\n"
+  . "\r\n"
+  . "送信内容は以下になります。\r\n"
+  . "\r\n"
+  . "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\r\n"
+  . "\r\n"
+  . "【 ご用件 】\r\n"
+  . "【 会社名 】" .  $_POST['company'] . "\r\n"
+  . "【 担当者名 】" .  $_POST['name'] . "\r\n"
+  . "【 電話番号 】" .  $_POST['tel'] . "\r\n"
+  . "【 Email 】" . $_POST['mail'] . "\r\n"
+  . "【 連絡方法 】" . $_POST['contact'] . "\r\n"
+  . "【問い合わせ項目】 " . $_POST['item'] . "\r\n"
+  . "【お問い合わせ内容】\r\n"
+  . str_replace("<br />", "\r\n", $_POST['inquiry'])
+  . "\r\n"
+  . "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\r\n"
+  . "──────────────────────\r\n"
+  . "株式会社ハマーズ 分析事業部 (BESTAR)\r\n"
+  . "http://bestar7.jp/\r\n"
+  . "Mail:info-b@bestar7.jp\r\n"
+  . "──────────────────────";
+$headers = "From: info-b@bestar7.jp";
 
 mail($to, $subject, $message, $headers);
 ?>
