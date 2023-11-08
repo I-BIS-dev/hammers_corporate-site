@@ -13,6 +13,8 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ベスター アスベスト分析・調査の専門家">
 
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/images/favicon.png">
   <link rel="stylesheet" href="/css/common.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="/assets/js/main.js"></script>

@@ -71,8 +71,17 @@ mail($to, $subject, $message, $headers);
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>株式会社ハマーズ</title>
+  <title>お問い合わせ | ベスター アスベスト分析・調査の専門家</title>
+  <meta name="description" content="お問い合わせのページです。早い・簡単・便利なアスベスト分析ならベスターにお任せください！">
+  <meta property="og:title" content="ベお問い合わせ | ベスター アスベスト分析・調査の専門家">
+  <meta property="og:description" content="お問い合わせのページです。早い・簡単・便利なアスベスト分析ならベスターにお任せください！">
+  <meta property="og:url" content="https://bestar7.jp/contact/">
+  <meta property="og:image" content="https://bestar7.jp/assets/images/ogp-img.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ベスター アスベスト分析・調査の専門家">
 
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/images/favicon.png">
   <link rel="stylesheet" href="/css/common.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="/assets/js/main.js"></script>
