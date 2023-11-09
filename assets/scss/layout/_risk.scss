@@ -453,9 +453,14 @@
         .l-risk-table__ttl {
           text-align: center;
           font-weight: bold;
+          font-size: 20px;
           padding: 20px 0;
           color: $main-color;
           border-bottom: 2px solid $main-color;
+          @include mq(sp) {
+            font-size: 14px;
+            padding: 14px 0;
+          }
         }
         .l-risk-table__list {
           .l-risk-table__item {
@@ -494,9 +499,14 @@
         .l-risk-table__ttl {
           text-align: center;
           font-weight: bold;
+          font-size: 20px;
           padding: 20px 0;
           color: $main-color;
           border-bottom: 2px solid $main-color;
+          @include mq(sp) {
+            font-size: 14px;
+            padding: 14px 0;
+          }
         }
         .l-risk-table__list {
           .l-risk-table__item {
@@ -508,6 +518,7 @@
             background-color: $white;
             text-align: center;
             border-bottom: 1px solid #c2cfc9;
+
             &:nth-child(even) {
               background-color: #f7f7f7;
             }
