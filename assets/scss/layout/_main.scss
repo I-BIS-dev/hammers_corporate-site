@@ -1199,7 +1199,7 @@
     padding: 64px 0;
     position: relative;
     &.--flow {
-      background-color: $bg-color;
+      background-color: $white;
       padding: 0;
     }
     @include mq(sp) {

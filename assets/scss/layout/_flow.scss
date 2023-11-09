@@ -11,86 +11,70 @@
 
   .l-step1 {
     max-width: 840px;
-    padding: 120px 20px 0;
+    padding: 120px 20px 120px;
     margin: 0 auto;
     @include mq(sp) {
-      padding: 60px 16px 0;
+      padding: 60px 16px 60px;
     }
 
-    .l-step1__headline-area {
-      padding-bottom: 24px;
-      @include mq(sp-ls) {
-        padding-bottom: 16px;
-      }
-      @include mq(sp) {
-        padding-bottom: 12px;
-      }
+    .l-ttl-area {
+      text-align: center;
 
-      .l-step1__headline-prefix {
-        text-align: center;
+      .l-ttl {
+        color: $main-color;
         font-size: 24px;
         font-weight: bold;
-        color: $main-color;
-        padding-bottom: 18px;
-        @include mq(sp-ls) {
-          font-size: 22px;
-          padding-bottom: 13px;
-        }
+        font-family: "Roboto", sans-serif;
         @include mq(sp) {
           font-size: 20px;
-          padding-bottom: 9px;
         }
-
-        .--font-lg {
+        &.--font-strong {
           font-size: 80px;
-          line-height: 1;
+          line-height: 0.9;
+          padding-left: 4px;
           @include mq(sp-ls) {
-            font-size: 60px;
+            font-size: 48px;
           }
           @include mq(sp) {
             font-size: 40px;
           }
         }
       }
-      .l-step1__ttl-area {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .l-step1__ttl {
-          font-size: 32px;
-          font-weight: bold;
-          text-align: center;
-          position: relative;
-          margin-bottom: 1em;
-          display: inline-block;
-          padding-bottom: 15px;
-          margin-bottom: 60px;
-          border-bottom: 4px dashed $main-color;
-          @include mq(sp-ls) {
-            font-size: 28px;
-            padding-bottom: 13px;
-            border-bottom: 3px dashed $main-color;
-            margin-bottom: 40px;
-          }
-          @include mq(sp) {
-            font-size: 20px;
-            padding-bottom: 8px;
-            margin-bottom: 30px;
-            // border-bottom: 2px dashed $main-color;
-          }
+      .l-text {
+        font-size: 32px;
+        font-weight: bold;
+        color: $black;
+        padding-top: 24px;
+        padding-bottom: 60px;
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-decoration-color: $main-color;
+        text-decoration-thickness: 2px;
+        text-decoration-skip-ink: none;
+        text-underline-offset: 16px;
+        line-height: 200%;
+        @include mq(sp-ls) {
+          font-size: 26px;
+          text-underline-offset: 12px;
+          padding-top: 16px;
+        }
+        @include mq(sp) {
+          font-size: 18px;
+          text-underline-offset: 12px;
+          padding-bottom: 30px;
         }
       }
     }
 
     .l-step1__text-area {
-      padding-bottom: 80px;
+      padding-bottom: 32px;
       @include mq(sp) {
-        padding-bottom: 40px;
+        padding-bottom: 24px;
       }
       .l-step1__text {
-        line-height: 180%;
+        line-height: 200%;
         &.--under {
-          padding-top: 11px;
+          padding-top: 22px;
         }
       }
     }
@@ -98,10 +82,10 @@
     .l-step1__excel {
       padding: 44px;
       border-radius: 12px;
-      margin-top: 80px;
-      border: 3px solid $main-color;
+      margin-top: 32px;
+      border: 4px solid $main-color;
       @include mq(sp) {
-        margin-top: 40px;
+        margin-top: 24px;
         border: 2px solid $main-color;
         padding: 10px;
       }
@@ -135,7 +119,7 @@
           }
 
           .l-step1__text {
-            line-height: 180%;
+            line-height: 200%;
             padding-bottom: 34px;
           }
           .l-step1__btn-area {
@@ -155,8 +139,13 @@
             @include mq(sp-ls) {
               padding-top: 24px;
             }
-            .l-step1__img {
-              min-width: 278px;
+            .l-step1__modal-open--link {
+              &:hover {
+                @include hover-effect;
+              }
+              .l-step1__img {
+                min-width: 278px;
+              }
             }
           }
 
@@ -210,23 +199,24 @@
               width: 100%;
               max-width: 650px;
               min-width: 300px;
-              height: auto;
+              height: 80vh;
               background-color: #fff;
               position: absolute;
               z-index: 100;
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%);
+              // padding: 50px 0;
             }
             .l-step1__modal-contents {
               overflow: auto;
               width: 100%;
-              height: 100%;
+              height: 80vh;
               box-sizing: border-box;
               position: relative;
               z-index: 100;
               .l-step1__modal-content {
-                margin: 36px;
+                margin: 50px 0;
               }
               .l-step1__modal-close {
                 position: absolute;
@@ -244,73 +234,66 @@
 }
 .l-step2 {
   max-width: 840px;
-  padding: 120px 20px 0;
+  padding: 120px 20px 120px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
   @include mq(sp) {
-    padding: 60px 16px 0;
+    padding: 60px 16px 60px;
   }
 
-  .l-step2__headline-area {
-    .l-step2__headline-prefix {
-      text-align: center;
+  .l-ttl-area {
+    text-align: center;
+
+    .l-ttl {
+      color: $main-color;
       font-size: 24px;
       font-weight: bold;
-      color: $main-color;
-      padding-bottom: 18px;
-      @include mq(sp-ls) {
-        font-size: 22px;
-        padding-bottom: 13px;
-      }
+      font-family: "Roboto", sans-serif;
       @include mq(sp) {
         font-size: 20px;
-        padding-bottom: 9px;
       }
-
-      .--font-lg {
+      &.--font-strong {
         font-size: 80px;
-        line-height: 1;
+        line-height: 0.9;
+        padding-left: 4px;
         @include mq(sp-ls) {
-          font-size: 60px;
+          font-size: 48px;
         }
         @include mq(sp) {
           font-size: 40px;
         }
       }
     }
-    .l-step2__ttl-area {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .l-step2__ttl {
-        font-size: 32px;
-        font-weight: bold;
-        text-align: center;
-        position: relative;
-        margin-bottom: 1em;
-        display: inline-block;
-        padding-bottom: 15px;
-        margin-bottom: 60px;
-        border-bottom: 4px dashed $main-color;
-        @include mq(sp-ls) {
-          font-size: 28px;
-          padding-bottom: 13px;
-          border-bottom: 3px dashed $main-color;
-          margin-bottom: 40px;
-        }
-        @include mq(sp) {
-          font-size: 20px;
-          padding-bottom: 8px;
-          margin-bottom: 30px;
-        }
+    .l-text {
+      font-size: 32px;
+      font-weight: bold;
+      color: $black;
+      padding-top: 24px;
+      padding-bottom: 60px;
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      text-decoration-color: $main-color;
+      text-decoration-thickness: 2px;
+      text-decoration-skip-ink: none;
+      text-underline-offset: 16px;
+      line-height: 200%;
+      @include mq(sp-ls) {
+        font-size: 26px;
+        text-underline-offset: 12px;
+        padding-top: 16px;
+      }
+      @include mq(sp) {
+        font-size: 18px;
+        text-underline-offset: 12px;
+        padding-bottom: 30px;
       }
     }
   }
 
   .l-step2__text-area {
     .l-step2__text {
-      line-height: 180%;
+      line-height: 200%;
 
       &.--min {
         font-size: 12px;
@@ -326,7 +309,7 @@
   .l-step2__caution {
     padding: 44px;
     border-radius: 12px;
-    border: 3px solid $main-color;
+    border: 4px solid $main-color;
     @include mq(sp) {
       padding: 10px;
       border: 2px solid $main-color;
@@ -345,7 +328,8 @@
     }
 
     .l-step2__text {
-      padding: 16px 0;
+      padding: 8px 0 32px;
+      line-height: 200%;
       text-align: center;
       @include mq(sp) {
         padding: 16px 8px;
@@ -354,10 +338,12 @@
 
     .l-step2__caution-top {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 40px;
       @include mq(sp-ls) {
         flex-direction: column;
         justify-content: center;
+        gap: 0;
       }
 
       .l-step2__sample-topleft {
@@ -386,10 +372,18 @@
               max-width: 162px;
             }
 
+            .l-step2__img-prefix {
+              text-align: center;
+              padding-bottom: 12px;
+              font-weight: bold;
+              font-size: 14px;
+            }
+
             .l-step2__img {
               min-height: 148px;
               width: 100%;
               margin-right: 16px;
+              border-radius: 4px;
               @include mq(sp-ls) {
                 min-height: 140px;
               }
@@ -412,9 +406,17 @@
             margin: 0 auto;
           }
 
+          .l-step2__img-prefix {
+            text-align: center;
+            padding-bottom: 12px;
+            font-weight: bold;
+            font-size: 14px;
+          }
+
           .l-step2__img {
             min-height: 148px;
             width: 100%;
+            border-radius: 4px;
           }
         }
 
@@ -432,7 +434,7 @@
         font-weight: bold;
         text-align: center;
         padding: 56px 8px;
-        font-size: 14px;
+        font-size: 16px;
         @include mq(sp) {
           padding: 32px 8px;
         }
@@ -449,7 +451,7 @@
       .l-step2__center-text {
         font-size: 12px;
         text-align: center;
-        padding: 8px 0;
+        padding: 16px 0;
         @include mq(sp) {
           padding: 0 8px;
         }
@@ -459,7 +461,6 @@
     .l-step2__caution-bottom {
       display: flex;
       justify-content: space-between;
-      align-items: center;
       padding: 56px 8px;
       @include mq(sp-ls) {
         flex-direction: column-reverse;
@@ -472,9 +473,9 @@
       .l-step2__bottom-left {
         max-width: 387px;
         .l-step2__text {
-          line-height: 180%;
+          line-height: 200%;
           text-align: left;
-          padding-right: 24px;
+          padding: 0 24px 9px 0;
 
           @include mq(sp-ls) {
             padding: 32px 0;
@@ -502,53 +503,6 @@
         }
       }
     }
-
-    // .l-step2__info-area {
-    //   display: flex;
-    //   justify-content: space-between;
-    //   align-items: center;
-    //   @include mq(sp-ls) {
-    //     flex-direction: column-reverse;
-    //   }
-    //   .l-step2__info {
-    //     flex: 5;
-    //     padding: 0 64px;
-    //     @include mq(sp-ls) {
-    //       padding: 0;
-    //     }
-
-    //     .l-step2__text {
-    //       line-height: 180%;
-    //       padding-bottom: 24px;
-    //     }
-    //     .l-step2__btn-area {
-    //       display: flex;
-    //       justify-content: center;
-    //     }
-    //   }
-    //   .l-step2__excel-area {
-    //     flex: 5;
-    //     max-width: 278px;
-    //     @include mq(sp-ls) {
-    //       padding-bottom: 24px;
-    //     }
-    //     @include mq(sp-ls) {
-    //       padding-bottom: 16px;
-    //     }
-    //     .l-step2__img {
-    //       max-width: 278px;
-    //       width: 100%;
-    //     }
-    //     .l-step2__dl-area {
-    //       text-align: center;
-    //       padding: 2px;
-    //       .l-step2__example {
-    //         color: $main-color;
-    //         font-size: 14px;
-    //       }
-    //     }
-    //   }
-    // }
   }
 }
 
@@ -560,70 +514,63 @@
     padding: 60px 16px 0;
   }
 
-  .l-step3__headline-area {
-    .l-step3__headline-prefix {
-      text-align: center;
+  .l-ttl-area {
+    text-align: center;
+
+    .l-ttl {
+      color: $main-color;
       font-size: 24px;
       font-weight: bold;
-      color: $main-color;
-      padding-bottom: 18px;
-      @include mq(sp-ls) {
-        font-size: 22px;
-        padding-bottom: 13px;
-      }
+      font-family: "Roboto", sans-serif;
       @include mq(sp) {
         font-size: 20px;
-        padding-bottom: 9px;
       }
-
-      .--font-lg {
+      &.--font-strong {
         font-size: 80px;
-        line-height: 1;
+        line-height: 0.9;
+        padding-left: 4px;
         @include mq(sp-ls) {
-          font-size: 60px;
+          font-size: 48px;
         }
         @include mq(sp) {
           font-size: 40px;
         }
       }
     }
-    .l-step3__ttl-area {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .l-step3__ttl {
-        font-size: 32px;
-        font-weight: bold;
-        text-align: center;
-        position: relative;
-        margin-bottom: 1em;
-        display: inline-block;
-        padding-bottom: 15px;
-        margin-bottom: 60px;
-        border-bottom: 4px dashed $main-color;
-        @include mq(sp-ls) {
-          font-size: 28px;
-          padding-bottom: 13px;
-          border-bottom: 3px dashed $main-color;
-          margin-bottom: 40px;
-        }
-        @include mq(sp) {
-          font-size: 20px;
-          padding-bottom: 8px;
-          margin-bottom: 30px;
-        }
+    .l-text {
+      font-size: 32px;
+      font-weight: bold;
+      color: $black;
+      padding-top: 24px;
+      padding-bottom: 60px;
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      text-decoration-color: $main-color;
+      text-decoration-thickness: 2px;
+      text-decoration-skip-ink: none;
+      text-underline-offset: 16px;
+      line-height: 200%;
+      @include mq(sp-ls) {
+        font-size: 26px;
+        text-underline-offset: 12px;
+        padding-top: 16px;
+      }
+      @include mq(sp) {
+        font-size: 18px;
+        text-underline-offset: 12px;
+        padding-bottom: 30px;
       }
     }
   }
 
   .l-step3__text {
-    line-height: 180%;
+    line-height: 200%;
   }
   .l-step3__img-area {
     max-width: 520px;
     display: flex;
     justify-content: center;
-    margin: 48px auto;
+    margin: 40px auto;
     .l-step3__img {
       max-width: 520px;
       width: 100%;
@@ -640,57 +587,51 @@
     padding: 60px 16px 60px;
   }
 
-  .l-step4__headline-area {
-    .l-step4__headline-prefix {
-      text-align: center;
+  .l-ttl-area {
+    text-align: center;
+
+    .l-ttl {
+      color: $main-color;
       font-size: 24px;
       font-weight: bold;
-      color: $main-color;
-      padding-bottom: 18px;
-      @include mq(sp-ls) {
-        font-size: 22px;
-        padding-bottom: 13px;
-      }
+      font-family: "Roboto", sans-serif;
       @include mq(sp) {
         font-size: 20px;
-        padding-bottom: 9px;
       }
-      .--font-lg {
+      &.--font-strong {
         font-size: 80px;
-        line-height: 1;
+        line-height: 0.9;
+        padding-left: 4px;
         @include mq(sp-ls) {
-          font-size: 60px;
+          font-size: 48px;
         }
         @include mq(sp) {
           font-size: 40px;
         }
       }
     }
-    .l-step4__ttl-area {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .l-step4__ttl {
-        font-size: 32px;
-        font-weight: bold;
-        text-align: center;
-        position: relative;
-        margin-bottom: 1em;
-        display: inline-block;
-        padding-bottom: 15px;
-        margin-bottom: 60px;
-        border-bottom: 4px dashed $main-color;
-        @include mq(sp-ls) {
-          font-size: 28px;
-          padding-bottom: 13px;
-          border-bottom: 3px dashed $main-color;
-          margin-bottom: 40px;
-        }
-        @include mq(sp) {
-          font-size: 20px;
-          padding-bottom: 8px;
-          margin-bottom: 30px;
-        }
+    .l-text {
+      font-size: 32px;
+      font-weight: bold;
+      color: $black;
+      padding-top: 24px;
+      padding-bottom: 60px;
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      text-decoration-color: $main-color;
+      text-decoration-thickness: 2px;
+      text-decoration-skip-ink: none;
+      text-underline-offset: 16px;
+      line-height: 200%;
+      @include mq(sp-ls) {
+        font-size: 26px;
+        text-underline-offset: 12px;
+        padding-top: 16px;
+      }
+      @include mq(sp) {
+        font-size: 18px;
+        text-underline-offset: 12px;
+        padding-bottom: 30px;
       }
     }
   }
@@ -702,7 +643,7 @@
     max-width: 520px;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 40px auto;
     .l-step4__img {
       max-width: 520px;
       width: 100%;
