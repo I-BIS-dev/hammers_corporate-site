@@ -29,10 +29,10 @@
 
     .c-analysis__top-text {
       line-height: 2;
-      text-align: center;
+      text-align: left;
+      line-height: 200%;
       @include mq(sp) {
         font-size: 14px;
-        line-height: 180%;
         text-align: left;
       }
     }

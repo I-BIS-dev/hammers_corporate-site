@@ -73,7 +73,7 @@ mail($to, $subject, $message, $headers);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>お問い合わせ | ベスター アスベスト分析・調査の専門家</title>
   <meta name="description" content="お問い合わせのページです。早い・簡単・便利なアスベスト分析ならベスターにお任せください！">
-  <meta property="og:title" content="ベお問い合わせ | ベスター アスベスト分析・調査の専門家">
+  <meta property="og:title" content="お問い合わせ | ベスター アスベスト分析・調査の専門家">
   <meta property="og:description" content="お問い合わせのページです。早い・簡単・便利なアスベスト分析ならベスターにお任せください！">
   <meta property="og:url" content="https://bestar7.jp/contact/">
   <meta property="og:image" content="https://bestar7.jp/assets/images/ogp-img.png">
@@ -150,7 +150,7 @@ mail($to, $subject, $message, $headers);
       </div>
       <div class="l-sub-mv__label-area">
         <p class="l-sub-mv__label">
-          <a href="#" class="l-sub-mv__label--top">TOP</a>
+          <a href="../" class="l-sub-mv__label--top">TOP</a>
           <span class="l-sub-mv__label--arrow"></span>
           <a href="" class="l-sub-mv__label--current">お問い合わせ/完了画面</a>
         </p>
@@ -168,6 +168,25 @@ mail($to, $subject, $message, $headers);
         <p class="l-complete__msg --desctiption">※ご入力内容を記載した確認メールを送信しました。<br>※ご確認メールが24時間経過しても届かない場合は、恐れ入りますが、再度お問い合わせください。<br>※返信にお時間を頂く場合がございます。予めご了承ください。</p>
       </div>
     </div>
+    <section class="l-contact">
+      <div class="p-inner">
+        <div class="l-contact-ttl">
+          <p class="l-contact-text">アスベストのことならお気軽にお問い合わせください</p>
+        </div>
+        <div class="l-contact__infoarea">
+          <div class="l-contact__telarea">
+            <p class="l-contact__tel">TEL<a class="l-contact__tel --link" href="tel:045-253-2560">045-253-2560</a></p>
+            <p class="l-contact__time">受付時間 9:00〜18:00（土日祝除く）</p>
+          </div>
+          <div class="l-contact__btnarea">
+            <a href="/contact/" class="c-ctabtn --sub">お問い合わせ</a>
+          </div>
+        </div>
+      </div>
+      <div class="c-top-btn --topbtn">
+        <img src="/assets/images/arrow-topbtn.svg" alt="topに戻るボタン" class="c-top-btn-icon">
+      </div>
+    </section>
   </main>
 
   <footer class="l-footer">

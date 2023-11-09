@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>お問い合わせ | ベスター アスベスト分析・調査の専門家</title>
   <meta name="description" content="お問い合わせのページです。早い・簡単・便利なアスベスト分析ならベスターにお任せください！">
-  <meta property="og:title" content="ベお問い合わせ | ベスター アスベスト分析・調査の専門家">
+  <meta property="og:title" content="お問い合わせ | ベスター アスベスト分析・調査の専門家">
   <meta property="og:description" content="お問い合わせのページです。早い・簡単・便利なアスベスト分析ならベスターにお任せください！">
   <meta property="og:url" content="https://bestar7.jp/contact/">
   <meta property="og:image" content="https://bestar7.jp/assets/images/ogp-img.png">
@@ -83,7 +83,7 @@
       </div>
       <div class="l-sub-mv__label-area">
         <p class="l-sub-mv__label">
-          <a href="#" class="l-sub-mv__label--top">TOP</a>
+          <a href="../" class="l-sub-mv__label--top">TOP</a>
           <span class="l-sub-mv__label--arrow"></span>
           <a href="" class="l-sub-mv__label--current">お問い合わせ</a>
         </p>
@@ -188,6 +188,26 @@
         </div>
       </form>
     </div>
+
+    <section class="l-contact">
+      <div class="p-inner">
+        <div class="l-contact-ttl">
+          <p class="l-contact-text">アスベストのことならお気軽にお問い合わせください</p>
+        </div>
+        <div class="l-contact__infoarea">
+          <div class="l-contact__telarea">
+            <p class="l-contact__tel">TEL<a class="l-contact__tel --link" href="tel:045-253-2560">045-253-2560</a></p>
+            <p class="l-contact__time">受付時間 9:00〜18:00（土日祝除く）</p>
+          </div>
+          <div class="l-contact__btnarea">
+            <a href="/contact/" class="c-ctabtn --sub">お問い合わせ</a>
+          </div>
+        </div>
+      </div>
+      <div class="c-top-btn --topbtn">
+        <img src="/assets/images/arrow-topbtn.svg" alt="topに戻るボタン" class="c-top-btn-icon">
+      </div>
+    </section>
   </main>
 
   <footer class="l-footer">
