@@ -50,7 +50,7 @@
     }
 
     &:nth-child(2) {
-      margin: 7px 0;
+      margin: 8px 0;
     }
 
     &:nth-child(3) {
@@ -62,7 +62,7 @@
     z-index: 9999;
     .l-header__hamburger--border {
       &:nth-child(1) {
-        top: 7px;
+        top: 6px;
         transform: rotate(45deg);
         background-color: #fff;
       }
@@ -70,7 +70,7 @@
         opacity: 0;
       }
       &:nth-child(3) {
-        top: -13px;
+        top: -12px;
         transform: rotate(-45deg);
         background-color: #fff;
       }

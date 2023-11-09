@@ -490,6 +490,7 @@
         margin: 0 auto;
         max-width: 800px;
         line-height: 200%;
+        padding-bottom: 12px;
         @include mq(sp-ls) {
           padding-bottom: 16px;
         }

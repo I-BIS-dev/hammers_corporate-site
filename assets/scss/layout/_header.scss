@@ -22,8 +22,7 @@
     max-height: 49px;
 
     &.header-animation {
-      max-height: 49px;
-      // box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+      max-height: 80px;
     }
   }
   @include mq(sp) {
@@ -52,7 +51,7 @@
     @include mq(sp) {
       width: 116px;
       margin-left: 16px;
-      padding-top: 16px;
+      padding-top: 7px;
       &.header-animation {
         opacity: 0;
       }
@@ -78,7 +77,7 @@
       top: 0;
       right: 170px;
       background-color: #18ab5d;
-      padding: 5px 9px;
+      padding: 5px 12px;
       border-radius: 0 0 8px 8px;
       color: #fff;
       font-size: 11px;
@@ -105,6 +104,7 @@
         background-color: rgb(0, 131, 62);
         transition: all 0.9s;
         display: none;
+        width: 100%;
       }
 
       &.--open {
@@ -124,6 +124,9 @@
           align-items: center;
           justify-content: start;
           padding: 60px 0;
+          &.header-animation {
+            margin-top: 58px;
+          }
         }
 
         .l-header__nav-item {

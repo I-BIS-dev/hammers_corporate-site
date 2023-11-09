@@ -177,12 +177,14 @@
       .l-merit__ttl {
         color: $main-color;
         font-size: 24px;
+        font-weight: bold;
         font-family: "Roboto", sans-serif;
         @include mq(sp) {
           font-size: 20px;
         }
         &.--font-strong {
           font-size: 80px;
+          font-weight: initial;
           line-height: 0.9;
           padding-left: 4px;
           @include mq(sp-ls) {
@@ -222,7 +224,7 @@
       .l-merit__desctiption-area {
         display: flex;
         justify-content: center;
-        align-items: center;
+
         @include mq(sp-ls) {
           justify-content: space-between;
         }
@@ -278,6 +280,7 @@
       .l-reliable__ttl {
         color: $main-color;
         font-size: 24px;
+        font-weight: bold;
         font-family: "Roboto", sans-serif;
         @include mq(sp) {
           font-size: 20px;
@@ -398,6 +401,7 @@
       .l-allin__ttl {
         color: $main-color;
         font-size: 24px;
+        font-weight: bold;
         font-family: "Roboto", sans-serif;
         @include mq(sp) {
           font-size: 20px;
