@@ -358,6 +358,80 @@
       }
     }
 
+    // .l-risk-table {
+    //   display: flex;
+    //   justify-content: space-between;
+    //   max-width: 800px;
+    //   margin: 0 auto;
+    //   @include mq(sp-ls) {
+    //     // flex-direction: column;
+    //     // justify-content: center;
+    //   }
+
+    //   .l-risk-table__left {
+    //     flex: 5;
+    //     max-width: 400px;
+    //     width: 100%;
+    //     @include mq(sp-ls) {
+    //       margin: 0 auto;
+    //     }
+
+    //     .l-risk-table__ttl {
+    //       text-align: center;
+    //       font-weight: bold;
+    //       padding: 14px 0;
+    //       background-color: #dbede3;
+    //       margin: 0 4px;
+    //     }
+    //     .l-risk-table__list {
+    //       .l-risk-table__item {
+    //         padding: 16px 0;
+    //         margin: 0 4px;
+    //         background-color: $bg-color;
+    //         text-align: center;
+    //         &:nth-child(even) {
+    //           background-color: #dbede3;
+    //         }
+    //         @include mq(sp) {
+    //           font-size: 10px;
+    //           padding: 12px 4px;
+    //         }
+    //       }
+    //     }
+    //   }
+    //   .l-risk-table__right {
+    //     flex: 5;
+    //     max-width: 400px;
+    //     width: 100%;
+    //     @include mq(sp-ls) {
+    //       margin: 0 auto;
+    //     }
+
+    //     .l-risk-table__ttl {
+    //       text-align: center;
+    //       font-weight: bold;
+    //       padding: 14px 0;
+    //       background-color: #dbede3;
+    //       margin: 0 4px;
+    //     }
+    //     .l-risk-table__list {
+    //       .l-risk-table__item {
+    //         padding: 16px 0;
+    //         margin: 0 4px;
+    //         background-color: $bg-color;
+    //         text-align: center;
+    //         &:nth-child(even) {
+    //           background-color: #dbede3;
+    //         }
+    //         @include mq(sp) {
+    //           font-size: 10px;
+    //           padding: 12px 4px;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+
     .l-risk-table {
       display: flex;
       justify-content: space-between;
@@ -379,22 +453,32 @@
         .l-risk-table__ttl {
           text-align: center;
           font-weight: bold;
-          padding: 14px 0;
-          background-color: #dbede3;
-          margin: 0 4px;
+          padding: 20px 0;
+          color: $main-color;
+          border-bottom: 2px solid $main-color;
         }
         .l-risk-table__list {
           .l-risk-table__item {
-            padding: 16px 0;
-            margin: 0 4px;
-            background-color: $bg-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65px;
+            padding: 20px 16px;
+            background-color: $white;
+            border-bottom: 1px solid #c2cfc9;
             text-align: center;
             &:nth-child(even) {
-              background-color: #dbede3;
+              background-color: #f7f7f7;
+            }
+            @include mq(sp-ls) {
+              font-size: 14px;
+              padding: 12px 12px;
+              height: 60px;
             }
             @include mq(sp) {
-              font-size: 10px;
-              padding: 12px 4px;
+              font-size: 11px;
+              padding: 12px 12px;
+              height: 55px;
             }
           }
         }
@@ -410,22 +494,32 @@
         .l-risk-table__ttl {
           text-align: center;
           font-weight: bold;
-          padding: 14px 0;
-          background-color: #dbede3;
-          margin: 0 4px;
+          padding: 20px 0;
+          color: $main-color;
+          border-bottom: 2px solid $main-color;
         }
         .l-risk-table__list {
           .l-risk-table__item {
-            padding: 16px 0;
-            margin: 0 4px;
-            background-color: $bg-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65px;
+            padding: 20px 16px;
+            background-color: $white;
             text-align: center;
+            border-bottom: 1px solid #c2cfc9;
             &:nth-child(even) {
-              background-color: #dbede3;
+              background-color: #f7f7f7;
+            }
+            @include mq(sp-ls) {
+              font-size: 15px;
+              padding: 12px 12px;
+              height: 60px;
             }
             @include mq(sp) {
-              font-size: 10px;
-              padding: 12px 4px;
+              font-size: 11px;
+              padding: 12px 12px;
+              height: 55px;
             }
           }
         }
