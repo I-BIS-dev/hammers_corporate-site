@@ -15,13 +15,13 @@
     width: 33.333%;
 
     &:after {
-      background: #91cfae;
+      background: #e8e8e8;
       content: "";
-      width: calc(100% - 24px);
-      height: 4px;
+      width: calc(100% - 26px);
+      height: 2px;
       position: absolute;
-      left: calc(-50% + 12px);
-      top: 10px;
+      left: calc(-50% + 15px);
+      top: 15px;
       @include mq(sp) {
         width: calc(100% - 18px);
         height: 2px;
@@ -35,13 +35,13 @@
     }
 
     .c-stepbar__number {
-      background: #91cfae;
-      color: #ffffff;
+      background: #e8e8e8;
+      color: $black;
       display: inline-block;
-      height: 24px;
+      height: 30px;
       margin-bottom: 5px;
-      line-height: 22px;
-      width: 24px;
+      line-height: 28px;
+      width: 30px;
       border-radius: 50%;
       @include mq(sp) {
         height: 20px;
@@ -52,9 +52,14 @@
   }
 
   .--visited {
-    &:after,
+    color: $main-color;
+    &:after {
+      background: $accent-color;
+    }
+
     .c-stepbar__number {
       background: $accent-color;
+      color: $white;
     }
   }
 }

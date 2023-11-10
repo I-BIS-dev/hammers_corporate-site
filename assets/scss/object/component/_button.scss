@@ -143,30 +143,25 @@
       width: 300px;
     }
   }
-
-  // span {
-  //   display: block;
-  //   transition: 0.5s;
-  //   &:hover {
-  //     transform: rotateX(360deg);
-  //   }
-  // }
+  &.--contact {
+    width: 156px;
+    @include mq(sp) {
+      // width: 300px;
+    }
+  }
 }
 
 .c-confirm-btn-area {
-  padding-top: 32px;
-  gap: 24px;
+  padding-top: 48px;
+  gap: 30px;
+  display: flex;
+  justify-content: center;
   .c-confirm-btn {
-    border: none;
-    background-color: #70b63a;
-    font-weight: 700;
-    font-family: inherit;
-    cursor: pointer;
+    background: transparent;
     color: #fff;
-    font-size: 14px;
-    padding: 18px 64px;
-    border-radius: 80px;
-    margin-right: 12px;
+    font-weight: bold;
+    display: block;
+    border: none;
     &:hover {
       @include hover-effect;
     }
@@ -182,7 +177,7 @@
 
   .c-back-btn {
     border: none;
-    background-color: #ddd;
+    background-color: #d0d0d0;
     font-weight: 700;
     font-family: inherit;
     cursor: pointer;

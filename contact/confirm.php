@@ -85,23 +85,20 @@
         <p class="l-sub-mv__label">
           <a href="../" class="l-sub-mv__label--top">TOP</a>
           <span class="l-sub-mv__label--arrow"></span>
-          <a href="" class="l-sub-mv__label--current">お問い合わせ/確認画面</a>
+          <a href="" class="l-sub-mv__label--current">お問い合わせ</a>
         </p>
       </div>
     </section>
     <div class="l-confirm-area a--fadein-first">
-      <ol class=" l-stepbar">
-        <li class="l-stepbar__list --visited"><span class="l-stepbar__number">1</span><br>入力</li>
-        <li class="l-stepbar__list --visited"><span class="l-stepbar__number">2</span><br>確認</li>
-        <li class="l-stepbar__list"><span class="l-stepbar__number">3</span><br>完了</li>
+      <ol class=" c-stepbar">
+        <li class="c-stepbar__list --visited"><span class="c-stepbar__number">1</span><br>内容入力</li>
+        <li class="c-stepbar__list --visited"><span class="c-stepbar__number">2</span><br>内容確認</li>
+        <li class="c-stepbar__list"><span class="c-stepbar__number">3</span><br>送信完了</li>
       </ol>
-      <!-- <div class="main-test"> -->
       <form action="/contact/complete.php" method="post">
         <table>
           <tr class="l-confirm-rows">
-            <!-- <div class="l-confirm-leftbox"> -->
             <td class="l-confirm-left">会社名</td>
-            <!-- </div> -->
             <td class="l-confirm-right"><?php echo $_POST["company"]; ?></td>
             <input hidden type="text" name="company" size="50" value="<?php echo $_POST["company"]; ?>">
           </tr>
@@ -137,11 +134,12 @@
           </tr>
         </table>
         <div class="c-confirm-btn-area">
-          <input class="c-confirm-btn" type="submit" value="送信" />
           <button class="c-back-btn" type="button" onclick="history.back(-1)">戻る</button>
+          <div class="c-ctabtn --contact">
+            <input class="c-confirm-btn" type="submit" value="送信する" />
+          </div>
         </div>
       </form>
-      <!-- </div> -->
     </div>
 
     <section class="l-contact">

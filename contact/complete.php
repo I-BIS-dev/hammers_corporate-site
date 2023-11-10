@@ -152,15 +152,15 @@ mail($to, $subject, $message, $headers);
         <p class="l-sub-mv__label">
           <a href="../" class="l-sub-mv__label--top">TOP</a>
           <span class="l-sub-mv__label--arrow"></span>
-          <a href="" class="l-sub-mv__label--current">お問い合わせ/完了画面</a>
+          <a href="" class="l-sub-mv__label--current">お問い合わせ</a>
         </p>
       </div>
     </section>
     <div class="l-confirm-area a--fadein-first">
-      <ol class="l-stepbar">
-        <li class="l-stepbar__list --visited"><span class="l-stepbar__number">1</span><br>入力</li>
-        <li class="l-stepbar__list --visited"><span class="l-stepbar__number">2</span><br>確認</li>
-        <li class="l-stepbar__list --visited"><span class="l-stepbar__number">3</span><br>完了</li>
+      <ol class="c-stepbar">
+        <li class="c-stepbar__list --visited"><span class="c-stepbar__number">1</span><br>内容入力</li>
+        <li class="c-stepbar__list --visited"><span class="c-stepbar__number">2</span><br>内容確認</li>
+        <li class="c-stepbar__list --visited"><span class="c-stepbar__number">3</span><br>送信完了</li>
       </ol>
       <div class="l-complete__msg-area a--fadein-first">
         <p class="l-complete__msg --ttl">送信が完了しました</p>

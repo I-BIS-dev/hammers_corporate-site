@@ -96,9 +96,9 @@
         </p>
       </div>
       <ol class="c-stepbar">
-        <li class="c-stepbar__list --visited"><span class="c-stepbar__number">1</span><br>入力</li>
-        <li class="c-stepbar__list"><span class="c-stepbar__number">2</span><br>確認</li>
-        <li class="c-stepbar__list"><span class="c-stepbar__number">3</span><br>完了</li>
+        <li class="c-stepbar__list --visited"><span class="c-stepbar__number">1</span><br>内容入力</li>
+        <li class="c-stepbar__list"><span class="c-stepbar__number">2</span><br>内容確認</li>
+        <li class="c-stepbar__list"><span class="c-stepbar__number">3</span><br>送信完了</li>
       </ol>
       <form class="c-analysis__form" action="/contact/confirm.php" method="post">
         <div class="c-analysis__row">
@@ -184,7 +184,9 @@
         <div class="c-analysis__row"></div>
 
         <div class="c-analysis__submit-wrap">
-          <input class="js-form-click" type="submit" value="送信" />
+          <div class="c-ctabtn">
+            <input class="js-form-click" type="submit" value="送信内容を確認する" />
+          </div>
         </div>
       </form>
     </div>
