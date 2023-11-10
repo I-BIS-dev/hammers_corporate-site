@@ -358,89 +358,11 @@
       }
     }
 
-    // .l-risk-table {
-    //   display: flex;
-    //   justify-content: space-between;
-    //   max-width: 800px;
-    //   margin: 0 auto;
-    //   @include mq(sp-ls) {
-    //     // flex-direction: column;
-    //     // justify-content: center;
-    //   }
-
-    //   .l-risk-table__left {
-    //     flex: 5;
-    //     max-width: 400px;
-    //     width: 100%;
-    //     @include mq(sp-ls) {
-    //       margin: 0 auto;
-    //     }
-
-    //     .l-risk-table__ttl {
-    //       text-align: center;
-    //       font-weight: bold;
-    //       padding: 14px 0;
-    //       background-color: #dbede3;
-    //       margin: 0 4px;
-    //     }
-    //     .l-risk-table__list {
-    //       .l-risk-table__item {
-    //         padding: 16px 0;
-    //         margin: 0 4px;
-    //         background-color: $bg-color;
-    //         text-align: center;
-    //         &:nth-child(even) {
-    //           background-color: #dbede3;
-    //         }
-    //         @include mq(sp) {
-    //           font-size: 10px;
-    //           padding: 12px 4px;
-    //         }
-    //       }
-    //     }
-    //   }
-    //   .l-risk-table__right {
-    //     flex: 5;
-    //     max-width: 400px;
-    //     width: 100%;
-    //     @include mq(sp-ls) {
-    //       margin: 0 auto;
-    //     }
-
-    //     .l-risk-table__ttl {
-    //       text-align: center;
-    //       font-weight: bold;
-    //       padding: 14px 0;
-    //       background-color: #dbede3;
-    //       margin: 0 4px;
-    //     }
-    //     .l-risk-table__list {
-    //       .l-risk-table__item {
-    //         padding: 16px 0;
-    //         margin: 0 4px;
-    //         background-color: $bg-color;
-    //         text-align: center;
-    //         &:nth-child(even) {
-    //           background-color: #dbede3;
-    //         }
-    //         @include mq(sp) {
-    //           font-size: 10px;
-    //           padding: 12px 4px;
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
-
     .l-risk-table {
       display: flex;
       justify-content: space-between;
       max-width: 800px;
       margin: 0 auto;
-      @include mq(sp-ls) {
-        // flex-direction: column;
-        // justify-content: center;
-      }
 
       .l-risk-table__left {
         flex: 5;

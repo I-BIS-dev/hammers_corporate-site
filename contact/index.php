@@ -68,12 +68,6 @@
       <img class="c-phone-icon" src="/assets/images/phone-icon.svg" alt="電話のアイコン">
     </a>
   </div>
-  <!-- <div class="c-contact">
-    <a href="../request/">
-      <img class="c-contact__img" src="/assets/images/arrow-header.svg" width="15" height="15" alt="問い合わせフォームリンク">
-      <p class="c-contact__text">分析依頼はこちら</p>
-    </a>
-  </div> -->
 
   <main class="main">
     <section class="l-sub-mv">

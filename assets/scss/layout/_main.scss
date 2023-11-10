@@ -111,39 +111,6 @@
             font-size: 18px;
           }
         }
-        // .l-mv__ctabtn {
-        //   position: relative;
-        //   display: inline-block;
-        //   padding: 24px 28px;
-        //   &::before {
-        //     content: "";
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     right: 0;
-        //     bottom: 0;
-        //     border-radius: 50px;
-        //     border: 5px solid transparent;
-        //     background: linear-gradient(
-        //         135deg,
-        //         rgb(74, 234, 220) 0%,
-        //         rgb(151, 120, 209) 20%,
-        //         rgb(207, 42, 186) 40%,
-        //         rgb(238, 44, 130) 60%,
-        //         rgb(251, 105, 98) 80%,
-        //         rgb(254, 248, 76) 100%
-        //       )
-        //       border-box border-box;
-        //     -webkit-mask:
-        //       linear-gradient(#fff 0 0) padding-box,
-        //       linear-gradient(#fff 0 0) border-box;
-        //     -webkit-mask-composite: destination-out;
-        //     mask:
-        //       linear-gradient(#fff 0 0) padding-box,
-        //       linear-gradient(#fff 0 0) border-box;
-        //     mask-composite: exclude;
-        //   }
-        // }
       }
     }
 
@@ -939,114 +906,6 @@
       padding: 60px 0;
     }
 
-    // .l-access__pointarea {
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    //   gap: 40px;
-    //   @include mq(sp-ls) {
-    //     flex-direction: column;
-    //     gap: 24px;
-    //   }
-
-    //   .l-access_point-card {
-    //     .l-access__point1 {
-    //       white-space: nowrap;
-    //       font-size: 20px;
-    //       font-weight: bold;
-    //       color: #00833e;
-    //       background-color: $bg-color;
-    //       padding: 8px 80px;
-    //       border-radius: 5px;
-    //       text-align: center;
-    //       position: relative;
-    //       display: block;
-    //       width: 400px;
-    //       padding-bottom: 13px;
-
-    //       @include mq(sp-ls) {
-    //         padding: 8px 40px;
-    //         font-size: 16px;
-    //         white-space: normal;
-    //       }
-    //       @include mq(sp) {
-    //         width: 324px;
-    //       }
-    //       &::before {
-    //         content: "";
-    //         display: inline-block;
-    //         width: 21px;
-    //         height: 21px;
-    //         line-height: 1.2;
-    //         margin-right: 4px;
-    //         background-image: url(../assets/images/access-checkicon.svg);
-    //         background-repeat: no-repeat;
-    //         background-size: contain;
-    //         @include mq(sp-ls) {
-    //           content: "";
-    //           width: 15px;
-    //           height: 16px;
-    //           left: 18px;
-    //           top: 15px;
-    //           background-size: contain;
-    //         }
-    //       }
-    //       .l-access__border {
-    //         border-bottom: 3px dashed $main-color;
-    //         padding: 6px;
-    //         @include mq(sp) {
-    //           padding: 4px;
-    //           border-bottom: 2px dashed $main-color;
-    //         }
-    //       }
-    //     }
-    //     .l-access__point2 {
-    //       white-space: nowrap;
-    //       font-size: 20px;
-    //       font-weight: bold;
-    //       color: #00833e;
-    //       background-color: $bg-color;
-    //       border-radius: 5px;
-    //       text-align: center;
-    //       position: relative;
-    //       display: block;
-    //       width: 400px;
-    //       @include mq(sp-ls) {
-    //         padding: 8px 40px;
-    //         font-size: 16px;
-    //         white-space: normal;
-    //       }
-    //       &::before {
-    //         content: "";
-    //         display: inline-block;
-    //         width: 21px;
-    //         height: 21px;
-    //         line-height: 1.2;
-    //         margin-right: 4px;
-    //         background-image: url(../assets/images/access-checkicon.svg);
-    //         background-repeat: no-repeat;
-    //         background-size: contain;
-    //         @include mq(sp-ls) {
-    //           content: "";
-    //           width: 15px;
-    //           height: 16px;
-    //           left: 18px;
-    //           top: 15px;
-    //           background-size: contain;
-    //         }
-    //       }
-    //       .l-access__border {
-    //         border-bottom: 3px dashed $main-color;
-    //         padding: 6px;
-    //         @include mq(sp) {
-    //           padding: 4px;
-    //           border-bottom: 2px dashed $main-color;
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
-
     .l-access__pointarea {
       display: flex;
       justify-content: center;
@@ -1108,43 +967,6 @@
           width: 100%;
         }
 
-        // .l-access__infoarea {
-        //   padding-bottom: 8px;
-        //   text-align: center;
-        //   @include mq(sp-ls) {
-        //     padding: 24px 0;
-        //   }
-
-        //   .l-access__info {
-        //     font-weight: bold;
-        //     font-size: 18px;
-        //     color: $sub-color;
-        //     text-align: center;
-        //     display: inline-block;
-        //     margin: 0 auto;
-        //     position: relative;
-
-        //     &::before {
-        //       content: "";
-        //       height: 19px;
-        //       position: absolute;
-        //       border-left: 2px solid #70b63a;
-        //       left: -13px;
-        //       transform: rotate(-18deg);
-        //       top: 6px;
-        //     }
-        //     &::after {
-        //       content: "";
-        //       height: 19px;
-        //       position: absolute;
-        //       border-left: 2px solid #70b63a;
-        //       right: -13px;
-        //       transform: rotate(18deg);
-        //       top: 6px;
-        //     }
-        //   }
-        // }
-
         .l-access__namearea {
           padding-bottom: 24px;
           @include mq(sp-ls) {
@@ -1186,15 +1008,6 @@
           @include mq(sp-ls) {
             padding-bottom: 24px;
           }
-
-          // .l-access__tel {
-          //   color: $black;
-          //   &.--link {
-          //     &:hover {
-          //       @include hover-effect;
-          //     }
-          //   }
-          // }
         }
         .l-access__ctabtn {
           margin: 0 auto;

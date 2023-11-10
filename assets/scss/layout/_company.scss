@@ -260,8 +260,6 @@
       padding-bottom: 64px;
       @include mq(sp-ls) {
         flex-direction: column;
-        // justify-content: center;
-        // padding-bottom: 40px;
       }
 
       .l-adress-img {
