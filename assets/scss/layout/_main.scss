@@ -1051,6 +1051,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      padding-bottom: 40px;
       .l-access__point {
         color: $main-color;
         font-size: 28px;
@@ -1082,30 +1083,24 @@
       max-width: 960px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       @include mq(sp-ls) {
         flex-direction: column;
       }
 
-      .l-access__address-map {
-        max-width: 524px;
-
+      .l-access__img-area {
+        max-width: 360px;
         @include mq(sp-ls) {
-          margin: 0 auto;
-          text-align: center;
+          padding-bottom: 40px;
         }
-
-        .l-access__iframe {
-          width: 524px;
-          height: 550px;
-          @include mq(sp) {
-            height: 342px;
-          }
+        .l-access__img {
+          width: 100%;
         }
       }
+
       .l-access__address-info {
-        margin: 0 auto;
-        max-width: 460px;
-        padding-bottom: 64px;
+        max-width: 540px;
+
         @include mq(sp-ls) {
           margin: 0 auto;
         }
@@ -1113,42 +1108,42 @@
           width: 100%;
         }
 
-        .l-access__infoarea {
-          padding-bottom: 8px;
-          text-align: center;
-          @include mq(sp-ls) {
-            padding: 24px 0;
-          }
+        // .l-access__infoarea {
+        //   padding-bottom: 8px;
+        //   text-align: center;
+        //   @include mq(sp-ls) {
+        //     padding: 24px 0;
+        //   }
 
-          .l-access__info {
-            font-weight: bold;
-            font-size: 18px;
-            color: $sub-color;
-            text-align: center;
-            display: inline-block;
-            margin: 0 auto;
-            position: relative;
+        //   .l-access__info {
+        //     font-weight: bold;
+        //     font-size: 18px;
+        //     color: $sub-color;
+        //     text-align: center;
+        //     display: inline-block;
+        //     margin: 0 auto;
+        //     position: relative;
 
-            &::before {
-              content: "";
-              height: 19px;
-              position: absolute;
-              border-left: 2px solid #70b63a;
-              left: -13px;
-              transform: rotate(-18deg);
-              top: 6px;
-            }
-            &::after {
-              content: "";
-              height: 19px;
-              position: absolute;
-              border-left: 2px solid #70b63a;
-              right: -13px;
-              transform: rotate(18deg);
-              top: 6px;
-            }
-          }
-        }
+        //     &::before {
+        //       content: "";
+        //       height: 19px;
+        //       position: absolute;
+        //       border-left: 2px solid #70b63a;
+        //       left: -13px;
+        //       transform: rotate(-18deg);
+        //       top: 6px;
+        //     }
+        //     &::after {
+        //       content: "";
+        //       height: 19px;
+        //       position: absolute;
+        //       border-left: 2px solid #70b63a;
+        //       right: -13px;
+        //       transform: rotate(18deg);
+        //       top: 6px;
+        //     }
+        //   }
+        // }
 
         .l-access__namearea {
           padding-bottom: 24px;
@@ -1158,7 +1153,8 @@
 
           .l-access__name {
             font-size: 28px;
-            text-align: center;
+            text-align: left;
+            font-weight: bold;
             @include mq(sp) {
               font-size: 20px;
             }
@@ -1166,7 +1162,7 @@
         }
 
         .l-access__adressarea {
-          padding-bottom: 24px;
+          padding-bottom: 32px;
           margin: 0 auto;
           @include mq(sp-ls) {
             padding-bottom: 16px;
@@ -1180,6 +1176,8 @@
           .l-access__adress {
             font-size: 16px;
             margin: 0 auto;
+            font-weight: bold;
+            line-height: 200%;
           }
         }
         .l-access__telarea {
@@ -1205,6 +1203,22 @@
             justify-content: center;
             width: 300px;
           }
+        }
+      }
+    }
+    .l-access__address-map {
+      max-width: 960px;
+      padding-top: 60px;
+
+      @include mq(sp-ls) {
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .l-access__iframe {
+        width: 100%;
+        min-height: 300px;
+        @include mq(sp) {
         }
       }
     }
