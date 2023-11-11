@@ -10,11 +10,10 @@
   right: 0;
   z-index: 99;
   transition: max-height 0.3s ease;
-  background-color: rgb(255, 255, 255);
+  // background-color: rgb(255, 255, 255);
   &.header-animation {
     max-height: 80px;
-    // box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
-    // background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
   }
   @include mq(sp-tab) {
     padding: 4px 0;
@@ -23,6 +22,7 @@
 
     &.header-animation {
       max-height: 80px;
+      background-color: transparent;
     }
   }
   @include mq(sp) {
@@ -75,7 +75,7 @@
     .l-header__phone {
       position: fixed;
       top: 0;
-      right: 170px;
+      right: 183px;
       background-color: #18ab5d;
       padding: 5px 12px;
       border-radius: 0 0 8px 8px;
@@ -238,6 +238,9 @@
             @include mq(sp-tab) {
               min-width: 300px;
               color: $white;
+              &.header-animation {
+                font-size: 16px;
+              }
               &:hover {
                 color: $white;
                 &::before {

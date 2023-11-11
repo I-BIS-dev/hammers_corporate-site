@@ -148,7 +148,7 @@
 
         .l-mv__hero-descroption {
           min-width: 164px;
-          color: $main-color;
+          color: $accent-color;
           font-size: 14px;
           line-height: 155%;
           position: absolute;
@@ -466,12 +466,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-bottom: 60px;
+      padding-bottom: 75px;
       @include mq(sp-ls) {
-        padding-bottom: 48px;
+        padding-bottom: 63px;
       }
       @include mq(sp) {
-        padding-bottom: 30px;
+        padding-bottom: 45px;
       }
 
       .l-surbey__ttl-text {
@@ -500,14 +500,14 @@
             bottom: -15px;
             left: 0;
             width: 100%;
-            border-bottom: 4px dashed $main-color;
+            border-bottom: 4px dotted $main-color;
             @include mq(sp-ls) {
               bottom: -13px;
-              border-bottom: 3px dashed $main-color;
+              border-bottom: 3px dotted $main-color;
             }
             @include mq(sp) {
               bottom: -10px;
-              border-bottom: 2px dashed $main-color;
+              border-bottom: 2px dotted $main-color;
             }
           }
         }
@@ -520,11 +520,12 @@
         justify-content: center;
       }
       .l-surbey__imgarea {
-        flex: 5;
+        margin-right: 60px;
         position: relative;
         @include mq(sp-ls) {
           display: flex;
           justify-content: center;
+          margin: 0 auto;
           padding: 0 20px;
         }
         .l-surbey__img1 {
@@ -543,10 +544,10 @@
         }
 
         .l-surbey__description {
-          padding: 0px 12px 84px 0;
+          padding: 0px 12px 40px 0;
           line-height: 200%;
           @include mq(sp-ls) {
-            padding: 20px;
+            padding: 20px 20px 40px;
           }
         }
         .l-surbey__ctabtn {
@@ -576,7 +577,7 @@
       display: flex;
       justify-content: center;
       gap: 115px;
-      margin-bottom: 80px;
+      margin: 0 50px 80px;
       @include mq(sp-ls) {
         padding: 40px 16px;
         flex-direction: column;
@@ -584,8 +585,7 @@
         border: solid 2px #00833e;
       }
       @include mq(sp) {
-        margin-bottom: 32px;
-        margin-top: 12px;
+        margin: 12px 0 44px;
       }
       &::after {
         content: "EASY&SPEEDY";
@@ -638,7 +638,7 @@
       justify-content: center;
       align-items: center;
       gap: 115px;
-      margin-bottom: 80px;
+      margin: 0 50px 80px;
       @include mq(sp-ls) {
         padding: 40px 16px;
         flex-direction: column;
@@ -646,7 +646,7 @@
         border: solid 2px #00833e;
       }
       @include mq(sp) {
-        margin-bottom: 32px;
+        margin: 0 0 44px;
       }
       &::after {
         content: "RELIABLE";
@@ -698,7 +698,7 @@
       justify-content: center;
       align-items: center;
       gap: 115px;
-      margin-bottom: 80px;
+      margin: 0 50px 80px;
       @include mq(sp-ls) {
         padding: 40px 16px;
         flex-direction: column;
@@ -706,7 +706,7 @@
         border: solid 2px #00833e;
       }
       @include mq(sp) {
-        margin-bottom: 32px;
+        margin: 0 0 44px;
       }
       &::after {
         content: "ALL IN";
@@ -810,12 +810,13 @@
           border-radius: 16px;
           font-weight: bold;
           font-family: "Roboto", sans-serif;
+          font-size: 18px;
           @include mq(sp-ls) {
             padding: 16px 38px 16px 50px;
             font-size: 14px;
           }
           &::before {
-            font-size: 20px;
+            font-size: 18px;
             line-height: 1;
             position: absolute;
             top: 16px;
@@ -829,7 +830,7 @@
             width: 40px;
             height: 40px;
             text-align: center;
-            line-height: 39px;
+            line-height: 41px;
             @include mq(sp-ls) {
               top: 11px;
               left: 15px;
@@ -846,13 +847,14 @@
           margin: 0;
           padding: 20px 20px 20px 80px;
           line-height: 170%;
+          font-size: 18px;
           @include mq(sp-ls) {
             margin: 0;
             padding: 16px 16px 16px 50px;
             font-size: 14px;
           }
           &::before {
-            font-size: 22px;
+            font-size: 18px;
             line-height: 1;
             position: absolute;
             left: 16px;
@@ -866,7 +868,7 @@
             width: 40px;
             height: 40px;
             text-align: center;
-            line-height: 33px;
+            line-height: 36px;
             @include mq(sp-ls) {
               font-size: 14px;
               left: 15px;
@@ -879,6 +881,7 @@
 
           .l-faq__text {
             margin: 30px 0 0;
+            line-height: 200%;
             &:first-child {
               margin-top: 0;
             }
@@ -1022,6 +1025,9 @@
     .l-access__address-map {
       max-width: 960px;
       padding-top: 60px;
+      @include mq(sp) {
+        padding-top: 40px;
+      }
 
       @include mq(sp-ls) {
         margin: 0 auto;
@@ -1032,6 +1038,7 @@
         width: 100%;
         min-height: 300px;
         @include mq(sp) {
+          width: 300px;
         }
       }
     }

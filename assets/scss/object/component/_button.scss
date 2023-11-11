@@ -93,6 +93,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  white-space: nowrap;
   &::after {
     content: "";
     background-image: url(../assets/images/arrow-ctabtn.svg);

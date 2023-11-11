@@ -1,6 +1,6 @@
 .main {
   .l-sub-mv {
-    padding-top: 105px;
+    padding-top: 109px;
 
     .l-sub-mv__area {
       width: 100%;
@@ -378,10 +378,11 @@
           font-size: 20px;
           padding: 20px 0;
           color: $main-color;
-          border-bottom: 2px solid $main-color;
+          border-bottom: 4px solid $main-color;
           @include mq(sp) {
             font-size: 14px;
             padding: 14px 0;
+            border-bottom: 2px solid $main-color;
           }
         }
         .l-risk-table__list {
@@ -389,8 +390,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 65px;
-            padding: 20px 16px;
+            height: 80px;
+            padding: 24px 8px;
+            font-size: 20px;
             background-color: $white;
             border-bottom: 1px solid #c2cfc9;
             text-align: center;
@@ -424,10 +426,11 @@
           font-size: 20px;
           padding: 20px 0;
           color: $main-color;
-          border-bottom: 2px solid $main-color;
+          border-bottom: 4px solid $main-color;
           @include mq(sp) {
             font-size: 14px;
             padding: 14px 0;
+            border-bottom: 2px solid $main-color;
           }
         }
         .l-risk-table__list {
@@ -435,12 +438,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 65px;
-            padding: 20px 16px;
+            height: 80px;
+            padding: 24px 8px;
             background-color: $white;
             text-align: center;
             border-bottom: 1px solid #c2cfc9;
-
+            font-size: 20px;
             &:nth-child(even) {
               background-color: #f7f7f7;
             }

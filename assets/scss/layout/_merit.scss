@@ -187,11 +187,13 @@
           font-weight: initial;
           line-height: 0.9;
           padding-left: 4px;
+          font-weight: bold;
           @include mq(sp-ls) {
             font-size: 48px;
           }
           @include mq(sp) {
             font-size: 40px;
+            line-height: 1;
           }
         }
       }
@@ -294,6 +296,7 @@
           }
           @include mq(sp) {
             font-size: 40px;
+            line-height: 1;
           }
         }
       }
@@ -415,6 +418,7 @@
           }
           @include mq(sp) {
             font-size: 40px;
+            line-height: 1;
           }
         }
       }
