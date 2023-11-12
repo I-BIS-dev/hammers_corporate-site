@@ -202,24 +202,30 @@
         font-size: 32px;
         font-weight: bold;
         color: $black;
-        padding-top: 24px;
-        padding-bottom: 60px;
-        text-decoration: underline;
-        text-decoration-style: dashed;
-        text-decoration-color: $main-color;
-        text-decoration-thickness: 4px;
-        text-decoration-skip-ink: none;
-        text-underline-offset: 16px;
-        line-height: 200%;
+        text-align: center;
+        padding: 0.5em 16px 1em;
+        position: relative;
+        margin-bottom: 60px;
+        display: inline-block;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 64%;
+          border-bottom: 4px solid $main-color;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          @include mq(sp) {
+            border-bottom: 3px solid $main-color;
+          }
+        }
         @include mq(sp-ls) {
-          font-size: 26px;
-          text-underline-offset: 12px;
-          padding-top: 16px;
+          font-size: 28px;
         }
         @include mq(sp) {
           font-size: 18px;
-          text-underline-offset: 12px;
-          padding-bottom: 30px;
+          margin-bottom: 30px;
         }
       }
 
@@ -304,24 +310,30 @@
         font-size: 32px;
         font-weight: bold;
         color: $black;
-        padding-top: 24px;
-        padding-bottom: 60px;
-        text-decoration: underline;
-        text-decoration-style: dashed;
-        text-decoration-color: $main-color;
-        text-decoration-thickness: 2px;
-        text-decoration-skip-ink: none;
-        text-underline-offset: 16px;
-        line-height: 200%;
+        text-align: center;
+        padding: 0.5em 16px 1em;
+        position: relative;
+        margin-bottom: 60px;
+        display: inline-block;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 64%;
+          border-bottom: 4px solid $main-color;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          @include mq(sp) {
+            border-bottom: 3px solid $main-color;
+          }
+        }
         @include mq(sp-ls) {
-          font-size: 26px;
-          text-underline-offset: 12px;
-          padding-top: 16px;
+          font-size: 28px;
         }
         @include mq(sp) {
-          font-size: 18px;
-          text-underline-offset: 12px;
-          padding-bottom: 30px;
+          font-size: 16px;
+          margin-bottom: 30px;
         }
       }
 
@@ -340,7 +352,7 @@
           max-width: 400px;
           line-height: 200%;
           @include mq(sp-ls) {
-            padding: 8px 0;
+            padding: 0 0 24px;
             margin: 0 auto;
           }
         }
@@ -427,30 +439,36 @@
         font-size: 32px;
         font-weight: bold;
         color: $black;
-        padding-top: 24px;
-        line-height: 200%;
-        text-decoration: underline;
-        text-decoration-style: dashed;
-        text-decoration-color: $main-color;
-        text-decoration-thickness: 2px;
-        text-decoration-skip-ink: none;
-        text-underline-offset: 16px;
+        text-align: center;
+        padding: 0.5em 16px 1em;
+        position: relative;
+        margin-bottom: 60px;
+        display: inline-block;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 64%;
+          border-bottom: 4px solid $main-color;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          @include mq(sp) {
+            border-bottom: 3px solid $main-color;
+          }
+        }
         @include mq(sp-ls) {
-          font-size: 26px;
-          text-underline-offset: 12px;
-          padding-top: 16px;
+          font-size: 28px;
         }
         @include mq(sp) {
           font-size: 18px;
-          text-underline-offset: 12px;
-          padding-top: 16px;
+          margin-bottom: 30px;
         }
       }
 
       .l-allin__desctiption-area {
         display: flex;
         justify-content: center;
-        padding-top: 32px;
 
         .l-allin__desctiption {
           text-align: left;

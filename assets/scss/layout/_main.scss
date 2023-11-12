@@ -65,13 +65,10 @@
           align-items: center;
           justify-content: center;
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-          // transition: background 0.3s ease-in-out;
           overflow: hidden;
           &:hover {
-            // background: linear-gradient(64deg, rgba(150, 201, 61, 1) 0%, rgba(0, 176, 155, 1) 100%);
             background: radial-gradient(circle at 100% 0%, rgba(0, 176, 155, 1) 15%, rgba(150, 201, 61, 1));
           }
-
           &::before {
             position: absolute;
             top: 0;
@@ -97,14 +94,14 @@
             background-image: url(../assets/images/arrow-ctabtn.svg);
             background-repeat: no-repeat;
             position: absolute;
-            top: 48%;
+            top: 46%;
             transform: translateX(-45%);
             right: 5%;
             width: 15px;
             height: 15px;
             transition: all 0.3s;
             @include mq(sp) {
-              top: 45%;
+              top: 43%;
             }
           }
           &:hover::after {
@@ -478,6 +475,7 @@
       }
 
       .l-surbey__ttl-text {
+        line-height: 1;
         font-size: 32px;
         font-weight: bold;
         @include mq(sp-ls) {
@@ -489,6 +487,7 @@
 
         &.--font {
           font-size: 40px;
+          line-height: 1;
           color: $main-color;
           position: relative;
           @include mq(sp-ls) {

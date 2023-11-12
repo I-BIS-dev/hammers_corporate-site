@@ -84,14 +84,11 @@
   height: 64px;
   display: block;
   border-radius: 32px;
-  padding: 24px 64px;
+  padding: 20px 64px;
   background-color: $sub-color;
   color: $white;
   text-align: center;
   font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
   white-space: nowrap;
   &::after {
@@ -99,7 +96,7 @@
     background-image: url(../assets/images/arrow-ctabtn.svg);
     background-repeat: no-repeat;
     position: absolute;
-    top: 46%;
+    top: 28px;
     transform: translateX(-46%);
     right: 5%;
     width: 15px;
@@ -116,8 +113,10 @@
     background-color: $white;
     color: $sub-color;
     border: 3px solid $sub-color;
+    padding: 17px 64px;
     &::after {
       background-image: url(../assets/images/arrow-ctasub.svg);
+      top: 25px;
     }
   }
   &.--white {

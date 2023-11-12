@@ -135,38 +135,45 @@
         font-size: 32px;
         font-weight: bold;
         color: $black;
-        line-height: 200%;
-        padding-bottom: 30px;
-        text-decoration: underline;
-        text-decoration-style: dashed;
-        text-decoration-color: $main-color;
-        text-decoration-thickness: 4px;
-        text-decoration-skip-ink: none;
-        text-underline-offset: 16px;
+        text-align: center;
+        padding: 0.5em 16px 1em;
+        position: relative;
+        margin-bottom: 37px;
+        display: inline-block;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 64%;
+          border-bottom: 4px solid $main-color;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          @include mq(sp) {
+            border-bottom: 3px solid $main-color;
+          }
+        }
         @include mq(sp-ls) {
-          font-size: 26px;
-          text-underline-offset: 14px;
+          font-size: 28px;
         }
         @include mq(sp) {
           font-size: 18px;
-          text-underline-offset: 12px;
-          padding-top: 16px;
-          font-size: 18px;
-          padding: 0 0 24px;
+          margin-bottom: 30px;
         }
-        &.--intro {
-          font-size: 24px;
-          color: $main-color;
-          text-decoration: none;
-          padding: 0 0 60px;
-          @include mq(sp-ls) {
-            font-size: 18px;
-            padding: 0 0 40px;
-          }
-          @include mq(sp) {
-            font-size: 15px;
-            padding: 0 0 30px;
-          }
+      }
+      .l-risk-primary__text--intro {
+        font-size: 24px;
+        font-weight: bold;
+        color: $main-color;
+        text-decoration: none;
+        padding: 0 0 60px;
+        @include mq(sp-ls) {
+          font-size: 18px;
+          padding: 0 0 40px;
+        }
+        @include mq(sp) {
+          font-size: 15px;
+          padding: 0 0 30px;
         }
       }
 
@@ -228,38 +235,46 @@
         font-size: 32px;
         font-weight: bold;
         color: $black;
-        line-height: 200%;
-        padding-bottom: 30px;
-        text-decoration: underline;
-        text-decoration-style: dashed;
-        text-decoration-color: $main-color;
-        text-decoration-thickness: 4px;
-        text-decoration-skip-ink: none;
-        text-underline-offset: 16px;
+        text-align: center;
+        padding: 0.5em 16px 1em;
+        position: relative;
+        margin-bottom: 37px;
+        display: inline-block;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 64%;
+          border-bottom: 4px solid $main-color;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          @include mq(sp) {
+            border-bottom: 3px solid $main-color;
+          }
+        }
         @include mq(sp-ls) {
-          font-size: 26px;
-          text-underline-offset: 14px;
+          font-size: 28px;
         }
         @include mq(sp) {
-          font-size: 18px;
-          text-underline-offset: 12px;
-          padding-top: 16px;
-          font-size: 18px;
-          padding: 0 0 24px;
+          font-size: 15px;
+          margin-bottom: 30px;
         }
-        &.--intro {
-          font-size: 24px;
-          color: $main-color;
-          text-decoration: none;
-          padding: 0 0 60px;
-          @include mq(sp-ls) {
-            font-size: 18px;
-            padding: 0 0 40px;
-          }
-          @include mq(sp) {
-            font-size: 15px;
-            padding: 0 0 30px;
-          }
+      }
+
+      .l-risk-secondary__text--intro {
+        font-size: 24px;
+        font-weight: bold;
+        color: $main-color;
+        text-decoration: none;
+        padding: 0 0 60px;
+        @include mq(sp-ls) {
+          font-size: 18px;
+          padding: 0 0 40px;
+        }
+        @include mq(sp) {
+          font-size: 15px;
+          padding: 0 0 30px;
         }
       }
 
@@ -301,7 +316,7 @@
       padding: 80px 24px 72px;
     }
     @include mq(sp) {
-      padding: 60px 0 68px;
+      padding: 40px 0 40px;
     }
 
     .l-risk-tertiary__contents {
@@ -312,38 +327,46 @@
         font-size: 32px;
         font-weight: bold;
         color: $black;
-        line-height: 200%;
-        padding-bottom: 30px;
-        text-decoration: underline;
-        text-decoration-style: dashed;
-        text-decoration-color: $main-color;
-        text-decoration-thickness: 4px;
-        text-decoration-skip-ink: none;
-        text-underline-offset: 16px;
+        text-align: center;
+        padding: 0.5em 16px 1em;
+        position: relative;
+        margin-bottom: 37px;
+        display: inline-block;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 64%;
+          border-bottom: 4px solid $main-color;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          @include mq(sp) {
+            border-bottom: 3px solid $main-color;
+          }
+        }
         @include mq(sp-ls) {
-          font-size: 26px;
-          text-underline-offset: 14px;
+          font-size: 28px;
         }
         @include mq(sp) {
-          font-size: 18px;
-          text-underline-offset: 12px;
-          padding-top: 16px;
-          font-size: 18px;
-          padding: 0 0 24px;
+          font-size: 15px;
+          margin-bottom: 30px;
         }
-        &.--intro {
-          font-size: 24px;
-          color: $main-color;
-          text-decoration: none;
-          padding: 0 0 60px;
-          @include mq(sp-ls) {
-            font-size: 18px;
-            padding: 0 0 40px;
-          }
-          @include mq(sp) {
-            font-size: 15px;
-            padding: 0 0 30px;
-          }
+      }
+
+      .l-risk-tertiary__text--intro {
+        font-size: 24px;
+        font-weight: bold;
+        color: $main-color;
+        text-decoration: none;
+        padding: 0 0 60px;
+        @include mq(sp-ls) {
+          font-size: 18px;
+          padding: 0 0 40px;
+        }
+        @include mq(sp) {
+          font-size: 15px;
+          padding: 0 0 30px;
         }
       }
 
