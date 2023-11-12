@@ -19,6 +19,9 @@
       top: 40%;
       left: 50%;
       transform: translate(-50%, -40%);
+      @include mq(sp-tab) {
+        padding: 0 26px;
+      }
       @include mq(sp-ls) {
         flex-direction: column;
         justify-content: center;

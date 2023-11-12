@@ -10,7 +10,6 @@
   right: 0;
   z-index: 99;
   transition: max-height 0.3s ease;
-  // background-color: rgb(255, 255, 255);
   &.header-animation {
     max-height: 80px;
     background-color: rgb(255, 255, 255);
@@ -19,6 +18,10 @@
     padding: 4px 0;
     background-color: transparent;
     max-height: 49px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 
     &.header-animation {
       max-height: 80px;
@@ -28,10 +31,8 @@
   @include mq(sp) {
     background-color: transparent;
     height: 49px;
-
     &.header-animation {
       height: 49px;
-      // box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
     }
   }
 
@@ -44,17 +45,11 @@
       width: 176px;
       margin-left: 24px;
       padding-top: 16px;
-      &.header-animation {
-        opacity: 0;
-      }
     }
     @include mq(sp) {
       width: 116px;
       margin-left: 16px;
       padding-top: 7px;
-      &.header-animation {
-        opacity: 0;
-      }
     }
 
     .l-header__link {
@@ -96,7 +91,7 @@
       position: relative;
 
       @include mq(sp-tab) {
-        position: absolute;
+        position: fixed;
         z-index: 1;
         top: 0;
         left: 0;
@@ -116,6 +111,7 @@
       .l-header__nav-list {
         display: flex;
         padding-top: 18px;
+        white-space: nowrap;
         &.header-animation {
           padding: 0;
         }
@@ -268,6 +264,7 @@
       transition: padding 0.3s ease;
       display: inline-block;
       cursor: pointer;
+      white-space: nowrap;
       &.header-animation {
         padding: 12px 16px;
       }

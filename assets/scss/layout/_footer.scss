@@ -69,6 +69,7 @@
         @include mq(sp) {
           font-size: 12px;
           padding-bottom: 24px;
+          width: 100%;
         }
       }
     }
@@ -87,6 +88,9 @@
         border-right: 1px solid #229f5d;
         padding-left: 40px;
         @include mq(sp) {
+          &:nth-child(5) {
+            padding-left: 20px;
+          }
           &:nth-child(6) {
             padding-left: 20px;
           }

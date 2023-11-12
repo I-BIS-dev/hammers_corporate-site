@@ -173,12 +173,48 @@
           .l-step1__img-area {
             max-width: 278px;
             width: 100%;
+            position: relative;
+            transition: all 0.3s;
             @include mq(sp-ls) {
               padding-top: 24px;
             }
             .l-step1__modal-open--link {
+              display: inline-block;
+              position: relative;
+              &::before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.3); /* オーバーレイの初期状態は透明 */
+                opacity: 0;
+                transition: all 0.7s;
+              }
+              &::after {
+                content: "";
+                opacity: 0;
+                width: 58px;
+                height: 58px;
+                border-radius: 50%;
+                background-color: $main-color;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-image: url(../assets/images/search.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                transition: all 0.7s;
+              }
               &:hover {
-                @include hover-effect;
+                &::before {
+                  opacity: 1;
+                }
+                &::after {
+                  opacity: 1;
+                }
               }
               .l-step1__img {
                 min-width: 278px;
@@ -253,7 +289,18 @@
               position: relative;
               z-index: 100;
               .l-step1__modal-content {
-                margin: 50px 0;
+                margin: 10px 0;
+                @include mq(sp) {
+                  margin: 0;
+                }
+                .l-step1__img {
+                  height: 75vh;
+                  max-width: 100%;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                }
               }
               .l-step1__modal-close {
                 position: absolute;
@@ -261,6 +308,7 @@
                 right: 10px;
                 text-decoration: none;
                 font-size: 27px;
+                z-index: 100;
               }
             }
           }
