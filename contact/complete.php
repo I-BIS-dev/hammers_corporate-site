@@ -32,7 +32,7 @@ mail($to, $subject, $message, $headers);
 ?>
 
 <?php
-$to = "ino.winter.1212@gmail.com";
+$to = "info-b@bestar7.jp";
 $subject = "お問い合わせがありました";
 $message  = $_POST['name'] . " 様 \r\n"
   . "\r\n"
