@@ -135,7 +135,7 @@
             </p>
           </div>
           <div class="c-analysis__data">
-            <input class="js-form-input" placeholder="abcde@fghij.com" type="text" name="mail" size="50" value="" required>
+            <input class="js-form-input" placeholder="abcde@fghij.com" type="email" name="mail" size="50" value="" required>
             <p class="js-err">このフィールドに入力してください。</p>
           </div>
         </div>
@@ -172,7 +172,8 @@
             </p>
           </div>
           <div class="c-analysis__data">
-            <textarea placeholder="内容を入力してください" name="inquiry" cols="50" rows="5"></textarea>
+            <textarea class="js-form-input" placeholder="内容を入力してください" name="inquiry" cols="50" rows="5" required></textarea>
+            <p class="js-err">このフィールドに入力してください。</p>
           </div>
         </div>
         <div class="c-analysis__row"></div>

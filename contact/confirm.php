@@ -40,7 +40,7 @@
           <li class="l-header__nav-item"><a class="l-header__nav-link" href="../faq/">よくある質問</a></li>
           <li class="l-header__nav-item"><a class="l-header__nav-link" href="../company/">会社概要</a></li>
           <li class="l-header__nav-item --none"><a class="l-header__nav-link" href="../request/">分析依頼</a></li>
-          <li class="l-header__nav-item"><a class="c-ctabtn --white" href="">お問い合わせ</a></li>
+          <li class="l-header__nav-item"><a class="c-ctabtn --white" href="../contact/">お問い合わせ</a></li>
           <li class="l-header__nav-item"><a class="c-ctabtn" href="../request/">分析依頼</a></li>
         </ul>
       </nav>
@@ -59,7 +59,7 @@
   </button>
 
   <div class="c-contact-btn">
-    <a class="c-contact-link" href="">
+    <a class="c-contact-link" href="../contact/">
       <img class="c-contact-icon" src="/assets/images/arrow-header.svg" alt="矢印のアイコン">
     </a>
   </div>
@@ -112,7 +112,7 @@
           <tr class="l-confirm-rows">
             <td class="l-confirm-left">メールアドレス</td>
             <td class="l-confirm-right"><?php echo $_POST["mail"]; ?></td>
-            <input hidden type="text" name="mail" size="50" value="<?php echo $_POST["mail"]; ?>">
+            <input hidden type="email" name="mail" size="50" value="<?php echo $_POST["mail"]; ?>">
           </tr>
           <tr class="l-confirm-rows">
             <td class="l-confirm-left">連絡方法</td>
@@ -132,7 +132,7 @@
         </table>
         <div class="c-confirm-btn-area">
           <button class="c-back-btn" type="button" onclick="history.back(-1)">戻る</button>
-          <div class="c-ctabtn">
+          <div class="c-ctabtn --sm">
             <input class="c-confirm-btn" type="submit" value="送信する" />
           </div>
         </div>

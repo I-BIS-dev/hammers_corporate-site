@@ -107,7 +107,7 @@ mail($to, $subject, $message, $headers);
           <li class="l-header__nav-item"><a class="l-header__nav-link" href="../faq/">よくある質問</a></li>
           <li class="l-header__nav-item"><a class="l-header__nav-link" href="../company/">会社概要</a></li>
           <li class="l-header__nav-item --none"><a class="l-header__nav-link" href="../request/">分析依頼</a></li>
-          <li class="l-header__nav-item"><a class="c-ctabtn --white" href="">お問い合わせ</a></li>
+          <li class="l-header__nav-item"><a class="c-ctabtn --white" href="../contact/">お問い合わせ</a></li>
           <li class="l-header__nav-item"><a class="c-ctabtn" href="../request/">分析依頼</a></li>
         </ul>
       </nav>
@@ -126,7 +126,7 @@ mail($to, $subject, $message, $headers);
   </button>
 
   <div class="c-contact-btn">
-    <a class="c-contact-link" href="">
+    <a class="c-contact-link" href="../contact/">
       <img class="c-contact-icon" src="/assets/images/arrow-header.svg" alt="矢印のアイコン">
     </a>
   </div>
@@ -199,7 +199,7 @@ mail($to, $subject, $message, $headers);
         <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../flow/">ご依頼の流れ</a></li>
         <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../faq/">よくある質問</a></li>
         <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../company/">会社概要</a></li>
-        <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="">お問い合わせ</a></li>
+        <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="../contact/">お問い合わせ</a></li>
         <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="../request/">分析依頼</a></li>
         <!-- <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="../sctl/">特定商取引法に基づく表記</a>
         </li> -->
