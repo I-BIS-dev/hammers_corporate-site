@@ -409,49 +409,57 @@
       display: flex;
       justify-content: center;
 
-      p {
-        display: inline-flex;
-        // display: flex;
-        justify-content: center;
-        column-gap: 30px;
-        row-gap: 8px;
-        flex-wrap: wrap;
-        // display: inline-block;
-        position: relative;
-
-        &:before {
-          background: url(../assets/images/arrow-ctabtn.svg);
-          background-size: contain;
-          background-repeat: no-repeat;
-          content: "";
-          height: 10px;
-          position: absolute;
-          width: 14px;
-          top: 50%;
-          right: 45px;
-          transform: translateY(-50%);
-          z-index: 100;
-        }
-      }
-
-      input[type="submit"],
-      input[type="button"] {
+      input[type="submit"] {
         border: none;
-        background-color: $sub-color;
-        font-weight: 700;
-        font-family: inherit;
-        cursor: pointer;
+        background-color: transparent;
         color: $white;
-
-        font-size: 14px;
-        padding: 18px 90px;
-        border-radius: 80px;
-        position: relative;
-
-        &:hover {
-          @include hover-effect;
-        }
+        font-size: 16px;
+        font-weight: bold;
       }
+
+      // p {
+      //   display: inline-flex;
+      //   // display: flex;
+      //   justify-content: center;
+      //   column-gap: 30px;
+      //   row-gap: 8px;
+      //   flex-wrap: wrap;
+      //   // display: inline-block;
+      //   position: relative;
+
+      //   &:before {
+      //     background: url(../assets/images/arrow-ctabtn.svg);
+      //     background-size: contain;
+      //     background-repeat: no-repeat;
+      //     content: "";
+      //     height: 10px;
+      //     position: absolute;
+      //     width: 14px;
+      //     top: 50%;
+      //     right: 45px;
+      //     transform: translateY(-50%);
+      //     z-index: 100;
+      //   }
+      // }
+
+      // input[type="submit"],
+      // input[type="button"] {
+      //   border: none;
+      //   background-color: $sub-color;
+      //   font-weight: 700;
+      //   font-family: inherit;
+      //   cursor: pointer;
+      //   color: $white;
+
+      //   font-size: 14px;
+      //   padding: 18px 90px;
+      //   border-radius: 80px;
+      //   position: relative;
+
+      //   &:hover {
+      //     @include hover-effect;
+      //   }
+      // }
 
       .wpcf7-spinner {
         display: none;

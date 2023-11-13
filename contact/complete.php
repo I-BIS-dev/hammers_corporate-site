@@ -140,7 +140,7 @@ mail($to, $subject, $message, $headers);
     <section class="l-sub-mv">
       <div class="l-sub-mv__area">
         <div class="l-sub-mv-area-sp"></div>
-        <h1 class="l-sub-mv__hero --privacy">お問い合わせ/完了画面</h1>
+        <h1 class="l-sub-mv__hero --privacy">お問い合わせ</h1>
       </div>
       <div class="l-sub-mv__label-area">
         <p class="l-sub-mv__label">
@@ -158,8 +158,8 @@ mail($to, $subject, $message, $headers);
       </ol>
       <div class="l-complete__msg-area a--fadein-first">
         <p class="l-complete__msg --ttl">送信が完了しました</p>
-        <p class="l-complete__msg">フォーム内容をご送信頂きまして誠にありがとうございます。<br>担当者よりご案内させていただきます。</p>
-        <p class="l-complete__msg --desctiption">※ご入力内容を記載した確認メールを送信しました。<br>※ご確認メールが24時間経過しても届かない場合は、恐れ入りますが、再度お問い合わせください。<br>※返信にお時間を頂く場合がございます。予めご了承ください。</p>
+        <p class="l-complete__msg">お問い合わせありがとうございました。<br>後ほど担当者よりご連絡させていただきます。</p>
+        <p class="l-complete__msg --desctiption">※ご入力内容を記載した確認メールを送信しました。<br>確認メールが24時間経過しても届かない場合は、恐れ入りますが再度お問い合わせください。<br>※返信にお時間を頂く場合がございます。予めご了承ください。</p>
       </div>
     </div>
     <section class="l-contact">

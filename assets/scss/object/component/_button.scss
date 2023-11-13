@@ -91,6 +91,7 @@
   font-weight: bold;
   position: relative;
   white-space: nowrap;
+  cursor: pointer;
   &::after {
     content: "";
     background-image: url(../assets/images/arrow-ctabtn.svg);
@@ -156,45 +157,44 @@
   gap: 30px;
   display: flex;
   justify-content: center;
+  @include mq(sp-ls) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .c-confirm-btn {
     background: transparent;
     color: #fff;
     font-weight: bold;
-    display: block;
+    font-size: 16px;
     border: none;
     &:hover {
       @include hover-effect;
     }
-    @include mq(sp-ls) {
-      font-size: 14px;
-      padding: 12px 64px;
-    }
     @include mq(sp) {
-      font-size: 12px;
-      padding: 12px 56px;
+      font-size: 16px;
+      padding: 4px 56px;
     }
   }
 
   .c-back-btn {
     border: none;
+    width: 320px;
     background-color: #d0d0d0;
-    font-weight: 700;
+    font-weight: bold;
     font-family: inherit;
     cursor: pointer;
     color: #fff;
     font-size: 14px;
     padding: 18px 64px;
     border-radius: 80px;
+    white-space: nowrap;
     &:hover {
       @include hover-effect;
     }
     @include mq(sp-ls) {
-      font-size: 14px;
-      padding: 12px 64px;
-    }
-    @include mq(sp) {
-      font-size: 12px;
+      font-size: 16px;
       padding: 12px 56px;
+      height: 64px;
     }
   }
 }

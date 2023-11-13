@@ -73,7 +73,7 @@
     <section class="l-sub-mv">
       <div class="l-sub-mv__area">
         <div class="l-sub-mv-area-sp"></div>
-        <h1 class="l-sub-mv__hero --privacy">お問い合わせ/確認画面</h1>
+        <h1 class="l-sub-mv__hero --privacy">お問い合わせ</h1>
       </div>
       <div class="l-sub-mv__label-area">
         <p class="l-sub-mv__label">
@@ -84,6 +84,9 @@
       </div>
     </section>
     <div class="l-confirm-area a--fadein-first">
+      <div class="l-confirm__msg-area a--fadein-first">
+        <p class="l-confirm__msg">以下の内容で間違いがなければ、「送信する」ボタンを押してください。</p>
+      </div>
       <ol class=" c-stepbar">
         <li class="c-stepbar__list --visited"><span class="c-stepbar__number">1</span><br>内容入力</li>
         <li class="c-stepbar__list --visited"><span class="c-stepbar__number">2</span><br>内容確認</li>
@@ -129,7 +132,7 @@
         </table>
         <div class="c-confirm-btn-area">
           <button class="c-back-btn" type="button" onclick="history.back(-1)">戻る</button>
-          <div class="c-ctabtn --contact">
+          <div class="c-ctabtn">
             <input class="c-confirm-btn" type="submit" value="送信する" />
           </div>
         </div>
@@ -173,7 +176,7 @@
         <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../flow/">ご依頼の流れ</a></li>
         <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../faq/">よくある質問</a></li>
         <li class="l-footer__nav-item"><a class="l-footer__nav-link" href="../company/">会社概要</a></li>
-        <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="">お問い合わせ</a></li>
+        <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="../contact/">お問い合わせ</a></li>
         <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="../request/">分析依頼</a></li>
         <!-- <li class="l-footer__nav-item --noborder"><a class="l-footer__nav-link" href="../sctl/">特定商取引法に基づく表記</a>
         </li> -->
