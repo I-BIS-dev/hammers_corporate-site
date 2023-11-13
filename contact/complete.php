@@ -150,7 +150,7 @@ mail($to, $subject, $message, $headers);
         </p>
       </div>
     </section>
-    <div class="l-confirm-area a--fadein-first">
+    <div class="l-complete-area a--fadein-first">
       <ol class="c-stepbar">
         <li class="c-stepbar__list --visited"><span class="c-stepbar__number">1</span><br>内容入力</li>
         <li class="c-stepbar__list --visited"><span class="c-stepbar__number">2</span><br>内容確認</li>

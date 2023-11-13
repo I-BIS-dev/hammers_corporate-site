@@ -19,21 +19,21 @@
     }
   }
 
-  .l-confirm-area {
-    padding: 64px;
+  .l-complete-area {
+    padding: 60px 0 120px;
     max-width: 960px;
     margin: 0 auto;
     @include mq(sp-tab) {
       padding: 40px;
     }
     @include mq(sp) {
-      padding: 40px 20px;
+      padding: 60px 20px;
     }
 
     .l-complete__msg-area {
-      margin: 80px auto 260px;
+      margin: 60px auto 0;
       @include mq(sp) {
-        margin: 40px auto 64px;
+        margin: 40px auto 0;
       }
       .l-complete__msg {
         font-size: 16px;
