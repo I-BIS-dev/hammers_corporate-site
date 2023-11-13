@@ -168,7 +168,7 @@
         <div class="c-analysis__row">
           <div class="c-analysis__head">
             <p>
-              問い合わせ内容
+              問い合わせ内容<span>必須</span>
             </p>
           </div>
           <div class="c-analysis__data">
