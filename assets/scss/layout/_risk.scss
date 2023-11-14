@@ -575,11 +575,7 @@
           margin: 0 auto;
           height: auto;
           @include mq(sp-ls) {
-            padding-bottom: 16px;
             margin: 0 auto;
-          }
-          @include mq(sp) {
-            padding-bottom: 8px;
           }
         }
       }
