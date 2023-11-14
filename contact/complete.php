@@ -34,9 +34,9 @@ mail($to, $subject, $message, $headers);
 <?php
 $to = "aijie0811@gmail.com";
 $subject = "お問い合わせがありました";
-$message  = $_POST['name'] . " 様 \r\n"
-  // . "\r\n"
+$message  = "\r\n"
   . "【 会社名 】：" .  $_POST['company'] . "\r\n"
+  . $_POST['name'] . "様\r\n"
   . $_POST['mail'] . "から問い合わせがありました。\r\n"
   . "\r\n"
   . "送信内容は以下になります。\r\n"
