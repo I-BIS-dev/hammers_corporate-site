@@ -36,9 +36,8 @@ $to = "aijie0811@gmail.com";
 $subject = "お問い合わせがありました";
 $message  = $_POST['name'] . " 様 \r\n"
   . "\r\n"
-  . "BESTARへお問い合わせありがとうございました。\r\n"
-  . "早急にご返信致しますので今しばらくお待ちください。\r\n"
-  . "【 会社名 】" .  $_POST['company'] . "\r\n"
+  . $_POST['name'] . "様\r\n"
+  . $_POST['mail'] . "から問い合わせがありました。\r\n"
   . "\r\n"
   . "送信内容は以下になります。\r\n"
   . "\r\n"
@@ -54,12 +53,7 @@ $message  = $_POST['name'] . " 様 \r\n"
   . "【お問い合わせ内容】\r\n"
   . str_replace("<br />", "\r\n", $_POST['inquiry'])
   . "\r\n"
-  . "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\r\n"
-  . "──────────────────────\r\n"
-  . "株式会社ハマーズ 分析事業部 (BESTAR)\r\n"
-  . "http://bestar7.jp/\r\n"
-  . "Mail:info-b@bestar7.jp\r\n"
-  . "──────────────────────";
+  . "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\r\n";
 $headers = "From: info-b@bestar7.jp";
 
 mail($to, $subject, $message, $headers);
