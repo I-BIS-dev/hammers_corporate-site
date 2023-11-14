@@ -32,12 +32,13 @@ mail($to, $subject, $message, $headers);
 ?>
 
 <?php
-$to = "info-b@bestar7.jp";
+$to = "aijie0811@gmail.com";
 $subject = "お問い合わせがありました";
 $message  = $_POST['name'] . " 様 \r\n"
   . "\r\n"
   . "BESTARへお問い合わせありがとうございました。\r\n"
   . "早急にご返信致しますので今しばらくお待ちください。\r\n"
+  . "【 会社名 】" .  $_POST['company'] . "\r\n"
   . "\r\n"
   . "送信内容は以下になります。\r\n"
   . "\r\n"
