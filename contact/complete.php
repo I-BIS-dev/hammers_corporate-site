@@ -31,7 +31,7 @@ mail($to, $subject, $message, $headers);
 ?>
 
 <?php
-$to = "aijie0811@gmail.com";
+$to = "info-b@bestar7.jp";
 $subject = "お問い合わせがありました";
 $message  = "\r\n"
   . $_POST['name'] . "様\r\n"
@@ -151,7 +151,7 @@ mail($to, $subject, $message, $headers);
       <div class="l-complete__msg-area a--fadein-first">
         <p class="l-complete__msg --ttl">送信が完了しました</p>
         <p class="l-complete__msg">お問い合わせありがとうございました。<br>後ほど担当者よりご連絡させていただきます。</p>
-        <p class="l-complete__msg --desctiption">※ご入力内容を記載した確認メールを送信しました。<br>確認メールが24時間経過しても届かない場合は、恐れ入りますが再度お問い合わせください。<br>※返信にお時間を頂く場合がございます。予めご了承ください。</p>
+        <p class="l-complete__msg --desctiption">※ご入力内容を記載した確認メールを送信しました。確認メールが24時間経過しても届かない場合は、恐れ入りますが再度お問い合わせください。</p>
       </div>
     </div>
     <section class="l-contact">
