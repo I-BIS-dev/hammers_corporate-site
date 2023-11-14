@@ -121,7 +121,7 @@
   .l-greeting {
     padding: 120px 24px 0;
     @include mq(sp) {
-      padding: 64px 16px;
+      padding: 60px 0;
     }
 
     .l-greeting__description {
@@ -213,7 +213,7 @@
   .l-adress-area {
     padding: 120px 0;
     @include mq(sp) {
-      padding: 64px 0;
+      padding: 0 0 60px;
     }
 
     .l-adress__ttl-area {

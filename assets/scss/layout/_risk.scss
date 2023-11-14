@@ -401,11 +401,11 @@
           font-size: 20px;
           padding: 20px 0;
           color: $main-color;
-          border-bottom: 4px solid $main-color;
+          border-bottom: 2px solid #c2cfc9;
           @include mq(sp) {
             font-size: 14px;
             padding: 14px 0;
-            border-bottom: 2px solid $main-color;
+            border-bottom: 2px solid #c2cfc9;
           }
         }
         .l-risk-table__list {
@@ -415,7 +415,7 @@
             align-items: center;
             height: 80px;
             padding: 24px 8px;
-            font-size: 20px;
+            font-size: 16px;
             background-color: $white;
             border-bottom: 1px solid #c2cfc9;
             text-align: center;
@@ -449,11 +449,10 @@
           font-size: 20px;
           padding: 20px 0;
           color: $main-color;
-          border-bottom: 4px solid $main-color;
+          border-bottom: 2px solid #c2cfc9;
           @include mq(sp) {
             font-size: 14px;
             padding: 14px 0;
-            border-bottom: 2px solid $main-color;
           }
         }
         .l-risk-table__list {
@@ -466,7 +465,7 @@
             background-color: $white;
             text-align: center;
             border-bottom: 1px solid #c2cfc9;
-            font-size: 20px;
+            font-size: 16px;
             &:nth-child(even) {
               background-color: #f7f7f7;
             }

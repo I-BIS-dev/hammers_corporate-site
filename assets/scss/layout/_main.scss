@@ -150,7 +150,7 @@
           min-width: 164px;
           color: $accent-color;
           font-size: 14px;
-          line-height: 155%;
+          line-height: 1.5;
           position: absolute;
           top: 50%;
           left: 50%;
@@ -1009,6 +1009,7 @@
         }
         .l-access__telarea {
           padding-bottom: 48px;
+          line-height: 200%;
           margin: 0 auto;
           @include mq(sp-ls) {
             padding-bottom: 24px;

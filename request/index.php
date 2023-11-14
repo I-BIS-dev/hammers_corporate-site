@@ -21,7 +21,7 @@
   <header class="l-header">
     <h1 class="l-header__logo-area">
       <a href="../" class="l-header__link">
-        <img src="/assets/images/logo.svg" alt="ハマーズのロゴ" class="l-header-logo">
+        <img src="/assets/images/logo.svg" alt="  ベスター アスベスト分析・調査の専門家" class="l-header-logo">
       </a>
     </h1>
     <div class="l-header__navarea">
@@ -41,7 +41,7 @@
         </ul>
       </nav>
       <div class="l-header__nav-contact">
-        <img class="l-header__navicon" src="/assets/images/arrow-header.svg" width="25" height="25" alt="矢印アイコン">
+        <img class="l-header__navicon" src="/assets/images/arrow-header.svg" width="25" height="25" alt="">
         <a href="../contact/" class="l-header__btn">お問い合わせ</a>
       </div>
     </div>
@@ -56,12 +56,12 @@
 
   <div class="c-contact-btn">
     <a class="c-contact-link" href="">
-      <img class="c-contact-icon" src="/assets/images/arrow-header.svg" alt="矢印のアイコン">
+      <img class="c-contact-icon" src="/assets/images/arrow-header.svg" alt="">
     </a>
   </div>
   <div class="c-phone-btn">
     <a class="c-phone-link" href="tel:045-253-2560">
-      <img class="c-phone-icon" src="/assets/images/phone-icon.svg" alt="電話のアイコン">
+      <img class="c-phone-icon" src="/assets/images/phone-icon.svg" alt="">
     </a>
   </div>
   <!-- <div class="c-contact">
@@ -96,7 +96,7 @@
         </div>
         <div class="l-contact__infoarea">
           <div class="l-contact__telarea">
-            <p class="l-contact__tel">TEL<a class="l-contact__tel --link" href="tel:045-253-2560">045-253-2560</a></p>
+            <p class="l-contact__tel">TEL045-253-2560</p>
             <p class="l-contact__time">受付時間 9:00〜18:00（土日祝除く）</p>
           </div>
           <div class="l-contact__btnarea">
@@ -115,7 +115,7 @@
     <div class="l-footer__top">
       <div class="l-footer__logo-area">
         <div class="l-footer__logo">
-          <img src="../assets/images/logo-white.svg" alt="ハマーズロゴ" class="l-footer__logo-img">
+          <img src="../assets/images/logo-white.svg" alt="ベスター アスベスト分析・調査の専門家" class="l-footer__logo-img">
         </div>
         <p class="l-footer__logo-company">株式会社ハマーズ アスベスト分析事業部</p>
         <p class="l-footer__logo-address">〒231-0048 神奈川県横浜市中区蓬莱町2-6-14 戸賀崎ビル2F</p>
