@@ -47,7 +47,7 @@
         font-weight: bold;
         color: $black;
         text-align: center;
-        padding: 0.5em 16px 1em;
+        padding: 0.5em 0 1em;
         position: relative;
         margin-bottom: 60px;
         display: inline-block;
@@ -68,8 +68,9 @@
           font-size: 28px;
         }
         @include mq(sp) {
-          font-size: 20px;
+          font-size: 24px;
           margin-bottom: 30px;
+          line-height: 1.5;
         }
       }
     }
@@ -159,8 +160,8 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                background-color: rgba(0, 0, 0, 0.3); /* オーバーレイの初期状態は透明 */
-                opacity: 0;
+                background-color: rgba(0, 0, 0, 0.2);
+                opacity: 1;
                 transition: all 0.7s;
               }
               &::after {
@@ -177,15 +178,16 @@
                 background-image: url(../assets/images/search.svg);
                 background-repeat: no-repeat;
                 background-position: center;
+                opacity: 1;
                 transition: all 0.7s;
               }
               &:hover {
                 &::before {
-                  opacity: 1;
+                  background-color: rgba(0, 0, 0, 0.4);
                 }
-                &::after {
-                  opacity: 1;
-                }
+                // &::after {
+                //   // @include hover-effect;
+                // }
               }
               .l-step1__img {
                 min-width: 278px;
@@ -327,7 +329,7 @@
       font-weight: bold;
       color: $black;
       text-align: center;
-      padding: 0.5em 16px 1em;
+      padding: 0.5em 0 1em;
       position: relative;
       margin-bottom: 60px;
       display: inline-block;
@@ -348,8 +350,9 @@
         font-size: 28px;
       }
       @include mq(sp) {
-        font-size: 20px;
+        font-size: 24px;
         margin-bottom: 30px;
+        line-height: 1.5;
       }
     }
   }
@@ -613,7 +616,7 @@
       font-weight: bold;
       color: $black;
       text-align: center;
-      padding: 0.5em 16px 1em;
+      padding: 0.5em 0 1em;
       position: relative;
       margin-bottom: 60px;
       display: inline-block;
@@ -634,8 +637,9 @@
         font-size: 28px;
       }
       @include mq(sp) {
-        font-size: 20px;
+        font-size: 24px;
         margin-bottom: 30px;
+        line-height: 1.5;
       }
     }
   }
@@ -694,7 +698,7 @@
       font-weight: bold;
       color: $black;
       text-align: center;
-      padding: 0.5em 16px 1em;
+      padding: 0.5em 0 1em;
       position: relative;
       margin-bottom: 60px;
       display: inline-block;
@@ -715,8 +719,9 @@
         font-size: 28px;
       }
       @include mq(sp) {
-        font-size: 20px;
+        font-size: 24px;
         margin-bottom: 30px;
+        line-height: 1.5;
       }
     }
   }

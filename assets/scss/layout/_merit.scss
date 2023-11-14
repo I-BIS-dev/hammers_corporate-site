@@ -203,7 +203,7 @@
         font-weight: bold;
         color: $black;
         text-align: center;
-        padding: 0.5em 16px 1em;
+        padding: 0.5em 0 1em;
         position: relative;
         margin-bottom: 60px;
         display: inline-block;
@@ -224,8 +224,9 @@
           font-size: 28px;
         }
         @include mq(sp) {
-          font-size: 18px;
+          font-size: 24px;
           margin-bottom: 30px;
+          line-height: 1.5;
         }
       }
 
@@ -311,7 +312,7 @@
         font-weight: bold;
         color: $black;
         text-align: center;
-        padding: 0.5em 16px 1em;
+        padding: 0.5em 0 1em;
         position: relative;
         margin-bottom: 60px;
         display: inline-block;
@@ -332,8 +333,9 @@
           font-size: 28px;
         }
         @include mq(sp) {
-          font-size: 16px;
+          font-size: 24px;
           margin-bottom: 30px;
+          line-height: 1.5;
         }
       }
 
@@ -440,7 +442,7 @@
         font-weight: bold;
         color: $black;
         text-align: center;
-        padding: 0.5em 16px 1em;
+        padding: 0.5em 0 1em;
         position: relative;
         margin-bottom: 60px;
         display: inline-block;
@@ -461,8 +463,9 @@
           font-size: 28px;
         }
         @include mq(sp) {
-          font-size: 18px;
+          font-size: 24px;
           margin-bottom: 30px;
+          line-height: 1.5;
         }
       }
 
