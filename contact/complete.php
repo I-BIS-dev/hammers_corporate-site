@@ -27,8 +27,8 @@ $message  = $_POST['name'] . " 様 \r\n"
   . "──────────────────────";
 $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
 // $headers = "From: info-b@bestar7.jp";
-$header .= "From: info-b@bestar7.jp\r\n";
-$header .= "Return-Path: info-b@bestar7.jp\r\n";
+$header .= "From: aijie0811@outlook.jp\r\n";
+$header .= "Return-Path: aijie0811@outlook.jp\r\n";
 
 mail($to, $subject, $message, $headers);
 ?>
@@ -56,8 +56,8 @@ $message  = "\r\n"
   . "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\r\n";
 $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
 // $headers = "From: info-b@bestar7.jp";
-$header .= "From: info-b@bestar7.jp\r\n";
-$header .= "Return-Path: info-b@bestar7.jp\r\n";
+$header .= "From: aijie0811@outlook.jp\r\n";
+$header .= "Return-Path: aijie0811@outlook.jp\r\n";
 
 mail($to, $subject, $message, $headers);
 ?>
