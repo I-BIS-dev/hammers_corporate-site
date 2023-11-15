@@ -27,6 +27,8 @@ $message  = $_POST['name'] . " 様 \r\n"
   . "──────────────────────";
 $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
 $headers = "From: info-b@bestar7.jp";
+$header .= "From: info-b@bestar7.jp\r\n";
+$header .= "Return-Path: info-b@bestar7.jp\r\n";
 
 mail($to, $subject, $message, $headers);
 ?>
@@ -53,7 +55,9 @@ $message  = "\r\n"
   . "\r\n"
   . "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\r\n";
 $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
-$headers = "From: info-b@bestar7.jp";
+// $headers = "From: info-b@bestar7.jp";
+$header .= "From: info-b@bestar7.jp\r\n";
+$header .= "Return-Path: info-b@bestar7.jp\r\n";
 
 mail($to, $subject, $message, $headers);
 ?>
@@ -171,13 +175,13 @@ mail($to, $subject, $message, $headers);
           </div>
         </div>
       </div>
-      <div class="c-top-btn --topbtn">
-        <img src="/assets/images/arrow-topbtn.svg" alt="topに戻るボタン" class="c-top-btn-icon">
-      </div>
     </section>
   </main>
 
   <footer class="l-footer">
+    <div class="c-top-btn --topbtn">
+      <img src="/assets/images/arrow-topbtn.svg" alt="topに戻るボタン" class="c-top-btn-icon">
+    </div>
     <div class="l-footer__top">
       <div class="l-footer__logo-area">
         <div class="l-footer__logo">
