@@ -948,8 +948,12 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding-bottom: 60px;
       @include mq(sp-ls) {
         flex-direction: column;
+      }
+      @include mq(sp-ls) {
+        padding-bottom: 40px;
       }
 
       .l-access__img-area {
@@ -1025,24 +1029,22 @@
         }
       }
     }
+
     .l-access__address-map {
       max-width: 960px;
-      padding-top: 60px;
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 31%;
       @include mq(sp) {
-        padding-top: 40px;
+        padding-top: 100%;
       }
-
-      @include mq(sp-ls) {
-        margin: 0 auto;
-        text-align: center;
-      }
-
       .l-access__iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        min-height: 300px;
-        @include mq(sp) {
-          width: 300px;
-        }
+        height: 100%;
       }
     }
   }

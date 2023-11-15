@@ -1,45 +1,32 @@
 .c-headline-area {
-  padding-bottom: 60px;
-  @include mq(sp-ls) {
-    padding-bottom: 48px;
-  }
-  @include mq(sp) {
-    padding-bottom: 0;
-  }
+  text-align: center;
 
   .c-headline {
     font-size: 32px;
     font-weight: bold;
-    text-align: center;
-    padding: 0 0 32px;
+    padding: 0.5em 0 1em;
     position: relative;
-    margin-bottom: 1em;
+    margin-bottom: 60px;
+    display: inline-block;
+    line-height: 1.5;
     &::before {
       content: "";
       position: absolute;
       bottom: 0;
-      width: 10%;
+      width: 64%;
       height: 4px;
       left: 50%;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
       background-color: $main-color;
-      @include mq(sp-ls) {
-        width: 12%;
-      }
-      @include mq(sp) {
-        width: 17%;
-        bottom: 6px;
-      }
     }
     @include mq(sp-ls) {
       font-size: 28px;
-      padding: 0 8px 26px;
+      padding: 0 0 26px;
     }
     @include mq(sp) {
       font-size: 24px;
       margin-bottom: 30px;
-      line-height: 1.5;
     }
   }
   &.--flow {
