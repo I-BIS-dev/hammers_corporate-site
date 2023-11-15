@@ -27,14 +27,14 @@ $message  = $_POST['name'] . " 様 \r\n"
   . "──────────────────────";
 $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
 // $headers = "From: info-b@bestar7.jp";
-$headers .= "From: From: aijie0811@outlook.jp\r\n";
-$headers .= "Return-Path: From: aijie0811@outlook.jp\r\n";
+$headers .= "From: From: info-b@bestar7.jp\r\n";
+$headers .= "Return-Path: From: info-b@bestar7.jp\r\n";
 
 mail($to, $subject, $message, $headers);
 ?>
 
 <?php
-$to = "From: aijie0811@outlook.jp";
+$to = "From: info-b@bestar7.jp";
 $subject = "お問い合わせがありました";
 $message  = "\r\n"
   . $_POST['name'] . "様\r\n"
@@ -56,8 +56,8 @@ $message  = "\r\n"
   . "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\r\n";
 $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
 // $headers = "From: info-b@bestar7.jp";
-$headers .= "From: From: aijie0811@outlook.jp\r\n";
-$headers .= "Return-Path: From: aijie0811@outlook.jp\r\n";
+$headers .= "From: From: info-b@bestar7.jp\r\n";
+$headers .= "Return-Path: From: info-b@bestar7.jp\r\n";
 
 mail($to, $subject, $message, $headers);
 ?>
