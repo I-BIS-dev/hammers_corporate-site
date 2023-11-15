@@ -1,0 +1,42 @@
+.c-headline-area {
+  text-align: center;
+
+  .c-headline {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0.5em 0 1em;
+    position: relative;
+    margin-bottom: 60px;
+    display: inline-block;
+    line-height: 1.5;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 64%;
+      height: 4px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      background-color: $main-color;
+    }
+    @include mq(sp-ls) {
+      font-size: 28px;
+      padding: 0 0 26px;
+    }
+    @include mq(sp) {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  }
+  &.--flow {
+    &::after {
+      content: "STEP1";
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      font-size: 14px;
+      color: $main-color;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.c-stepbar {
+  display: flex;
+  max-width: 400px;
+  position: relative;
+  margin: 48px auto;
+  text-align: center;
+  @include mq(sp) {
+    margin: 32px auto;
+  }
+
+  .c-stepbar__list {
+    font-size: 12px;
+    list-style: none;
+    position: relative;
+    width: 33.333%;
+
+    &:after {
+      background: #e8e8e8;
+      content: "";
+      width: calc(100% - 26px);
+      height: 2px;
+      position: absolute;
+      left: calc(-50% + 15px);
+      top: 15px;
+      @include mq(sp) {
+        width: calc(100% - 18px);
+        height: 2px;
+        left: calc(-50% + 10px);
+        top: 9px;
+      }
+    }
+
+    &:first-child:after {
+      display: none;
+    }
+
+    .c-stepbar__number {
+      background: #e8e8e8;
+      color: $black;
+      display: inline-block;
+      height: 30px;
+      margin-bottom: 5px;
+      line-height: 28px;
+      width: 30px;
+      border-radius: 50%;
+      @include mq(sp) {
+        height: 20px;
+        line-height: 18px;
+        width: 20px;
+      }
+    }
+  }
+
+  .--visited {
+    color: $main-color;
+    &:after {
+      background: $accent-color;
+    }
+
+    .c-stepbar__number {
+      background: $accent-color;
+      color: $white;
+    }
+  }
+}

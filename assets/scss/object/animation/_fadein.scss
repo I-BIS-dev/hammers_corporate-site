@@ -7,3 +7,19 @@
   transform: translate3d(0, 0, 0);
   opacity: 1;
 }
+
+.a--fadein-first {
+  animation: fadein 2s ease;
+}
+
+@keyframes fadein {
+  0% {
+    transform: translate3d(0, 50px, 0);
+    transition: 1.5s;
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}

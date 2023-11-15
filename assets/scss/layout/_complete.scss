@@ -1,0 +1,72 @@
+.main {
+  .l-sub-mv {
+    .l-sub-mv__area {
+      .l-sub-mv__hero {
+        @include mq(sp-ls) {
+          width: 90%;
+          text-align: center;
+        }
+        @include mq(sp) {
+          width: 90%;
+          text-align: center;
+        }
+        &.--contact {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .l-complete-area {
+    padding: 60px 0 120px;
+    max-width: 960px;
+    margin: 0 auto;
+    @include mq(sp-tab) {
+      padding: 40px;
+    }
+    @include mq(sp) {
+      padding: 60px 20px;
+    }
+
+    .l-complete__msg-area {
+      margin: 60px auto 0;
+      @include mq(sp) {
+        margin: 40px auto 0;
+      }
+      .l-complete__msg {
+        font-size: 16px;
+        line-height: 200%;
+        color: $black;
+        text-align: center;
+        padding-bottom: 24px;
+        @include mq(sp) {
+          font-size: 14px;
+          line-height: 200%;
+          text-align: left;
+        }
+        &.--ttl {
+          color: $main-color;
+          font-size: 22px;
+          font-weight: bold;
+          padding-bottom: 24px;
+          @include mq(sp) {
+            font-size: 16px;
+            text-align: center;
+          }
+        }
+        &.--desctiption {
+          color: #807e7e;
+          font-size: 14px;
+          line-height: 180%;
+          padding-bottom: 24px;
+          @include mq(sp) {
+            font-size: 10px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

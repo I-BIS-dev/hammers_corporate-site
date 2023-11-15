@@ -1,32 +1,130 @@
-main {
+.main {
   .l-mv {
-    background-image: url(../assets/images/mainvisual.png);
+    background-image: url(../assets/images/mainvisual.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
+    position: relative;
 
-    .l-mv__hero-text {
-      padding: 340px 0 64px 146px;
-      color: $main-color;
-      font-size: 46px;
-      font-weight: bold;
-      line-height: 160%;
+    .l-mv__heroarea {
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+      @include mq(sp-tab) {
+        padding: 0 26px;
+      }
       @include mq(sp-ls) {
-        font-size: 22px;
-        color: $white;
-        text-align: center;
-        padding: 340px 0 64px;
+        flex-direction: column;
+        justify-content: center;
+      }
+      @include mq(sp) {
+        margin: 0;
+      }
+
+      .l-mv__hero-text {
+        color: #323031;
+        font-size: 46px;
+        line-height: 160%;
+        font-weight: bold;
+        line-height: 160%;
+        @include mq(sp-ls) {
+          font-size: 28px;
+          text-align: center;
+          padding-bottom: 46px;
+        }
+      }
+
+      .l-mv__btnarea {
+        max-width: 352px;
+        height: 78px;
+        position: relative;
+        @include mq(sp) {
+          min-width: 238px;
+        }
+
+        .l-mv__ctabtn {
+          display: block;
+          position: relative;
+          width: 100%;
+          border-radius: 50px;
+          padding: 16px 64px;
+          font-size: 26px;
+          font-weight: bold;
+          background: linear-gradient(64deg, rgba(0, 176, 155, 1) 0%, rgba(150, 201, 61, 1) 100%);
+          color: $white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+          overflow: hidden;
+          &:hover {
+            background: radial-gradient(circle at 100% 0%, rgba(0, 176, 155, 1) 15%, rgba(150, 201, 61, 1));
+          }
+          &::before {
+            position: absolute;
+            top: 0;
+            left: -60%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+            transform: skewX(-25deg);
+            transition: 2s ease-in-out;
+            content: "";
+            @keyframes flash {
+              100% {
+                left: 120%;
+              }
+            }
+          }
+          &:hover::before {
+            animation: flash 0.75s;
+          }
+
+          &::after {
+            content: "";
+            background-image: url(../assets/images/arrow-ctabtn.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 46%;
+            transform: translateX(-45%);
+            right: 5%;
+            width: 15px;
+            height: 15px;
+            transition: all 0.3s;
+            @include mq(sp) {
+              top: 43%;
+            }
+          }
+          &:hover::after {
+            right: 4%;
+          }
+          @include mq(sp) {
+            font-size: 18px;
+          }
+        }
       }
     }
+
     .l-mv__flex-container {
       display: flex;
-      padding-left: 146px;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -80%);
       @include mq(sp-ls) {
         justify-content: center;
-        padding-left: 0;
+      }
+      @include mq(sp) {
+        width: 338px;
       }
 
       .l-mv__flex-img-bg {
@@ -34,21 +132,25 @@ main {
         height: 180px;
         background-image: url(../assets/images/mv-textbg.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         position: relative;
         text-align: center;
-        margin: 0 8px;
+        margin: 0 16px;
         @include mq(sp-ls) {
-          width: 110px;
-          height: 110px;
+          width: 120px;
+          height: 120px;
+        }
+        @include mq(sp) {
+          margin: 0 2px;
+          background-size: contain;
         }
 
         .l-mv__hero-descroption {
           min-width: 164px;
-          color: $main-color;
-          font-size: 15px;
-          line-height: 155%;
+          color: $accent-color;
+          font-size: 14px;
+          line-height: 1.5;
           position: absolute;
           top: 50%;
           left: 50%;
@@ -56,9 +158,12 @@ main {
           @include mq(sp-ls) {
             font-size: 10px;
           }
+          @include mq(sp) {
+            min-width: 112px;
+          }
 
           .l-mv__hero-hero-descroption--bold {
-            font-size: 20px;
+            font-size: 18px;
             @include mq(sp-ls) {
               font-size: 10px;
             }
@@ -69,38 +174,46 @@ main {
   }
 
   .l-feature {
-    background-color: $bg-color;
+    background-color: $white;
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
-    padding: 64px 0;
+    padding: 120px 0;
     @include mq(sp-ls) {
-      padding-top: 64px;
+      padding: 80px 0;
     }
     @include mq(sp) {
-      padding-top: 32px;
+      padding: 60px 0;
     }
 
     .l-feature__text-top {
-      max-width: 650px;
+      font-weight: bold;
       margin: 0 auto;
       text-align: center;
       line-height: 200%;
       padding-bottom: 48px;
+      font-size: 21px;
       @include mq(sp-ls) {
+        font-size: 16px;
+      }
+      @include mq(sp) {
         font-size: 12px;
       }
     }
     .l-feature__card {
-      max-width: 425px;
+      max-width: 500px;
       text-align: center;
-      margin: 0 40px;
+      margin: 0 20px;
       padding-bottom: 24px;
       @include mq(sp-ls) {
         margin: 0 auto;
+        width: 383px;
+      }
+      @include mq(sp) {
+        width: 314px;
       }
 
       .l-feature__card-top {
-        background-color: $main-color;
+        background-color: $accent-color;
         padding: 4px 24px;
         border-radius: 7px 7px 0 0;
 
@@ -128,35 +241,62 @@ main {
         }
       }
       .l-feature__card-bottom {
-        border: 1px solid $main-color;
+        border: 3px solid $accent-color;
         border-top: none;
         border-radius: 0 0 7px 7px;
-        padding: 32px;
+        padding: 32px 18px;
+        height: 130px;
         background-color: $white;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
         @include mq(sp-ls) {
           padding: 24px;
+          height: 103px;
+        }
+        @include mq(sp) {
+          padding: 14px;
+          height: 72px;
         }
         .l-feature__card-bottom--day {
           font-size: 40px;
           font-weight: bold;
+          &.--secondary {
+            font-size: 32px;
+            @include mq(sp-ls) {
+              font-size: 20px;
+              width: 339px;
+            }
+            @include mq(sp-ls) {
+              width: inherit;
+            }
+          }
           @include mq(sp-ls) {
-            font-size: 26px;
+            font-size: 20px;
           }
         }
       }
     }
     .l-feature__text-bottom {
-      max-width: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin: 0 auto;
-      text-align: center;
       line-height: 180%;
       padding-bottom: 64px;
       @include mq(sp-ls) {
-        font-size: 12px;
         padding-bottom: 24px;
       }
       .l-feature__text {
-        font-size: 10px;
+        font-size: 16px;
+        text-align: left;
+        padding-top: 16px;
+        @include mq(sp-ls) {
+          font-size: 14px;
+          padding-top: 14px;
+        }
+        @include mq(sp) {
+          font-size: 12px;
+          padding-top: 12px;
+        }
       }
     }
     .l-feature__info {
@@ -196,106 +336,20 @@ main {
         }
       }
     }
-
-    .l-feature__ctabtn {
+    .l-feature__ctabtn-area {
       display: flex;
       justify-content: center;
-      align-items: center;
-      padding-bottom: 64px;
-    }
-  }
-
-  .l-survey {
-    background-color: $white;
-
-    .l-surbey__ttl {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 64px;
-
-      .l-surbey__ttl-text {
-        font-size: 32px;
-        font-weight: bold;
-        @include mq(sp-ls) {
-          font-size: 26px;
-        }
-        @include mq(sp) {
-          font-size: 16px;
-        }
-
-        &.--font {
-          font-size: 40px;
-          color: $main-color;
-          position: relative;
-          @include mq(sp-ls) {
-            font-size: 32px;
-          }
-          @include mq(sp) {
-            font-size: 20px;
-          }
-          &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            border-bottom: 2px dashed $main-color;
-          }
-        }
-      }
-    }
-    .l-surbey__flex-container {
-      display: flex;
-      padding: 40px 0 80px;
+      gap: 32px;
       @include mq(sp-ls) {
         flex-direction: column;
+        gap: 8px;
+      }
+      .l-feature__ctabtn {
+        display: flex;
         justify-content: center;
-      }
-      .l-surbey__imgarea {
-        flex: 5;
-        position: relative;
+        align-items: center;
         @include mq(sp-ls) {
-          display: flex;
-          justify-content: center;
-        }
-        .l-surbey__img1 {
-          max-width: 245px;
-          @include mq(sp) {
-            max-width: 170px;
-          }
-        }
-        .l-surbey__img2 {
-          max-width: 245px;
-          position: absolute;
-          top: 5%;
-          left: 40%;
-          @include mq(sp-ls) {
-            position: static;
-          }
-          @include mq(sp) {
-            max-width: 170px;
-          }
-        }
-      }
-      .l-surbey__info {
-        flex: 5;
-        max-width: 428px;
-        @include mq(sp-ls) {
-          margin: 0 auto;
-        }
-        @include mq(sp) {
-          padding: 8px;
-        }
-
-        .l-surbey__description {
-          text-align: justify;
-          padding: 40px 0 84px;
-          line-height: 200%;
-        }
-        .l-surbey__ctabtn {
-          display: flex;
-          justify-content: center;
+          padding-bottom: 24px;
         }
       }
     }
@@ -305,14 +359,25 @@ main {
     background-color: $bg-color;
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
-    padding: 64px 0;
+    padding: 120px 0;
+    @include mq(sp-ls) {
+      padding: 80px 0;
+    }
+    @include mq(sp) {
+      padding: 60px 0;
+    }
 
     .l-flow__card-container {
       display: flex;
       justify-content: space-between;
+      padding: 64px 0;
       @include mq(sp-ls) {
         flex-direction: column;
         justify-content: center;
+        padding: 32px 0;
+      }
+      @include mq(sp-ls) {
+        padding: 0;
       }
 
       .l-flow__card {
@@ -329,7 +394,12 @@ main {
           position: relative;
           z-index: 1;
           @include mq(sp-ls) {
-            max-width: 400px;
+            max-width: 315px;
+            margin: 0 auto;
+          }
+          @include mq(sp) {
+            max-width: 205px;
+            margin: 0 auto;
           }
           &::after {
             content: "";
@@ -367,7 +437,7 @@ main {
         padding-bottom: 16px;
       }
       .l-flow__card-description {
-        text-align: justify;
+        text-align-last: left;
         line-height: 170%;
 
         &.--link {
@@ -375,9 +445,329 @@ main {
         }
       }
     }
+    .l-flow__ctabtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .l-survey {
+    background-color: $white;
+    padding: 120px 0;
+    @include mq(sp-ls) {
+      padding: 80px 0;
+    }
+    @include mq(sp) {
+      padding: 60px 0;
+    }
+
+    .l-surbey__ttl {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 75px;
+      @include mq(sp-ls) {
+        padding-bottom: 63px;
+      }
+      @include mq(sp) {
+        padding-bottom: 45px;
+      }
+
+      .l-surbey__ttl-text {
+        line-height: 1;
+        font-size: 32px;
+        font-weight: bold;
+        @include mq(sp-ls) {
+          font-size: 22px;
+          padding: 0 20px;
+        }
+        @include mq(sp) {
+          font-size: 15px;
+          padding: 0 4px;
+        }
+
+        &.--font {
+          font-size: 40px;
+          line-height: 1;
+          color: $main-color;
+          position: relative;
+          @include mq(sp-ls) {
+            font-size: 28px;
+          }
+          @include mq(sp) {
+            font-size: 20px;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 100%;
+            border-bottom: 4px dotted $main-color;
+            @include mq(sp-ls) {
+              bottom: -13px;
+              border-bottom: 3px dotted $main-color;
+            }
+            @include mq(sp) {
+              bottom: -10px;
+              border-bottom: 2px dotted $main-color;
+            }
+          }
+        }
+      }
+    }
+    .l-surbey__flex-container {
+      display: flex;
+      @include mq(sp-ls) {
+        flex-direction: column;
+        justify-content: center;
+      }
+      .l-surbey__imgarea {
+        margin-right: 60px;
+        position: relative;
+        @include mq(sp-ls) {
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+        .l-surbey__img1 {
+          max-width: 500px;
+          width: 100%;
+        }
+      }
+      .l-surbey__info {
+        flex: 5;
+        max-width: 428px;
+        @include mq(sp-ls) {
+          margin: 0 auto;
+        }
+        @include mq(sp) {
+          padding: 8px;
+        }
+
+        .l-surbey__description {
+          padding: 0px 12px 40px 0;
+          line-height: 200%;
+          @include mq(sp-ls) {
+            padding: 20px 20px 40px;
+          }
+        }
+        .l-surbey__ctabtn {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .l-merit-top {
+    background-color: $bg-color;
+    margin: 0 calc(50% - 50vw);
+    padding: 0 calc(50vw - 50%);
+    padding: 120px 0;
+    @include mq(sp-ls) {
+      padding: 80px 0;
+    }
+    @include mq(sp) {
+      padding: 60px 0;
+    }
+    .l-merit-top__list {
+      position: relative;
+      padding: 64px 8px;
+      border: solid 4px #00833e;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 115px;
+      margin: 0 50px 80px;
+      @include mq(sp-ls) {
+        padding: 40px 16px;
+        flex-direction: column;
+        gap: 24px;
+        border: solid 2px #00833e;
+      }
+      @include mq(sp) {
+        margin: 12px 0 44px;
+      }
+      &::after {
+        content: "EASY&SPEEDY";
+        position: absolute;
+        top: -28px;
+        left: 15px;
+        text-align: right;
+        background: #f4f7f7;
+        font-size: 32px;
+        color: #00833e;
+        padding: 0 10px;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        @include mq(sp-ls) {
+          font-size: 24px;
+          top: -21px;
+        }
+      }
+
+      .l-merit-top__list-img {
+        max-width: 154px;
+        height: auto;
+        @include mq(sp-ls) {
+          margin: 0 auto;
+        }
+      }
+      .l-merit-top__list-text {
+        max-width: 480px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 180%;
+        @include mq(sp-ls) {
+          font-size: 20px;
+          max-width: 80%;
+          margin: 0 auto;
+        }
+        @include mq(sp) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .l-merit-top__list--secondary {
+      position: relative;
+      padding: 64px 8px;
+      border: solid 4px #00833e;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 115px;
+      margin: 0 50px 80px;
+      @include mq(sp-ls) {
+        padding: 40px 16px;
+        flex-direction: column;
+        gap: 24px;
+        border: solid 2px #00833e;
+      }
+      @include mq(sp) {
+        margin: 0 0 44px;
+      }
+      &::after {
+        content: "RELIABLE";
+        position: absolute;
+        top: -28px;
+        right: 15px;
+        text-align: right;
+        background: #f4f7f7;
+        font-size: 32px;
+        color: #00833e;
+        padding: 0 10px;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        @include mq(sp-ls) {
+          font-size: 24px;
+          top: -21px;
+        }
+      }
+
+      .l-merit-top__list--secondary-img {
+        max-width: 154px;
+        height: auto;
+        @include mq(sp-ls) {
+          margin: 0 auto;
+        }
+      }
+      .l-merit-top__list--secondary-text {
+        max-width: 480px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 180%;
+        @include mq(sp-ls) {
+          font-size: 20px;
+          max-width: 80%;
+          margin: 0 auto;
+        }
+        @include mq(sp) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .l-merit-top__list--tertiary {
+      position: relative;
+      padding: 64px 8px;
+      border: solid 4px #00833e;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 115px;
+      margin: 0 50px 80px;
+      @include mq(sp-ls) {
+        padding: 40px 16px;
+        flex-direction: column;
+        gap: 24px;
+        border: solid 2px #00833e;
+      }
+      @include mq(sp) {
+        margin: 0 0 44px;
+      }
+      &::after {
+        content: "ALL IN";
+        position: absolute;
+        top: -28px;
+        left: 15px;
+        text-align: right;
+        background: #f4f7f7;
+        font-size: 32px;
+        color: #00833e;
+        padding: 0 10px;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        @include mq(sp-ls) {
+          font-size: 24px;
+          top: -21px;
+        }
+      }
+
+      .l-merit-top__list--tertiary-img {
+        max-width: 154px;
+        height: auto;
+        @include mq(sp-ls) {
+          margin: 0 auto;
+        }
+      }
+      .l-merit-top__list--tertiary-text {
+        max-width: 480px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 180%;
+        @include mq(sp-ls) {
+          font-size: 20px;
+          max-width: 80%;
+          margin: 0 auto;
+        }
+        @include mq(sp) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .l-merit-top__ctabtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .l-faq {
+    padding: 120px 0;
+    @include mq(sp-ls) {
+      padding: 80px 0;
+    }
+    @include mq(sp) {
+      padding: 60px 0;
+    }
     .l-faq__list {
       padding-bottom: 64px;
 
@@ -424,12 +814,13 @@ main {
           border-radius: 16px;
           font-weight: bold;
           font-family: "Roboto", sans-serif;
+          font-size: 18px;
           @include mq(sp-ls) {
             padding: 16px 38px 16px 50px;
             font-size: 14px;
           }
           &::before {
-            font-size: 20px;
+            font-size: 18px;
             line-height: 1;
             position: absolute;
             top: 16px;
@@ -437,13 +828,13 @@ main {
             display: block;
             content: "Q";
             color: #3285bf;
-            background-color: #00833e;
+            background-color: #229f5d;
             color: #fff;
             border-radius: 50%;
             width: 40px;
             height: 40px;
             text-align: center;
-            line-height: 39px;
+            line-height: 41px;
             @include mq(sp-ls) {
               top: 11px;
               left: 15px;
@@ -460,13 +851,14 @@ main {
           margin: 0;
           padding: 20px 20px 20px 80px;
           line-height: 170%;
+          font-size: 18px;
           @include mq(sp-ls) {
             margin: 0;
             padding: 16px 16px 16px 50px;
             font-size: 14px;
           }
           &::before {
-            font-size: 22px;
+            font-size: 18px;
             line-height: 1;
             position: absolute;
             left: 16px;
@@ -474,14 +866,13 @@ main {
             display: block;
             content: "A";
             font-weight: bold;
-            color: #3285bf;
-            border: 1px solid $main-color;
-            color: $main-color;
+            border: 1px solid #229f5d;
+            color: #229f5d;
             border-radius: 50%;
             width: 40px;
             height: 40px;
             text-align: center;
-            line-height: 33px;
+            line-height: 36px;
             @include mq(sp-ls) {
               font-size: 14px;
               left: 15px;
@@ -494,7 +885,7 @@ main {
 
           .l-faq__text {
             margin: 30px 0 0;
-            text-align: justify;
+            line-height: 200%;
             &:first-child {
               margin-top: 0;
             }
@@ -507,7 +898,6 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-bottom: 64px;
     }
   }
 
@@ -515,98 +905,30 @@ main {
     background-color: $bg-color;
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
-    padding: 64px 0;
+    padding: 120px 0;
     @include mq(sp-ls) {
-      padding-top: 64px;
+      padding: 80px 0;
     }
     @include mq(sp) {
-      padding-top: 16px;
+      padding: 60px 0;
     }
 
     .l-access__pointarea {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      padding-bottom: 24px;
-
-      .l-access_point-card {
-        max-width: 400px;
-        @include mq(sp-ls) {
-          max-width: 300;
-        }
-        .l-access__point1 {
-          white-space: nowrap;
-          font-size: 20px;
-          font-weight: bold;
-          color: $main-color;
-          background-color: $white;
-          padding: 8px 80px;
-          border: 1px solid $main-color;
-          border-radius: 14px;
+      padding-bottom: 40px;
+      .l-access__point {
+        color: $main-color;
+        font-size: 28px;
+        font-weight: bold;
+        @include mq(sp) {
+          font-size: 23px;
           text-align: center;
-          position: relative;
-          display: block;
-          @include mq(sp-ls) {
-            padding: 8px 40px;
-            font-size: 16px;
-            white-space: normal;
-          }
-          &::before {
-            content: "";
-            width: 30px;
-            height: 30px;
-            line-height: 30;
-            position: absolute;
-            left: 52px;
-            top: 17px;
-            background-image: url(../assets/images/access-checkicon.svg);
-            background-repeat: no-repeat;
-            @include mq(sp-ls) {
-              content: "";
-              width: 15px;
-              height: 16px;
-              left: 18px;
-              top: 15px;
-              background-size: contain;
-            }
-          }
         }
-        .l-access__point2 {
-          white-space: nowrap;
-          font-size: 20px;
-          font-weight: bold;
-          color: $main-color;
-          background-color: $white;
-          padding: 8px 80px;
-          border: 1px solid $main-color;
-          border-radius: 14px;
+        @include mq(sp) {
+          font-size: 18px;
           text-align: center;
-          position: relative;
-          display: block;
-          @include mq(sp-ls) {
-            padding: 8px 40px;
-            font-size: 16px;
-            white-space: normal;
-          }
-          &::before {
-            content: "";
-            width: 30px;
-            height: 30px;
-            line-height: 30;
-            position: absolute;
-            left: 52px;
-            top: 17px;
-            background-image: url(../assets/images/access-checkicon.svg);
-            background-repeat: no-repeat;
-            @include mq(sp-ls) {
-              content: "";
-              width: 15px;
-              height: 16px;
-              left: 18px;
-              top: 15px;
-              background-size: contain;
-            }
-          }
         }
       }
     }
@@ -616,36 +938,45 @@ main {
 
       .l-acces__text {
         line-height: 200%;
-        padding-bottom: 40px;
+        padding: 16px 0 40px;
+        @include mq(sp) {
+          text-align: left;
+        }
       }
     }
 
     .l-access__addressarea {
-      background-color: $white;
+      max-width: 960px;
       display: flex;
-      justify-content: center;
-      margin: 0 calc(50% - 50vw);
-      padding: 0 calc(50vw - 50%);
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 60px;
       @include mq(sp-ls) {
         flex-direction: column;
-        justify-content: center;
+      }
+      @include mq(sp-ls) {
+        padding-bottom: 40px;
       }
 
-      .l-access__address-map {
-        width: 100%;
-        max-width: 686px;
-
-        iframe {
-          max-width: 686px;
+      .l-access__img-area {
+        max-width: 360px;
+        @include mq(sp-ls) {
+          padding-bottom: 40px;
+        }
+        .l-access__img {
           width: 100%;
-          min-height: 300px;
         }
       }
+
       .l-access__address-info {
-        flex: auto;
-        max-width: 524px;
-        background-color: #fff;
-        padding: 24px 32px;
+        max-width: 540px;
+
+        @include mq(sp-ls) {
+          margin: 0 auto;
+        }
+        @include mq(sp) {
+          width: 100%;
+        }
 
         .l-access__namearea {
           padding-bottom: 24px;
@@ -654,59 +985,100 @@ main {
           }
 
           .l-access__name {
+            font-size: 28px;
+            text-align: left;
             font-weight: bold;
-            font-size: 20px;
+            @include mq(sp) {
+              font-size: 20px;
+            }
           }
         }
+
         .l-access__adressarea {
-          padding-bottom: 24px;
+          padding-bottom: 32px;
+          margin: 0 auto;
           @include mq(sp-ls) {
             padding-bottom: 16px;
+            width: 100%;
+          }
+          @include mq(sp) {
+            padding-bottom: 16px;
+            width: 100%;
           }
 
           .l-access__adress {
             font-size: 16px;
+            margin: 0 auto;
+            font-weight: bold;
+            line-height: 200%;
           }
         }
         .l-access__telarea {
           padding-bottom: 48px;
+          line-height: 200%;
+          margin: 0 auto;
           @include mq(sp-ls) {
             padding-bottom: 24px;
           }
-
-          .l-access__tel {
-            font-weight: bold;
-
-            &.--link {
-              &:hover {
-                @include hover-effect;
-              }
-            }
-          }
         }
         .l-access__ctabtn {
-          display: flex;
-          justify-content: start;
+          margin: 0 auto;
+          width: 356px;
+          @include mq(sp) {
+            justify-content: center;
+            width: 300px;
+          }
         }
+      }
+    }
+
+    .l-access__address-map {
+      max-width: 960px;
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 31%;
+      @include mq(sp) {
+        padding-top: 100%;
+      }
+      .l-access__iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
     }
   }
 
   .l-contact {
-    background-color: $bg-color;
+    background-color: #e2ebeb;
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
     padding: 64px 0;
     position: relative;
+    &.--flow {
+      background-color: $white;
+      padding: 0;
+    }
+    @include mq(sp) {
+      padding: 40px 0;
+    }
 
     .l-contact-ttl {
       text-align: center;
-      padding: 32px 0;
+      padding-bottom: 32px;
+      @include mq(sp) {
+        padding-bottom: 16px;
+      }
 
       .l-contact-text {
         color: $main-color;
         font-size: 20px;
         font-weight: bold;
+        @include mq(sp) {
+          font-size: 13px;
+        }
       }
     }
 
@@ -714,10 +1086,18 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 24px;
+      gap: 32px;
       @include mq(sp-ls) {
         flex-direction: column;
         justify-content: center;
+      }
+      &.--flow {
+        @include mq(sp-ls) {
+          flex-direction: column;
+          justify-content: center;
+          padding: 40px 0;
+          gap: 14px;
+        }
       }
 
       .l-contact__telarea {
@@ -729,6 +1109,9 @@ main {
           font-family: "Roboto", sans-serif;
           font-weight: bold;
           color: $main-color;
+          @include mq(sp) {
+            font-size: 26px;
+          }
 
           &.--link {
             &:hover {
@@ -748,6 +1131,12 @@ main {
       text-align: center;
       display: flex;
       justify-content: start;
+      &.--flow {
+        padding: 80px 0;
+        @include mq(sp) {
+          padding: 0;
+        }
+      }
 
       .l-contact__btn {
         font-size: 14px;

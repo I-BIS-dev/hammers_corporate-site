@@ -1,24 +1,36 @@
 .p-headline {
   max-width: 300px;
   text-align: center;
-  margin: 40px auto;
+  margin: 0 auto;
+  padding-bottom: 60px;
   @include mq(sp-ls) {
-    margin: 24px auto;
+    padding-bottom: 48px;
+  }
+  @include mq(sp) {
+    padding-bottom: 30px;
   }
 
   .p-headline__prefix {
     color: $main-color;
     padding-bottom: 16px;
     font-weight: bold;
+    font-size: 22px;
     @include mq(sp-ls) {
-      font-size: 12px;
+      font-size: 20px;
+      padding-bottom: 4px;
+    }
+    @include mq(sp-ls) {
+      font-size: 18px;
       padding-bottom: 4px;
     }
   }
   .p-headline-ttl {
-    font-size: 40px;
+    font-size: 42px;
     @include mq(sp-ls) {
-      font-size: 20px;
+      font-size: 34px;
+    }
+    @include mq(sp) {
+      font-size: 28px;
     }
   }
 }

@@ -1,0 +1,40 @@
+.c-contact-btn {
+  position: fixed;
+  z-index: 2;
+  top: 60px;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: $main-color;
+  cursor: pointer;
+  display: none;
+  &:hover {
+    @include hover-effect;
+  }
+
+  @include mq(sp-tab) {
+    display: block;
+    &::after {
+      content: "お問い合わせ";
+      position: absolute;
+      width: 48px;
+      height: 20px;
+      bottom: -2px;
+      left: 54%;
+      transform: translateX(-50%);
+      font-size: 7px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      color: #fff;
+    }
+  }
+
+  .c-contact-link {
+    display: block;
+    .c-contact-icon {
+      margin: 14px auto 20px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

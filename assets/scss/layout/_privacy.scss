@@ -21,23 +21,26 @@
 
   .l-privacy {
     text-align: left;
-    margin: 80px auto;
-    padding: 0 24px;
+    margin: 120px auto;
+    @include mq(sp) {
+      margin: 60px auto;
+    }
+
     .l-privacy__text-area {
       line-height: 200%;
 
       .l-privacy__text {
         line-height: 200%;
-        padding-bottom: 120px;
+        padding-bottom: 60px;
         @include mq(sp) {
-          padding-bottom: 64px;
+          padding-bottom: 30px;
         }
       }
     }
 
     .l-privacy-content {
       text-align: left;
-      padding-bottom: 56px;
+      padding-bottom: 44px;
       @include mq(sp) {
         padding-bottom: 32px;
       }
@@ -45,10 +48,14 @@
       .l-privacy__ttl {
         font-weight: bold;
         font-size: 24px;
-        padding-bottom: 32px;
+        border-left: 4px solid $main-color;
+        margin-bottom: 24px;
+        padding-left: 20px;
+
         @include mq(sp) {
-          font-size: 20px;
-          padding-bottom: 16px;
+          font-size: 18px;
+          padding: 6px 12px;
+          margin-bottom: 24px;
         }
       }
       .l-privacy__text {
@@ -56,8 +63,18 @@
 
         .l-privacy__list {
           .l-privacy__item {
-            list-style-type: disc;
-            list-style-position: inside;
+            &::before {
+              content: "";
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              background-color: #262626;
+              display: inline-block;
+              line-height: 5;
+              position: relative;
+              top: -12px;
+              margin-right: 8px;
+            }
           }
         }
       }
