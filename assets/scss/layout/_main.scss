@@ -480,9 +480,11 @@
         font-weight: bold;
         @include mq(sp-ls) {
           font-size: 22px;
+          padding: 0 20px;
         }
         @include mq(sp) {
           font-size: 15px;
+          padding: 0 4px;
         }
 
         &.--font {

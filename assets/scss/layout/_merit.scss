@@ -1,7 +1,7 @@
 .main {
   .l-sub-mv {
     padding-top: 105px;
-    @include mq(sp) {
+    @include mq(sp-tab) {
       padding-top: 60px !important;
     }
 
@@ -395,7 +395,7 @@
             height: auto;
             @include mq(sp-ls) {
               margin: 0 auto;
-              padding-bottom: 8px;
+              padding-bottom: 32px;
             }
             @include mq(sp) {
               padding-bottom: 24px;
