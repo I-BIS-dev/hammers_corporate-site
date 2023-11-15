@@ -25,13 +25,14 @@ $message  = $_POST['name'] . " 様 \r\n"
   . "http://bestar7.jp/\r\n"
   . "Mail:info-b@bestar7.jp\r\n"
   . "──────────────────────";
+$headers = "Content-Type: text/plain; charset=UTF-8\r\n";
 $headers = "From: info-b@bestar7.jp";
 
 mail($to, $subject, $message, $headers);
 ?>
 
 <?php
-$to = "aisuke0811@outlook.jp";
+$to = "info-b@bestar7.jp";
 $subject = "お問い合わせがありました";
 $message  = "\r\n"
   . $_POST['name'] . "様\r\n"
@@ -51,6 +52,7 @@ $message  = "\r\n"
   . str_replace("<br />", "\r\n", $_POST['inquiry'])
   . "\r\n"
   . "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\r\n";
+$headers = "Content-Type: text/plain; charset=UTF-8\r\n";
 $headers = "From: info-b@bestar7.jp";
 
 mail($to, $subject, $message, $headers);
