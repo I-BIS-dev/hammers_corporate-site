@@ -116,6 +116,7 @@
     color: $sub-color;
     border: 3px solid $sub-color;
     padding: 17px 64px;
+    transition: all 0.3s;
     &::after {
       background-image: url(../assets/images/arrow-ctasub.svg);
       top: 25px;
