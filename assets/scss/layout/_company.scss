@@ -417,6 +417,8 @@
             right: 40px;
           }
           @include mq(sp) {
+            max-width: 160px;
+            min-height: 160px;
             right: -20px;
           }
         }
