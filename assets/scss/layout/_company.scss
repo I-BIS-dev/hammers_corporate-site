@@ -414,6 +414,10 @@
             max-width: 170px;
             min-height: 170px;
             bottom: -70px;
+            right: 40px;
+          }
+          @include mq(sp) {
+            right: -20px;
           }
         }
 

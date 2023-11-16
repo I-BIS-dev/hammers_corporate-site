@@ -93,6 +93,7 @@
   position: relative;
   white-space: nowrap;
   cursor: pointer;
+  transition: all 0.3s;
   &::after {
     content: "";
     background-image: url(../assets/images/arrow-ctabtn.svg);
@@ -125,7 +126,7 @@
   &.--white {
     background-color: $white;
     color: $sub-color;
-
+    transition: all 0.3s;
     &::after {
       background-image: url(../assets/images/arrow-ctasub.svg);
     }
@@ -133,6 +134,7 @@
   &.--excle {
     background-color: $main-color;
     color: $white;
+    transition: all 0.3s;
     &::after {
       background-image: url(../assets/images/arrow-ctabtn.svg);
     }
@@ -142,6 +144,7 @@
   }
   &.--lg {
     width: 356px;
+    transition: all 0.3s;
     @include mq(sp) {
       width: 300px;
     }

@@ -149,7 +149,7 @@
         .l-mv__hero-descroption {
           min-width: 164px;
           color: $accent-color;
-          font-size: 14px;
+          font-size: 16px;
           line-height: 1.5;
           position: absolute;
           top: 50%;
@@ -162,10 +162,16 @@
             min-width: 112px;
           }
 
-          .l-mv__hero-hero-descroption--bold {
+          .l-mv__hero-descroption--bold {
+            font-size: 20px;
+            @include mq(sp-ls) {
+              font-size: 12px;
+            }
+          }
+          .l-mv__hero-descroption--bold-center {
             font-size: 18px;
             @include mq(sp-ls) {
-              font-size: 10px;
+              font-size: 11px;
             }
           }
         }
