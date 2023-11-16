@@ -275,6 +275,18 @@
           &:focus {
             outline: 2px solid #00833e;
           }
+
+          &:invalid {
+            // &::after {
+            content: attr(title);
+            color: transparent;
+            // }
+          }
+
+          input:invalid::after {
+            content: attr(title);
+            color: transparent;
+          }
         }
 
         .wpcf7-list-item-label:hover {
