@@ -86,7 +86,7 @@
 
     <div class="c-analysis__contents a--fadein-first">
       <div class="c-analysis__top-text">
-        <p class="c-analysis__description">弊社ならびにサービスに関するご質問や相談は、お電話またはこちらのフォームからお送りください。<br>数日以内にご希望の連絡方法にて返信いたします。<br>なお、添付ファイルがある場合は、<span class="c-font-bold">info-b@bestar7.jp</span>宛にメールで送信ください。
+        <p class="c-analysis__description">弊社ならびにサービスに関するご質問や相談は、お電話またはこちらのフォームからお送りください。<br>数日以内にご希望の連絡方法にて返信いたします。<br>なお、添付ファイルがある場合は、<a href="mailto:info-b@bestar7.jp" class="c-font-bold">info-b@bestar7.jp</a>宛にメールで送信ください。
         </p>
       </div>
       <ol class="c-stepbar">
@@ -161,7 +161,7 @@
               <input type="radio" id="analysis" name="item" value="分析依頼の相談" checked><span>分析依頼の相談</span>
             </label>
             <label for="faq">
-              <input type="radio" id="faq" name="item" value="弊社へのご意見・質問"><span>弊社へのご意見・質問</span>
+              <input type="radio" id="faq" name="item" value="弊社へのご意見・質問"><span>弊社へのご質問・お問い合わせ</span>
             </label>
           </div>
         </div>

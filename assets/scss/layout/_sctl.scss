@@ -57,9 +57,11 @@
     .l-table-area {
       max-width: 960px;
       margin: 0 auto;
+
       .l-table {
         display: flex;
         border-top: 1px solid #c2cfc9;
+
         &:last-child {
           border-bottom: 1px solid #c2cfc9;
         }
@@ -71,7 +73,7 @@
           justify-content: center;
           align-items: center;
           @include mq(sp-ls) {
-            width: 200px;
+            width: 150px;
           }
           @include mq(sp) {
             width: 100px;
@@ -110,6 +112,8 @@
           .l-table-data--list {
             padding: 0;
             .l-table-data--item {
+              text-indent: -1em;
+              padding-left: 1em;
               &::before {
                 content: "";
                 width: 4px;

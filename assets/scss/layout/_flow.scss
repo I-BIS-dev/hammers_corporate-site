@@ -84,6 +84,10 @@
         line-height: 200%;
         &.--under {
           padding-top: 22px;
+          font-size: 20px;
+          @include mq(sp) {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -163,10 +167,6 @@
                 background-color: rgba(0, 0, 0, 0.2);
                 opacity: 1;
                 transition: all 0.7s;
-                border: 2px solid $main-color;
-                @include mq(sp) {
-                  border: 1px solid $main-color;
-                }
               }
               &::after {
                 content: "";

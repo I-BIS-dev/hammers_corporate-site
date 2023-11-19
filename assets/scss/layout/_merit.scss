@@ -395,9 +395,6 @@
             height: auto;
             @include mq(sp-ls) {
               margin: 0 auto;
-              padding-bottom: 32px;
-            }
-            @include mq(sp) {
               padding-bottom: 24px;
             }
           }

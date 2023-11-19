@@ -22,7 +22,7 @@ $message  = $_POST['name'] . " 様 \r\n"
   . "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\r\n"
   . "──────────────────────\r\n"
   . "株式会社ハマーズ 分析事業部 (BESTAR)\r\n"
-  . "http://bestar7.jp/\r\n"
+  . "https://bestar7.jp/\r\n"
   . "Mail:info-b@bestar7.jp\r\n"
   . "──────────────────────";
 $headers = "Content-Type: text/plain; charset=UTF-8\r\n";

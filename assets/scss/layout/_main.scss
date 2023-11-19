@@ -291,6 +291,9 @@
       @include mq(sp-ls) {
         padding-bottom: 24px;
       }
+      @include mq(sp) {
+        padding-bottom: 40px;
+      }
       .l-feature__text {
         font-size: 16px;
         text-align: left;
@@ -393,6 +396,11 @@
           margin: 0 auto;
           padding-bottom: 24px;
           max-width: 400px;
+        }
+        &:last-child {
+          @include mq(sp) {
+            margin-bottom: 40px;
+          }
         }
 
         .l-flow__card-border {
@@ -536,7 +544,6 @@
           display: flex;
           justify-content: center;
           margin: 0 auto;
-          padding: 0 20px;
         }
         .l-surbey__img1 {
           max-width: 500px;
@@ -550,14 +557,14 @@
           margin: 0 auto;
         }
         @include mq(sp) {
-          padding: 8px;
+          max-width: 100%;
         }
 
         .l-surbey__description {
-          padding: 0px 12px 40px 0;
+          // padding: 0px 12px 40px 0;
           line-height: 200%;
-          @include mq(sp-ls) {
-            padding: 20px 20px 40px;
+          @include mq(sp) {
+            padding: 28px 0 40px;
           }
         }
         .l-surbey__ctabtn {
@@ -776,6 +783,9 @@
     }
     .l-faq__list {
       padding-bottom: 64px;
+      @include mq(sp) {
+        padding-bottom: 40px;
+      }
 
       .l-faq__item {
         position: relative;
@@ -1026,6 +1036,9 @@
           @include mq(sp-ls) {
             padding-bottom: 24px;
           }
+          @include mq(sp) {
+            padding-bottom: 30px;
+          }
         }
         .l-access__ctabtn {
           margin: 0 auto;
@@ -1044,8 +1057,11 @@
       width: 100%;
       height: 0;
       padding-top: 31%;
+      @include mq(sp-ls) {
+        padding-top: 42%;
+      }
       @include mq(sp) {
-        padding-top: 100%;
+        padding-top: 75%;
       }
       .l-access__iframe {
         position: absolute;
