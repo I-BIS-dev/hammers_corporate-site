@@ -34,7 +34,7 @@ mail($to, $subject, $message, $headers);
 ?>
 
 <?php
-$to = "info-b@bestar7.jp";
+$to = "aijie0811@gmail.com";
 $subject = "お問い合わせがありました";
 $message  = "\r\n"
   . $_POST['name'] . "様\r\n"
