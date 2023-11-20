@@ -27,14 +27,14 @@ $message  = $_POST['name'] . " 様 \r\n"
   . "──────────────────────";
 $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
 // $headers = "From: info-b@bestar7.jp";
-$headers .= "From: 株式会社ハマーズ 分析事業部 (BESTAR)\r\n";
+// $headers .= "From: 株式会社ハマーズ 分析事業部 (BESTAR)\r\n";
 // $headers .= "Return-Path: info-b@bestar7.jp\r\n";
 
 mail($to, $subject, $message, $headers);
 ?>
 
 <?php
-$to = "aijie0811@gmail.com";
+$to = "aisuke100811@Yahoo.co.jp";
 $subject = "お問い合わせがありました";
 $message  = "\r\n"
   . $_POST['name'] . "様\r\n"
@@ -56,7 +56,7 @@ $message  = "\r\n"
   . "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\r\n";
 $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
 // $headers = "From: info-b@bestar7.jp";
-$headers .= "From: 株式会社ハマーズ 分析事業部 (BESTAR)\r\n";
+// $headers .= "From: 株式会社ハマーズ 分析事業部 (BESTAR)\r\n";
 // $headers .= "Return-Path: info-b@bestar7.jp\r\n";
 
 mail($to, $subject, $message, $headers);
