@@ -149,7 +149,7 @@
         .l-mv__hero-descroption {
           min-width: 164px;
           color: $accent-color;
-          font-size: 16px;
+          font-size: 15px;
           line-height: 1.5;
           position: absolute;
           top: 50%;
@@ -376,89 +376,187 @@
       padding: 60px 0;
     }
 
-    .l-flow__card-container {
+    .l-flow__card-area {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-      padding: 64px 0;
+      width: 100%;
       @include mq(sp-ls) {
         flex-direction: column;
-        justify-content: center;
-        padding: 32px 0;
+        align-items: center;
       }
-      @include mq(sp-ls) {
-        padding: 0;
-      }
-
       .l-flow__card {
-        max-width: 200px;
-        text-align: center;
-        @include mq(sp-ls) {
-          margin: 0 auto;
-          padding-bottom: 24px;
-          max-width: 400px;
-        }
-        &:last-child {
-          @include mq(sp) {
-            margin-bottom: 40px;
-          }
-        }
-
-        .l-flow__card-border {
-          max-width: 200px;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .l-flow__card-head {
+          background-color: #fff;
+          box-shadow: 0px 12px 48px 0px rgba(0, 0, 0, 0.05);
+          border-radius: 50%;
+          width: 205px;
+          height: 205px;
           position: relative;
-          z-index: 1;
-          @include mq(sp-ls) {
-            max-width: 315px;
-            margin: 0 auto;
+          @include mq(sp-tab) {
+            width: 180px;
+            height: 180px;
           }
-          @include mq(sp) {
-            max-width: 205px;
-            margin: 0 auto;
+          @include mq(sp-ls) {
+            width: 205px;
+            height: 205px;
+          }
+          &::before {
+            content: "01";
+            width: 66px;
+            height: 66px;
+            background-color: $accent-color;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: $white;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            @include mq(sp-tab) {
+              width: 50px;
+              height: 50px;
+            }
+            @include mq(sp-ls) {
+              width: 66px;
+              height: 66px;
+            }
           }
           &::after {
             content: "";
             position: absolute;
             top: 50%;
+            right: -48px;
             transform: translateY(-50%);
-            right: -100px;
-            width: 100%;
-            height: 2px;
-            border-top: 2px dashed $main-color;
+            border-top: 3px dotted #229f5d;
             z-index: -1;
+            height: 1px;
+            width: 50px;
+            @include mq(sp-tab) {
+              width: 74px;
+              right: -70px;
+            }
             @include mq(sp-ls) {
-              content: none;
+              border: none;
             }
           }
-
-          .l-flow__card-img {
-            padding-bottom: 16px;
-            width: 100%;
-          }
-        }
-        &:last-child {
-          .l-flow__card-border {
+          &.--border {
             &::after {
               border: none;
             }
           }
+          .l-flow__card-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
         }
-      }
-
-      .l-flow__card-ttl {
-        font-size: 20px;
-        font-weight: bold;
-        color: $main-color;
-        padding-bottom: 16px;
-      }
-      .l-flow__card-description {
-        text-align-last: left;
-        line-height: 170%;
-
-        &.--link {
-          text-decoration: underline;
+        .l-flow__card-body {
+          padding-top: 16px;
+          .l-flow__card-ttl {
+            color: $main-color;
+            font-weight: bold;
+            text-align: center;
+            font-size: 20px;
+          }
+          .l-flow__card-text {
+            font-size: 18px;
+          }
         }
       }
     }
+
+    // .l-flow__card-container {
+    //   display: flex;
+    //   justify-content: space-between;
+    //   padding: 64px 0;
+    //   @include mq(sp-ls) {
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     padding: 32px 0;
+    //   }
+    //   @include mq(sp-ls) {
+    //     padding: 0;
+    //   }
+
+    //   .l-flow__card {
+    //     max-width: 200px;
+    //     text-align: center;
+    //     @include mq(sp-ls) {
+    //       margin: 0 auto;
+    //       padding-bottom: 24px;
+    //       max-width: 400px;
+    //     }
+    //     &:last-child {
+    //       @include mq(sp) {
+    //         margin-bottom: 40px;
+    //       }
+    //     }
+
+    //     .l-flow__card-border {
+    //       max-width: 200px;
+    //       position: relative;
+    //       z-index: 1;
+    //       @include mq(sp-ls) {
+    //         max-width: 315px;
+    //         margin: 0 auto;
+    //       }
+    //       @include mq(sp) {
+    //         max-width: 205px;
+    //         margin: 0 auto;
+    //       }
+    //       &::after {
+    //         content: "";
+    //         position: absolute;
+    //         top: 50%;
+    //         transform: translateY(-50%);
+    //         right: -100px;
+    //         width: 100%;
+    //         height: 2px;
+    //         border-top: 2px dashed $main-color;
+    //         z-index: -1;
+    //         @include mq(sp-ls) {
+    //           content: none;
+    //         }
+    //       }
+
+    //       .l-flow__card-img {
+    //         padding-bottom: 16px;
+    //         width: 100%;
+    //       }
+    //     }
+    //     &:last-child {
+    //       .l-flow__card-border {
+    //         &::after {
+    //           border: none;
+    //         }
+    //       }
+    //     }
+    //   }
+
+    //   .l-flow__card-ttl {
+    //     font-size: 20px;
+    //     font-weight: bold;
+    //     color: $main-color;
+    //     padding-bottom: 16px;
+    //   }
+    //   .l-flow__card-description {
+    //     text-align-last: left;
+    //     line-height: 170%;
+
+    //     &.--link {
+    //       text-decoration: underline;
+    //     }
+    //   }
+    // }
     .l-flow__ctabtn {
       display: flex;
       justify-content: center;
