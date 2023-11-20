@@ -25,12 +25,18 @@ $message  = $_POST['name'] . " 様 \r\n"
   . "https://bestar7.jp/\r\n"
   . "Mail:info-b@bestar7.jp\r\n"
   . "──────────────────────";
+// $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
+// // $headers .= "From: info-b@bestar7.jp";
+// $headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR)\r\n";
+// $headers .= "Return-Path: info-b@bestar7.jp\r\n";
 $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
-// $headers .= "From: info-b@bestar7.jp";
-$headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR)\r\n";
+$headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR) <info-b@bestar7.jp>\r\n";
 $headers .= "Return-Path: info-b@bestar7.jp\r\n";
 
-mail($to, $subject, $message, $headers);
+
+// mail($to, $subject, $message, $headers);
+mail($to, $subject, $message, $headers, "-finfo-b@bestar7.jp");
+
 ?>
 
 <?php
@@ -54,12 +60,18 @@ $message  = "\r\n"
   . str_replace("<br />", "\r\n", $_POST['inquiry'])
   . "\r\n"
   . "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\r\n";
+// $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
+// // $headers .= "From: info-b@bestar7.jp";
+// $headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR)\r\n";
+// $headers .= "Return-Path: info-b@bestar7.jp\r\n";
 $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
-// $headers .= "From: info-b@bestar7.jp";
-$headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR)\r\n";
+$headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR) <info-b@bestar7.jp>\r\n";
 $headers .= "Return-Path: info-b@bestar7.jp\r\n";
 
-mail($to, $subject, $message, $headers);
+
+// mail($to, $subject, $message, $headers);
+mail($to, $subject, $message, $headers, "-finfo-b@bestar7.jp");
+
 ?>
 
 
