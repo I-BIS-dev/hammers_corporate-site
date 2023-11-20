@@ -34,8 +34,8 @@ $headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR) <info-b@best
 $headers .= "Return-Path: info-b@bestar7.jp\r\n";
 
 
-// mail($to, $subject, $message, $headers);
-mail($to, $subject, $message, $headers, "-finfo-b@bestar7.jp");
+mail($to, $subject, $message, $headers);
+// mail($to, $subject, $message, $headers, "-finfo-b@bestar7.jp");
 
 ?>
 
@@ -69,8 +69,8 @@ $headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR) <info-b@best
 $headers .= "Return-Path: info-b@bestar7.jp\r\n";
 
 
-// mail($to, $subject, $message, $headers);
-mail($to, $subject, $message, $headers, "-finfo-b@bestar7.jp");
+mail($to, $subject, $message, $headers);
+// mail($to, $subject, $message, $headers, "-finfo-b@bestar7.jp");
 
 ?>
 
