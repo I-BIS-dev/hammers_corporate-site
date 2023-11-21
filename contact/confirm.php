@@ -92,7 +92,7 @@
         <li class="c-stepbar__list --visited"><span class="c-stepbar__number">2</span><br>内容確認</li>
         <li class="c-stepbar__list"><span class="c-stepbar__number">3</span><br>送信完了</li>
       </ol>
-      <form action="/contact/complete.php" method="post">
+      <form action="/contact/complete.php" enctype="multipart/form-data" method="post">
         <div class="c-confirm__contents">
           <div class="c-confirm__row">
             <div class="c-confirm__head">
@@ -137,6 +137,15 @@
               <span><?php echo $_POST["mail"]; ?></span>
             </div>
             <input hidden type="email" name="mail" size="50" value="<?php echo $_POST["mail"]; ?>">
+          </div>
+          <div class="c-confirm__row">
+            <div class="c-confirm__head">
+              <p>添付ファイル</p>
+            </div>
+            <div class="c-confirm__data">
+              <span><?php echo $_POST["attachment"]; ?></span>
+              <input hidden type="file" name="attachment" size="50" value="<?php echo $_POST["attachment"]; ?>">
+            </div>
           </div>
           <div class="c-confirm__row">
             <div class="c-confirm__head">

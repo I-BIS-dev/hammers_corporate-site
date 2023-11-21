@@ -94,7 +94,7 @@
         <li class="c-stepbar__list"><span class="c-stepbar__number">2</span><br>内容確認</li>
         <li class="c-stepbar__list"><span class="c-stepbar__number">3</span><br>送信完了</li>
       </ol>
-      <form class="c-analysis__form" action="/contact/confirm.php" method="post">
+      <form class="c-analysis__form" action="/contact/confirm.php" enctype="multipart/form-data" method="post">
         <div class="c-analysis__row">
           <div class="c-analysis__head">
             <p>
@@ -136,6 +136,18 @@
           </div>
           <div class="c-analysis__data">
             <input class="js-form-input" placeholder="abcde@fghij.com" type="email" name="mail" size="50" value="" required>
+            <p class="js-err">このフィールドに入力してください。</p>
+          </div>
+        </div>
+        <div class="c-analysis__row">
+          <div class="c-analysis__head">
+            <p>
+              添付ファイル
+            </p>
+          </div>
+          <div class="c-analysis__data">
+            <input type="file" name="attachment" value="">
+            <p class="c-analysis__file-text">※複数ある場合はzip形式の圧縮ファイルにしてお送りください。容量の目安は10MBまで。</p>
             <p class="js-err">このフィールドに入力してください。</p>
           </div>
         </div>
