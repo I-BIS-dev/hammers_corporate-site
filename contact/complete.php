@@ -1,6 +1,7 @@
 <?php
 $to = $_POST["mail"];
 $subject = "送信ありがとうございました";
+$subject = mb_encode_mimeheader($subject, 'UTF-8');
 $message  = $_POST['name'] . " 様 \r\n"
   . "\r\n"
   . "BESTARへお問い合わせありがとうございました。\r\n"
@@ -37,6 +38,7 @@ mail($to, $subject, $message, $headers);
 <?php
 $to = "aisuke100811@Yahoo.co.jp";
 $subject = "お問い合わせがありました";
+$subject = mb_encode_mimeheader($subject, 'UTF-8');
 $message  = "\r\n"
   . $_POST['name'] . "様\r\n"
   . $_POST['mail'] . "から問い合わせがありました。\r\n"
