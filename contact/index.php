@@ -191,9 +191,9 @@
         <div class="c-analysis__row"></div>
 
         <div class="c-analysis__submit-wrap">
-          <div class="c-ctabtn">
-            <input class="js-form-click" type="submit" value="送信内容を確認する" />
-          </div>
+          <label for="test" class="c-ctabtn">
+            <input class="js-form-click" id="test" type="submit" value="送信内容を確認する" />
+          </label>
         </div>
       </form>
     </div>

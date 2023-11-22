@@ -23,7 +23,7 @@
 
 // ハンバーガーメニュー
 .l-header__hamburger {
-  width: 41px;
+  width: 40px;
   display: none;
   border-color: rgba(0, 0, 0, 0);
   background-color: rgba(0, 0, 0, 0);
@@ -31,8 +31,8 @@
   padding: 10px 5px;
   position: fixed;
   z-index: 1 !important;
-  top: 10px;
-  right: 9px;
+  top: 7px;
+  right: 11px;
   @include mq(sp-tab) {
     display: block;
     z-index: 9999 !important;
@@ -150,10 +150,9 @@
     }
   }
   &.--sm {
-    width: 220px;
-    // @include mq(sp) {
-    //   width: 300px;
-    // }
+    @include mq(sp-ls) {
+      width: 220px;
+    }
   }
   &.--contact {
     width: 156px;

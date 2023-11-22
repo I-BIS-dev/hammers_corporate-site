@@ -216,9 +216,9 @@
         </table> -->
         <div class="c-confirm-btn-area">
           <button class="c-back-btn" type="button" onclick="history.back(-1)">戻る</button>
-          <div class="c-ctabtn --sm">
+          <label class="c-ctabtn --sm">
             <input class="c-confirm-btn" type="submit" value="送信する" />
-          </div>
+          </label>
         </div>
       </form>
     </div>

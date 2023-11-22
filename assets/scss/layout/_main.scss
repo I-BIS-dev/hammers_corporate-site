@@ -359,6 +359,9 @@
         align-items: center;
         @include mq(sp-ls) {
           padding-bottom: 24px;
+          &:last-child {
+            padding-bottom: 0;
+          }
         }
       }
     }
@@ -624,8 +627,9 @@
         font-size: 32px;
         font-weight: bold;
         @include mq(sp-ls) {
-          font-size: 22px;
-          padding: 0 20px;
+          font-size: 18px;
+          padding: 0 6px;
+          line-height: 200%;
         }
         @include mq(sp) {
           font-size: 15px;
@@ -638,7 +642,8 @@
           color: $main-color;
           position: relative;
           @include mq(sp-ls) {
-            font-size: 28px;
+            font-size: 22px;
+            line-height: 200%;
           }
           @include mq(sp) {
             font-size: 20px;
@@ -694,7 +699,7 @@
         .l-surbey__description {
           // padding: 0px 12px 40px 0;
           line-height: 200%;
-          @include mq(sp) {
+          @include mq(sp-ls) {
             padding: 28px 0 40px;
           }
         }
@@ -727,7 +732,7 @@
       gap: 115px;
       margin: 0 50px 80px;
       @include mq(sp-ls) {
-        padding: 40px 16px;
+        padding: 40px 0;
         flex-direction: column;
         gap: 24px;
         border: solid 2px #00833e;
@@ -1215,7 +1220,7 @@
       padding: 0;
     }
     @include mq(sp) {
-      padding: 40px 0;
+      padding: 60px 0;
     }
 
     .l-contact-ttl {

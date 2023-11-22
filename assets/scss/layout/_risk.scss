@@ -210,11 +210,10 @@
           margin: 0 auto;
           height: auto;
           @include mq(sp-ls) {
-            padding-bottom: 16px;
             margin: 0 auto;
           }
           @include mq(sp) {
-            padding-bottom: 8px;
+            padding-bottom: 0;
           }
         }
       }
@@ -319,7 +318,7 @@
       padding: 80px 24px 72px;
     }
     @include mq(sp) {
-      padding: 40px 0 40px;
+      padding: 60px 0 40px;
     }
 
     .l-risk-tertiary__contents {
@@ -561,7 +560,7 @@
           justify-content: center;
         }
         @include mq(sp) {
-          padding: 24px 0;
+          padding: 24px 0 0;
         }
 
         &.--flex {
