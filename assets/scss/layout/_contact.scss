@@ -46,7 +46,7 @@
     }
 
     .c-analysis__form {
-      padding: 22px 17px 20px;
+      padding: 22px 0 20px;
     }
 
     .c-analysis__row {
@@ -97,6 +97,7 @@
             background: $sub-color;
             padding: 2px 16px;
             color: white;
+            font-size: 12px;
 
             @include mq(sp-ls) {
               margin-left: 20px;

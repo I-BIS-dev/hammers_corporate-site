@@ -7,6 +7,7 @@ jQuery(document).ready(function () {
     nav.toggleClass("--open");
   });
 
+
   // カレント表示
   const headerNavLink = document.querySelectorAll(".l-header__nav-link");
 
@@ -29,7 +30,7 @@ jQuery(document).ready(function () {
 
   jQuerywin.on("load scroll", function () {
     const value = jQuery(this).scrollTop();
-    if (value > 100) {
+    if (value > 1) {
       jQueryheader.addClass("header-animation");
       jQuerycontact.addClass("header-animation");
       jQueryphone.addClass("header-animation");
@@ -103,4 +104,17 @@ jQuery(document).ready(function () {
       }
     });
   });
+
+  // モーダル
+  const modalBtn = document.getElementById("modal-btn");
+  const modal = document.getElementById("modal");
+  const closeBtn = document.getElementsByClassName("close")[0];
+
+  modalBtn.onclick = function () {
+    modal.classList.add("show"); // クラスを付与
+  };
+
+  closeBtn.onclick = function () {
+    modal.classList.remove("show"); // クラスを削除
+  };
 });

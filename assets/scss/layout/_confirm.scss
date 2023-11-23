@@ -100,7 +100,6 @@
 
     .c-confirm__contents {
       max-width: 1020px;
-      padding: 0 20px;
 
       .c-confirm__row {
         display: flex;
@@ -150,6 +149,7 @@
               background: $sub-color;
               padding: 2px 16px;
               color: white;
+              font-size: 12px;
 
               @include mq(sp-ls) {
                 margin-left: 20px;
