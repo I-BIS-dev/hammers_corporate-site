@@ -144,8 +144,8 @@
         text-align: center;
         margin: 0 16px;
         @include mq(sp-tab) {
-          width: 160px;
-          height: 160px;
+          width: 138px;
+          height: 138px;
         }
         @include mq(sp-ls) {
           width: 126px;
@@ -176,12 +176,18 @@
 
           .l-mv__hero-descroption--bold {
             font-size: 20px;
+            @include mq(sp-tab) {
+              font-size: 16x;
+            }
             @include mq(sp-ls) {
               font-size: 12px;
             }
           }
           .l-mv__hero-descroption--bold-center {
             font-size: 18px;
+            @include mq(sp-tab) {
+              font-size: 14px;
+            }
             @include mq(sp-ls) {
               font-size: 11px;
             }
