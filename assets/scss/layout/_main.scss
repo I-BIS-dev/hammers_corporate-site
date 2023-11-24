@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width: 100%;
     height: 100vh;
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
@@ -21,6 +22,7 @@
       transform: translate(-50%, -40%);
       @include mq(sp-tab) {
         padding: 0 26px;
+        top: 40%;
       }
       @include mq(sp-ls) {
         flex-direction: column;
@@ -36,10 +38,13 @@
         line-height: 160%;
         font-weight: bold;
         line-height: 160%;
+        @include mq(sp-tab) {
+          font-size: 40px;
+        }
         @include mq(sp-ls) {
           font-size: 28px;
           text-align: center;
-          padding-bottom: 46px;
+          padding-bottom: 16px;
         }
       }
 
@@ -120,8 +125,9 @@
       top: 80%;
       left: 50%;
       transform: translate(-50%, -80%);
-      @include mq(sp-ls) {
+      @include mq(sp-tab) {
         justify-content: center;
+        top: 90%;
       }
       @include mq(sp) {
         width: 338px;
@@ -137,11 +143,17 @@
         position: relative;
         text-align: center;
         margin: 0 16px;
+        @include mq(sp-tab) {
+          width: 160px;
+          height: 160px;
+        }
         @include mq(sp-ls) {
-          width: 120px;
-          height: 120px;
+          width: 140px;
+          height: 140px;
         }
         @include mq(sp) {
+          width: 120px;
+          height: 120px;
           margin: 0 2px;
           background-size: contain;
         }
