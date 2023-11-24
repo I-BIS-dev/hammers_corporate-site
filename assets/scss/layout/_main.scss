@@ -71,6 +71,10 @@
           justify-content: center;
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
           overflow: hidden;
+          @include mq(sp-ls) {
+            font-size: 22px;
+            padding: 12px 58px;
+          }
           &:hover {
             background: radial-gradient(circle at 100% 0%, rgba(0, 176, 155, 1) 15%, rgba(150, 201, 61, 1));
           }
@@ -93,7 +97,6 @@
           &:hover::before {
             animation: flash 0.75s;
           }
-
           &::after {
             content: "";
             background-image: url(../assets/images/arrow-ctabtn.svg);
@@ -128,6 +131,9 @@
       @include mq(sp-tab) {
         justify-content: center;
         top: 90%;
+      }
+      @include mq(sp-ls) {
+        width: 100%;
       }
       @include mq(sp) {
         width: 338px;
@@ -167,6 +173,9 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          @include mq(sp-tab) {
+            font-size: 13px;
+          }
           @include mq(sp-ls) {
             font-size: 10px;
           }
@@ -177,7 +186,7 @@
           .l-mv__hero-descroption--bold {
             font-size: 20px;
             @include mq(sp-tab) {
-              font-size: 16x;
+              font-size: 16px;
             }
             @include mq(sp-ls) {
               font-size: 12px;
