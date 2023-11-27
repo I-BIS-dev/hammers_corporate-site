@@ -196,9 +196,6 @@
   .l-merit {
     padding: 120px 24px;
     @include mq(sp-ls) {
-      padding: 80px 24px;
-    }
-    @include mq(sp) {
       padding: 60px 0;
     }
 
@@ -310,9 +307,6 @@
   .l-reliable {
     padding: 120px 24px;
     @include mq(sp-ls) {
-      padding: 80px 24px;
-    }
-    @include mq(sp) {
       padding: 60px 0;
     }
 
@@ -437,11 +431,9 @@
   .l-allin {
     padding: 120px 24px;
     @include mq(sp-ls) {
-      padding: 80px 24px;
-    }
-    @include mq(sp) {
       padding: 60px 0;
     }
+
     .l-allin__ttl-area {
       text-align: center;
 

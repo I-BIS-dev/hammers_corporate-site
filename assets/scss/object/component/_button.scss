@@ -10,10 +10,6 @@
   cursor: pointer;
   border-radius: 50%;
   z-index: 1;
-  @include mq(sp) {
-    transform: translateX(-50%);
-    left: 50%;
-  }
 
   .c-top-btn-icon {
     padding: 19px 0 15px;
@@ -178,6 +174,7 @@
     font-weight: bold;
     font-size: 16px;
     border: none;
+    cursor: pointer;
     &:hover {
       @include hover-effect;
     }

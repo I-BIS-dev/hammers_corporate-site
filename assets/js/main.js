@@ -57,7 +57,7 @@ jQuery(document).ready(function () {
     jQuery(".l-faq__list dt").not(jQuery(this)).removeClass("--arrow");
   });
 
-  jQuery(".--topbtn img").click(function () {
+  jQuery(".--topbtn").click(function () {
     jQuery("html,body").animate({ scrollTop: 0 }, 700);
   });
 
