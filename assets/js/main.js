@@ -83,27 +83,27 @@ jQuery(document).ready(function () {
 
   jQuery(".js-err").css("display", "none");
 
-  jQuery(".js-form-click").click(function () {
-    jQuery(".js-form-input").each(function () {
-      if (jQuery(this).val() === "") {
-        console.log("true");
-        // e.preventDefault();
-        jQuery(this).next("p").css({
-          color: "#dc3232",
-          "font-size": "12px",
-          "font-weight": "normal",
-          display: "block",
-          position: "absolute",
-          left: "0",
-          bottom: "-20px",
-        });
-      } else {
-        jQuery(this).next("p").css({
-          display: "none",
-        });
-      }
-    });
-  });
+  // jQuery(".js-form-click").click(function () {
+  //   jQuery(".js-form-input").each(function () {
+  //     if (jQuery(this).val() === "") {
+  //       console.log("true");
+  //       // e.preventDefault();
+  //       jQuery(this).next("p").css({
+  //         color: "#dc3232",
+  //         "font-size": "12px",
+  //         "font-weight": "normal",
+  //         display: "block",
+  //         position: "absolute",
+  //         left: "0",
+  //         bottom: "-20px",
+  //       });
+  //     } else {
+  //       jQuery(this).next("p").css({
+  //         display: "none",
+  //       });
+  //     }
+  //   });
+  // });
 
   // モーダル
   const modalBtn = document.getElementById("modal-btn");

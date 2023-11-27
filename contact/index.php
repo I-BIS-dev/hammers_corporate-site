@@ -103,7 +103,7 @@
           </div>
           <div class="c-analysis__data">
             <input class="js-form-input" placeholder="株式会社〇〇" type="text" name="company" size="50" value="" required>
-            <p class="js-err">このフィールドに入力してください。</p>
+            <!-- <p class="js-err">このフィールドに入力してください。</p> -->
           </div>
         </div>
         <div class="c-analysis__row">
@@ -114,7 +114,7 @@
           </div>
           <div class="c-analysis__data">
             <input class="js-form-input" placeholder="△△ △△" type="text" name="name" size="50" value="" required>
-            <p class="js-err">このフィールドに入力してください。</p>
+            <!-- <p class="js-err">このフィールドに入力してください。</p> -->
           </div>
         </div>
         <div class="c-analysis__row">
@@ -125,7 +125,7 @@
           </div>
           <div class="c-analysis__data">
             <input class="js-form-input" placeholder="090-1234-5678" type="text" name="tel" size="50" value="" required>
-            <p class="js-err">このフィールドに入力してください。</p>
+            <!-- <p class="js-err">このフィールドに入力してください。</p> -->
           </div>
         </div>
         <div class="c-analysis__row">
@@ -136,7 +136,7 @@
           </div>
           <div class="c-analysis__data">
             <input class="js-form-input" placeholder="abcde@fghij.com" type="email" name="mail" size="50" value="" required>
-            <p class="js-err">このフィールドに入力してください。</p>
+            <!-- <p class="js-err">このフィールドに入力してください。</p> -->
           </div>
         </div>
         <div class="c-analysis__row">
@@ -148,7 +148,7 @@
           <div class="c-analysis__data">
             <input type="file" name="attachment" value="">
             <p class="c-analysis__file-text">※複数ある場合はzip形式の圧縮ファイルにしてお送りください。容量の目安は10MBまで。</p>
-            <p class="js-err">このフィールドに入力してください。</p>
+            <!-- <p class="js-err">このフィールドに入力してください。</p> -->
           </div>
         </div>
         <div class="c-analysis__row">
@@ -185,7 +185,7 @@
           </div>
           <div class="c-analysis__data">
             <textarea class="js-form-input" placeholder="内容を入力してください" name="inquiry" cols="50" rows="5" required></textarea>
-            <p class="js-err">このフィールドに入力してください。</p>
+            <!-- <p class="js-err">このフィールドに入力してください。</p> -->
           </div>
         </div>
         <div class="c-analysis__row"></div>
