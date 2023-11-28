@@ -143,8 +143,19 @@
               <p>添付ファイル</p>
             </div>
             <div class="c-confirm__data">
-              <span><?php echo $_POST["attachment"]; ?></span>
-              <input hidden type="file" name="attachment" size="50" value="<?php echo $_POST["attachment"]; ?>">
+              <?php
+              //元ファイル名の先頭にアップロード日時を加える
+              $newfilename = date("YmdHis") . "-" . $_FILES['attachment']['name'];
+              //ファイルの保存先
+              $upload = './' . $newfilename;
+              //アップロードが正しく完了したかチェック
+              if (move_uploaded_file($_FILES['attachment']['tmp_name'], $upload)) {
+                echo '<span>' . $_FILES["attachment"]["name"] . '</span>';
+              } else {
+                echo 'アップロード失敗';
+              }
+              ?>
+              <input hidden type="file" name="attachment" size="50" value="<?php echo $_FILES["attachment"]; ?>">
             </div>
           </div>
           <div class="c-confirm__row">
