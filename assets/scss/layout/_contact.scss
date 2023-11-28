@@ -23,7 +23,7 @@
     margin: 120px auto;
     max-width: 1020px;
     padding: 0 20px;
-    @include mq(sp) {
+    @include mq(sp-ls) {
       margin: 60px auto;
     }
 

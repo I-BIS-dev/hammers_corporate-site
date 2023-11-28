@@ -21,8 +21,8 @@
 
   .l-sctl {
     margin: 120px auto;
-    @include mq(sp) {
-      margin: 64px auto;
+    @include mq(sp-ls) {
+      margin: 60px auto;
     }
 
     .l-sctl-area {

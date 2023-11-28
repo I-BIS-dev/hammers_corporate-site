@@ -23,10 +23,8 @@
     padding: 60px 0 120px;
     max-width: 960px;
     margin: 0 auto;
-    @include mq(sp-tab) {
-      padding: 40px;
-    }
-    @include mq(sp) {
+
+    @include mq(sp-ls) {
       padding: 60px 20px;
     }
 

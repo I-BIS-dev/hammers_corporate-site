@@ -119,8 +119,8 @@
   }
 
   .l-greeting {
-    padding: 120px 24px 0;
-    @include mq(sp) {
+    padding: 120px 0 0;
+    @include mq(sp-ls) {
       padding: 60px 0;
     }
 
@@ -214,7 +214,7 @@
 
   .l-adress-area {
     padding: 120px 0;
-    @include mq(sp) {
+    @include mq(sp-ls) {
       padding: 0 0 60px;
     }
 

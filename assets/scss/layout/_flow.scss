@@ -13,7 +13,7 @@
     max-width: 840px;
     padding: 120px 20px 120px;
     margin: 0 auto;
-    @include mq(sp) {
+    @include mq(sp-ls) {
       padding: 60px 20px 60px;
     }
 
@@ -386,7 +386,7 @@
   margin: 0 auto;
   position: relative;
   z-index: 1;
-  @include mq(sp) {
+  @include mq(sp-ls) {
     padding: 60px 20px 60px;
   }
 
@@ -672,7 +672,7 @@
   max-width: 840px;
   padding: 120px 20px 120px;
   margin: 0 auto;
-  @include mq(sp) {
+  @include mq(sp-ls) {
     padding: 60px 20px 60px;
   }
 
@@ -754,7 +754,7 @@
   max-width: 840px;
   padding: 120px 20px 120px;
   margin: 0 auto;
-  @include mq(sp) {
+  @include mq(sp-ls) {
     padding: 60px 20px 60px;
   }
 

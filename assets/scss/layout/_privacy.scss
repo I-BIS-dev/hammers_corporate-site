@@ -22,7 +22,7 @@
   .l-privacy {
     text-align: left;
     margin: 120px auto;
-    @include mq(sp) {
+    @include mq(sp-ls) {
       margin: 60px auto;
     }
 
