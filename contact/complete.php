@@ -1,4 +1,18 @@
 <?php
+$file_path = $_FILES['attachment']['tmp_name'];
+// ファイル名
+$file_name = $_FILES['attachment']['name'];
+
+// ファイルを開く
+$file = fopen($file_path, "rb");
+// ファイルを読み込む
+$data = fread($file, filesize($file_path));
+// ファイルを閉じる
+fclose($file);
+// ファイルをエンコードする
+$data = chunk_split(base64_encode($data));
+
+
 $to = $_POST["mail"];
 $subject = "送信ありがとうございました";
 $subject = mb_encode_mimeheader($subject, 'UTF-8');
@@ -27,15 +41,45 @@ $message  = $_POST['name'] . " 様 \r\n"
   . "https://bestar7.jp/\r\n"
   . "Mail:info-b@bestar7.jp\r\n"
   . "──────────────────────";
-$headers = "Content-Type: text/plain; charset=UTF-8\r\n";
-$headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR) <info-b@bestar7.jp>\r\n";
-$headers .= "Return-Path: info-b@bestar7.jp\r\n";
+// メールのヘッダーを設定する
+$headers = "From: 株式会社ハマーズ分析事業部 (BESTAR) <info-b@bestar7.jp>\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: multipart/mixed; boundary=\"boundary\"\r\n\r\n";
+
+// メールの本文を追加する
+$headers .= "--boundary\r\n";
+$headers .= "Content-Type: text/plain; charset=\"UTF-8\"\r\n";
+$headers .= "Content-Transfer-Encoding: base64\r\n\r\n";
+$headers .= chunk_split(base64_encode($message));
+
+// 添付ファイルを追加する
+$headers .= "--boundary\r\n";
+$headers .= "Content-Type: application/octet-stream; name=\"" . $file_name . "\"\r\n";
+$headers .= "Content-Disposition: attachment; filename=\"" . $file_name . "\"\r\n";
+$headers .= "Content-Transfer-Encoding: base64\r\n\r\n";
+$headers .= $data . "\r\n";
+$headers .= "--boundary--";
+
 
 
 mail($to, $subject, $message, $headers);
 ?>
 
 <?php
+$file_path = $_FILES['attachment']['tmp_name'];
+// ファイル名
+$file_name = $_FILES['attachment']['name'];
+
+// ファイルを開く
+$file = fopen($file_path, "rb");
+// ファイルを読み込む
+$data = fread($file, filesize($file_path));
+// ファイルを閉じる
+fclose($file);
+// ファイルをエンコードする
+$data = chunk_split(base64_encode($data));
+
+
 $to = "aisuke100811@Yahoo.co.jp";
 $subject = "お問い合わせがありました";
 $subject = mb_encode_mimeheader($subject, 'UTF-8');
@@ -58,9 +102,25 @@ $message  = "\r\n"
   . str_replace("<br />", "\r\n", $_POST['inquiry'])
   . "\r\n"
   . "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\r\n";
-$headers = "Content-Type: text/plain; charset=UTF-8\r\n";
-$headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR) <info-b@bestar7.jp>\r\n";
-$headers .= "Return-Path: info-b@bestar7.jp\r\n";
+// メールのヘッダーを設定する
+$headers = "From: 株式会社ハマーズ分析事業部 (BESTAR) <info-b@bestar7.jp>\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: multipart/mixed; boundary=\"boundary\"\r\n\r\n";
+
+// メールの本文を追加する
+$headers .= "--boundary\r\n";
+$headers .= "Content-Type: text/plain; charset=\"UTF-8\"\r\n";
+$headers .= "Content-Transfer-Encoding: base64\r\n\r\n";
+$headers .= chunk_split(base64_encode($message));
+
+// 添付ファイルを追加する
+$headers .= "--boundary\r\n";
+$headers .= "Content-Type: application/octet-stream; name=\"" . $file_name . "\"\r\n";
+$headers .= "Content-Disposition: attachment; filename=\"" . $file_name . "\"\r\n";
+$headers .= "Content-Transfer-Encoding: base64\r\n\r\n";
+$headers .= $data . "\r\n";
+$headers .= "--boundary--";
+
 
 
 mail($to, $subject, $message, $headers);
