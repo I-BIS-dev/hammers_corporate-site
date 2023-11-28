@@ -353,14 +353,16 @@
               }
             }
             &.fade-in {
-              transform: translateY(100%);
+              // transform: translateY(100%);
+              transform: scale(0);
               opacity: 0;
             }
 
             &.show {
-              transform: translateY(0);
+              // transform: translateY(0);
+              transform: scale(1);
               opacity: 1;
-              transition: transform 1s ease-in-out;
+              transition: transform 0.7s ease-in-out;
             }
           }
 
