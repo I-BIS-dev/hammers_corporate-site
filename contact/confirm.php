@@ -151,6 +151,9 @@
               //アップロードが正しく完了したかチェック
               if (move_uploaded_file($_FILES['attachment']['tmp_name'], $upload)) {
                 echo '<span>' . $_FILES["attachment"]["name"] . '</span>';
+              } else if (!is_uploaded_file($_FILES['attachment']['tmp_name'])) {
+                // ファイルがアップロードされていない場合、空欄にする
+                echo '<span></span>';
               } else {
                 echo 'アップロード失敗';
               }
