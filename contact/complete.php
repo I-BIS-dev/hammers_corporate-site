@@ -31,8 +31,27 @@ $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
 $headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR) <info-b@bestar7.jp>\r\n";
 $headers .= "Return-Path: info-b@bestar7.jp\r\n";
 
+$filepath = "./" . date("YmdHis") . "-" . $_FILES['attachment']['name']; // アップロードされたファイルのパス
+$boundary = "__BOUNDARY__";
 
-mail($to, $subject, $message, $headers);
+$additional_headers = "Content-Type: multipart/mixed;boundary=\"" . $boundary . "\"\n";
+$additional_headers .= $headers;
+
+$message .= "--" . $boundary . "\n";
+
+$message .= "Content-Type: text/plain; charset=\"ISO-2022-JP\"\n\n";
+$message .= "--" . $boundary . "\n";
+
+$message .= "Content-Type: " . mime_content_type($filepath) . "; name=\"" . basename($filepath) . "\"\n";
+$message .= "Content-Disposition: attachment; filename=\"" . basename($filepath) . "\"\n";
+$message .= "Content-Transfer-Encoding: base64\n";
+$message .= "\n";
+$message .= chunk_split(base64_encode(file_get_contents($filepath))) . "\n";
+
+$message .= "--" . $boundary . "--";
+
+
+mail($to, $subject, $message, $headers, $additional_headers);
 ?>
 
 <?php
@@ -62,8 +81,27 @@ $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
 $headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR) <info-b@bestar7.jp>\r\n";
 $headers .= "Return-Path: info-b@bestar7.jp\r\n";
 
+$filepath = "./" . date("YmdHis") . "-" . $_FILES['attachment']['name']; // アップロードされたファイルのパス
+$boundary = "__BOUNDARY__";
 
-mail($to, $subject, $message, $headers);
+$additional_headers = "Content-Type: multipart/mixed;boundary=\"" . $boundary . "\"\n";
+$additional_headers .= $headers;
+
+$message .= "--" . $boundary . "\n";
+
+$message .= "Content-Type: text/plain; charset=\"ISO-2022-JP\"\n\n";
+$message .= "--" . $boundary . "\n";
+
+$message .= "Content-Type: " . mime_content_type($filepath) . "; name=\"" . basename($filepath) . "\"\n";
+$message .= "Content-Disposition: attachment; filename=\"" . basename($filepath) . "\"\n";
+$message .= "Content-Transfer-Encoding: base64\n";
+$message .= "\n";
+$message .= chunk_split(base64_encode(file_get_contents($filepath))) . "\n";
+
+$message .= "--" . $boundary . "--";
+
+
+mail($to, $subject, $message, $headers, $additional_headers);
 ?>
 
 
