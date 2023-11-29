@@ -235,6 +235,7 @@
         position: relative;
         margin-bottom: 37px;
         display: inline-block;
+        line-height: 1.5;
         &::before {
           content: "";
           position: absolute;
@@ -327,6 +328,7 @@
         text-align: center;
         padding: 0.5em 0 1em;
         position: relative;
+        line-height: 1.5;
         margin-bottom: 37px;
         display: inline-block;
         &::before {
@@ -413,7 +415,7 @@
             align-items: center;
             height: 80px;
             padding: 24px 8px;
-            font-size: 16px;
+            font-size: 14px;
             background-color: $white;
             border-bottom: 1px solid #c2cfc9;
             text-align: center;
@@ -421,12 +423,11 @@
               background-color: #f7f7f7;
             }
             @include mq(sp-ls) {
-              font-size: 14px;
               padding: 12px 12px;
               height: 60px;
             }
             @include mq(sp) {
-              font-size: 11px;
+              font-size: 12px;
               padding: 12px 12px;
               height: 55px;
             }
@@ -463,17 +464,16 @@
             background-color: $white;
             text-align: center;
             border-bottom: 1px solid #c2cfc9;
-            font-size: 16px;
+            font-size: 14px;
             &:nth-child(even) {
               background-color: #f7f7f7;
             }
             @include mq(sp-ls) {
-              font-size: 15px;
               padding: 12px 12px;
               height: 60px;
             }
             @include mq(sp) {
-              font-size: 11px;
+              font-size: 12px;
               padding: 12px 12px;
               height: 55px;
             }

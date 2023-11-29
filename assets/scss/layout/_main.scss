@@ -525,7 +525,7 @@
             padding: 8px 0 12px;
           }
           .l-flow__card-text {
-            font-size: 16px;
+            font-size: 15px;
             line-height: 200%;
             padding: 0 20px;
             @include mq(sp-ls) {
@@ -753,10 +753,9 @@
       gap: 115px;
       margin: 0 50px 80px;
       @include mq(sp-ls) {
-        padding: 40px 0;
+        padding: 30px 20px;
         flex-direction: column;
         gap: 24px;
-        border: solid 2px #00833e;
       }
       @include mq(sp) {
         margin: 12px 0 44px;
@@ -793,7 +792,6 @@
         line-height: 180%;
         @include mq(sp-ls) {
           font-size: 20px;
-          max-width: 80%;
           margin: 0 auto;
         }
         @include mq(sp) {
@@ -817,7 +815,6 @@
         padding: 40px 16px;
         flex-direction: column;
         gap: 24px;
-        border: solid 2px #00833e;
       }
       @include mq(sp) {
         margin: 0 0 44px;
@@ -877,7 +874,6 @@
         padding: 40px 16px;
         flex-direction: column;
         gap: 24px;
-        border: solid 2px #00833e;
       }
       @include mq(sp) {
         margin: 0 0 44px;
