@@ -156,6 +156,7 @@
           text-decoration: underline;
           &:hover {
             @include hover-effect;
+            text-decoration: none !important;
           }
           @include mq(sp) {
             font-size: 11px;
@@ -276,7 +277,8 @@
           max-width: 400px;
           line-height: 200%;
           @include mq(sp-ls) {
-            padding-bottom: 16px;
+            padding-bottom: 24px;
+            max-width: 100%;
           }
         }
 
@@ -383,6 +385,7 @@
           @include mq(sp-ls) {
             padding: 0 0 24px;
             margin: 0 auto;
+            max-width: 100%;
           }
         }
 
@@ -421,6 +424,7 @@
             @include mq(sp-ls) {
               margin: 0 auto;
               padding-bottom: 24px;
+              max-width: 520px;
             }
           }
         }

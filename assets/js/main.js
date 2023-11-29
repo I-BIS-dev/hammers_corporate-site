@@ -9,13 +9,13 @@ jQuery(document).ready(function () {
 
 
   // カレント表示
-  const headerNavLink = document.querySelectorAll(".l-header__nav-link");
+  // const headerNavLink = document.querySelectorAll(".l-header__nav-link");
 
-  headerNavLink.forEach((targetLink) => {
-    if (targetLink.href === location.href) {
-      targetLink.classList.add("current");
-    }
-  });
+  // headerNavLink.forEach((targetLink) => {
+  //   if (targetLink.href === location.href) {
+  //     targetLink.classList.add("current");
+  //   }
+  // });
 
   // スクロール時ヘッダーアニメーション
   var jQuerywin = jQuery(window),

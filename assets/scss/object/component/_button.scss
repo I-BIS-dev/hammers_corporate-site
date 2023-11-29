@@ -119,6 +119,9 @@
       background-image: url(../assets/images/arrow-ctasub.svg);
       top: 25px;
     }
+    &:hover {
+      background-color: rgba(230, 230, 230, 0.3);
+    }
   }
   &.--white {
     background-color: $white;

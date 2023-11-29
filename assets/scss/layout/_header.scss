@@ -198,12 +198,12 @@
             }
             &:hover {
               @include hover-effect;
-              &:nth-child(8) {
-                opacity: 1;
-              }
-              &:nth-child(9) {
-                opacity: 1;
-              }
+              // &:nth-child(8) {
+              //   opacity: 1;
+              // }
+              // &:nth-child(9) {
+              //   opacity: 1;
+              // }
               &::after {
                 right: 15px;
               }
