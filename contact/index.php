@@ -139,7 +139,7 @@
             <!-- <p class="js-err">このフィールドに入力してください。</p> -->
           </div>
         </div>
-        <div class="c-analysis__row">
+        <!-- <div class="c-analysis__row">
           <div class="c-analysis__head">
             <p>
               添付ファイル
@@ -148,9 +148,9 @@
           <div class="c-analysis__data">
             <input type="file" name="attachment" value="">
             <p class="c-analysis__file-text">※複数ある場合はzip形式の圧縮ファイルにしてお送りください。容量の目安は10MBまで。</p>
-            <!-- <p class="js-err">このフィールドに入力してください。</p> -->
-          </div>
-        </div>
+            <p class="js-err">このフィールドに入力してください。</p> -->
+        <!-- </div>
+        </div> -->
         <div class="c-analysis__row">
           <div class="c-analysis__head c-analysis__head--check">
             <p>連絡方法</p>

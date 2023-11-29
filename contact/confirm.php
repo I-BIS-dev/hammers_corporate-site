@@ -138,7 +138,7 @@
             </div>
             <input hidden type="email" name="mail" size="50" value="<?php echo $_POST["mail"]; ?>">
           </div>
-          <div class="c-confirm__row">
+          <!-- <div class="c-confirm__row">
             <div class="c-confirm__head">
               <p>添付ファイル</p>
             </div>
@@ -160,7 +160,7 @@
               ?>
               <input hidden type="file" name="attachment" size="50" value="<?php echo $_FILES["attachment"]; ?>">
             </div>
-          </div>
+          </div> -->
           <div class="c-confirm__row">
             <div class="c-confirm__head">
               <p>連絡方法</p>

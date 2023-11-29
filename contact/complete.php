@@ -15,7 +15,7 @@ $message  = $_POST['name'] . " 様 \r\n"
   . "【 担当者名 】：" .  $_POST['name'] . "\r\n"
   . "【 電話番号 】：" .  $_POST['tel'] . "\r\n"
   . "【 メールアドレス 】：" . $_POST['mail'] . "\r\n"
-  // . "【 添付ファイル 】：" . $_POST['attachment'] . "\r\n"
+  . "【 添付ファイル 】：" . $_POST['attachment'] . "\r\n"
   . "【 連絡方法 】：" . $_POST['contact'] . "\r\n"
   . "【問い合わせ項目】：" . $_POST['item'] . "\r\n"
   . "【問い合わせ内容】：\r\n"
@@ -31,23 +31,8 @@ $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
 $headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR) <info-b@bestar7.jp>\r\n";
 $headers .= "Return-Path: info-b@bestar7.jp\r\n";
 
-if (isset($_FILES['attachment']) && $_FILES['attachment']['error'] == UPLOAD_ERR_OK) {
-  $filepath = $_FILES['attachment']['tmp_name']; // アップロードされたファイルの一時パス
-  $filename = $_FILES['attachment']['name']; // クライアントから送信された元のファイル名
 
-  $message .= "--" . $boundary . "\n";
-
-  $message .= "Content-Type: " . finfo_file(finfo_open(FILEINFO_MIME_TYPE), $filepath) . "; name=\"" . $filename . "\"\n";
-  $message .= "Content-Disposition: attachment; filename=\"" . $filename . "\"\n";
-  $message .= "Content-Transfer-Encoding: base64\n";
-  $message .= "\n";
-  $message .= chunk_split(base64_encode(file_get_contents($filepath))) . "\n";
-
-  $message .= "--" . $boundary . "--";
-}
-
-
-mail($to, $subject, $message, $headers, $additional_headers);
+mail($to, $subject, $message, $headers);
 ?>
 
 <?php
@@ -66,7 +51,7 @@ $message  = "\r\n"
   . "【 担当者名 】：" .  $_POST['name'] . "\r\n"
   . "【 電話番号 】：" .  $_POST['tel'] . "\r\n"
   . "【 メールアドレス 】：" . $_POST['mail'] . "\r\n"
-  // . "【 添付ファイル 】：" . $_POST['attachment'] . "\r\n"
+  . "【 添付ファイル 】：" . $_POST['attachment'] . "\r\n"
   . "【 連絡方法 】：" . $_POST['contact'] . "\r\n"
   . "【問い合わせ項目】： " . $_POST['item'] . "\r\n"
   . "【問い合わせ内容】：\r\n"
@@ -77,22 +62,8 @@ $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
 $headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR) <info-b@bestar7.jp>\r\n";
 $headers .= "Return-Path: info-b@bestar7.jp\r\n";
 
-if (isset($_FILES['attachment']) && $_FILES['attachment']['error'] == UPLOAD_ERR_OK) {
-  $filepath = $_FILES['attachment']['tmp_name']; // アップロードされたファイルの一時パス
-  $filename = $_FILES['attachment']['name']; // クライアントから送信された元のファイル名
 
-  $message .= "--" . $boundary . "\n";
-
-  $message .= "Content-Type: " . finfo_file(finfo_open(FILEINFO_MIME_TYPE), $filepath) . "; name=\"" . $filename . "\"\n";
-  $message .= "Content-Disposition: attachment; filename=\"" . $filename . "\"\n";
-  $message .= "Content-Transfer-Encoding: base64\n";
-  $message .= "\n";
-  $message .= chunk_split(base64_encode(file_get_contents($filepath))) . "\n";
-
-  $message .= "--" . $boundary . "--";
-}
-
-mail($to, $subject, $message, $headers, $additional_headers);
+mail($to, $subject, $message, $headers);
 ?>
 
 
