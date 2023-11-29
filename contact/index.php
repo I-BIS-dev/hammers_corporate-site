@@ -86,7 +86,7 @@
 
     <div class="c-analysis__contents a--fadein-first">
       <div class="c-analysis__top-text">
-        <p class="c-analysis__description">弊社ならびにサービスに関するご質問や相談は、お電話またはこちらのフォームからお送りください。<br>数日以内にご希望の連絡方法にて返信いたします。<br>なお、添付ファイルがある場合は、<span class="c-font-bold">info-b@bestar7.jp</span>宛にメールで送信ください。
+        <p class="c-analysis__description">弊社ならびにサービスに関するご質問や相談は、お電話またはこちらのフォームからお送りください。<br>数日以内にご希望の連絡方法にて返信いたします。<br>なお、添付ファイルがある場合は、<a href="mailto:info-b@bestar7.jp" class="c-font-bold">info-b@bestar7.jp</a>宛にメールで送信ください。
         </p>
       </div>
       <ol class="c-stepbar">
@@ -94,7 +94,7 @@
         <li class="c-stepbar__list"><span class="c-stepbar__number">2</span><br>内容確認</li>
         <li class="c-stepbar__list"><span class="c-stepbar__number">3</span><br>送信完了</li>
       </ol>
-      <form class="c-analysis__form" action="/contact/confirm.php" method="post">
+      <form class="c-analysis__form" action="/contact/confirm.php" enctype="multipart/form-data" method="post">
         <div class="c-analysis__row">
           <div class="c-analysis__head">
             <p>
@@ -103,7 +103,7 @@
           </div>
           <div class="c-analysis__data">
             <input class="js-form-input" placeholder="株式会社〇〇" type="text" name="company" size="50" value="" required>
-            <p class="js-err">このフィールドに入力してください。</p>
+            <!-- <p class="js-err">このフィールドに入力してください。</p> -->
           </div>
         </div>
         <div class="c-analysis__row">
@@ -114,7 +114,7 @@
           </div>
           <div class="c-analysis__data">
             <input class="js-form-input" placeholder="△△ △△" type="text" name="name" size="50" value="" required>
-            <p class="js-err">このフィールドに入力してください。</p>
+            <!-- <p class="js-err">このフィールドに入力してください。</p> -->
           </div>
         </div>
         <div class="c-analysis__row">
@@ -125,7 +125,7 @@
           </div>
           <div class="c-analysis__data">
             <input class="js-form-input" placeholder="090-1234-5678" type="text" name="tel" size="50" value="" required>
-            <p class="js-err">このフィールドに入力してください。</p>
+            <!-- <p class="js-err">このフィールドに入力してください。</p> -->
           </div>
         </div>
         <div class="c-analysis__row">
@@ -136,7 +136,19 @@
           </div>
           <div class="c-analysis__data">
             <input class="js-form-input" placeholder="abcde@fghij.com" type="email" name="mail" size="50" value="" required>
-            <p class="js-err">このフィールドに入力してください。</p>
+            <!-- <p class="js-err">このフィールドに入力してください。</p> -->
+          </div>
+        </div>
+        <div class="c-analysis__row">
+          <div class="c-analysis__head">
+            <p>
+              添付ファイル
+            </p>
+          </div>
+          <div class="c-analysis__data">
+            <input type="file" name="attachment" value="">
+            <p class="c-analysis__file-text">※複数ある場合はzip形式の圧縮ファイルにしてお送りください。容量の目安は10MBまで。</p>
+            <!-- <p class="js-err">このフィールドに入力してください。</p> -->
           </div>
         </div>
         <div class="c-analysis__row">
@@ -161,7 +173,7 @@
               <input type="radio" id="analysis" name="item" value="分析依頼の相談" checked><span>分析依頼の相談</span>
             </label>
             <label for="faq">
-              <input type="radio" id="faq" name="item" value="弊社へのご意見・質問"><span>弊社へのご意見・質問</span>
+              <input type="radio" id="faq" name="item" value="弊社へのご意見・質問"><span>弊社へのご質問・お問い合わせ</span>
             </label>
           </div>
         </div>
@@ -173,15 +185,15 @@
           </div>
           <div class="c-analysis__data">
             <textarea class="js-form-input" placeholder="内容を入力してください" name="inquiry" cols="50" rows="5" required></textarea>
-            <p class="js-err">このフィールドに入力してください。</p>
+            <!-- <p class="js-err">このフィールドに入力してください。</p> -->
           </div>
         </div>
         <div class="c-analysis__row"></div>
 
         <div class="c-analysis__submit-wrap">
-          <div class="c-ctabtn">
-            <input class="js-form-click" type="submit" value="送信内容を確認する" />
-          </div>
+          <label for="test" class="c-ctabtn">
+            <input class="js-form-click" id="test" type="submit" value="送信内容を確認する" />
+          </label>
         </div>
       </form>
     </div>

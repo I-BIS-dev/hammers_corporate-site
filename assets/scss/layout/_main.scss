@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width: 100%;
     height: 100vh;
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
@@ -21,6 +22,7 @@
       transform: translate(-50%, -40%);
       @include mq(sp-tab) {
         padding: 0 26px;
+        top: 40%;
       }
       @include mq(sp-ls) {
         flex-direction: column;
@@ -36,10 +38,13 @@
         line-height: 160%;
         font-weight: bold;
         line-height: 160%;
+        @include mq(sp-tab) {
+          font-size: 40px;
+        }
         @include mq(sp-ls) {
           font-size: 28px;
           text-align: center;
-          padding-bottom: 46px;
+          padding-bottom: 16px;
         }
       }
 
@@ -66,6 +71,10 @@
           justify-content: center;
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
           overflow: hidden;
+          @include mq(sp-ls) {
+            font-size: 22px;
+            padding: 12px 58px;
+          }
           &:hover {
             background: radial-gradient(circle at 100% 0%, rgba(0, 176, 155, 1) 15%, rgba(150, 201, 61, 1));
           }
@@ -88,7 +97,6 @@
           &:hover::before {
             animation: flash 0.75s;
           }
-
           &::after {
             content: "";
             background-image: url(../assets/images/arrow-ctabtn.svg);
@@ -120,8 +128,12 @@
       top: 80%;
       left: 50%;
       transform: translate(-50%, -80%);
-      @include mq(sp-ls) {
+      @include mq(sp-tab) {
         justify-content: center;
+        top: 90%;
+      }
+      @include mq(sp-ls) {
+        width: 100%;
       }
       @include mq(sp) {
         width: 338px;
@@ -137,11 +149,17 @@
         position: relative;
         text-align: center;
         margin: 0 16px;
+        @include mq(sp-tab) {
+          width: 138px;
+          height: 138px;
+        }
         @include mq(sp-ls) {
-          width: 120px;
-          height: 120px;
+          width: 126px;
+          height: 126px;
         }
         @include mq(sp) {
+          width: 120px;
+          height: 120px;
           margin: 0 2px;
           background-size: contain;
         }
@@ -149,12 +167,15 @@
         .l-mv__hero-descroption {
           min-width: 164px;
           color: $accent-color;
-          font-size: 14px;
+          font-size: 15px;
           line-height: 1.5;
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          @include mq(sp-tab) {
+            font-size: 13px;
+          }
           @include mq(sp-ls) {
             font-size: 10px;
           }
@@ -162,10 +183,22 @@
             min-width: 112px;
           }
 
-          .l-mv__hero-hero-descroption--bold {
-            font-size: 18px;
+          .l-mv__hero-descroption--bold {
+            font-size: 20px;
+            @include mq(sp-tab) {
+              font-size: 16px;
+            }
             @include mq(sp-ls) {
-              font-size: 10px;
+              font-size: 12px;
+            }
+          }
+          .l-mv__hero-descroption--bold-center {
+            font-size: 18px;
+            @include mq(sp-tab) {
+              font-size: 14px;
+            }
+            @include mq(sp-ls) {
+              font-size: 11px;
             }
           }
         }
@@ -179,9 +212,6 @@
     padding: 0 calc(50vw - 50%);
     padding: 120px 0;
     @include mq(sp-ls) {
-      padding: 80px 0;
-    }
-    @include mq(sp) {
       padding: 60px 0;
     }
 
@@ -285,6 +315,9 @@
       @include mq(sp-ls) {
         padding-bottom: 24px;
       }
+      @include mq(sp) {
+        padding-bottom: 40px;
+      }
       .l-feature__text {
         font-size: 16px;
         text-align: left;
@@ -350,6 +383,9 @@
         align-items: center;
         @include mq(sp-ls) {
           padding-bottom: 24px;
+          &:last-child {
+            padding-bottom: 0;
+          }
         }
       }
     }
@@ -361,90 +397,223 @@
     padding: 0 calc(50vw - 50%);
     padding: 120px 0;
     @include mq(sp-ls) {
-      padding: 80px 0;
-    }
-    @include mq(sp) {
       padding: 60px 0;
     }
 
-    .l-flow__card-container {
+    .l-flow__card-area {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-      padding: 64px 0;
+      width: 100%;
+      padding-bottom: 64px;
       @include mq(sp-ls) {
         flex-direction: column;
-        justify-content: center;
-        padding: 32px 0;
+        align-items: center;
       }
-      @include mq(sp-ls) {
-        padding: 0;
+      @include mq(sp) {
+        padding-bottom: 40px;
       }
-
       .l-flow__card {
-        max-width: 200px;
-        text-align: center;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         @include mq(sp-ls) {
-          margin: 0 auto;
-          padding-bottom: 24px;
-          max-width: 400px;
+          max-width: 205px;
+          width: 100%;
+          padding-bottom: 48px;
         }
-
-        .l-flow__card-border {
-          max-width: 200px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+        .l-flow__card-head {
+          background-color: #fff;
+          box-shadow: 0px 12px 48px 0px rgba(0, 0, 0, 0.05);
+          border-radius: 50%;
+          width: 205px;
+          height: 205px;
           position: relative;
-          z-index: 1;
-          @include mq(sp-ls) {
-            max-width: 315px;
-            margin: 0 auto;
+          @include mq(sp-tab) {
+            width: 180px;
+            height: 180px;
           }
-          @include mq(sp) {
-            max-width: 205px;
-            margin: 0 auto;
+          @include mq(sp-ls) {
+            width: 205px;
+            height: 205px;
+          }
+          &::before {
+            content: "01";
+            width: 66px;
+            height: 66px;
+            background-color: $accent-color;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: $white;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            @include mq(sp-tab) {
+              width: 50px;
+              height: 50px;
+            }
+            @include mq(sp-ls) {
+              width: 66px;
+              height: 66px;
+            }
           }
           &::after {
             content: "";
             position: absolute;
             top: 50%;
+            right: -48px;
             transform: translateY(-50%);
-            right: -100px;
-            width: 100%;
-            height: 2px;
-            border-top: 2px dashed $main-color;
+            border-top: 3px dotted #229f5d;
             z-index: -1;
+            height: 1px;
+            width: 50px;
+            @include mq(sp-tab) {
+              width: 74px;
+              right: -70px;
+            }
             @include mq(sp-ls) {
-              content: none;
+              border: none;
             }
           }
-
-          .l-flow__card-img {
-            padding-bottom: 16px;
-            width: 100%;
-          }
-        }
-        &:last-child {
-          .l-flow__card-border {
+          &.--border {
             &::after {
               border: none;
             }
           }
+          &.--point2 {
+            &::before {
+              content: "02";
+            }
+          }
+          &.--point3 {
+            &::before {
+              content: "03";
+            }
+          }
+          &.--point4 {
+            &::before {
+              content: "04";
+            }
+          }
+          .l-flow__card-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
         }
-      }
-
-      .l-flow__card-ttl {
-        font-size: 20px;
-        font-weight: bold;
-        color: $main-color;
-        padding-bottom: 16px;
-      }
-      .l-flow__card-description {
-        text-align-last: left;
-        line-height: 170%;
-
-        &.--link {
-          text-decoration: underline;
+        .l-flow__card-body {
+          padding-top: 16px;
+          .l-flow__card-ttl {
+            color: $main-color;
+            font-weight: bold;
+            text-align: center;
+            font-size: 20px;
+            padding: 8px 0 12px;
+          }
+          .l-flow__card-text {
+            font-size: 16px;
+            line-height: 200%;
+            padding: 0 20px;
+            @include mq(sp-ls) {
+              padding: 0;
+            }
+          }
         }
       }
     }
+
+    // .l-flow__card-container {
+    //   display: flex;
+    //   justify-content: space-between;
+    //   padding: 64px 0;
+    //   @include mq(sp-ls) {
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     padding: 32px 0;
+    //   }
+    //   @include mq(sp-ls) {
+    //     padding: 0;
+    //   }
+
+    //   .l-flow__card {
+    //     max-width: 200px;
+    //     text-align: center;
+    //     @include mq(sp-ls) {
+    //       margin: 0 auto;
+    //       padding-bottom: 24px;
+    //       max-width: 400px;
+    //     }
+    //     &:last-child {
+    //       @include mq(sp) {
+    //         margin-bottom: 40px;
+    //       }
+    //     }
+
+    //     .l-flow__card-border {
+    //       max-width: 200px;
+    //       position: relative;
+    //       z-index: 1;
+    //       @include mq(sp-ls) {
+    //         max-width: 315px;
+    //         margin: 0 auto;
+    //       }
+    //       @include mq(sp) {
+    //         max-width: 205px;
+    //         margin: 0 auto;
+    //       }
+    //       &::after {
+    //         content: "";
+    //         position: absolute;
+    //         top: 50%;
+    //         transform: translateY(-50%);
+    //         right: -100px;
+    //         width: 100%;
+    //         height: 2px;
+    //         border-top: 2px dashed $main-color;
+    //         z-index: -1;
+    //         @include mq(sp-ls) {
+    //           content: none;
+    //         }
+    //       }
+
+    //       .l-flow__card-img {
+    //         padding-bottom: 16px;
+    //         width: 100%;
+    //       }
+    //     }
+    //     &:last-child {
+    //       .l-flow__card-border {
+    //         &::after {
+    //           border: none;
+    //         }
+    //       }
+    //     }
+    //   }
+
+    //   .l-flow__card-ttl {
+    //     font-size: 20px;
+    //     font-weight: bold;
+    //     color: $main-color;
+    //     padding-bottom: 16px;
+    //   }
+    //   .l-flow__card-description {
+    //     text-align-last: left;
+    //     line-height: 170%;
+
+    //     &.--link {
+    //       text-decoration: underline;
+    //     }
+    //   }
+    // }
     .l-flow__ctabtn {
       display: flex;
       justify-content: center;
@@ -456,9 +625,6 @@
     background-color: $white;
     padding: 120px 0;
     @include mq(sp-ls) {
-      padding: 80px 0;
-    }
-    @include mq(sp) {
       padding: 60px 0;
     }
 
@@ -479,8 +645,9 @@
         font-size: 32px;
         font-weight: bold;
         @include mq(sp-ls) {
-          font-size: 22px;
-          padding: 0 20px;
+          font-size: 18px;
+          padding: 0 6px;
+          line-height: 200%;
         }
         @include mq(sp) {
           font-size: 15px;
@@ -493,7 +660,8 @@
           color: $main-color;
           position: relative;
           @include mq(sp-ls) {
-            font-size: 28px;
+            font-size: 22px;
+            line-height: 200%;
           }
           @include mq(sp) {
             font-size: 20px;
@@ -530,7 +698,6 @@
           display: flex;
           justify-content: center;
           margin: 0 auto;
-          padding: 0 20px;
         }
         .l-surbey__img1 {
           max-width: 500px;
@@ -544,14 +711,14 @@
           margin: 0 auto;
         }
         @include mq(sp) {
-          padding: 8px;
+          max-width: 100%;
         }
 
         .l-surbey__description {
-          padding: 0px 12px 40px 0;
+          // padding: 0px 12px 40px 0;
           line-height: 200%;
           @include mq(sp-ls) {
-            padding: 20px 20px 40px;
+            padding: 28px 0 40px;
           }
         }
         .l-surbey__ctabtn {
@@ -568,11 +735,9 @@
     padding: 0 calc(50vw - 50%);
     padding: 120px 0;
     @include mq(sp-ls) {
-      padding: 80px 0;
-    }
-    @include mq(sp) {
       padding: 60px 0;
     }
+
     .l-merit-top__list {
       position: relative;
       padding: 64px 8px;
@@ -583,7 +748,7 @@
       gap: 115px;
       margin: 0 50px 80px;
       @include mq(sp-ls) {
-        padding: 40px 16px;
+        padding: 40px 0;
         flex-direction: column;
         gap: 24px;
         border: solid 2px #00833e;
@@ -763,13 +928,14 @@
   .l-faq {
     padding: 120px 0;
     @include mq(sp-ls) {
-      padding: 80px 0;
-    }
-    @include mq(sp) {
       padding: 60px 0;
     }
+
     .l-faq__list {
       padding-bottom: 64px;
+      @include mq(sp) {
+        padding-bottom: 40px;
+      }
 
       .l-faq__item {
         position: relative;
@@ -813,7 +979,6 @@
           background: $bg-color;
           border-radius: 16px;
           font-weight: bold;
-          font-family: "Roboto", sans-serif;
           font-size: 18px;
           @include mq(sp-ls) {
             padding: 16px 38px 16px 50px;
@@ -835,6 +1000,7 @@
             height: 40px;
             text-align: center;
             line-height: 41px;
+            font-family: "Roboto", sans-serif;
             @include mq(sp-ls) {
               top: 11px;
               left: 15px;
@@ -867,6 +1033,7 @@
             content: "A";
             font-weight: bold;
             border: 1px solid #229f5d;
+            font-family: "Roboto", sans-serif;
             color: #229f5d;
             border-radius: 50%;
             width: 40px;
@@ -890,6 +1057,9 @@
               margin-top: 0;
             }
           }
+          &.--faq-answer {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -907,9 +1077,6 @@
     padding: 0 calc(50vw - 50%);
     padding: 120px 0;
     @include mq(sp-ls) {
-      padding: 80px 0;
-    }
-    @include mq(sp) {
       padding: 60px 0;
     }
 
@@ -1020,6 +1187,9 @@
           @include mq(sp-ls) {
             padding-bottom: 24px;
           }
+          @include mq(sp) {
+            padding-bottom: 30px;
+          }
         }
         .l-access__ctabtn {
           margin: 0 auto;
@@ -1038,8 +1208,11 @@
       width: 100%;
       height: 0;
       padding-top: 31%;
+      @include mq(sp-ls) {
+        padding-top: 42%;
+      }
       @include mq(sp) {
-        padding-top: 100%;
+        padding-top: 75%;
       }
       .l-access__iframe {
         position: absolute;
@@ -1061,8 +1234,8 @@
       background-color: $white;
       padding: 0;
     }
-    @include mq(sp) {
-      padding: 40px 0;
+    @include mq(sp-ls) {
+      padding: 60px 0;
     }
 
     .l-contact-ttl {

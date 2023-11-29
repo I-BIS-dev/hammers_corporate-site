@@ -1,6 +1,7 @@
 <?php
 $to = $_POST["mail"];
 $subject = "送信ありがとうございました";
+$subject = mb_encode_mimeheader($subject, 'UTF-8');
 $message  = $_POST['name'] . " 様 \r\n"
   . "\r\n"
   . "BESTARへお問い合わせありがとうございました。\r\n"
@@ -14,6 +15,7 @@ $message  = $_POST['name'] . " 様 \r\n"
   . "【 担当者名 】：" .  $_POST['name'] . "\r\n"
   . "【 電話番号 】：" .  $_POST['tel'] . "\r\n"
   . "【 メールアドレス 】：" . $_POST['mail'] . "\r\n"
+  // . "【 添付ファイル 】：" . $_POST['attachment'] . "\r\n"
   . "【 連絡方法 】：" . $_POST['contact'] . "\r\n"
   . "【問い合わせ項目】：" . $_POST['item'] . "\r\n"
   . "【問い合わせ内容】：\r\n"
@@ -22,20 +24,36 @@ $message  = $_POST['name'] . " 様 \r\n"
   . "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\r\n"
   . "──────────────────────\r\n"
   . "株式会社ハマーズ 分析事業部 (BESTAR)\r\n"
-  . "http://bestar7.jp/\r\n"
+  . "https://bestar7.jp/\r\n"
   . "Mail:info-b@bestar7.jp\r\n"
   . "──────────────────────";
 $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
-// $headers = "From: info-b@bestar7.jp";
-$headers .= "From: From: info-b@bestar7.jp\r\n";
-$headers .= "Return-Path: From: info-b@bestar7.jp\r\n";
+$headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR) <info-b@bestar7.jp>\r\n";
+$headers .= "Return-Path: info-b@bestar7.jp\r\n";
 
-mail($to, $subject, $message, $headers);
+if (isset($_FILES['attachment']) && $_FILES['attachment']['error'] == UPLOAD_ERR_OK) {
+  $filepath = $_FILES['attachment']['tmp_name']; // アップロードされたファイルの一時パス
+  $filename = $_FILES['attachment']['name']; // クライアントから送信された元のファイル名
+
+  $message .= "--" . $boundary . "\n";
+
+  $message .= "Content-Type: " . finfo_file(finfo_open(FILEINFO_MIME_TYPE), $filepath) . "; name=\"" . $filename . "\"\n";
+  $message .= "Content-Disposition: attachment; filename=\"" . $filename . "\"\n";
+  $message .= "Content-Transfer-Encoding: base64\n";
+  $message .= "\n";
+  $message .= chunk_split(base64_encode(file_get_contents($filepath))) . "\n";
+
+  $message .= "--" . $boundary . "--";
+}
+
+
+mail($to, $subject, $message, $headers, $additional_headers);
 ?>
 
 <?php
-$to = "info-b@bestar7.jp";
+$to = "aisuke100811@Yahoo.co.jp";
 $subject = "お問い合わせがありました";
+$subject = mb_encode_mimeheader($subject, 'UTF-8');
 $message  = "\r\n"
   . $_POST['name'] . "様\r\n"
   . $_POST['mail'] . "から問い合わせがありました。\r\n"
@@ -48,6 +66,7 @@ $message  = "\r\n"
   . "【 担当者名 】：" .  $_POST['name'] . "\r\n"
   . "【 電話番号 】：" .  $_POST['tel'] . "\r\n"
   . "【 メールアドレス 】：" . $_POST['mail'] . "\r\n"
+  // . "【 添付ファイル 】：" . $_POST['attachment'] . "\r\n"
   . "【 連絡方法 】：" . $_POST['contact'] . "\r\n"
   . "【問い合わせ項目】： " . $_POST['item'] . "\r\n"
   . "【問い合わせ内容】：\r\n"
@@ -55,11 +74,25 @@ $message  = "\r\n"
   . "\r\n"
   . "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\r\n";
 $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
-// $headers = "From: info-b@bestar7.jp";
-$headers .= "From: From: info-b@bestar7.jp\r\n";
-$headers .= "Return-Path: From: info-b@bestar7.jp\r\n";
+$headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR) <info-b@bestar7.jp>\r\n";
+$headers .= "Return-Path: info-b@bestar7.jp\r\n";
 
-mail($to, $subject, $message, $headers);
+if (isset($_FILES['attachment']) && $_FILES['attachment']['error'] == UPLOAD_ERR_OK) {
+  $filepath = $_FILES['attachment']['tmp_name']; // アップロードされたファイルの一時パス
+  $filename = $_FILES['attachment']['name']; // クライアントから送信された元のファイル名
+
+  $message .= "--" . $boundary . "\n";
+
+  $message .= "Content-Type: " . finfo_file(finfo_open(FILEINFO_MIME_TYPE), $filepath) . "; name=\"" . $filename . "\"\n";
+  $message .= "Content-Disposition: attachment; filename=\"" . $filename . "\"\n";
+  $message .= "Content-Transfer-Encoding: base64\n";
+  $message .= "\n";
+  $message .= chunk_split(base64_encode(file_get_contents($filepath))) . "\n";
+
+  $message .= "--" . $boundary . "--";
+}
+
+mail($to, $subject, $message, $headers, $additional_headers);
 ?>
 
 

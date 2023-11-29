@@ -121,9 +121,6 @@
   .l-risk-primary {
     padding: 120px 24px;
     @include mq(sp-ls) {
-      padding: 80px 24px;
-    }
-    @include mq(sp) {
       padding: 60px 0;
     }
 
@@ -210,11 +207,10 @@
           margin: 0 auto;
           height: auto;
           @include mq(sp-ls) {
-            padding-bottom: 16px;
             margin: 0 auto;
           }
           @include mq(sp) {
-            padding-bottom: 8px;
+            padding-bottom: 0;
           }
         }
       }
@@ -224,11 +220,9 @@
   .l-risk-secondary {
     padding: 120px 24px;
     @include mq(sp-ls) {
-      padding: 80px 24px;
-    }
-    @include mq(sp) {
       padding: 60px 0;
     }
+
     .l-risk-secondary__contents {
       text-align: center;
 
@@ -316,10 +310,10 @@
   .l-risk-tertiary {
     padding: 120px 24px 80px;
     @include mq(sp-ls) {
-      padding: 80px 24px 72px;
+      padding: 60px 0 72px;
     }
     @include mq(sp) {
-      padding: 40px 0 40px;
+      padding: 60px 0 40px;
     }
 
     .l-risk-tertiary__contents {
@@ -492,9 +486,6 @@
   .l-risk-quaternary {
     padding: 0 24px 120px;
     @include mq(sp-ls) {
-      padding: 0 24px 80px;
-    }
-    @include mq(sp) {
       padding: 0 0 60px;
     }
 
@@ -553,7 +544,7 @@
       }
 
       .l-risk-quaternary__img-area {
-        padding: 32px 0;
+        padding: 32px 0 0;
         max-width: 800px;
         margin: 0 auto;
         @include mq(sp-ls) {
@@ -561,7 +552,7 @@
           justify-content: center;
         }
         @include mq(sp) {
-          padding: 24px 0;
+          padding: 24px 0 0;
         }
 
         &.--flex {

@@ -84,17 +84,17 @@
       <div class="l-mv__flex-container">
         <div class="l-mv__flex-img-bg">
           <p class="l-mv__hero-descroption c-font-bold">受付からご報告まで<br><span
-              class="l-mv__hero-hero-descroption--bold">最短１営業日!</span>
+              class="l-mv__hero-descroption--bold">最短１営業日!</span>
           </p>
         </div>
         <div class="l-mv__flex-img-bg">
           <p class="l-mv__hero-descroption c-font-bold">フォームのご入力と<br><span
-              class="l-mv__hero-hero-descroption--bold">検体郵送だけでOK</span>
+              class="l-mv__hero-descroption--bold-center">検体郵送だけでOK</span>
           </p>
         </div>
         <div class="l-mv__flex-img-bg">
           <p class="l-mv__hero-descroption c-font-bold">検体受付場所が<br><span
-              class="l-mv__hero-hero-descroption--bold">横浜市役所近く</span>
+              class="l-mv__hero-descroption--bold">横浜市役所近く</span>
           </p>
         </div>
       </div>
@@ -149,10 +149,52 @@
         <h2 class="p-headline-ttl">ご利用の流れ</h2>
       </div>
       <div class="p-inner">
-        <div class="l-flow__card-container">
+
+        <div class="l-flow__card-area">
+          <div class="l-flow__card">
+            <div class="l-flow__card-head">
+              <img src="/assets/images/flow1.svg" alt="" class="l-flow__card-img">
+            </div>
+            <div class="l-flow__card-body">
+              <p class="l-flow__card-ttl">分析依頼</p>
+              <p class="l-flow__card-text">まずは<a href="/request/"
+                  class="u--link">こちらのフォーム</a>、またはメールからご依頼ください。直接持ち込みも可能です。</p>
+            </div>
+          </div>
+          <div class="l-flow__card">
+            <div class="l-flow__card-head --point2">
+              <img src="/assets/images/flow2.svg" alt="" class="l-flow__card-img">
+            </div>
+            <div class="l-flow__card-body">
+              <p class="l-flow__card-ttl">検体送付</p>
+              <p class="l-flow__card-text">分析用の検体を適切に採取・梱包いただき、弊社宛てにご郵送ください。</p>
+            </div>
+          </div>
+          <div class="l-flow__card">
+            <div class="l-flow__card-head --point3">
+              <img src="/assets/images/flow3.svg" alt="" class="l-flow__card-img">
+            </div>
+            <div class="l-flow__card-body">
+              <p class="l-flow__card-ttl">受付・分析開始</p>
+              <p class="l-flow__card-text">お送り頂いたご依頼内容と検体の確認ができ次第、すぐに分析を開始します。</p>
+            </div>
+          </div>
+          <div class="l-flow__card">
+            <div class="l-flow__card-head --border --point4">
+              <img src="/assets/images/flow4.svg" alt="" class="l-flow__card-img">
+            </div>
+            <div class="l-flow__card-body">
+              <p class="l-flow__card-ttl">結果報告</p>
+              <p class="l-flow__card-text">ご希望日までに分析結果をメールでご報告します。これで納品完了となります。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="l-flow__card-container">
           <div class="l-flow__card">
             <div class="l-flow__card-head">
               <div class="l-flow__card-border">
+                <div class="l-flow__card-img"></div>
                 <img src="/assets/images/flow1.png" alt="ご利用の流れ" class="l-flow__card-img">
               </div>
               <p class="l-flow__card-ttl">分析依頼</p>
@@ -195,7 +237,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="l-flow__ctabtn">
           <a href="/flow/" class="c-ctabtn">ご利用の流れを見る</a>
         </div>
@@ -204,14 +246,18 @@
 
     <!-- アスベスト調査 -->
     <div class="l-survey p-inner a--fadeIn">
-      <div class="l-surbey__ttl">
+      <div class="p-headline">
+        <p class="p-headline__prefix">RISK</p>
+        <h2 class="p-headline-ttl">アスベストの危険性</h2>
+      </div>
+      <!-- <div class="l-surbey__ttl">
         <p class="l-surbey__ttl-text">
           こんな工事に<span class="l-surbey__ttl-text --font">アスベスト調査が必要</span>です!
         </p>
-      </div>
-      <div class="l-surbey__flex-container">
+      </div> -->
+      <div class="l-surbey__flex-container p-inner">
         <div class="l-surbey__imgarea">
-          <img src="/assets/images/surbey.png" alt="軒下" class="l-surbey__img1">
+          <img src="/assets/images/surbey.png" alt="こんな工事にアスベスト調査が必要です！" class="l-surbey__img1">
         </div>
         <div class="l-surbey__info">
           <p class="l-surbey__description">
@@ -219,7 +265,7 @@
               class="c-font-bold">外壁塗材やサイディングなどの成形板、スレート、軒天</span>などは年代により含有されている確率がかなり高く、「建築物石綿含有建材調査者」の有資格者によるアスベスト分析が必要になります。
           </p>
           <div class="l-surbey__ctabtn">
-            <a href="/risk/" class="c-ctabtn">アスベストの危険性を見る</a>
+            <a href="/risk/" class="c-ctabtn c-font--sm">アスベストの危険性を見る</a>
           </div>
         </div>
       </div>
@@ -280,7 +326,7 @@
           <dl class="l-faq__item">
             <dt class="l-faq__question">支払いはどのようにすればよいですか？</dt>
             <dd class="l-faq__answer">
-              <p class="l-faq__text">分析依頼フォームから先に決済して頂くか、結果ご報告のメールにて請求書を添付いたします（初回のみ）。請求書到着後、1週間以内にお振込み願います。</p>
+              <p class="l-faq__text">初回のみ報告書と同時に請求書をメールにて送信いたします。請求書到着後1週間以内にお振込み願います。</p>
             </dd>
           </dl>
         </div>
@@ -304,7 +350,7 @@
         </div>
         <div class="l-access__addressarea">
           <div class="l-access__img-area">
-            <img src="/assets/images/office.jpg" alt="" class="l-access__img">
+            <img src="/assets/images/office.jpg" alt="ベスター受付事務所（馬車道）" class="l-access__img">
           </div>
           <div class="l-access__address-info">
             <div class="l-access__namearea">

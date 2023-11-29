@@ -7,6 +7,7 @@ jQuery(document).ready(function () {
     nav.toggleClass("--open");
   });
 
+
   // カレント表示
   const headerNavLink = document.querySelectorAll(".l-header__nav-link");
 
@@ -29,7 +30,7 @@ jQuery(document).ready(function () {
 
   jQuerywin.on("load scroll", function () {
     const value = jQuery(this).scrollTop();
-    if (value > 100) {
+    if (value > 1) {
       jQueryheader.addClass("header-animation");
       jQuerycontact.addClass("header-animation");
       jQueryphone.addClass("header-animation");
@@ -56,7 +57,7 @@ jQuery(document).ready(function () {
     jQuery(".l-faq__list dt").not(jQuery(this)).removeClass("--arrow");
   });
 
-  jQuery(".--topbtn img").click(function () {
+  jQuery(".--topbtn").click(function () {
     jQuery("html,body").animate({ scrollTop: 0 }, 700);
   });
 
@@ -75,23 +76,45 @@ jQuery(document).ready(function () {
     });
   });
 
-  jQuery(".js-err").css("display", "none");
+  // バリデーション非表示
+  // jQuery('input[required]').on('invalid', function () {
+  //   this.setCustomValidity('');  // デフォルトのバリデーションメッセージをクリア
+  // });
 
-  jQuery(".js-form-click").click(function () {
-    jQuery(".js-form-input").each(function () {
-      if (jQuery(this).val() === "") {
-        console.log("true");
-        jQuery(this).next("p").css({
-          color: "#dc3232",
-          "font-size": "12px",
-          "font-weight": "normal",
-          display: "block",
-        });
-      } else {
-        jQuery(this).next("p").css({
-          display: "none",
-        });
-      }
-    });
-  });
+  // jQuery(".js-err").css("display", "none");
+
+  // jQuery(".js-form-click").click(function () {
+  //   jQuery(".js-form-input").each(function () {
+  //     if (jQuery(this).val() === "") {
+  //       console.log("true");
+  //       // e.preventDefault();
+  //       jQuery(this).next("p").css({
+  //         color: "#dc3232",
+  //         "font-size": "12px",
+  //         "font-weight": "normal",
+  //         display: "block",
+  //         position: "absolute",
+  //         left: "0",
+  //         bottom: "-20px",
+  //       });
+  //     } else {
+  //       jQuery(this).next("p").css({
+  //         display: "none",
+  //       });
+  //     }
+  //   });
+  // });
+
+  // // モーダル
+  // const modalBtn = document.getElementById("modal-btn");
+  // const modal = document.getElementById("modal");
+  // const closeBtn = document.getElementsByClassName("close")[0];
+
+  // modalBtn.onclick = function () {
+  //   modal.classList.add("show"); // クラスを付与
+  // };
+
+  // closeBtn.onclick = function () {
+  //   modal.classList.remove("show"); // クラスを削除
+  // };
 });

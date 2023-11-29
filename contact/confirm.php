@@ -92,8 +92,106 @@
         <li class="c-stepbar__list --visited"><span class="c-stepbar__number">2</span><br>内容確認</li>
         <li class="c-stepbar__list"><span class="c-stepbar__number">3</span><br>送信完了</li>
       </ol>
-      <form action="/contact/complete.php" method="post">
-        <table>
+      <form action="/contact/complete.php" enctype="multipart/form-data" method="post">
+        <div class="c-confirm__contents">
+          <div class="c-confirm__row">
+            <div class="c-confirm__head">
+              <p>
+                会社名<span>必須</span>
+              </p>
+            </div>
+            <div class="c-confirm__data">
+              <span><?php echo $_POST["company"]; ?></span>
+              <input hidden type="text" name="company" size="50" value="<?php echo $_POST["company"]; ?>">
+            </div>
+          </div>
+          <div class="c-confirm__row">
+            <div class="c-confirm__head">
+              <p>
+                担当者名<span>必須</span>
+              </p>
+            </div>
+            <div class="c-confirm__data">
+              <span><?php echo $_POST["name"]; ?></span>
+              <input hidden type="text" name="name" size="50" value="<?php echo $_POST["name"]; ?>">
+            </div>
+          </div>
+          <div class="c-confirm__row">
+            <div class="c-confirm__head">
+              <p>
+                電話番号<span>必須</span>
+              </p>
+            </div>
+            <div class="c-confirm__data">
+              <span><?php echo $_POST["tel"]; ?></span>
+              <input hidden type="text" name="tel" size="50" value="<?php echo $_POST["tel"]; ?>">
+            </div>
+          </div>
+          <div class="c-confirm__row">
+            <div class="c-confirm__head">
+              <p>
+                メールアドレス<span>必須</span>
+              </p>
+            </div>
+            <div class="c-confirm__data">
+              <span><?php echo $_POST["mail"]; ?></span>
+            </div>
+            <input hidden type="email" name="mail" size="50" value="<?php echo $_POST["mail"]; ?>">
+          </div>
+          <div class="c-confirm__row">
+            <div class="c-confirm__head">
+              <p>添付ファイル</p>
+            </div>
+            <div class="c-confirm__data">
+              <?php
+              //元ファイル名の先頭にアップロード日時を加える
+              $newfilename = date("YmdHis") . "-" . $_FILES['attachment']['name'];
+              //ファイルの保存先
+              $upload = './' . $newfilename;
+              //アップロードが正しく完了したかチェック
+              if (move_uploaded_file($_FILES['attachment']['tmp_name'], $upload)) {
+                echo '<span>' . $_FILES["attachment"]["name"] . '</span>';
+              } else if (!is_uploaded_file($_FILES['attachment']['tmp_name'])) {
+                // ファイルがアップロードされていない場合、空欄にする
+                echo '<span></span>';
+              } else {
+                echo 'アップロード失敗';
+              }
+              ?>
+              <input hidden type="file" name="attachment" size="50" value="<?php echo $_FILES["attachment"]; ?>">
+            </div>
+          </div>
+          <div class="c-confirm__row">
+            <div class="c-confirm__head">
+              <p>連絡方法</p>
+            </div>
+            <div class="c-confirm__data">
+              <span><?php echo $_POST["contact"]; ?></span>
+              <input hidden type="text" name="contact" size="50" value="<?php echo $_POST["contact"]; ?>">
+            </div>
+          </div>
+          <div class="c-confirm__row">
+            <div class="c-confirm__head">
+              <p>問い合わせ項目</p>
+            </div>
+            <div class="c-confirm__data">
+              <span><?php echo $_POST["item"]; ?></span>
+              <input hidden type="text" name="item" size="50" value="<?php echo $_POST["item"]; ?>">
+            </div>
+          </div>
+          <div class="c-confirm__row">
+            <div class="c-confirm__head">
+              <p>
+                問い合わせ内容<span>必須</span>
+              </p>
+            </div>
+            <div class="c-confirm__data">
+              <spna><?php echo nl2br($_POST["inquiry"]); ?></spna>
+              <textarea hidden name="inquiry"><?php echo nl2br($_POST["inquiry"]);; ?></textarea>
+            </div>
+          </div>
+        </div>
+        <!-- <table>
           <tr class="l-confirm-rows">
             <td class="l-confirm-left">会社名</td>
             <td class="l-confirm-right"><?php echo $_POST["company"]; ?></td>
@@ -129,12 +227,12 @@
             <td class="l-confirm-right"><?php echo nl2br($_POST["inquiry"]); ?></td>
             <textarea hidden name="inquiry"><?php echo nl2br($_POST["inquiry"]);; ?></textarea>
           </tr>
-        </table>
+        </table> -->
         <div class="c-confirm-btn-area">
           <button class="c-back-btn" type="button" onclick="history.back(-1)">戻る</button>
-          <div class="c-ctabtn --sm">
+          <label class="c-ctabtn --sm">
             <input class="c-confirm-btn" type="submit" value="送信する" />
-          </div>
+          </label>
         </div>
       </form>
     </div>

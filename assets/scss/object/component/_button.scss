@@ -9,10 +9,7 @@
   background-color: #229f5d;
   cursor: pointer;
   border-radius: 50%;
-  @include mq(sp) {
-    transform: translateX(-50%);
-    left: 50%;
-  }
+  z-index: 1;
 
   .c-top-btn-icon {
     padding: 19px 0 15px;
@@ -23,7 +20,7 @@
 
 // ハンバーガーメニュー
 .l-header__hamburger {
-  width: 41px;
+  width: 40px;
   display: none;
   border-color: rgba(0, 0, 0, 0);
   background-color: rgba(0, 0, 0, 0);
@@ -31,8 +28,8 @@
   padding: 10px 5px;
   position: fixed;
   z-index: 1 !important;
-  top: 10px;
-  right: 10px;
+  top: 7px;
+  right: 11px;
   @include mq(sp-tab) {
     display: block;
     z-index: 9999 !important;
@@ -93,6 +90,7 @@
   position: relative;
   white-space: nowrap;
   cursor: pointer;
+  transition: all 0.3s;
   &::after {
     content: "";
     background-image: url(../assets/images/arrow-ctabtn.svg);
@@ -116,6 +114,7 @@
     color: $sub-color;
     border: 3px solid $sub-color;
     padding: 17px 64px;
+    transition: all 0.3s;
     &::after {
       background-image: url(../assets/images/arrow-ctasub.svg);
       top: 25px;
@@ -124,7 +123,7 @@
   &.--white {
     background-color: $white;
     color: $sub-color;
-
+    transition: all 0.3s;
     &::after {
       background-image: url(../assets/images/arrow-ctasub.svg);
     }
@@ -132,6 +131,7 @@
   &.--excle {
     background-color: $main-color;
     color: $white;
+    transition: all 0.3s;
     &::after {
       background-image: url(../assets/images/arrow-ctabtn.svg);
     }
@@ -141,15 +141,15 @@
   }
   &.--lg {
     width: 356px;
+    transition: all 0.3s;
     @include mq(sp) {
       width: 300px;
     }
   }
   &.--sm {
-    width: 220px;
-    // @include mq(sp) {
-    //   width: 300px;
-    // }
+    @include mq(sp-ls) {
+      width: 220px;
+    }
   }
   &.--contact {
     width: 156px;
@@ -174,6 +174,7 @@
     font-weight: bold;
     font-size: 16px;
     border: none;
+    cursor: pointer;
     &:hover {
       @include hover-effect;
     }

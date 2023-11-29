@@ -42,12 +42,12 @@
       width: 176px;
     }
     @include mq(sp-tab) {
-      width: 176px;
-      margin-left: 24px;
-      padding-top: 16px;
+      width: 144px;
+      margin-left: 16px;
+      padding-top: 7px;
     }
-    @include mq(sp) {
-      width: 116px;
+    @include mq(sp-ls) {
+      width: 144px;
       margin-left: 16px;
       padding-top: 7px;
     }
@@ -149,6 +149,12 @@
             &:hover {
               background-color: rgba(255, 255, 255, 0.2);
             }
+            &:nth-child(8) {
+              background-color: initial;
+            }
+            &:nth-child(9) {
+              background-color: initial;
+            }
             &:first-child {
               display: block;
             }
@@ -192,8 +198,20 @@
             }
             &:hover {
               @include hover-effect;
+              &:nth-child(8) {
+                opacity: 1;
+              }
+              &:nth-child(9) {
+                opacity: 1;
+              }
               &::after {
                 right: 15px;
+              }
+
+              .c-ctabtn {
+                &:hover {
+                  opacity: 1;
+                }
               }
             }
           }
