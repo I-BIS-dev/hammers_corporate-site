@@ -81,7 +81,7 @@ jQuery(document).ready(function () {
   //   this.setCustomValidity('');  // デフォルトのバリデーションメッセージをクリア
   // });
 
-  jQuery(".js-err").css("display", "none");
+  // jQuery(".js-err").css("display", "none");
 
   // jQuery(".js-form-click").click(function () {
   //   jQuery(".js-form-input").each(function () {
@@ -105,16 +105,16 @@ jQuery(document).ready(function () {
   //   });
   // });
 
-  // モーダル
-  const modalBtn = document.getElementById("modal-btn");
-  const modal = document.getElementById("modal");
-  const closeBtn = document.getElementsByClassName("close")[0];
+  // // モーダル
+  // const modalBtn = document.getElementById("modal-btn");
+  // const modal = document.getElementById("modal");
+  // const closeBtn = document.getElementsByClassName("close")[0];
 
-  modalBtn.onclick = function () {
-    modal.classList.add("show"); // クラスを付与
-  };
+  // modalBtn.onclick = function () {
+  //   modal.classList.add("show"); // クラスを付与
+  // };
 
-  closeBtn.onclick = function () {
-    modal.classList.remove("show"); // クラスを削除
-  };
+  // closeBtn.onclick = function () {
+  //   modal.classList.remove("show"); // クラスを削除
+  // };
 });
