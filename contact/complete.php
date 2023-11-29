@@ -31,24 +31,20 @@ $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
 $headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR) <info-b@bestar7.jp>\r\n";
 $headers .= "Return-Path: info-b@bestar7.jp\r\n";
 
-$filepath = "./" . date("YmdHis") . "-" . $_FILES['attachment']['name']; // アップロードされたファイルのパス
-$boundary = "__BOUNDARY__";
+if (isset($_FILES['attachment']) && $_FILES['attachment']['error'] == UPLOAD_ERR_OK) {
+  $filepath = $_FILES['attachment']['tmp_name']; // アップロードされたファイルの一時パス
+  $filename = $_FILES['attachment']['name']; // クライアントから送信された元のファイル名
 
-$additional_headers = "Content-Type: multipart/mixed;boundary=\"" . $boundary . "\"\n";
-$additional_headers .= $headers;
+  $message .= "--" . $boundary . "\n";
 
-$message .= "--" . $boundary . "\n";
+  $message .= "Content-Type: " . finfo_file(finfo_open(FILEINFO_MIME_TYPE), $filepath) . "; name=\"" . $filename . "\"\n";
+  $message .= "Content-Disposition: attachment; filename=\"" . $filename . "\"\n";
+  $message .= "Content-Transfer-Encoding: base64\n";
+  $message .= "\n";
+  $message .= chunk_split(base64_encode(file_get_contents($filepath))) . "\n";
 
-$message .= "Content-Type: text/plain; charset=\"ISO-2022-JP\"\n\n";
-$message .= "--" . $boundary . "\n";
-
-$message .= "Content-Type: " . mime_content_type($filepath) . "; name=\"" . basename($filepath) . "\"\n";
-$message .= "Content-Disposition: attachment; filename=\"" . basename($filepath) . "\"\n";
-$message .= "Content-Transfer-Encoding: base64\n";
-$message .= "\n";
-$message .= chunk_split(base64_encode(file_get_contents($filepath))) . "\n";
-
-$message .= "--" . $boundary . "--";
+  $message .= "--" . $boundary . "--";
+}
 
 
 mail($to, $subject, $message, $headers, $additional_headers);
@@ -81,25 +77,20 @@ $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
 $headers .= "From: 株式会社ハマーズ分析事業部 (BESTAR) <info-b@bestar7.jp>\r\n";
 $headers .= "Return-Path: info-b@bestar7.jp\r\n";
 
-$filepath = "./" . date("YmdHis") . "-" . $_FILES['attachment']['name']; // アップロードされたファイルのパス
-$boundary = "__BOUNDARY__";
+if (isset($_FILES['attachment']) && $_FILES['attachment']['error'] == UPLOAD_ERR_OK) {
+  $filepath = $_FILES['attachment']['tmp_name']; // アップロードされたファイルの一時パス
+  $filename = $_FILES['attachment']['name']; // クライアントから送信された元のファイル名
 
-$additional_headers = "Content-Type: multipart/mixed;boundary=\"" . $boundary . "\"\n";
-$additional_headers .= $headers;
+  $message .= "--" . $boundary . "\n";
 
-$message .= "--" . $boundary . "\n";
+  $message .= "Content-Type: " . finfo_file(finfo_open(FILEINFO_MIME_TYPE), $filepath) . "; name=\"" . $filename . "\"\n";
+  $message .= "Content-Disposition: attachment; filename=\"" . $filename . "\"\n";
+  $message .= "Content-Transfer-Encoding: base64\n";
+  $message .= "\n";
+  $message .= chunk_split(base64_encode(file_get_contents($filepath))) . "\n";
 
-$message .= "Content-Type: text/plain; charset=\"ISO-2022-JP\"\n\n";
-$message .= "--" . $boundary . "\n";
-
-$message .= "Content-Type: " . mime_content_type($filepath) . "; name=\"" . basename($filepath) . "\"\n";
-$message .= "Content-Disposition: attachment; filename=\"" . basename($filepath) . "\"\n";
-$message .= "Content-Transfer-Encoding: base64\n";
-$message .= "\n";
-$message .= chunk_split(base64_encode(file_get_contents($filepath))) . "\n";
-
-$message .= "--" . $boundary . "--";
-
+  $message .= "--" . $boundary . "--";
+}
 
 mail($to, $subject, $message, $headers, $additional_headers);
 ?>
