@@ -1095,8 +1095,8 @@
         color: $main-color;
         font-size: 28px;
         font-weight: bold;
-        @include mq(sp) {
-          font-size: 23px;
+        @include mq(sp-ls) {
+          font-size: 22px;
           text-align: center;
         }
         @include mq(sp) {

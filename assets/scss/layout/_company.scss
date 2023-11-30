@@ -278,6 +278,9 @@
         @include mq(sp-ls) {
           padding-top: 75%;
         }
+        @include mq(sp-ls) {
+          max-width: 100%;
+        }
         .l-adress-iframe {
           position: absolute;
           top: 0;
