@@ -530,6 +530,7 @@
             padding: 0 20px;
             @include mq(sp-ls) {
               padding: 0;
+              font-size: 16px;
             }
           }
         }
@@ -754,7 +755,7 @@
       margin: 0 50px 80px;
       @include mq(sp-ls) {
         margin: 0 0 80px;
-        padding: 30px 20px;
+        padding: 40px 20px;
         flex-direction: column;
         gap: 24px;
       }
@@ -814,7 +815,7 @@
       margin: 0 50px 80px;
       @include mq(sp-ls) {
         margin: 0 0 80px;
-        padding: 40px 16px;
+        padding: 40px 20px;
         flex-direction: column;
         gap: 24px;
       }
@@ -853,7 +854,6 @@
         line-height: 180%;
         @include mq(sp-ls) {
           font-size: 20px;
-          max-width: 80%;
           margin: 0 auto;
         }
         @include mq(sp) {
@@ -874,7 +874,7 @@
       margin: 0 50px 80px;
       @include mq(sp-ls) {
         margin: 0 0 80px;
-        padding: 40px 16px;
+        padding: 40px 20px;
         flex-direction: column;
         gap: 24px;
       }
@@ -913,7 +913,6 @@
         line-height: 180%;
         @include mq(sp-ls) {
           font-size: 20px;
-          max-width: 80%;
           margin: 0 auto;
         }
         @include mq(sp) {

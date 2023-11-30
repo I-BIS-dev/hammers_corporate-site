@@ -7,6 +7,15 @@ jQuery(document).ready(function () {
     nav.toggleClass("--open");
   });
 
+  // カレント表示
+  const headerNavLink = document.querySelectorAll(".l-header__nav-link");
+
+  headerNavLink.forEach((targetLink) => {
+    if (targetLink.href === location.href) {
+      targetLink.classList.add("current");
+    }
+  });
+
   // スクロール時ヘッダーアニメーション
   var jQuerywin = jQuery(window),
     jQueryheader = jQuery("header"),

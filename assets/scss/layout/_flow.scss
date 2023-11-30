@@ -522,12 +522,12 @@
           }
           .l-step2__img-area {
             max-width: 196px;
-            @include mq(sp-ls) {
-              max-width: 160px;
-            }
-            @include mq(sp-ls) {
-              max-width: 162px;
-            }
+            // @include mq(sp-ls) {
+            //   max-width: 160px;
+            // }
+            // @include mq(sp-ls) {
+            //   max-width: 162px;
+            // }
 
             .l-step2__img-prefix {
               text-align: center;
@@ -540,8 +540,8 @@
             }
 
             .l-step2__img {
-              min-height: 148px;
-              width: 100%;
+              width: 196px;
+              height: 147px;
               margin-right: 16px;
               border-radius: 4px;
               @include mq(sp-ls) {
@@ -580,7 +580,8 @@
           }
 
           .l-step2__img {
-            min-height: 148px;
+            width: 196px;
+            height: 147px;
             width: 100%;
             border-radius: 4px;
           }

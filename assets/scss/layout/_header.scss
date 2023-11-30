@@ -245,10 +245,10 @@
             }
             &.current {
               color: $main-color;
-              &::before {
-                visibility: visible;
-                transform: scaleX(1);
-              }
+              // &::before {
+              //   visibility: visible;
+              //   transform: scaleX(1);
+              // }
             }
             @include mq(sp-tab) {
               min-width: 300px;
