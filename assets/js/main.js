@@ -7,16 +7,6 @@ jQuery(document).ready(function () {
     nav.toggleClass("--open");
   });
 
-
-  // カレント表示
-  // const headerNavLink = document.querySelectorAll(".l-header__nav-link");
-
-  // headerNavLink.forEach((targetLink) => {
-  //   if (targetLink.href === location.href) {
-  //     targetLink.classList.add("current");
-  //   }
-  // });
-
   // スクロール時ヘッダーアニメーション
   var jQuerywin = jQuery(window),
     jQueryheader = jQuery("header"),
@@ -75,46 +65,4 @@ jQuery(document).ready(function () {
       }
     });
   });
-
-  // バリデーション非表示
-  // jQuery('input[required]').on('invalid', function () {
-  //   this.setCustomValidity('');  // デフォルトのバリデーションメッセージをクリア
-  // });
-
-  // jQuery(".js-err").css("display", "none");
-
-  // jQuery(".js-form-click").click(function () {
-  //   jQuery(".js-form-input").each(function () {
-  //     if (jQuery(this).val() === "") {
-  //       console.log("true");
-  //       // e.preventDefault();
-  //       jQuery(this).next("p").css({
-  //         color: "#dc3232",
-  //         "font-size": "12px",
-  //         "font-weight": "normal",
-  //         display: "block",
-  //         position: "absolute",
-  //         left: "0",
-  //         bottom: "-20px",
-  //       });
-  //     } else {
-  //       jQuery(this).next("p").css({
-  //         display: "none",
-  //       });
-  //     }
-  //   });
-  // });
-
-  // // モーダル
-  // const modalBtn = document.getElementById("modal-btn");
-  // const modal = document.getElementById("modal");
-  // const closeBtn = document.getElementsByClassName("close")[0];
-
-  // modalBtn.onclick = function () {
-  //   modal.classList.add("show"); // クラスを付与
-  // };
-
-  // closeBtn.onclick = function () {
-  //   modal.classList.remove("show"); // クラスを削除
-  // };
 });

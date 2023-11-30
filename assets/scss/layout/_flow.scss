@@ -97,7 +97,7 @@
       border-radius: 12px;
       margin-top: 32px;
       border: 4px solid $main-color;
-      @include mq(sp) {
+      @include mq(sp-ls) {
         margin-top: 24px;
         padding: 30px 20px;
       }
@@ -638,32 +638,30 @@
       @include mq(sp-ls) {
         flex-direction: column-reverse;
         justify-content: center;
+        padding: 56px 0 0;
       }
       @include mq(sp) {
-        padding: 32px 8px 0;
+        padding: 32px 0 0;
       }
 
       .l-step2__bottom-left {
         max-width: 387px;
         @include mq(sp-ls) {
           margin: 0 auto;
+          max-width: 100%;
         }
         .l-step2__text {
           line-height: 180%;
           text-align: left;
           padding: 0 24px 9px 0;
-
           @include mq(sp-ls) {
-            padding: 32px 0;
-          }
-          @include mq(sp) {
             padding: 16px 0;
           }
 
           &.--min {
             font-size: 12px;
             padding-right: 24px;
-            @include mq(sp) {
+            @include mq(sp-ls) {
               padding-right: 0;
             }
           }
