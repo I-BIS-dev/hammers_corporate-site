@@ -264,108 +264,6 @@
             // }
           }
 
-          // モーダルアニメーション付き
-          // .l-step1__img-area {
-          //   max-width: 278px;
-          //   width: 100%;
-          //   display: block;
-          //   position: relative;
-          //   &::before {
-          //     content: "";
-          //     width: 100%;
-          //     height: 100%;
-          //     position: absolute;
-          //     top: 0;
-          //     left: 0;
-          //     background-color: rgba(0, 0, 0, 0.2);
-          //     opacity: 1;
-          //     transition: all 0.7s;
-          //     z-index: 1;
-          //   }
-          //   &::after {
-          //     content: "";
-          //     opacity: 0;
-          //     width: 58px;
-          //     height: 58px;
-          //     border-radius: 50%;
-          //     background-color: $main-color;
-          //     position: absolute;
-          //     top: 50%;
-          //     left: 50%;
-          //     transform: translate(-50%, -50%);
-          //     background-image: url(../assets/images/search.svg);
-          //     background-repeat: no-repeat;
-          //     background-position: center;
-          //     opacity: 1;
-          //     transition: all 0.7s;
-          //     z-index: 2;
-          //   }
-          //   &:hover {
-          //     &::before {
-          //       background-color: rgba(0, 0, 0, 0.4);
-          //     }
-          //     // &::after {
-          //     //   // @include hover-effect;
-          //     // }
-          //   }
-          //   .l-step1__img {
-          //     min-width: 278px;
-          //     position: relative;
-          //     display: block;
-          //   }
-          // }
-
-          /* モーダル全体のスタイル */
-          // .modal {
-          //   background-color: gray;
-          //   position: fixed;
-          //   top: 0;
-          //   left: 0;
-          //   width: 100%;
-          //   height: 100%;
-          //   z-index: 999;
-          //   display: flex;
-          //   align-items: center;
-          //   justify-content: center;
-          //   .modal-content {
-          //     .close {
-          //       color: #fff;
-          //       float: right;
-          //       font-size: 28px;
-          //       font-weight: bold;
-          //       transition: all 0.3s;
-          //       &:hover {
-          //         @include hover-effect;
-          //         cursor: pointer;
-          //       }
-          //     }
-          //     .l-step1__img1 {
-          //       height: 90vh;
-          //       max-width: 100%;
-          //       text-align: center;
-          //       margin: 0 auto;
-          //       position: relative;
-          //       @include mq(sp-ls) {
-          //         max-width: 375px;
-          //         width: 100%;
-          //         height: auto;
-          //       }
-          //     }
-          //   }
-          //   &.fade-in {
-          //     // transform: translateY(100%);
-          //     transform: scale(0);
-          //     opacity: 0;
-          //   }
-
-          //   &.show {
-          //     // transform: translateY(0);
-          //     transform: scale(1);
-          //     opacity: 1;
-          //     transition: transform 0.7s ease-in-out;
-          //   }
-          // }
-
           .l-step1__excel-link {
             text-align: center;
             padding: 2px;
@@ -382,6 +280,7 @@
     }
   }
 }
+
 .l-step2 {
   max-width: 840px;
   padding: 120px 20px 120px;
@@ -522,12 +421,6 @@
           }
           .l-step2__img-area {
             max-width: 196px;
-            // @include mq(sp-ls) {
-            //   max-width: 160px;
-            // }
-            // @include mq(sp-ls) {
-            //   max-width: 162px;
-            // }
 
             .l-step2__img-prefix {
               text-align: center;
@@ -561,6 +454,7 @@
           }
         }
       }
+
       .l-step2__img-topright {
         display: inline-block;
         .l-step2__img-area {
@@ -668,6 +562,7 @@
           }
         }
       }
+
       .l-step2__bottom-right {
         max-width: 306px;
         width: 100%;
@@ -700,6 +595,7 @@
       @include mq(sp) {
         font-size: 20px;
       }
+
       &.--font-strong {
         font-size: 80px;
         line-height: 0.9;
@@ -750,11 +646,13 @@
   .l-step3__text {
     line-height: 200%;
   }
+
   .l-step3__img-area {
     max-width: 520px;
     display: flex;
     justify-content: center;
     margin: 40px auto;
+
     .l-step3__img {
       max-width: 520px;
       width: 100%;
@@ -782,6 +680,7 @@
       @include mq(sp) {
         font-size: 20px;
       }
+
       &.--font-strong {
         font-size: 80px;
         line-height: 0.9;
@@ -832,6 +731,7 @@
   .l-step4__text {
     line-height: 180%;
   }
+
   .l-step4__img-area {
     max-width: 520px;
     display: flex;

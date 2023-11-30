@@ -81,7 +81,7 @@
           padding: 0 8px;
           text-align: center;
           &:hover {
-            @include hover-effect;
+            text-decoration: none;
           }
           @include mq(sp) {
             font-size: 11px;

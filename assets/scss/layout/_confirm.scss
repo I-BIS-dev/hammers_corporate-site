@@ -43,59 +43,6 @@
       }
     }
 
-    // table {
-    //   border-collapse: collapse;
-    //   .l-confirm-rows {
-    //     border-top: 1px solid #c2cfc9;
-    //     // padding: 24px 0;
-    //     // height: auto;
-    //     // line-height: 200%;
-    //     &:last-child {
-    //       border-bottom: 1px solid #c2cfc9;
-    //       margin-bottom: 32px;
-    //     }
-    //     .l-confirm-left {
-    //       width: 260px;
-    //       background-color: #f4f7f7;
-    //       display: flex;
-    //       justify-content: center;
-    //       align-items: center;
-    //       padding: 24px 0;
-    //       font-weight: bold;
-    //       text-align: center;
-    //       // margin: 24px 0;
-    //       @include mq(sp-ls) {
-    //         width: 200px;
-    //         font-size: 14px;
-    //         padding: 16px 0;
-    //       }
-    //       @include mq(sp) {
-    //         width: 100px;
-    //         font-size: 12px;
-    //         padding: 16px 0;
-    //       }
-    //     }
-
-    //     .l-confirm-right {
-    //       max-width: 600px;
-    //       width: 100%;
-    //       padding: 24px 24px 24px 40px;
-    //       // overflow-y: auto; /* 縦方向のスクロールバーを必要に応じて表示 */
-    //       // margin: 24px 0;
-    //       @include mq(sp-ls) {
-    //         max-width: 300px;
-    //         font-size: 12px;
-    //         padding: 16px 24px 16px 24px;
-    //       }
-    //       @include mq(sp) {
-    //         max-width: 200px;
-    //         font-size: 12px;
-    //         padding: 16px 24px 16px 24px;
-    //       }
-    //     }
-    //   }
-    // }
-
     .c-confirm__contents {
       max-width: 1020px;
 
@@ -128,7 +75,6 @@
         .c-confirm__head {
           display: flex;
           align-items: center;
-          // padding-top: 12px;
 
           & > p {
             min-width: 280px;
@@ -161,7 +107,6 @@
             justify-content: space-between;
             min-width: 280px;
             align-items: flex-start;
-            // padding-top: 0;
 
             @include mq(sp-ls) {
               justify-content: start;
@@ -176,14 +121,6 @@
               }
             }
           }
-
-          // &--check {
-          //   // padding-top: 0;
-          // }
-
-          // &--date {
-          //   // padding-top: 5px;
-          // }
 
           &--file {
             align-items: flex-start;
@@ -226,10 +163,6 @@
             margin-left: 0;
             margin-top: 4px;
           }
-
-          // &--plan {
-          //   // padding-top: 4px;
-          // }
 
           &--plan > p > .wpcf7-form-control-wrap > .wpcf7-form-control {
             display: block;
@@ -338,10 +271,8 @@
             }
 
             &:invalid {
-              // &::after {
               content: attr(title);
               color: transparent;
-              // }
             }
 
             input:invalid::after {
@@ -414,7 +345,6 @@
             @include mq(sp-ls) {
               width: 100%;
               flex-direction: column;
-              // display: block;
             }
 
             span {
@@ -422,7 +352,6 @@
                 width: 228px;
 
                 @include mq(sp-ls) {
-                  // display: block;
                   width: 100%;
                 }
               }
@@ -459,12 +388,10 @@
 
         p {
           display: inline-flex;
-          // display: flex;
           justify-content: center;
           column-gap: 30px;
           row-gap: 8px;
           flex-wrap: wrap;
-          // display: inline-block;
           position: relative;
 
           &:before {
@@ -511,10 +438,6 @@
         border-color: #dc3232 !important;
         color: #dc3232;
       }
-
-      // .wpcf7-not-valid-tip {
-      //   // color: #dc3232;
-      // }
     }
   }
 }

@@ -155,7 +155,6 @@
           text-align: center;
           text-decoration: underline;
           &:hover {
-            @include hover-effect;
             text-decoration: none !important;
           }
           @include mq(sp) {
