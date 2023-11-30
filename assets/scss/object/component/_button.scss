@@ -120,7 +120,21 @@
       top: 25px;
     }
     &:hover {
-      background-color: rgba(230, 230, 230, 0.3);
+      background-color: rgba(245, 245, 245, 0.6);
+    }
+  }
+  &.--sub-secondary {
+    background-color: $white;
+    color: $sub-color;
+    border: 3px solid $sub-color;
+    padding: 17px 64px;
+    transition: all 0.3s;
+    &::after {
+      background-image: url(../assets/images/arrow-ctasub.svg);
+      top: 25px;
+    }
+    &:hover {
+      background-color: rgba(226, 226, 226, 0.6);
     }
   }
   &.--white {

@@ -655,14 +655,14 @@
           text-align: left;
           padding: 0 24px 9px 0;
           @include mq(sp-ls) {
-            padding: 16px 0;
+            padding: 16px 0 8px;
           }
 
           &.--min {
             font-size: 12px;
             padding-right: 24px;
             @include mq(sp-ls) {
-              padding-right: 0;
+              padding: 0;
             }
           }
         }
@@ -672,11 +672,8 @@
         width: 100%;
         height: auto;
         @include mq(sp-ls) {
-          padding: 32px 0;
+          padding: 0;
           max-width: 100%;
-        }
-        @include mq(sp) {
-          padding: 16px 0;
         }
       }
     }
