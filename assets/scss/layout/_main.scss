@@ -44,7 +44,7 @@
         @include mq(sp-ls) {
           font-size: 28px;
           text-align: center;
-          padding-bottom: 16px;
+          padding-bottom: 40px;
         }
       }
 
@@ -125,18 +125,20 @@
     .l-mv__flex-container {
       display: flex;
       position: absolute;
-      top: 80%;
+      // top: 80%;
+      bottom: -171%;
       left: 50%;
       transform: translate(-50%, -80%);
       @include mq(sp-tab) {
         justify-content: center;
-        top: 80%;
+        // top: 80%;
       }
       @include mq(sp-ls) {
         width: 100%;
+        bottom: -105%;
       }
       @include mq(sp) {
-        width: 100%;
+        bottom: -90%;
       }
 
       .l-mv__flex-img-bg {
