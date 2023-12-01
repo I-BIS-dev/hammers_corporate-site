@@ -1090,7 +1090,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-bottom: 40px;
+      padding-bottom: 60px;
+      @include mq(sp-ls) {
+        padding-bottom: 40px;
+      }
+
       .l-access__point {
         color: $main-color;
         font-size: 28px;
@@ -1161,6 +1165,9 @@
             font-size: 28px;
             text-align: left;
             font-weight: bold;
+            @include mq(sp-ls) {
+              font-size: 22px;
+            }
             @include mq(sp) {
               font-size: 20px;
             }
