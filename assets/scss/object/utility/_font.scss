@@ -32,20 +32,33 @@
 .c-font-color__feature-card--secondary {
   color: $black;
   font-size: 26px;
+  @include mq(sp-tab) {
+    font-size: 22px;
+  }
   @include mq(sp) {
-    font-size: 18px;
+    font-size: 21px;
   }
 }
 
 .c-font__value {
   font-size: 36px;
+  @include mq(sp-tab) {
+    font-size: 28px;
+  }
+  @include mq(sp-ls) {
+    line-height: 113%;
+  }
   @include mq(sp) {
     font-size: 28px;
+    line-height: 113%;
   }
 }
 .c-font__value--secondary {
   font-size: 46px;
   line-height: 1.2;
+  @include mq(sp-tab) {
+    font-size: 32px;
+  }
   @include mq(sp-ls) {
     font-size: 37px;
   }
@@ -58,21 +71,38 @@
   font-size: 18px;
   line-height: 1.9;
   @include mq(sp) {
+    font-size: 13px;
+    line-height: 137%;
+  }
+  @include mq(sp) {
     font-size: 12px;
+    line-height: 179%;
   }
 }
 
 .c-font-size__feature-card {
   font-size: 46px;
   line-height: 127%;
+  @include mq(sp-tab) {
+    font-size: 32px;
+    line-height: 108%;
+  }
   @include mq(sp-ls) {
+    font-size: 34px;
+    line-height: 113%;
+  }
+  @include mq(sp) {
     font-size: 30px;
+    line-height: 116%;
   }
 }
 
 .u--fontlg {
   font-size: 28px;
   margin-bottom: 8px;
+  @include mq(sp-tab) {
+    font-size: 23px;
+  }
   @include mq(sp) {
     font-size: 18px !important;
     margin-bottom: 10px;

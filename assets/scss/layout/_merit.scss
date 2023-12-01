@@ -381,6 +381,10 @@
           text-align: left;
           max-width: 400px;
           line-height: 200%;
+          @include mq(sp-tab) {
+            max-width: 360px;
+            padding-right: 24px;
+          }
           @include mq(sp-ls) {
             padding: 0 0 24px;
             margin: 0 auto;
@@ -411,9 +415,13 @@
           display: flex;
           justify-content: space-between;
           padding-top: 24px;
+          @include mq(sp-tab) {
+            gap: 20px;
+          }
           @include mq(sp-ls) {
             flex-direction: column;
             justify-content: center;
+            gap: 0;
           }
 
           .l-reliable__under-img {

@@ -275,12 +275,14 @@
         height: 0;
         padding-top: 40%;
         max-width: 470px;
-        @include mq(sp-ls) {
-          padding-top: 75%;
+        @include mq(sp-tab) {
+          max-width: 400px;
         }
         @include mq(sp-ls) {
           max-width: 100%;
+          padding-top: 75%;
         }
+
         .l-adress-iframe {
           position: absolute;
           top: 0;
@@ -294,6 +296,9 @@
         margin: 0 auto;
         padding: 0 0 0 16px;
         max-width: 460px;
+        @include mq(sp-tab) {
+          padding: 0 0 0 26px;
+        }
         @include mq(sp-ls) {
           padding: 16px 0 0;
         }
@@ -406,6 +411,9 @@
       .l-adress-second__info {
         margin: 0 auto;
         width: 100%;
+        @include mq(sp-tab) {
+          padding-right: 26px;
+        }
         @include mq(sp-ls) {
           padding: 16px 0 0;
           max-width: 460px;

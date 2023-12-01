@@ -21,7 +21,7 @@
       left: 50%;
       transform: translate(-50%, -40%);
       @include mq(sp-tab) {
-        padding: 0 26px;
+        padding: 0 48px;
         top: 40%;
       }
       @include mq(sp-ls) {
@@ -39,7 +39,7 @@
         font-weight: bold;
         line-height: 160%;
         @include mq(sp-tab) {
-          font-size: 40px;
+          font-size: 36px;
         }
         @include mq(sp-ls) {
           font-size: 28px;
@@ -125,13 +125,12 @@
     .l-mv__flex-container {
       display: flex;
       position: absolute;
-      // top: 80%;
       bottom: -171%;
       left: 50%;
       transform: translate(-50%, -80%);
       @include mq(sp-tab) {
         justify-content: center;
-        // top: 80%;
+        bottom: -156%;
       }
       @include mq(sp-ls) {
         width: 100%;
@@ -280,6 +279,9 @@
         height: 130px;
         background-color: $white;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        @include mq(sp-tab) {
+          height: 100px;
+        }
         @include mq(sp-ls) {
           padding: 24px;
           height: 103px;
@@ -291,17 +293,20 @@
         .l-feature__card-bottom--day {
           font-size: 40px;
           font-weight: bold;
+          // @include mq(sp-tab) {
+          //   font-size: 30px;
+          // }
           &.--secondary {
             font-size: 32px;
-            @include mq(sp-ls) {
+            @include mq(sp-tab) {
               font-size: 20px;
               width: 339px;
             }
-            @include mq(sp-ls) {
+            @include mq(sp-tab) {
               width: inherit;
             }
           }
-          @include mq(sp-ls) {
+          @include mq(sp-tab) {
             font-size: 20px;
           }
         }
@@ -723,7 +728,7 @@
         }
 
         .l-surbey__description {
-          // padding: 0px 12px 40px 0;
+          padding-bottom: 64px;
           line-height: 200%;
           @include mq(sp-ls) {
             padding: 28px 0 40px;
@@ -755,6 +760,10 @@
       justify-content: center;
       gap: 115px;
       margin: 0 50px 80px;
+      @include mq(sp-tab) {
+        margin: 0 0 80px;
+        padding: 40px 54px;
+      }
       @include mq(sp-ls) {
         margin: 0 0 80px;
         padding: 40px 20px;
@@ -815,6 +824,10 @@
       align-items: center;
       gap: 115px;
       margin: 0 50px 80px;
+      @include mq(sp-tab) {
+        margin: 0 0 80px;
+        padding: 40px 54px;
+      }
       @include mq(sp-ls) {
         margin: 0 0 80px;
         padding: 40px 20px;
@@ -874,6 +887,10 @@
       align-items: center;
       gap: 115px;
       margin: 0 50px 80px;
+      @include mq(sp-tab) {
+        margin: 0 0 80px;
+        padding: 40px 54px;
+      }
       @include mq(sp-ls) {
         margin: 0 0 80px;
         padding: 40px 20px;
@@ -1150,8 +1167,13 @@
       .l-access__address-info {
         max-width: 540px;
 
+        @include mq(sp-tab) {
+          max-width: 400px;
+          padding-left: 20px;
+        }
         @include mq(sp-ls) {
           margin: 0 auto;
+          padding-left: 0;
         }
         @include mq(sp) {
           width: 100%;
