@@ -45,6 +45,9 @@
       width: 144px;
       margin-left: 16px;
       padding-top: 7px;
+      &.header-animation {
+        width: 144px;
+      }
     }
     @include mq(sp-ls) {
       width: 144px;
